@@ -22,6 +22,8 @@ namespace Donare
             Console.WriteLine("Ioana");
 			Console.WriteLine("Teo");
 			Console.WriteLine("Mihai");
+                        Console.WriteLine("Ana");
+
         }
     }
 }
