@@ -3392,25 +3392,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Coste Claudia Ioana\\.nuget\\packages\\": {},
+    "C:\\Users\\cosov\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Coste Claudia Ioana\\Desktop\\CentruDeTransfuzie1\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj",
+      "projectUniqueName": "C:\\Users\\cosov\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj",
       "projectName": "CentruDeTransfuzie1",
-      "projectPath": "C:\\Users\\Coste Claudia Ioana\\Desktop\\CentruDeTransfuzie1\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj",
-      "packagesPath": "C:\\Users\\Coste Claudia Ioana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Coste Claudia Ioana\\Desktop\\CentruDeTransfuzie1\\CentruDeTransfuzie1\\obj\\",
+      "projectPath": "C:\\Users\\cosov\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj",
+      "packagesPath": "C:\\Users\\cosov\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cosov\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Coste Claudia Ioana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cosov\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
