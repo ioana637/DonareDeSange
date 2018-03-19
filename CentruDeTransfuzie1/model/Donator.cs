@@ -129,8 +129,8 @@ public class Donator {
     }
 
     public void SetLocalitateResedinta(string value) {
-        // TODO implement here
-    }
+        this.localitateResedinta = value;
+            }
 
     public string GetJudetResedinta() {
         return judetResedinta;
