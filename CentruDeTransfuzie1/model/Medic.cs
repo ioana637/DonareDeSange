@@ -6,6 +6,9 @@ using System.Text;
 
 public class Medic {
 
+    public Medic() {
+    }
+
     private int codMedic;
 
     private string cnp;
@@ -18,74 +21,63 @@ public class Medic {
 
     private string telefon;
 
-    public Medic(int codMedic, string cnp, string nume, string prenume, string email, string telefon)
-    {
-        this.codMedic = codMedic;
-        this.cnp = cnp;
-        this.nume = nume;
-        this.prenume = prenume;
-        this.email = email;
-        this.telefon = telefon;
+
+    public void Medic(int codMedic, string cnp, string nume, string prenume, string email, string telefon) {
+        // TODO implement here
     }
 
-    public int GetCodMedic()
-    {
-        return codMedic;
+    public int getCodMedic() {
+        // TODO implement here
+        return 0;
     }
 
-    public void SetCodMedic(int value)
-    {
-        this.codMedic = value;
+    public void setCodMedic(int value) {
+        // TODO implement here
     }
 
-    public string GetCnp()
-    {
-        return cnp;
+    public string getCnp() {
+        // TODO implement here
+        return "";
     }
 
-    public void SetCnp(string value)
-    {
-        this.cnp = value;
+    public void setCnp(string value) {
+        // TODO implement here
     }
 
-    public string GetNume()
-    {
-        return nume;
+    public string getNume() {
+        // TODO implement here
+        return "";
     }
 
-    public void SetNume(string value)
-    {
-        this.nume = value;
+    public void setNume(string value) {
+        // TODO implement here
     }
 
-    public string GetPrenume()
-    {
-        return prenume;
+    public string getPrenume() {
+        // TODO implement here
+        return "";
     }
 
-    public void SetPrenume(string value)
-    {
-        this.prenume = value;
+    public void setPrenume(string value) {
+        // TODO implement here
     }
 
-    public string GetEmail()
-    {
-        return email;
+    public string getEmail() {
+        // TODO implement here
+        return "";
     }
 
-    public void SetEmail(string value)
-    {
-        this.email = value;
+    public void setEmail(string value) {
+        // TODO implement here
     }
 
-    public string GetTelefon()
-    {
-        return telefon;
+    public string getTelefon() {
+        // TODO implement here
+        return "";
     }
 
-    public void SetTelefon(string value)
-    {
-        this.telefon = value;
+    public void setTelefon(string value) {
+        // TODO implement here
     }
 
 }
