@@ -1,0 +1,27 @@
+C:\Users\Dell\source\repos\CentruDeTransfuzie1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\Dell\source\repos\CentruDeTransfuzie1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\CentruDeTransfuzie1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\CentruDeTransfuzie1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfo.cs
+C:\Users\Dell\source\repos\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.deps.json
+C:\Users\Dell\source\repos\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.runtimeconfig.json
+C:\Users\Dell\source\repos\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.runtimeconfig.dev.json
+C:\Users\Dell\source\repos\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.dll
+C:\Users\Dell\source\repos\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.pdb
+C:\Users\Dell\source\repos\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.dll
+C:\Users\Dell\source\repos\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.pdb
+C:\Users\Dell\source\repos\CentruDeTransfuzie1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.dll
+C:\Users\Dell\source\repos\CentruDeTransfuzie1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.pdb
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.deps.json
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.runtimeconfig.json
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.runtimeconfig.dev.json
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.dll
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.pdb
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.dll
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.pdb
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfo.cs
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.csproj.CopyComplete
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.dll
+C:\Users\Coste Claudia Ioana\Desktop\CentruDeTransfuzie1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.pdb
