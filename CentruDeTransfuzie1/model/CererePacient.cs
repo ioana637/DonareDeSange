@@ -4,14 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class CererePacienti {
+public class CererePacient {
 
-    public CererePacienti() {
+    public CererePacient() {
     }
 
-    public int IdCerere;
+    public int IdCerere { get; set; }
 
-    public int IdPacient;
+    public int IdPacient { get; set; }
     public Pacient Pacient { get; set; }
     public Cerere Cerere { get; set; }
 

@@ -17,7 +17,7 @@ public class Cerere {
     public float CantitateGlobuleRosii { get; set; }
     public float CantitatePlasma { get; set; }
     public bool Efectuata { get; set; }
-    public List<CererePacienti> CererePacienti { get; set; }
+    public List<CererePacient> CererePacienti { get; set; }
 
     public Cerere( DateTime data, float cantitateSange, float cantitateTrombocite, float cantitateGlobuleRosii, float cantitatePlasma, bool efectuata)
     {
