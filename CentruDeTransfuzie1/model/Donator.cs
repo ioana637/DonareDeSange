@@ -6,215 +6,64 @@ using System.Text;
 
 public class Donator {
 
-    private int codDonator;
+    public int Id { get; set; }
 
-    private string nume;
+    public string Nume { get; set; }
 
-    private string prenume;
+    public string Prenume { get; set; }
 
-    private string sex;
+    public string Sex { get; set; }
 
-    private DateTime dataNastere;
+    public DateTime DataNastere { get; set; }
 
-    private string domiciliu;
+    public string Domiciliu { get; set; }
 
-    private string localitate;
+    public string Localitate { get; set; }
 
-    private string judet;
+    public string Judet { get; set; }
 
-    private string resedinta;
+    public string Resedinta { get; set; }
 
-    private string localitateResedinta;
+    public string LocalitateResedinta { get; set; }
 
-    private string judetResedinta;
+    public string JudetResedinta { get; set; }
 
-    private string telefon;
+    public string Telefon { get; set; }
 
-    private string email;
+    public string Email { get; set; }
 
-    private float greutate;
+    public float Greutate { get; set; }
 
-    private int puls;
+    public int Puls { get; set; }
 
-    private int tensiune;
+    public int Tensiune { get; set; }
 
-    private bool interventiiUltimele6Luni;
+    public bool InterventiiUltimele6Luni { get; set; }
 
-    private bool subTratament;
+    public bool SubTratament { get; set; }
 
-    public Donator(int cod, string nume, string prenume, string sex, DateTime data, string domiciliu, string localitate, string judet, string resedinta, string locResedinta, string judResedinta, string telefon, string email)
+    public UserDonator UserDonator { get; set; }
+
+    public Donator(string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email, float greutate, bool interventiiUltimele6Luni, bool subTratament)
     {
-        this.codDonator = cod;
-        this.nume = nume;
-        this.prenume = prenume;
-        this.sex = sex;
-        this.dataNastere = data;
-        this.domiciliu = domiciliu;
-        this.localitate = localitate;
-        this.judet = judet;
-        this.resedinta = resedinta;
-        this.localitateResedinta = locResedinta;
-        this.judetResedinta = judResedinta;
-        this.email = email;
-        this.telefon = telefon;
-
+        Nume = nume;
+        Prenume = prenume;
+        Sex = sex;
+        DataNastere = dataNastere;
+        Domiciliu = domiciliu;
+        Localitate = localitate;
+        Judet = judet;
+        Resedinta = resedinta;
+        LocalitateResedinta = localitateResedinta;
+        JudetResedinta = judetResedinta;
+        Telefon = telefon;
+        Email = email;
+        Greutate = greutate;
+        InterventiiUltimele6Luni = interventiiUltimele6Luni;
+        SubTratament = subTratament;
     }
 
-
-
-    public int GetCodDonator() {
-        return codDonator;
-    }
-
-    public void SetCodDonator(int value) {
-        this.codDonator = value;
-    }
-
-    public string GetNume() {
-        return nume;
-    }
-
-    public void SetNume(string value) {
-        this.nume = value;
-    }
-
-    public string GetPrenume() {
-        return prenume;
-    }
-
-    public void SetPrenume(string value) {
-        this.prenume = value;
-    }
-
-    public string GetSex() {
-        return sex;
-    }
-
-    public void SetSex(string value) {
-        this.sex = value;
-    }
-
-    public DateTime GetDataNastere() {
-        return dataNastere;
-    }
-
-    public void SetDataNastere(DateTime value) {
-        this.dataNastere = value;
-    }
-
-    public string GetDomiciliu() {
-        return domiciliu;
-    }
-
-    public void SetDomiciliu(string value) {
-        this.domiciliu = value;
-    }
-
-    public string GetLocalitate() {
-        return localitate;
-    }
-
-    public void SetLocalitate(string value) {
-        this.localitate = value;
-    }
-
-    public string GetJudet() {
-        return judet;
-    }
-
-    public void SetJudet(string value) {
-        this.judet = value;
-    }
-
-    public string GetResedinta() {
-        return resedinta;
-    }
-
-    public void SetResedinta(string value) {
-        this.resedinta = value;
-    }
-
-    public string GetLocalitateResedinta() {
-        return localitateResedinta;
-    }
-
-    public void SetLocalitateResedinta(string value) {
-        this.localitateResedinta = value;
-            }
-
-    public string GetJudetResedinta() {
-        return judetResedinta;
-    }
-
-    public void SetJudetResedinta(string value) {
-        this.judetResedinta = value;
-    }
-
-    public string GetTelefon() {
-        return telefon;
-    }
-
-    public void SetTelefon(string value) {
-        this.telefon = value;
-    }
-
-    public string GetEmail() {
-        return email;
-    }
-
-    public void SetEmail(string value) {
-        this.email = value;
-    }
-
-    public float GetGreutate()
+    public Donator()
     {
-        return greutate;
     }
-
-    public void SetGreutate(float value)
-    {
-        this.greutate = value;
-    }
-
-    public int GetPuls()
-    {
-        return puls;
-    }
-
-    public void SetPuls(int value)
-    {
-        this.puls = value;
-    }
-
-    public int GetTensiune()
-    {
-        return tensiune;
-    }
-
-    public void SetTensiune(int value)
-    {
-        this.tensiune = value;
-    }
-
-    public bool GetInterventiiUltimele6Luni()
-    {
-        return interventiiUltimele6Luni;
-    }
-
-    public void SetInterventiiUltimele6Luni(bool value)
-    {
-        this.interventiiUltimele6Luni = value;
-    }
-
-    public bool GetSubTratament()
-    {
-        return subTratament;
-    }
-
-    public void SetSubTratament(bool value)
-    {
-        this.subTratament = value;
-    }
-
-
 }

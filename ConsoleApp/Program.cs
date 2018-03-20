@@ -1,4 +1,5 @@
 ﻿using CentruDeTransfuzie1;
+using CentruDeTransfuzie1.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -10,8 +11,7 @@ namespace ConsoleApp
         {
             using(var db=new CTContext(new DbContextOptions<CTContext>()))
             {
-                db.Database.EnsureCreated();
-                Console.Write("Hello World");
+                DbInitializer.Initialize(db);
             }
         }
     }
