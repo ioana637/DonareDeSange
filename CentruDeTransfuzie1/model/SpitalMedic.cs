@@ -12,7 +12,7 @@ public class SpitalMedic {
     public int IdSpital { get; set; }
 
     public int IdMedic { get; set; }
-    public List<Medic> Medici { get; set; }
-    public List<Spital> Spitale { get; set; }
+    public Medic Medic { get; set; }
+    public Spital Spital { get; set; }
 
 }

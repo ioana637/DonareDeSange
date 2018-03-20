@@ -24,7 +24,7 @@ public class Pacient {
     public string Email { get; set; }
     public bool EDonator { get; set; }
     public Medic Medic { get; set; }
-    public List<CererePacienti> CereriPacienti { get; set; }
+    public List<CererePacient> CereriPacienti { get; set; }
 
 
 
