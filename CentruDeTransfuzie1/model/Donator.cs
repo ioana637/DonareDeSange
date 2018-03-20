@@ -1,4 +1,5 @@
 
+using CentruDeTransfuzie1.model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,6 +45,9 @@ public class Donator
     public bool SubTratament { get; set; }
 
     public UserDonator UserDonator { get; set; }
+    public List<PungaSange> PungiSange { get; set; }
+
+    public List<Analiza> Analize { get; set; }
 
     public Donator(string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email, float greutate, bool interventiiUltimele6Luni, bool subTratament)
     {
