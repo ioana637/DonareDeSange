@@ -3412,7 +3412,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dell\\.nuget\\packages\\": {},
+    "C:\\Users\\cosov\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -3421,18 +3422,20 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\anul2\\semestrul2\\ProiectISS\\DonareDeSange1\\ConsoleApp\\ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\cosov\\Documents\\GitHub\\DonareDeSange\\ConsoleApp\\ConsoleApp.csproj",
       "projectName": "ConsoleApp",
-      "projectPath": "D:\\anul2\\semestrul2\\ProiectISS\\DonareDeSange1\\ConsoleApp\\ConsoleApp.csproj",
-      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "D:\\anul2\\semestrul2\\ProiectISS\\DonareDeSange1\\ConsoleApp\\obj\\",
+      "projectPath": "C:\\Users\\cosov\\Documents\\GitHub\\DonareDeSange\\ConsoleApp\\ConsoleApp.csproj",
+      "packagesPath": "C:\\Users\\cosov\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cosov\\Documents\\GitHub\\DonareDeSange\\ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\cosov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -3444,8 +3447,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\anul2\\semestrul2\\ProiectISS\\DonareDeSange1\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj": {
-              "projectPath": "D:\\anul2\\semestrul2\\ProiectISS\\DonareDeSange1\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj"
+            "C:\\Users\\cosov\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj": {
+              "projectPath": "C:\\Users\\cosov\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj"
             }
           }
         }
@@ -3459,18 +3462,18 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
-            "version": "2.0.2"
+            "version": "[2.0.2, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "2.0.2"
           }
         },
         "imports": [

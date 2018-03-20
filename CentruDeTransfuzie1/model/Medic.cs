@@ -20,6 +20,9 @@ public class Medic
     public string Telefon { get; set; }
 
     public UserMedic UserMedic { get; set; }
+    public List<Cerere> Cereri { get; set; }
+    public List<SpitalMedic> SpitaleMedic { get; set; }
+    public List<Pacient> Pacienti { get; set; }
 
     public Medic(string cnp, string nume, string prenume, string email, string telefon)
     {
