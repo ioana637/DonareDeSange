@@ -38,3 +38,16 @@ C:\Users\cosov\Documents\GitHub\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0
 C:\Users\cosov\Documents\GitHub\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfo.cs
 C:\Users\cosov\Documents\GitHub\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.dll
 C:\Users\cosov\Documents\GitHub\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.pdb
+D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.deps.json
+D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.runtimeconfig.json
+D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.runtimeconfig.dev.json
+D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.dll
+D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.pdb
+D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.dll
+D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.pdb
+D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.csprojResolveAssemblyReference.cache
+D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.csproj.CoreCompileInputs.cache
+D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfoInputs.cache
+D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfo.cs
+D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.dll
+D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.pdb

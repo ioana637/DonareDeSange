@@ -4,47 +4,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class UserMedic {
+public class UserMedic
+{
 
-   
-    private int codUserMedic;
+    public int Id { get; set; }
 
-    private string username;
+    public string Username { get; set; }
 
-    private string parola;
+    public string Parola { get; set; }
 
+    public Medic Medic { get; set; }
 
-    public  UserMedic(int cod, string username, string parola) {
-        this.codUserMedic = cod;
-        this.username = username;
-        this.parola = parola;
+    public UserMedic(string username, string parola)
+    {
+        Username = username;
+        Parola = parola;
     }
 
-    public int GetCodUserMedic() {
-       
-        return codUserMedic;
+    public UserMedic()
+    {
     }
-
-    public void SetCodUserMedic(int value) {
-        this.codUserMedic = value;
-    }
-
-    public string GetUsername() {
-        return username;
-        
-    }
-
-    public void SetUsername(string value) {
-        this.username = value;
-    }
-
-    public string GetParola() {
-        return parola;
-    }
-
-    public void SetParola(string value) {
-        this.parola = value;
-       
-    }
-
 }
