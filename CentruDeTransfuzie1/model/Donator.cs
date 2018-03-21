@@ -32,6 +32,16 @@ public class Donator {
 
     private string email;
 
+    private float greutate;
+
+    private int puls;
+
+    private int tensiune;
+
+    private bool interventiiUltimele6Luni;
+
+    private bool subTratament;
+
     public Donator(int cod, string nume, string prenume, string sex, DateTime data, string domiciliu, string localitate, string judet, string resedinta, string locResedinta, string judResedinta, string telefon, string email)
     {
         this.codDonator = cod;
@@ -129,8 +139,8 @@ public class Donator {
     }
 
     public void SetLocalitateResedinta(string value) {
-        // TODO implement here
-    }
+        this.localitateResedinta = value;
+            }
 
     public string GetJudetResedinta() {
         return judetResedinta;
@@ -156,5 +166,55 @@ public class Donator {
         this.email = value;
     }
 
-   
+    public float GetGreutate()
+    {
+        return greutate;
+    }
+
+    public void SetGreutate(float value)
+    {
+        this.greutate = value;
+    }
+
+    public int GetPuls()
+    {
+        return puls;
+    }
+
+    public void SetPuls(int value)
+    {
+        this.puls = value;
+    }
+
+    public int GetTensiune()
+    {
+        return tensiune;
+    }
+
+    public void SetTensiune(int value)
+    {
+        this.tensiune = value;
+    }
+
+    public bool GetInterventiiUltimele6Luni()
+    {
+        return interventiiUltimele6Luni;
+    }
+
+    public void SetInterventiiUltimele6Luni(bool value)
+    {
+        this.interventiiUltimele6Luni = value;
+    }
+
+    public bool GetSubTratament()
+    {
+        return subTratament;
+    }
+
+    public void SetSubTratament(bool value)
+    {
+        this.subTratament = value;
+    }
+
+
 }
