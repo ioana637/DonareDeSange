@@ -45,24 +45,26 @@
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxUsername.ForeColor = System.Drawing.SystemColors.MenuText;
             this.textBoxUsername.Location = new System.Drawing.Point(98, 76);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(169, 20);
             this.textBoxUsername.TabIndex = 1;
             this.textBoxUsername.Tag = "";
             this.textBoxUsername.Text = "username";
+            this.textBoxUsername.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxUsername_MouseClick);
             this.textBoxUsername.TextChanged += new System.EventHandler(this.textBoxUsername_TextChanged);
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBoxPassword.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBoxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxPassword.ForeColor = System.Drawing.SystemColors.MenuText;
             this.textBoxPassword.Location = new System.Drawing.Point(98, 143);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(169, 20);
             this.textBoxPassword.TabIndex = 2;
             this.textBoxPassword.Text = "password";
+            this.textBoxPassword.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxPassword_MouseClick);
             this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
             // FormLogareMedic

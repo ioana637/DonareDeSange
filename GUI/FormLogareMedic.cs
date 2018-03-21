@@ -29,9 +29,19 @@ namespace GUI
 
         private void textBoxPassword_TextChanged(object sender, EventArgs e)
         {
-
+         
         }
 
-      
+        private void textBoxUsername_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBoxUsername.Text = "";
+        }
+
+        private void textBoxPassword_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBoxPassword.Text = "";
+            textBoxPassword.PasswordChar = '*';
+            
+        }
     }
 }
