@@ -14,6 +14,7 @@ namespace CentruDeTransfuzie1
         public DbSet<Donator> Donator { get; set; }
         public DbSet<UserDonator> UserDonator { get; set; }
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Medic>().ToTable("Medic");
