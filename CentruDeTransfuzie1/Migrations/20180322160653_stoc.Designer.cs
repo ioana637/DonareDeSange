@@ -12,9 +12,10 @@ using System;
 namespace CentruDeTransfuzie1.Migrations
 {
     [DbContext(typeof(CTContext))]
-    partial class CTContextModelSnapshot : ModelSnapshot
+    [Migration("20180322160653_stoc")]
+    partial class stoc
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -55,30 +56,6 @@ namespace CentruDeTransfuzie1.Migrations
                         .HasFilter("[PungaSangeId] IS NOT NULL");
 
                     b.ToTable("Analiza");
-                });
-
-            modelBuilder.Entity("CentruDeTransfuzie1.model.Stoc", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<float>("GlobuleRosii");
-
-                    b.Property<float>("Plasma");
-
-                    b.Property<int>("TermenGlobuleRosii");
-
-                    b.Property<int>("TermenPlasma");
-
-                    b.Property<int>("TermenTrombocite");
-
-                    b.Property<float>("TotalSange");
-
-                    b.Property<float>("Trombocite");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Stoc");
                 });
 
             modelBuilder.Entity("CentruTransfuzie", b =>

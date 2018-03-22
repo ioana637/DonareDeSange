@@ -6,6 +6,7 @@ namespace CentruDeTransfuzie1.model
 {
     public class Stoc
     {
+        public int Id { get; set; }
         public float TotalSange { get; set; }
         public float Trombocite { get; set; }
         public float GlobuleRosii { get; set; }

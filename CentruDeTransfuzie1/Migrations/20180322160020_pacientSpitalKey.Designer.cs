@@ -12,9 +12,10 @@ using System;
 namespace CentruDeTransfuzie1.Migrations
 {
     [DbContext(typeof(CTContext))]
-    partial class CTContextModelSnapshot : ModelSnapshot
+    [Migration("20180322160020_pacientSpitalKey")]
+    partial class pacientSpitalKey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -55,30 +56,6 @@ namespace CentruDeTransfuzie1.Migrations
                         .HasFilter("[PungaSangeId] IS NOT NULL");
 
                     b.ToTable("Analiza");
-                });
-
-            modelBuilder.Entity("CentruDeTransfuzie1.model.Stoc", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<float>("GlobuleRosii");
-
-                    b.Property<float>("Plasma");
-
-                    b.Property<int>("TermenGlobuleRosii");
-
-                    b.Property<int>("TermenPlasma");
-
-                    b.Property<int>("TermenTrombocite");
-
-                    b.Property<float>("TotalSange");
-
-                    b.Property<float>("Trombocite");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Stoc");
                 });
 
             modelBuilder.Entity("CentruTransfuzie", b =>
@@ -289,9 +266,13 @@ namespace CentruDeTransfuzie1.Migrations
 
                     b.Property<string>("Oras");
 
+                    b.Property<int?>("SpitalId");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CentruTransfuzieId");
+
+                    b.HasIndex("SpitalId");
 
                     b.ToTable("Spital");
                 });
@@ -433,6 +414,10 @@ namespace CentruDeTransfuzie1.Migrations
                     b.HasOne("CentruTransfuzie", "CentruTransfuzie")
                         .WithMany("Spitale")
                         .HasForeignKey("CentruTransfuzieId");
+
+                    b.HasOne("Spital")
+                        .WithMany("SpitalMedici")
+                        .HasForeignKey("SpitalId");
                 });
 
             modelBuilder.Entity("SpitalMedic", b =>
@@ -442,7 +427,7 @@ namespace CentruDeTransfuzie1.Migrations
                         .HasForeignKey("MedicId");
 
                     b.HasOne("Spital", "Spital")
-                        .WithMany("SpitalMedici")
+                        .WithMany()
                         .HasForeignKey("SpitalId");
                 });
 #pragma warning restore 612, 618

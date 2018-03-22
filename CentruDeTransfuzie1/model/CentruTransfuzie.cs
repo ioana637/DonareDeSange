@@ -27,6 +27,8 @@ public class CentruTransfuzie {
         Zona = zona;
         Oras = oras;
         Judet = judet;
+        Spitale = new List<Spital>();
+        PungiSange = new List<PungaSange>();
     }
 
 
