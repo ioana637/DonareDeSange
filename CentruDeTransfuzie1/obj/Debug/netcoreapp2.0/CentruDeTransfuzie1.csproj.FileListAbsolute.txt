@@ -40,3 +40,12 @@ D:\anul2\semestrul2\ProiectISS\DonareDeSange1\CentruDeTransfuzie1\obj\Debug\netc
 D:\anul2\semestrul2\ProiectISS\DonareDeSange1\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.AssemblyInfo.cs
 D:\anul2\semestrul2\ProiectISS\DonareDeSange1\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.dll
 D:\anul2\semestrul2\ProiectISS\DonareDeSange1\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.pdb
+C:\Facultate\DonareDeSange\CentruDeTransfuzie1\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.deps.json
+C:\Facultate\DonareDeSange\CentruDeTransfuzie1\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.dll
+C:\Facultate\DonareDeSange\CentruDeTransfuzie1\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.pdb
+C:\Facultate\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.csprojResolveAssemblyReference.cache
+C:\Facultate\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.csproj.CoreCompileInputs.cache
+C:\Facultate\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.AssemblyInfoInputs.cache
+C:\Facultate\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.AssemblyInfo.cs
+C:\Facultate\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.dll
+C:\Facultate\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.pdb

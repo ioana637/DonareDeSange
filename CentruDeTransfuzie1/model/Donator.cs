@@ -66,6 +66,8 @@ public class Donator
         Greutate = greutate;
         InterventiiUltimele6Luni = interventiiUltimele6Luni;
         SubTratament = subTratament;
+        PungiSange = new List<PungaSange>();
+        Analize = new List<Analiza>();
     }
 
     public Donator()

@@ -28,5 +28,6 @@ public class Cerere {
         CantitateGlobuleRosii = cantitateGlobuleRosii;
         CantitatePlasma = cantitatePlasma;
         Efectuata = efectuata;
+        CererePacienti = new List<CererePacient>();
     }
 }

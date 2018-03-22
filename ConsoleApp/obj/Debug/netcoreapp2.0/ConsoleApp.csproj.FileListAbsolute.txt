@@ -51,3 +51,16 @@ D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\obj\Debug\netcoreapp2.0
 D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfo.cs
 D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.dll
 D:\anul2\semestrul2\ProiectISS\DonareDeSange1\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.pdb
+C:\Facultate\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.deps.json
+C:\Facultate\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.runtimeconfig.json
+C:\Facultate\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.runtimeconfig.dev.json
+C:\Facultate\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.dll
+C:\Facultate\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.pdb
+C:\Facultate\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.dll
+C:\Facultate\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.pdb
+C:\Facultate\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Facultate\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Facultate\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfoInputs.cache
+C:\Facultate\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfo.cs
+C:\Facultate\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.dll
+C:\Facultate\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.pdb
