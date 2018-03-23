@@ -16,7 +16,12 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogareMedic());
+            //Application.Run(new FormLogareMedic());
+            //Application.Run(new FormDonator());
+            Application.Run(new FormMedic());
+            //Application.Run(new FormCentru());
+            //Application.Run(new FormAnalizeSange());
+            //Application.Run(new FormLogareCentru());
         }
     }
 }

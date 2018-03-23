@@ -64,3 +64,16 @@ C:\Facultate\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.Assembl
 C:\Facultate\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfo.cs
 C:\Facultate\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.dll
 C:\Facultate\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.pdb
+C:\Users\Mihai\Documents\GitHub\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.deps.json
+C:\Users\Mihai\Documents\GitHub\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.runtimeconfig.json
+C:\Users\Mihai\Documents\GitHub\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.runtimeconfig.dev.json
+C:\Users\Mihai\Documents\GitHub\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.dll
+C:\Users\Mihai\Documents\GitHub\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.pdb
+C:\Users\Mihai\Documents\GitHub\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.dll
+C:\Users\Mihai\Documents\GitHub\DonareDeSange\ConsoleApp\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.pdb
+C:\Users\Mihai\Documents\GitHub\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\Mihai\Documents\GitHub\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Mihai\Documents\GitHub\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Mihai\Documents\GitHub\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfo.cs
+C:\Users\Mihai\Documents\GitHub\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.dll
+C:\Users\Mihai\Documents\GitHub\DonareDeSange\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.pdb
