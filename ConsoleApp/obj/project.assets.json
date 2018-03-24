@@ -3412,7 +3412,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Adina\\.nuget\\packages\\": {},
+    "C:\\Users\\Mihai\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
@@ -3422,18 +3422,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Facultate\\DonareDeSange\\ConsoleApp\\ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\Mihai\\Documents\\GitHub\\DonareDeSange\\ConsoleApp\\ConsoleApp.csproj",
       "projectName": "ConsoleApp",
-      "projectPath": "C:\\Facultate\\DonareDeSange\\ConsoleApp\\ConsoleApp.csproj",
-      "packagesPath": "C:\\Users\\Adina\\.nuget\\packages\\",
-      "outputPath": "C:\\Facultate\\DonareDeSange\\ConsoleApp\\obj\\",
+      "projectPath": "C:\\Users\\Mihai\\Documents\\GitHub\\DonareDeSange\\ConsoleApp\\ConsoleApp.csproj",
+      "packagesPath": "C:\\Users\\Mihai\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mihai\\Documents\\GitHub\\DonareDeSange\\ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Adina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mihai\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -3447,8 +3447,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Facultate\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj": {
-              "projectPath": "C:\\Facultate\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj"
+            "C:\\Users\\Mihai\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj": {
+              "projectPath": "C:\\Users\\Mihai\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj"
             }
           }
         }

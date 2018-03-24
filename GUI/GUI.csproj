@@ -101,16 +101,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAnalizeSange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnalizeSange.Designer.cs">
+      <DependentUpon>FormAnalizeSange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCentru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCentru.Designer.cs">
+      <DependentUpon>FormCentru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDonator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDonator.Designer.cs">
+      <DependentUpon>FormDonator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogareCentru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogareCentru.Designer.cs">
+      <DependentUpon>FormLogareCentru.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogareMedic.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogareMedic.Designer.cs">
       <DependentUpon>FormLogareMedic.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMedic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMedic.Designer.cs">
+      <DependentUpon>FormMedic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAnalizeSange.resx">
+      <DependentUpon>FormAnalizeSange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCentru.resx">
+      <DependentUpon>FormCentru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDonator.resx">
+      <DependentUpon>FormDonator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogareCentru.resx">
+      <DependentUpon>FormLogareCentru.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogareMedic.resx">
       <DependentUpon>FormLogareMedic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMedic.resx">
+      <DependentUpon>FormMedic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
