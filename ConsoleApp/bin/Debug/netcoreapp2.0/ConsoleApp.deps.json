@@ -9,6 +9,7 @@
       "ConsoleApp/1.0.0": {
         "dependencies": {
           "CentruDeTransfuzie1": "1.0.0",
+          "GUI": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "2.0.2"
         },
@@ -446,6 +447,11 @@
         "runtime": {
           "CentruDeTransfuzie1.dll": {}
         }
+      },
+      "GUI/1.0.0": {
+        "runtime": {
+          "GUI.exe": {}
+        }
       }
     }
   },
@@ -820,6 +826,11 @@
       "hashPath": "system.threading.tasks.4.0.11.nupkg.sha512"
     },
     "CentruDeTransfuzie1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GUI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
