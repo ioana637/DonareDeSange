@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CentruDeTransfuzie1\CentruDeTransfuzie1.csproj" />
+    <ProjectReference Include="..\GUI\GUI.csproj" />
   </ItemGroup>
 
 </Project>
