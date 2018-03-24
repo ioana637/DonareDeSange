@@ -3412,7 +3412,11 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Developer\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\Raul\\.nuget\\packages\\": {},
+>>>>>>> 2a8d9f815e8f76a00aa05f0b1fd03c7db5012eae
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -3421,17 +3425,29 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Developer\\Documents\\GitHub\\DonareDeSange\\ConsoleApp\\ConsoleApp.csproj",
       "projectName": "ConsoleApp",
       "projectPath": "C:\\Users\\Developer\\Documents\\GitHub\\DonareDeSange\\ConsoleApp\\ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Developer\\Documents\\GitHub\\DonareDeSange\\ConsoleApp\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Raul\\Documents\\GitHub\\DonareDeSange\\ConsoleApp\\ConsoleApp.csproj",
+      "projectName": "ConsoleApp",
+      "projectPath": "C:\\Users\\Raul\\Documents\\GitHub\\DonareDeSange\\ConsoleApp\\ConsoleApp.csproj",
+      "packagesPath": "C:\\Users\\Raul\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Raul\\Documents\\GitHub\\DonareDeSange\\ConsoleApp\\obj\\",
+>>>>>>> 2a8d9f815e8f76a00aa05f0b1fd03c7db5012eae
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Raul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 2a8d9f815e8f76a00aa05f0b1fd03c7db5012eae
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3444,8 +3460,13 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\Developer\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj": {
               "projectPath": "C:\\Users\\Developer\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj"
+=======
+            "C:\\Users\\Raul\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj": {
+              "projectPath": "C:\\Users\\Raul\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj"
+>>>>>>> 2a8d9f815e8f76a00aa05f0b1fd03c7db5012eae
             }
           }
         }
@@ -3459,18 +3480,18 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "[2.0.2, )"
-          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
-            "version": "[2.0.2, )"
+            "version": "2.0.2"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "[2.0.0, )",
+            "version": "2.0",
             "autoReferenced": true
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "2.0.2"
           }
         },
         "imports": [
