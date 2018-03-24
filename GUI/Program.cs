@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CentruDeTransfuzie1;
+using CentruDeTransfuzie1.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +17,10 @@ namespace GUI
         [STAThread]
         static void Main()
         {
+            using (var db = new CTContext(new DbContextOptions<CTContext>()))
+            {
+                DbInitializer.Initialize(db);
+            }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormLogareMedic());
