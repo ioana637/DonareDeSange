@@ -897,22 +897,20 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "CentruDeTransfuzie1/1.0.0": {
+      "CentruDeTransfuzie/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.2",
-          "Microsoft.EntityFrameworkCore.Tools": "2.0.2"
-        },
         "compile": {
-          "bin/placeholder/CentruDeTransfuzie1.dll": {}
+          "bin/placeholder/CentruDeTransfuzie.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CentruDeTransfuzie1.dll": {}
+          "bin/placeholder/CentruDeTransfuzie.dll": {}
         }
       },
       "GUI/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "CentruDeTransfuzie": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/GUI.dll": {}
         },
@@ -3406,10 +3404,10 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "CentruDeTransfuzie1/1.0.0": {
+    "CentruDeTransfuzie/1.0.0": {
       "type": "project",
-      "path": "../CentruDeTransfuzie1/CentruDeTransfuzie1.csproj",
-      "msbuildProject": "../CentruDeTransfuzie1/CentruDeTransfuzie1.csproj"
+      "path": "../CentruDeTransfuzie/CentruDeTransfuzie.csproj",
+      "msbuildProject": "../CentruDeTransfuzie/CentruDeTransfuzie.csproj"
     },
     "GUI/1.0.0": {
       "type": "project",
@@ -3419,7 +3417,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "CentruDeTransfuzie1 >= 1.0.0",
       "GUI >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.2",
@@ -3461,9 +3458,6 @@
           "projectReferences": {
             "D:\\anul2\\semestrul2\\ISS\\DonareDeSange\\GUI\\GUI.csproj": {
               "projectPath": "D:\\anul2\\semestrul2\\ISS\\DonareDeSange\\GUI\\GUI.csproj"
-            },
-            "D:\\anul2\\semestrul2\\ISS\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj": {
-              "projectPath": "D:\\anul2\\semestrul2\\ISS\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj"
             }
           }
         }

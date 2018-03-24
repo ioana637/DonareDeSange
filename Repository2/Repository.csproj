@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DE00485F-97F6-479D-A5D6-0879DCC10CB9}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>GUI</RootNamespace>
-    <AssemblyName>GUI</AssemblyName>
+    <ProjectGuid>{914FFCE7-77AF-45F5-89B3-EA2C93E8832B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Repository2</RootNamespace>
+    <AssemblyName>Repository2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,6 +38,9 @@
     </Reference>
     <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.EntityFrameworkCore.Relational.2.0.2\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.SqlServer, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.SqlServer.2.0.2\lib\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.2.0.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
@@ -81,6 +82,9 @@
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.2.0.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.4.3\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.2.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
@@ -94,100 +98,22 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormAnalizeSange.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormAnalizeSange.Designer.cs">
-      <DependentUpon>FormAnalizeSange.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormCentru.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCentru.Designer.cs">
-      <DependentUpon>FormCentru.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormDonator.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormDonator.Designer.cs">
-      <DependentUpon>FormDonator.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormLogareCentru.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormLogareCentru.Designer.cs">
-      <DependentUpon>FormLogareCentru.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormLogareMedic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormLogareMedic.Designer.cs">
-      <DependentUpon>FormLogareMedic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormMedic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMedic.Designer.cs">
-      <DependentUpon>FormMedic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="GenericRepository.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormAnalizeSange.resx">
-      <DependentUpon>FormAnalizeSange.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormCentru.resx">
-      <DependentUpon>FormCentru.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormDonator.resx">
-      <DependentUpon>FormDonator.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormLogareCentru.resx">
-      <DependentUpon>FormLogareCentru.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormLogareMedic.resx">
-      <DependentUpon>FormLogareMedic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMedic.resx">
-      <DependentUpon>FormMedic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
+    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CentruDeTransfuzie\CentruDeTransfuzie.csproj">
-      <Project>{83AA4644-FE3B-4904-AF3B-120DD520696B}</Project>
+      <Project>{83aa4644-fe3b-4904-af3b-120dd520696b}</Project>
       <Name>CentruDeTransfuzie</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Service1\Service.csproj">
-      <Project>{6049f149-efd4-41dd-a199-a2756750ee02}</Project>
-      <Name>Service</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
