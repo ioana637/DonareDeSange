@@ -56,7 +56,6 @@
             this.textBoxUsername.Size = new System.Drawing.Size(252, 26);
             this.textBoxUsername.TabIndex = 1;
             this.textBoxUsername.Tag = "";
-            this.textBoxUsername.TextChanged += new System.EventHandler(this.textBoxUsername_TextChanged);
             // 
             // textBoxPassword
             // 
@@ -68,7 +67,6 @@
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(252, 26);
             this.textBoxPassword.TabIndex = 2;
-            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
             // comboBox1
             // 
