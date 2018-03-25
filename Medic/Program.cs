@@ -1,4 +1,7 @@
-﻿using GUI;
+﻿using CentruDeTransfuzie1;
+using CentruDeTransfuzie1.Data;
+using GUI;
+using Microsoft.EntityFrameworkCore;
 using Service;
 using System;
 using System.Collections.Generic;
@@ -16,6 +19,10 @@ namespace Medic
         [STAThread]
         static void Main()
         {
+            using (var db = new CTContext(new DbContextOptions<CTContext>()))
+            {
+                DbInitializer.Initialize(db);
+            }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             UserMedicService service = new UserMedicService();

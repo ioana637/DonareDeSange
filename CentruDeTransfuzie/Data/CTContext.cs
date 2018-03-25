@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using CentruDeTransfuzie1.model;
+
 namespace CentruDeTransfuzie1
 {
     public class CTContext : DbContext
