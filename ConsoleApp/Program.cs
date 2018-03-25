@@ -13,6 +13,7 @@ namespace ConsoleApp
             {
                 DbInitializer.Initialize(db);
             }
+
         }
     }
 }

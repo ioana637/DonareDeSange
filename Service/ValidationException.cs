@@ -16,5 +16,6 @@ namespace Service
         {
             return errorMessage;
         }
+        public ValidationException() { }
     }
 }

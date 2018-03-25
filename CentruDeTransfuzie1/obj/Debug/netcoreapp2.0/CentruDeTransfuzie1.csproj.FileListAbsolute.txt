@@ -58,3 +58,12 @@ C:\Users\Mihai\Documents\GitHub\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netc
 C:\Users\Mihai\Documents\GitHub\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.AssemblyInfo.cs
 C:\Users\Mihai\Documents\GitHub\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.dll
 C:\Users\Mihai\Documents\GitHub\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.pdb
+C:\Users\Developer\Documents\GitHub\DonareDeSange\CentruDeTransfuzie1\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.deps.json
+C:\Users\Developer\Documents\GitHub\DonareDeSange\CentruDeTransfuzie1\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.dll
+C:\Users\Developer\Documents\GitHub\DonareDeSange\CentruDeTransfuzie1\bin\Debug\netcoreapp2.0\CentruDeTransfuzie1.pdb
+C:\Users\Developer\Documents\GitHub\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.csprojResolveAssemblyReference.cache
+C:\Users\Developer\Documents\GitHub\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Documents\GitHub\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.AssemblyInfoInputs.cache
+C:\Users\Developer\Documents\GitHub\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.AssemblyInfo.cs
+C:\Users\Developer\Documents\GitHub\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.dll
+C:\Users\Developer\Documents\GitHub\DonareDeSange\CentruDeTransfuzie1\obj\Debug\netcoreapp2.0\CentruDeTransfuzie1.pdb

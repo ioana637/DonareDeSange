@@ -3392,7 +3392,11 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
+    "C:\\Users\\Developer\\.nuget\\packages\\": {},
+=======
     "C:\\Users\\Raul\\.nuget\\packages\\": {},
+>>>>>>> 2a8d9f815e8f76a00aa05f0b1fd03c7db5012eae
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -3401,17 +3405,29 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\Developer\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj",
+      "projectName": "CentruDeTransfuzie1",
+      "projectPath": "C:\\Users\\Developer\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj",
+      "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Developer\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\obj\\",
+=======
       "projectUniqueName": "C:\\Users\\Raul\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj",
       "projectName": "CentruDeTransfuzie1",
       "projectPath": "C:\\Users\\Raul\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\CentruDeTransfuzie1.csproj",
       "packagesPath": "C:\\Users\\Raul\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Raul\\Documents\\GitHub\\DonareDeSange\\CentruDeTransfuzie1\\obj\\",
+>>>>>>> 2a8d9f815e8f76a00aa05f0b1fd03c7db5012eae
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
+        "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
         "C:\\Users\\Raul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 2a8d9f815e8f76a00aa05f0b1fd03c7db5012eae
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
