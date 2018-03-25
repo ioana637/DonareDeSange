@@ -137,6 +137,12 @@
     <Compile Include="FormLogareCentru.Designer.cs">
       <DependentUpon>FormLogareCentru.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLogareDonator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogareDonator.Designer.cs">
+      <DependentUpon>FormLogareDonator.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogareMedic.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogareCentru.resx">
       <DependentUpon>FormLogareCentru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogareDonator.resx">
+      <DependentUpon>FormLogareDonator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogareMedic.resx">
       <DependentUpon>FormLogareMedic.cs</DependentUpon>
