@@ -40,6 +40,13 @@ namespace Service
                 unitOfWork.DonatorRepo.Save(donator);
                 UserDonator user = new UserDonator(userName, password);
                 unitOfWork.UserDonatorRepo.Save(user);
+                unitOfWork.Save();
+                donator = unitOfWork.DonatorRepo.GetBy(d => d.Email.Equals(email));
+                user = unitOfWork.UserDonatorRepo.GetBy(u => u.Username.Equals(userName));
+                donator.UserDonator = user;
+                user.Donator = donator;
+                unitOfWork.Save();
+
             }
         }
     }
