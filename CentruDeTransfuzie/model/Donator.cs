@@ -40,16 +40,16 @@ public class Donator
 
     public int Tensiune { get; set; }
 
-    public bool InterventiiUltimele6Luni { get; set; }
+    public int InterventiiUltimele6Luni { get; set; }
 
-    public bool SubTratament { get; set; }
+    public int SubTratament { get; set; }
 
     public UserDonator UserDonator { get; set; }
     public List<PungaSange> PungiSange { get; set; }
 
     public List<Analiza> Analize { get; set; }
 
-    public Donator(string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email, float greutate, bool interventiiUltimele6Luni, bool subTratament)
+    public Donator(string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email, float greutate, int interventiiUltimele6Luni, int subTratament)
     {
         Nume = nume;
         Prenume = prenume;

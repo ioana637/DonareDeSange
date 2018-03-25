@@ -7,6 +7,11 @@ namespace Service
     public class ValidationException : Exception
     {
         private String errorMessage;
+
+        public ValidationException()
+        {
+        }
+
         public ValidationException(String message)
         {
             errorMessage = message;
