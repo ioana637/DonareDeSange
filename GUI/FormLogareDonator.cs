@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Service;
 
 namespace GUI
 {
     public partial class FormLogareDonator : Form
     {
+        private DonatorService serviceDonator = new DonatorService();
         public FormLogareDonator()
         {
             InitializeComponent();
@@ -24,7 +26,10 @@ namespace GUI
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            FormRegisterDonator formRegisterDonator = new FormRegisterDonator();
+            this.Hide();
+            formRegisterDonator.Closed += (s, args) => this.Close();
+            formRegisterDonator.ShowDialog();
         }
     }
 }

@@ -2,6 +2,7 @@
 using CentruDeTransfuzie1.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
+using Service;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -21,13 +22,17 @@ namespace GUI
             {
                 DbInitializer.Initialize(db);
             }
+            UserMedicService us = new UserMedicService();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormDonator());
             //Application.Run(new FormCentru());
             //Application.Run(new FormAnalizeSange());
             //Application.Run(new FormLogareCentru());
-            Application.Run(new FormRegisterDonator());
+            //Application.Run(new FormRegisterDonator());
+            //Application.Run(new FormLogareMedic(us));
+            //Application.Run(new FormMedic(us));
+            Application.Run(new FormLogareDonator());
         }
     }
 }
