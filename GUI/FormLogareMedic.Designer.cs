@@ -31,7 +31,6 @@
             this.buttonLogIn = new System.Windows.Forms.Button();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -39,7 +38,7 @@
             // buttonLogIn
             // 
             this.buttonLogIn.Location = new System.Drawing.Point(213, 288);
-            this.buttonLogIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonLogIn.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogIn.Name = "buttonLogIn";
             this.buttonLogIn.Size = new System.Drawing.Size(112, 32);
             this.buttonLogIn.TabIndex = 0;
@@ -51,7 +50,7 @@
             // 
             this.textBoxUsername.ForeColor = System.Drawing.SystemColors.MenuText;
             this.textBoxUsername.Location = new System.Drawing.Point(147, 172);
-            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(252, 26);
             this.textBoxUsername.TabIndex = 1;
@@ -62,20 +61,11 @@
             this.textBoxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxPassword.ForeColor = System.Drawing.SystemColors.MenuText;
             this.textBoxPassword.Location = new System.Drawing.Point(147, 244);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(252, 26);
             this.textBoxPassword.TabIndex = 2;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(147, 93);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(252, 26);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.Text = "Spital";
             // 
             // label1
             // 
@@ -103,12 +93,11 @@
             this.ClientSize = new System.Drawing.Size(561, 440);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.buttonLogIn);
             this.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormLogareMedic";
             this.Text = "LOG IN";
             this.ResumeLayout(false);
@@ -121,7 +110,6 @@
         private System.Windows.Forms.Button buttonLogIn;
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

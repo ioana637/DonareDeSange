@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem157 = new System.Windows.Forms.ListViewItem("-Hepatită( de orice tip)");
-            System.Windows.Forms.ListViewItem listViewItem158 = new System.Windows.Forms.ListViewItem("-TBC");
-            System.Windows.Forms.ListViewItem listViewItem159 = new System.Windows.Forms.ListViewItem("-Sifilis");
-            System.Windows.Forms.ListViewItem listViewItem160 = new System.Windows.Forms.ListViewItem("-Malarie");
-            System.Windows.Forms.ListViewItem listViewItem161 = new System.Windows.Forms.ListViewItem("-Epilepsie și alte boli neurologice");
-            System.Windows.Forms.ListViewItem listViewItem162 = new System.Windows.Forms.ListViewItem("-Boli psihice");
-            System.Windows.Forms.ListViewItem listViewItem163 = new System.Windows.Forms.ListViewItem("-Bruceloză");
-            System.Windows.Forms.ListViewItem listViewItem164 = new System.Windows.Forms.ListViewItem("-Ulcer");
-            System.Windows.Forms.ListViewItem listViewItem165 = new System.Windows.Forms.ListViewItem("-Diabet zaharat");
-            System.Windows.Forms.ListViewItem listViewItem166 = new System.Windows.Forms.ListViewItem("-Boli de inimă");
-            System.Windows.Forms.ListViewItem listViewItem167 = new System.Windows.Forms.ListViewItem("-Boli de piele: psoriazis, vitiligo");
-            System.Windows.Forms.ListViewItem listViewItem168 = new System.Windows.Forms.ListViewItem("-Miopie forte: peste (-) 6 dioptrii");
-            System.Windows.Forms.ListViewItem listViewItem169 = new System.Windows.Forms.ListViewItem("-Cancer");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("-Hepatită( de orice tip)");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("-TBC");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("-Sifilis");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("-Malarie");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("-Epilepsie și alte boli neurologice");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("-Boli psihice");
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("-Bruceloză");
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("-Ulcer");
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("-Diabet zaharat");
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("-Boli de inimă");
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("-Boli de piele: psoriazis, vitiligo");
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("-Miopie forte: peste (-) 6 dioptrii");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("-Cancer");
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDonator));
             this.tabDonator = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
@@ -103,6 +104,7 @@
             this.textBoxParola = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBoxUserName = new System.Windows.Forms.TextBox();
+            this.buttonLogout = new System.Windows.Forms.Button();
             this.tabDonator.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -124,10 +126,10 @@
             this.tabDonator.Controls.Add(this.tabPage4);
             this.tabDonator.Controls.Add(this.tabPage5);
             this.tabDonator.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabDonator.Location = new System.Drawing.Point(0, 0);
+            this.tabDonator.Location = new System.Drawing.Point(0, 42);
             this.tabDonator.Name = "tabDonator";
             this.tabDonator.SelectedIndex = 0;
-            this.tabDonator.Size = new System.Drawing.Size(1007, 693);
+            this.tabDonator.Size = new System.Drawing.Size(981, 685);
             this.tabDonator.TabIndex = 0;
             this.tabDonator.Tag = "";
             // 
@@ -139,7 +141,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(999, 662);
+            this.tabPage1.Size = new System.Drawing.Size(999, 620);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Cereri sânge";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -166,7 +168,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 77);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(999, 518);
+            this.dataGridView1.Size = new System.Drawing.Size(999, 476);
             this.dataGridView1.TabIndex = 0;
             // 
             // tabPage2
@@ -187,7 +189,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(999, 662);
+            this.tabPage2.Size = new System.Drawing.Size(999, 620);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Formular de donare";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -295,19 +297,19 @@
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView1.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem157,
-            listViewItem158,
-            listViewItem159,
-            listViewItem160,
-            listViewItem161,
-            listViewItem162,
-            listViewItem163,
-            listViewItem164,
-            listViewItem165,
-            listViewItem166,
-            listViewItem167,
-            listViewItem168,
-            listViewItem169});
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4,
+            listViewItem5,
+            listViewItem6,
+            listViewItem7,
+            listViewItem8,
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12,
+            listViewItem13});
             this.listView1.Location = new System.Drawing.Point(72, 194);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(426, 273);
@@ -343,7 +345,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 27);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(999, 662);
+            this.tabPage3.Size = new System.Drawing.Size(885, 654);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Istoric rezultate analize";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -352,7 +354,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(386, 32);
+            this.label5.Location = new System.Drawing.Point(329, 32);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(275, 18);
             this.label5.TabIndex = 1;
@@ -366,7 +368,7 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(0, 81);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(999, 532);
+            this.dataGridView2.Size = new System.Drawing.Size(885, 524);
             this.dataGridView2.TabIndex = 0;
             // 
             // tabPage4
@@ -380,7 +382,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 27);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(999, 662);
+            this.tabPage4.Size = new System.Drawing.Size(973, 654);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Termenii dinaintea donării";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -441,7 +443,7 @@
                 " boli renale, boli psihice, boli hepatice, boli endocrine. "});
             this.listBox1.Location = new System.Drawing.Point(30, 74);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(960, 90);
+            this.listBox1.Size = new System.Drawing.Size(934, 90);
             this.listBox1.TabIndex = 1;
             // 
             // label6
@@ -492,7 +494,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 27);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(999, 662);
+            this.tabPage5.Size = new System.Drawing.Size(885, 654);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Setări cont";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -774,11 +776,24 @@
             this.textBoxUserName.Size = new System.Drawing.Size(204, 26);
             this.textBoxUserName.TabIndex = 0;
             // 
+            // buttonLogout
+            // 
+            this.buttonLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonLogout.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogout.Image")));
+            this.buttonLogout.Location = new System.Drawing.Point(927, 12);
+            this.buttonLogout.Name = "buttonLogout";
+            this.buttonLogout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.buttonLogout.Size = new System.Drawing.Size(47, 49);
+            this.buttonLogout.TabIndex = 1;
+            this.buttonLogout.UseVisualStyleBackColor = true;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
+            // 
             // FormDonator
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1006, 693);
+            this.ClientSize = new System.Drawing.Size(983, 731);
+            this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.tabDonator);
             this.Name = "FormDonator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
@@ -865,5 +880,6 @@
         private System.Windows.Forms.TextBox textBoxUserName;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Button buttonLogout;
     }
 }

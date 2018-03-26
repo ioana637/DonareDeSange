@@ -22,5 +22,9 @@ namespace GUI
    
         }
 
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
