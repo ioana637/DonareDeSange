@@ -23,6 +23,7 @@ namespace GUI
                 DbInitializer.Initialize(db);
             }
             UserMedicService us = new UserMedicService();
+            DonatorService ds = new DonatorService();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormDonator());
