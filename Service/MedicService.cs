@@ -14,9 +14,19 @@ namespace Service
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
                 UserMedic user = unitOfWork.UserMedicRepo.GetBy(m => m.Username.Equals(username));
-                if (user == null) throw new ValidationException("nu exista username");
                 return user;
             }
+        }
+
+        public bool Login(String username, String password)
+        {
+            
+            UserMedic um = GetUserMedicByUsername(username);
+            if (um == null) return false;
+            if (um.Parola.Equals(password)) return true;
+            else return false;
+            
+            
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,36 +13,43 @@ namespace GUI
 {
     public partial class FormLogareMedic : Form
     {
-        public FormLogareMedic()
+        private UserMedicService serviceMedic;
+
+        public FormLogareMedic(UserMedicService service)
         {
             InitializeComponent();
+            serviceMedic = service;
         }
 
         private void buttonLogIn_Click(object sender, EventArgs e)
         {
+            string username, parola;
+            username = textBoxUsername.Text;
+            parola = textBoxPassword.Text;
 
+            if (username.Equals("") || username.Equals(""))
+            {
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                MessageBox.Show(this, "Trebuie sa completati ambele campuri", "Eroare!", buttons);
+            }
+            else
+            {
+                bool result = serviceMedic.Login(username, parola);
+                if (result)
+                {
+                    Form formMainView = new FormMedic(serviceMedic);
+                    this.Hide();
+                    formMainView.Closed += (s, args) => this.Close();
+                    formMainView.ShowDialog();
+                }
+                else
+                {
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;
+                    MessageBox.Show(this, "Usernameul sau parola au fost introduse gresit!", "Eroare!", buttons);
+                }
+            }
         }
 
-        private void textBoxUsername_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxPassword_TextChanged(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void textBoxUsername_MouseClick(object sender, MouseEventArgs e)
-        {
-            textBoxUsername.Text = "";
-        }
-
-        private void textBoxPassword_MouseClick(object sender, MouseEventArgs e)
-        {
-            textBoxPassword.Text = "";
-            textBoxPassword.PasswordChar = '*';
-            
-        }
+      
     }
 }
