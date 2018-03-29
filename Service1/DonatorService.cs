@@ -32,11 +32,11 @@ namespace Service
             }
         }
 
-        public void RegisterDonator(string userName, string password, string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email, float greutate, int interventiiUltimele6Luni, int subTratament)
+        public void RegisterDonator(string userName, string password, string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
-                Donator donator = new Donator(nume, prenume, sex, dataNastere, domiciliu, localitate, judet, resedinta, localitateResedinta, judetResedinta, telefon, email, greutate, interventiiUltimele6Luni, subTratament);
+                Donator donator = new Donator(nume, prenume, sex, dataNastere, domiciliu, localitate, judet, resedinta, localitateResedinta, judetResedinta, telefon, email);
                 unitOfWork.DonatorRepo.Save(donator);
                 UserDonator user = new UserDonator(userName, password);
                 unitOfWork.UserDonatorRepo.Save(user);

@@ -49,7 +49,7 @@ public class Donator
 
     public List<Analiza> Analize { get; set; }
 
-    public Donator(string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email, float greutate, int interventiiUltimele6Luni, int subTratament)
+    public Donator(string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email)
     {
         Nume = nume;
         Prenume = prenume;
@@ -63,9 +63,9 @@ public class Donator
         JudetResedinta = judetResedinta;
         Telefon = telefon;
         Email = email;
-        Greutate = greutate;
-        InterventiiUltimele6Luni = interventiiUltimele6Luni;
-        SubTratament = subTratament;
+        Greutate = 0;
+        InterventiiUltimele6Luni = 0;
+        SubTratament = 0;
         PungiSange = new List<PungaSange>();
         Analize = new List<Analiza>();
     }

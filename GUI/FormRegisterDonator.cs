@@ -13,7 +13,7 @@ namespace GUI
             InitializeComponent();
         }
 
-        public void ValidateDonator(string username, string password, string rePassword, string nume, string prenume, string greutate, string domiciliu, string localitate, string judet, string Email, string telefon)
+        public void ValidateDonator(string username, string password, string rePassword, string nume, string prenume, string domiciliu, string localitate, string judet, string Email, string telefon)
         {
             string error = "";
 
@@ -50,19 +50,7 @@ namespace GUI
             {
                 error += " reconfirm";
             }
-            try
-            {
-                float g = float.Parse(greutate);
-                if (g < 50)
-                {
-                    error += " greutate";
-                }
-            }
-            catch (Exception ex)
-            {
-                error += " greutate";
-            }
-
+            
             if (localitate == string.Empty || localitate == null)
             {
                 error += " localitate";
@@ -217,7 +205,6 @@ namespace GUI
             string Zi = cb_zi.Text;
             string Luna = cb_luna.Text;
             string An = cb_an.Text;
-            string Greutate = txtGreutate.Text;
             string sex;
             if (rdB_F.Checked == true)
             {
@@ -235,31 +222,13 @@ namespace GUI
             string Judet2 = cmbJudet2.Text;
             string Email = txtEmail.Text;
             string Telefon = txtTelefon.Text;
-            int SubTratament;
-            if (chB_Tratament.Checked == true)
-            {
-                SubTratament = 1;
-            }
-            else
-            {
-                SubTratament = 0;
-            }
-            int interventiiUltimele6Luni;
-            if (chB_Interventie.Checked == true)
-            {
-                interventiiUltimele6Luni = 1;
-            }
-            else
-            {
-                interventiiUltimele6Luni = 0;
-            }
 
             #endregion
 
             try
             {
                 #region Validation
-                ValidateDonator(Username, Password, RePassword, Nume, Prenume, Greutate, Domiciliu, Localitate1, Judet1, Email, Telefon);
+                ValidateDonator(Username, Password, RePassword, Nume, Prenume, Domiciliu, Localitate1, Judet1, Email, Telefon);
 
                 DateTime DataNasterii = new DateTime(Int32.Parse(An), Int32.Parse(Luna), Int32.Parse(Zi));
 
@@ -268,7 +237,6 @@ namespace GUI
                 lblDom.Visible = false;
                 lblEmail.Visible = false;
                 lblJud.Visible = false;
-                lblKg.Visible = false;
                 lblLoc.Visible = false;
                 lblNume.Visible = false;
                 lblNume.Visible = false;
@@ -281,9 +249,8 @@ namespace GUI
                 cmbLoc2.Items.Add(Localitate1);
                 #endregion
 
-                float greutate = float.Parse(Greutate);
 
-                service.RegisterDonator(Username, Password, Nume, Prenume, sex, DataNasterii, Domiciliu, Localitate1, Judet1, Resedinta, Localitate2, Judet2, Telefon, Email, greutate, interventiiUltimele6Luni, SubTratament);
+                service.RegisterDonator(Username, Password, Nume, Prenume, sex, DataNasterii, Domiciliu, Localitate1, Judet1, Resedinta, Localitate2, Judet2, Telefon, Email);
                 try
                 {
                     service.GetUserDonator(Username);
@@ -357,14 +324,7 @@ namespace GUI
                 {
                     lblDom.Visible = false;
                 }
-                if (error.Message.Contains("greutate"))
-                {
-                    lblKg.Visible = true;
-                }
-                else
-                {
-                    lblKg.Visible = false;
-                }
+               
 
                 if (error.Message.Contains("judet"))
                 {

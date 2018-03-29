@@ -44,17 +44,13 @@
             this.lblJud = new System.Windows.Forms.Label();
             this.lblLoc = new System.Windows.Forms.Label();
             this.lblDom = new System.Windows.Forms.Label();
-            this.lblKg = new System.Windows.Forms.Label();
             this.lblDn = new System.Windows.Forms.Label();
             this.lblPren = new System.Windows.Forms.Label();
             this.lblNume = new System.Windows.Forms.Label();
             this.btnInapoi = new System.Windows.Forms.Button();
             this.btnInregistreaza = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtGreutate = new System.Windows.Forms.TextBox();
             this.rdB_M = new System.Windows.Forms.RadioButton();
             this.rdB_F = new System.Windows.Forms.RadioButton();
-            this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.txtTelefon = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -86,8 +82,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.chB_Tratament = new System.Windows.Forms.CheckBox();
-            this.chB_Interventie = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lblREpsw
@@ -204,7 +198,7 @@
             this.lblDateInvalide.AutoSize = true;
             this.lblDateInvalide.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateInvalide.ForeColor = System.Drawing.Color.Red;
-            this.lblDateInvalide.Location = new System.Drawing.Point(189, 594);
+            this.lblDateInvalide.Location = new System.Drawing.Point(177, 539);
             this.lblDateInvalide.Name = "lblDateInvalide";
             this.lblDateInvalide.Size = new System.Drawing.Size(158, 25);
             this.lblDateInvalide.TabIndex = 111;
@@ -266,17 +260,6 @@
             this.lblDom.Text = "*";
             this.lblDom.Visible = false;
             // 
-            // lblKg
-            // 
-            this.lblKg.AutoSize = true;
-            this.lblKg.ForeColor = System.Drawing.Color.Red;
-            this.lblKg.Location = new System.Drawing.Point(265, 250);
-            this.lblKg.Name = "lblKg";
-            this.lblKg.Size = new System.Drawing.Size(13, 17);
-            this.lblKg.TabIndex = 105;
-            this.lblKg.Text = "*";
-            this.lblKg.Visible = false;
-            // 
             // lblDn
             // 
             this.lblDn.AutoSize = true;
@@ -313,7 +296,7 @@
             // btnInapoi
             // 
             this.btnInapoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInapoi.Location = new System.Drawing.Point(43, 587);
+            this.btnInapoi.Location = new System.Drawing.Point(31, 532);
             this.btnInapoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInapoi.Name = "btnInapoi";
             this.btnInapoi.Size = new System.Drawing.Size(121, 38);
@@ -325,7 +308,7 @@
             // btnInregistreaza
             // 
             this.btnInregistreaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInregistreaza.Location = new System.Drawing.Point(387, 587);
+            this.btnInregistreaza.Location = new System.Drawing.Point(375, 532);
             this.btnInregistreaza.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInregistreaza.Name = "btnInregistreaza";
             this.btnInregistreaza.Size = new System.Drawing.Size(191, 38);
@@ -333,25 +316,6 @@
             this.btnInregistreaza.Text = "Înregistrează-mă";
             this.btnInregistreaza.UseVisualStyleBackColor = true;
             this.btnInregistreaza.Click += new System.EventHandler(this.btnInregistreaza_Click_1);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(447, 250);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(37, 25);
-            this.label20.TabIndex = 99;
-            this.label20.Text = "Kg";
-            // 
-            // txtGreutate
-            // 
-            this.txtGreutate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGreutate.Location = new System.Drawing.Point(372, 247);
-            this.txtGreutate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtGreutate.Name = "txtGreutate";
-            this.txtGreutate.Size = new System.Drawing.Size(69, 30);
-            this.txtGreutate.TabIndex = 98;
             // 
             // rdB_M
             // 
@@ -378,16 +342,6 @@
             this.rdB_F.TabIndex = 96;
             this.rdB_F.Text = "F";
             this.rdB_F.UseVisualStyleBackColor = true;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(273, 250);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(93, 25);
-            this.label19.TabIndex = 95;
-            this.label19.Text = "Greutate:";
             // 
             // label18
             // 
@@ -702,37 +656,11 @@
             this.label1.TabIndex = 64;
             this.label1.Text = "Nume:";
             // 
-            // chB_Tratament
-            // 
-            this.chB_Tratament.AutoSize = true;
-            this.chB_Tratament.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chB_Tratament.Location = new System.Drawing.Point(19, 534);
-            this.chB_Tratament.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chB_Tratament.Name = "chB_Tratament";
-            this.chB_Tratament.Size = new System.Drawing.Size(156, 29);
-            this.chB_Tratament.TabIndex = 123;
-            this.chB_Tratament.Text = "Sub tratament";
-            this.chB_Tratament.UseVisualStyleBackColor = true;
-            // 
-            // chB_Interventie
-            // 
-            this.chB_Interventie.AutoSize = true;
-            this.chB_Interventie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chB_Interventie.Location = new System.Drawing.Point(219, 534);
-            this.chB_Interventie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chB_Interventie.Name = "chB_Interventie";
-            this.chB_Interventie.Size = new System.Drawing.Size(266, 29);
-            this.chB_Interventie.TabIndex = 124;
-            this.chB_Interventie.Text = "Intervenție în ultimele 6 luni";
-            this.chB_Interventie.UseVisualStyleBackColor = true;
-            // 
             // FormRegisterDonator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 638);
-            this.Controls.Add(this.chB_Interventie);
-            this.Controls.Add(this.chB_Tratament);
+            this.ClientSize = new System.Drawing.Size(597, 588);
             this.Controls.Add(this.lblREpsw);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblPassw);
@@ -749,17 +677,13 @@
             this.Controls.Add(this.lblJud);
             this.Controls.Add(this.lblLoc);
             this.Controls.Add(this.lblDom);
-            this.Controls.Add(this.lblKg);
             this.Controls.Add(this.lblDn);
             this.Controls.Add(this.lblPren);
             this.Controls.Add(this.lblNume);
             this.Controls.Add(this.btnInapoi);
             this.Controls.Add(this.btnInregistreaza);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.txtGreutate);
             this.Controls.Add(this.rdB_M);
             this.Controls.Add(this.rdB_F);
-            this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.txtTelefon);
             this.Controls.Add(this.label17);
@@ -818,17 +742,13 @@
         private System.Windows.Forms.Label lblJud;
         private System.Windows.Forms.Label lblLoc;
         private System.Windows.Forms.Label lblDom;
-        private System.Windows.Forms.Label lblKg;
         private System.Windows.Forms.Label lblDn;
         private System.Windows.Forms.Label lblPren;
         private System.Windows.Forms.Label lblNume;
         private System.Windows.Forms.Button btnInapoi;
         private System.Windows.Forms.Button btnInregistreaza;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txtGreutate;
         private System.Windows.Forms.RadioButton rdB_M;
         private System.Windows.Forms.RadioButton rdB_F;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txtTelefon;
         private System.Windows.Forms.Label label17;
@@ -860,7 +780,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox chB_Tratament;
-        private System.Windows.Forms.CheckBox chB_Interventie;
     }
 }
