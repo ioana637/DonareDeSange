@@ -26,7 +26,8 @@ namespace Medic
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             UserMedicService service = new UserMedicService();
-            Application.Run(new FormLogareMedic(service));
+            //Application.Run(new FormLogareMedic(service));
+            Application.Run(new FormMedic(service));
 
         }
     }
