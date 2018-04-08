@@ -10,6 +10,7 @@ namespace CentruDeTransfuzie1.Data
         public static void Initialize(CTContext context)
         {
             context.Database.EnsureCreated();
+
             if (context.UserMedic.Any()) return;
 
             Medic m1 = new Medic("2770111123456", "Coste", "Claudia", "ioana@yahoo.com", "0742345678");

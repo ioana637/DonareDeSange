@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
@@ -18,7 +19,10 @@ public class Spital {
     }
 
     public int Id { get; set; }
+
+    [Required(ErrorMessage = "CentruTransfuzie is required")]
     public CentruTransfuzie CentruTransfuzie { get; set; }
+
     public List<SpitalMedic> SpitalMedici { get; set; }
     public string Adresa { get; set; }
     public string Oras { get; set; }

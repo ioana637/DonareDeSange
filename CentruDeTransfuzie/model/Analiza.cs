@@ -1,6 +1,7 @@
 ﻿using CentruDeTransfuzie1.utils;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace CentruDeTransfuzie1.model
@@ -11,12 +12,15 @@ namespace CentruDeTransfuzie1.model
     
 
        public int Id { get; set; }
+
+       [Required(ErrorMessage = "Donator is required")]
        public Donator Donator { get; set; }
-       public PungaSange PungaSange { get; set; }
-       public GrupaSange Grupa { get; set; }
-       public TipRh Rh { get; set; }
-       
-       public bool HIV { get; set; }
+
+        public PungaSange PungaSange { get; set; }
+        public GrupaSange Grupa { get; set; }
+        public TipRh Rh { get; set; }
+
+        public bool HIV { get; set; } 
       
        public bool HepatitaB { get; set; }
     

@@ -12,9 +12,10 @@ using System;
 namespace CentruDeTransfuzie1.Migrations
 {
     [DbContext(typeof(CTContext))]
-    partial class CTContextModelSnapshot : ModelSnapshot
+    [Migration("20180408173314_constrangeri")]
+    partial class constrangeri
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
