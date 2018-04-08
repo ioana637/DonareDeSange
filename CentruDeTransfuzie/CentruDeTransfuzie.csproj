@@ -154,6 +154,10 @@
     <Compile Include="Migrations\20180322164733_dbset.Designer.cs">
       <DependentUpon>20180322164733_dbset.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20180408173314_constrangeri.cs" />
+    <Compile Include="Migrations\20180408173314_constrangeri.designer.cs">
+      <DependentUpon>20180408173314_constrangeri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\CTContextModelSnapshot.cs" />
     <Compile Include="model\Analiza.cs" />
     <Compile Include="model\CentruTransfuzie.cs" />

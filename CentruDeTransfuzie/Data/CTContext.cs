@@ -47,7 +47,43 @@ namespace CentruDeTransfuzie1
             modelBuilder.Entity<Spital>().ToTable("Spital");
             modelBuilder.Entity<SpitalMedic>().ToTable("SpitalMedic");
 
+            modelBuilder.Entity<Stoc>().HasKey(s => new { s.Grupa, s.RH });
 
+            //constrangeri donator
+            modelBuilder.Entity<Donator>()
+            .HasIndex(u => u.Email)
+            .IsUnique();
+            modelBuilder.Entity<Donator>()
+            .HasIndex(u => u.Telefon)
+            .IsUnique();
+
+            modelBuilder.Entity<UserDonator>()
+            .HasIndex(u => u.Username)
+            .IsUnique();
+
+            modelBuilder.Entity<CentruTransfuzie>()
+            .HasIndex(u => u.Nume)
+            .IsUnique();
+
+            modelBuilder.Entity<Medic>()
+            .HasIndex(u => u.Email)
+            .IsUnique();
+
+            modelBuilder.Entity<Medic>()
+            .HasIndex(u => u.Telefon)
+            .IsUnique();
+
+            modelBuilder.Entity<Medic>()
+            .HasIndex(u => u.Cnp)
+            .IsUnique();
+
+            modelBuilder.Entity<UserMedic>()
+            .HasIndex(u => u.Username)
+            .IsUnique();
+
+            modelBuilder.Entity<Pacient>()
+            .HasIndex(u => u.Email)
+            .IsUnique();
             //modelBuilder.Entity<Medic>().HasKey(m => m.Id);
             //modelBuilder.Entity<UserMedic>().HasKey(u => u.Id);
             //modelBuilder.Entity<Medic>().HasOne<UserMedic>().WithOne().HasForeignKey<Medic>();
