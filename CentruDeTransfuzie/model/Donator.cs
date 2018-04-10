@@ -48,7 +48,8 @@ public class Donator
 
     public int Puls { get; set; }
 
-    public int Tensiune { get; set; }
+    public int TensiuneSistolica { get; set; }
+    public int TensiuneDiastolica { get; set; }
 
     public int InterventiiUltimele6Luni { get; set; }
 
