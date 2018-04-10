@@ -1,6 +1,7 @@
 ﻿using Repository;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Service
@@ -27,6 +28,15 @@ namespace Service
             else return false;
             
             
+        }
+
+        public IQueryable<Cerere> GetAllCereri()
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                IQueryable<Cerere> cereri = unitOfWork.CerereRepo.GetAll();
+                return cereri;
+            }
         }
     }
 }

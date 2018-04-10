@@ -41,17 +41,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.buttonLogout = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage3
@@ -65,11 +65,11 @@
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.label2);
             this.tabPage3.Controls.Add(this.label1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 27);
+            this.tabPage3.Location = new System.Drawing.Point(10, 61);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(770, 414);
+            this.tabPage3.Size = new System.Drawing.Size(808, 374);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Creeaza o cerere";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -81,7 +81,7 @@
             this.label5.Location = new System.Drawing.Point(18, 248);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(251, 19);
+            this.label5.Size = new System.Drawing.Size(643, 45);
             this.label5.TabIndex = 9;
             this.label5.Text = "Pacienții ce au nevoie de sânge:";
             // 
@@ -91,7 +91,7 @@
             this.checkedListBox1.Location = new System.Drawing.Point(22, 270);
             this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(601, 109);
+            this.checkedListBox1.Size = new System.Drawing.Size(601, 100);
             this.checkedListBox1.TabIndex = 8;
             // 
             // textBox3
@@ -99,7 +99,7 @@
             this.textBox3.Location = new System.Drawing.Point(140, 173);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(88, 26);
+            this.textBox3.Size = new System.Drawing.Size(88, 53);
             this.textBox3.TabIndex = 6;
             // 
             // textBox2
@@ -107,7 +107,7 @@
             this.textBox2.Location = new System.Drawing.Point(140, 129);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(90, 26);
+            this.textBox2.Size = new System.Drawing.Size(90, 53);
             this.textBox2.TabIndex = 5;
             // 
             // textBox1
@@ -115,7 +115,7 @@
             this.textBox1.Location = new System.Drawing.Point(141, 80);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(88, 26);
+            this.textBox1.Size = new System.Drawing.Size(88, 53);
             this.textBox1.TabIndex = 1;
             // 
             // label4
@@ -124,7 +124,7 @@
             this.label4.Location = new System.Drawing.Point(20, 183);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 18);
+            this.label4.Size = new System.Drawing.Size(162, 44);
             this.label4.TabIndex = 4;
             this.label4.Text = "Plasmă:";
             // 
@@ -134,7 +134,7 @@
             this.label3.Location = new System.Drawing.Point(20, 133);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 18);
+            this.label3.Size = new System.Drawing.Size(257, 44);
             this.label3.TabIndex = 3;
             this.label3.Text = "Globule roșii:";
             // 
@@ -144,7 +144,7 @@
             this.label2.Location = new System.Drawing.Point(18, 84);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 18);
+            this.label2.Size = new System.Drawing.Size(229, 44);
             this.label2.TabIndex = 2;
             this.label2.Text = "Trombocite:";
             // 
@@ -155,7 +155,7 @@
             this.label1.Location = new System.Drawing.Point(20, 33);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 23);
+            this.label1.Size = new System.Drawing.Size(432, 57);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cantitate sânge:";
             // 
@@ -163,11 +163,11 @@
             // 
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 27);
+            this.tabPage2.Location = new System.Drawing.Point(10, 61);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(770, 414);
+            this.tabPage2.Size = new System.Drawing.Size(836, 383);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Cereri sânge";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -175,7 +175,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(600, 360);
+            this.button1.Location = new System.Drawing.Point(628, 369);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 32);
@@ -183,26 +183,14 @@
             this.button1.Text = "Modifică cerere";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 35);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(770, 309);
-            this.dataGridView2.TabIndex = 0;
-            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 27);
+            this.tabPage1.Location = new System.Drawing.Point(10, 61);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(820, 414);
+            this.tabPage1.Size = new System.Drawing.Size(836, 383);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pacienți";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -216,7 +204,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 58);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(820, 356);
+            this.dataGridView1.Size = new System.Drawing.Size(848, 365);
             this.dataGridView1.TabIndex = 0;
             // 
             // tabControl1
@@ -231,14 +219,14 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(828, 445);
+            this.tabControl1.Size = new System.Drawing.Size(856, 454);
             this.tabControl1.TabIndex = 0;
             // 
             // buttonLogout
             // 
             this.buttonLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonLogout.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogout.Image")));
-            this.buttonLogout.Location = new System.Drawing.Point(707, 1);
+            this.buttonLogout.Location = new System.Drawing.Point(735, 1);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.buttonLogout.Size = new System.Drawing.Size(47, 49);
@@ -246,11 +234,24 @@
             this.buttonLogout.UseVisualStyleBackColor = true;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(0, 35);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(798, 318);
+            this.dataGridView2.TabIndex = 0;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
             // FormMedic
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 44F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 469);
+            this.ClientSize = new System.Drawing.Size(844, 478);
             this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -261,10 +262,10 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -283,10 +284,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Button buttonLogout;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }
