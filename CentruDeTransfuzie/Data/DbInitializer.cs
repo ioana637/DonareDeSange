@@ -10,6 +10,12 @@ namespace CentruDeTransfuzie1.Data
         public static void Initialize(CTContext context)
         {
             context.Database.EnsureCreated();
+            if (context.Cerere.Any()) return;
+            Cerere c1 = new Cerere("1-1-2018", 5, 1, 3, 1, true, context.Medic.Find(1));
+            Cerere c2 = new Cerere("2-1-2018", 7, 2, 1, 4, false, context.Medic.Find(2));
+            context.Cerere.Add(c1);
+            context.Cerere.Add(c2);
+            context.SaveChanges();
 
             if (context.UserMedic.Any()) return;
 
@@ -21,12 +27,14 @@ namespace CentruDeTransfuzie1.Data
             UserMedic um2 = new UserMedic("raul", "12345");
             context.Donator.Add(donator1);
             context.UserDonator.Add(userDonator1);
+            
             context.SaveChanges();
             var usersM = new UserMedic[]
             {
                 um1, um2
             };
             var medici = new Medic[] { m1, m2 };
+            var cereri = new Cerere[] { c1, c2 };
 
             foreach (UserMedic um in usersM)
             {
@@ -37,12 +45,15 @@ namespace CentruDeTransfuzie1.Data
             {
                 context.Medic.Add(m);
             }
+            foreach(Cerere c in cereri)
+            {
+                context.Cerere.Add(c);
+            }
             context.SaveChanges();
             context.UserMedic.Find(1).Medic = context.Medic.Find(1);
             context.Medic.Find(1).UserMedic = context.UserMedic.Find(1);
             context.UserMedic.Find(2).Medic = context.Medic.Find(2);
             context.Medic.Find(2).UserMedic = context.UserMedic.Find(2);
-
 
             context.SaveChanges();
         }

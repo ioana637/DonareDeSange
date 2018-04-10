@@ -29,7 +29,7 @@ public class Cerere {
 
     public List<CererePacient> CererePacienti { get; set; }
 
-    public Cerere( string data, float cantitateSange, float cantitateTrombocite, float cantitateGlobuleRosii, float cantitatePlasma, bool efectuata)
+    public Cerere( string data, float cantitateSange, float cantitateTrombocite, float cantitateGlobuleRosii, float cantitatePlasma, bool efectuata,Medic m)
     {
 
         Data = data;
@@ -38,6 +38,7 @@ public class Cerere {
         CantitateGlobuleRosii = cantitateGlobuleRosii;
         CantitatePlasma = cantitatePlasma;
         Efectuata = efectuata;
+        Medic = m;
         CererePacienti = new List<CererePacient>();
     }
 }
