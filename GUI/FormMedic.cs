@@ -14,13 +14,19 @@ namespace GUI
     public partial class FormMedic : Form
     {
         private UserMedicService serviceMedic;
+        private string usernameMedic;
         private List<Cerere> listCereri = new List<Cerere>();
         private BindingSource bindingSource;
-        public FormMedic(UserMedicService service)
+        public FormMedic(UserMedicService service, String username)
         {
             InitializeComponent();
             this.serviceMedic = service;
+            this.usernameMedic = username;
+            //createDataGridView2();
             loadDataGridView2();
+            
+
+
         }
 
         private void buttonLogout_Click(object sender, EventArgs e)
@@ -83,7 +89,7 @@ namespace GUI
 
         private void loadDataGridView2()
         {
-            listCereri = serviceMedic.GetAllCereri().ToList<Cerere>();
+            listCereri = serviceMedic.GetCereriByMedic(usernameMedic);
             bindingSource = new BindingSource(listCereri, null);
             dataGridView2.DataSource = bindingSource;
             if (bindingSource.Position >= 0)
@@ -93,9 +99,6 @@ namespace GUI
 
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
+
     }
 }
