@@ -13,7 +13,7 @@ namespace GUI
 {
     public partial class FormLogareDonator : Form
     {
-        DonatorService service = new DonatorService();
+        DonatorService service;
 
         public FormLogareDonator(DonatorService service)
         {

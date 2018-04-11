@@ -717,8 +717,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "FormRegisterDonator";
-            this.Text = "FormRegisterDonator";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Register";
             this.Load += new System.EventHandler(this.FormRegisterDonator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
