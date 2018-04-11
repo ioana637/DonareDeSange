@@ -19,7 +19,7 @@ namespace Service
             }
         }
 
-        public static bool LogInUserDonator(string userName, string password)
+        public bool LogInUserDonator(string userName, string password)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {

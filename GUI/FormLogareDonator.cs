@@ -21,6 +21,10 @@ namespace GUI
             this.service = service;
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+        }
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FormRegisterDonator formRegister = new FormRegisterDonator();
@@ -31,8 +35,8 @@ namespace GUI
         {
             try
             {
-                UserDonator user = service.GetUserDonator(txtUsername.Text);
-                if (user.Username == txtUsername.Text && user.Parola == txtPassw.Text)
+                //UserDonator user = service.GetUserDonator(txtUsername.Text);
+                if (service.LogInUserDonator(txtUsername.Text, txtPassw.Text))
                 {
                     FormDonator formDonator = new FormDonator();
                     formDonator.Show();
