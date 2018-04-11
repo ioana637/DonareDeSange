@@ -18,7 +18,6 @@ namespace CentruDeTransfuzie1.Data
             InitializeCereri(context);
             InitializeDonatori(context);
 
-
         }
 
 
