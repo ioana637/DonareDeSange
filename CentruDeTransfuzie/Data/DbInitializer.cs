@@ -24,6 +24,7 @@ namespace CentruDeTransfuzie1.Data
 
         public static void initializeMedic(CTContext context)
         {
+            if (context.Medic.Any()) return;
             Medic m1 = new Medic("2770111123456", "Coste", "Claudia", "ioana@yahoo.com", "0742345678");
             Medic m2 = new Medic("2661223654321", "Dordai", "Raul", "raul@yahoo.com", "0785123456");
             var medici = new Medic[] { m1, m2 };

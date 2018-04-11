@@ -17,15 +17,7 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-   
-        }
-
-        private void buttonLogout_Click(object sender, EventArgs e)
-        {
-
-        }
+  
 
     }
 }
