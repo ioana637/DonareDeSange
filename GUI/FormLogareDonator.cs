@@ -15,9 +15,10 @@ namespace GUI
     {
         DonatorService service = new DonatorService();
 
-        public FormLogareDonator()
+        public FormLogareDonator(DonatorService service)
         {
             InitializeComponent();
+            this.service = service;
         }
 
         private void label2_Click(object sender, EventArgs e)
