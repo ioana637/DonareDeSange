@@ -54,9 +54,6 @@ public class Donator
 
     public int SubTratament { get; set; }
 
-
-    
-
     [MaxLength(1)]
     [RegularExpression("[TF]", ErrorMessage = "Activ must be T(true) OR F(false)")]
     public string Activ { get; set; }
@@ -68,6 +65,7 @@ public class Donator
 
     public Donator(string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email)
     {
+        Activ = "T";
         Nume = nume;
         Prenume = prenume;
         Sex = sex;
