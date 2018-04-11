@@ -21,10 +21,6 @@ namespace GUI
             this.service = service;
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-        }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FormRegisterDonator formRegister = new FormRegisterDonator();

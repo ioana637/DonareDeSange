@@ -231,7 +231,7 @@
             // 
             this.lblJud.AutoSize = true;
             this.lblJud.ForeColor = System.Drawing.Color.Red;
-            this.lblJud.Location = new System.Drawing.Point(45, 343);
+            this.lblJud.Location = new System.Drawing.Point(285, 346);
             this.lblJud.Name = "lblJud";
             this.lblJud.Size = new System.Drawing.Size(13, 17);
             this.lblJud.TabIndex = 108;
@@ -242,7 +242,7 @@
             // 
             this.lblLoc.AutoSize = true;
             this.lblLoc.ForeColor = System.Drawing.Color.Red;
-            this.lblLoc.Location = new System.Drawing.Point(280, 339);
+            this.lblLoc.Location = new System.Drawing.Point(29, 346);
             this.lblLoc.Name = "lblLoc";
             this.lblLoc.Size = new System.Drawing.Size(13, 17);
             this.lblLoc.TabIndex = 107;
@@ -396,7 +396,7 @@
             this.cmbJudet2.Enabled = false;
             this.cmbJudet2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbJudet2.FormattingEnabled = true;
-            this.cmbJudet2.Location = new System.Drawing.Point(84, 439);
+            this.cmbJudet2.Location = new System.Drawing.Point(357, 439);
             this.cmbJudet2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbJudet2.Name = "cmbJudet2";
             this.cmbJudet2.Size = new System.Drawing.Size(213, 33);
@@ -407,7 +407,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(11, 442);
+            this.label14.Location = new System.Drawing.Point(284, 442);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(67, 25);
             this.label14.TabIndex = 88;
@@ -418,7 +418,7 @@
             this.cmbLoc2.Enabled = false;
             this.cmbLoc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLoc2.FormattingEnabled = true;
-            this.cmbLoc2.Location = new System.Drawing.Point(399, 439);
+            this.cmbLoc2.Location = new System.Drawing.Point(145, 439);
             this.cmbLoc2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbLoc2.Name = "cmbLoc2";
             this.cmbLoc2.Size = new System.Drawing.Size(133, 33);
@@ -428,7 +428,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(297, 442);
+            this.label15.Location = new System.Drawing.Point(43, 442);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(101, 25);
             this.label15.TabIndex = 86;
@@ -461,7 +461,7 @@
             this.cmbJudet1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbJudet1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbJudet1.FormattingEnabled = true;
-            this.cmbJudet1.Location = new System.Drawing.Point(138, 339);
+            this.cmbJudet1.Location = new System.Drawing.Point(373, 340);
             this.cmbJudet1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbJudet1.Name = "cmbJudet1";
             this.cmbJudet1.Size = new System.Drawing.Size(133, 33);
@@ -472,7 +472,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(66, 342);
+            this.label12.Location = new System.Drawing.Point(301, 343);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(67, 25);
             this.label12.TabIndex = 82;
@@ -482,7 +482,7 @@
             // 
             this.cmbLoc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLoc1.FormattingEnabled = true;
-            this.cmbLoc1.Location = new System.Drawing.Point(396, 333);
+            this.cmbLoc1.Location = new System.Drawing.Point(145, 340);
             this.cmbLoc1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbLoc1.Name = "cmbLoc1";
             this.cmbLoc1.Size = new System.Drawing.Size(133, 33);
@@ -599,7 +599,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(291, 339);
+            this.label6.Location = new System.Drawing.Point(40, 346);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(101, 25);
             this.label6.TabIndex = 69;
@@ -717,10 +717,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximizeBox = false;
             this.Name = "FormRegisterDonator";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Register";
+            this.Text = "FormRegisterDonator";
             this.Load += new System.EventHandler(this.FormRegisterDonator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
