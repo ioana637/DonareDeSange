@@ -10,8 +10,8 @@ namespace CentruDeTransfuzie1
         {
             get
             {
-                //return "Data Source=localhost\\SQLEXPRESS; Initial Catalog=CentruTransfuzii;Integrated Security=True;";
-                return "Data Source=.; Initial Catalog=CentruTransfuzii;Integrated Security=True;";
+                return "Data Source=localhost\\SQLEXPRESS; Initial Catalog=CentruTransfuzii;Integrated Security=True;";
+                //return "Data Source=.; Initial Catalog=CentruTransfuzii;Integrated Security=True;";
             }
         }
     }
