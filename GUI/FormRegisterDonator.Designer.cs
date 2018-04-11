@@ -124,7 +124,7 @@
             // 
             this.txtREpsw.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtREpsw.Location = new System.Drawing.Point(182, 119);
-            this.txtREpsw.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtREpsw.Margin = new System.Windows.Forms.Padding(2);
             this.txtREpsw.Name = "txtREpsw";
             this.txtREpsw.Size = new System.Drawing.Size(158, 26);
             this.txtREpsw.TabIndex = 118;
@@ -134,7 +134,7 @@
             // 
             this.txtPsw.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPsw.Location = new System.Drawing.Point(274, 82);
-            this.txtPsw.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPsw.Margin = new System.Windows.Forms.Padding(2);
             this.txtPsw.Name = "txtPsw";
             this.txtPsw.Size = new System.Drawing.Size(155, 26);
             this.txtPsw.TabIndex = 117;
@@ -144,7 +144,7 @@
             // 
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(106, 84);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(103, 26);
             this.txtUsername.TabIndex = 116;
@@ -192,7 +192,7 @@
             // 
             this.checkRes.AutoSize = true;
             this.checkRes.Location = new System.Drawing.Point(14, 313);
-            this.checkRes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkRes.Margin = new System.Windows.Forms.Padding(2);
             this.checkRes.Name = "checkRes";
             this.checkRes.Size = new System.Drawing.Size(15, 14);
             this.checkRes.TabIndex = 112;
@@ -312,7 +312,7 @@
             // 
             this.btnInapoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInapoi.Location = new System.Drawing.Point(23, 432);
-            this.btnInapoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInapoi.Margin = new System.Windows.Forms.Padding(2);
             this.btnInapoi.Name = "btnInapoi";
             this.btnInapoi.Size = new System.Drawing.Size(91, 31);
             this.btnInapoi.TabIndex = 101;
@@ -324,7 +324,7 @@
             // 
             this.btnInregistreaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInregistreaza.Location = new System.Drawing.Point(281, 432);
-            this.btnInregistreaza.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInregistreaza.Margin = new System.Windows.Forms.Padding(2);
             this.btnInregistreaza.Name = "btnInregistreaza";
             this.btnInregistreaza.Size = new System.Drawing.Size(143, 31);
             this.btnInregistreaza.TabIndex = 100;
@@ -338,7 +338,7 @@
             this.rdB_M.Checked = true;
             this.rdB_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdB_M.Location = new System.Drawing.Point(118, 202);
-            this.rdB_M.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdB_M.Margin = new System.Windows.Forms.Padding(2);
             this.rdB_M.Name = "rdB_M";
             this.rdB_M.Size = new System.Drawing.Size(40, 24);
             this.rdB_M.TabIndex = 97;
@@ -351,7 +351,7 @@
             this.rdB_F.AutoSize = true;
             this.rdB_F.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdB_F.Location = new System.Drawing.Point(80, 202);
-            this.rdB_F.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdB_F.Margin = new System.Windows.Forms.Padding(2);
             this.rdB_F.Name = "rdB_F";
             this.rdB_F.Size = new System.Drawing.Size(37, 24);
             this.rdB_F.TabIndex = 96;
@@ -373,7 +373,7 @@
             // 
             this.txtTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefon.Location = new System.Drawing.Point(290, 392);
-            this.txtTelefon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefon.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefon.Name = "txtTelefon";
             this.txtTelefon.Size = new System.Drawing.Size(138, 26);
             this.txtTelefon.TabIndex = 93;
@@ -393,7 +393,7 @@
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(86, 392);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(124, 26);
             this.txtEmail.TabIndex = 91;
@@ -415,10 +415,11 @@
             this.cmbJudet2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbJudet2.FormattingEnabled = true;
             this.cmbJudet2.Location = new System.Drawing.Point(268, 357);
-            this.cmbJudet2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbJudet2.Margin = new System.Windows.Forms.Padding(2);
             this.cmbJudet2.Name = "cmbJudet2";
             this.cmbJudet2.Size = new System.Drawing.Size(161, 28);
             this.cmbJudet2.TabIndex = 89;
+            this.cmbJudet2.SelectedIndexChanged += new System.EventHandler(this.cmbJudet2_SelectedIndexChanged);
             // 
             // label14
             // 
@@ -437,7 +438,7 @@
             this.cmbLoc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLoc2.FormattingEnabled = true;
             this.cmbLoc2.Location = new System.Drawing.Point(109, 357);
-            this.cmbLoc2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbLoc2.Margin = new System.Windows.Forms.Padding(2);
             this.cmbLoc2.Name = "cmbLoc2";
             this.cmbLoc2.Size = new System.Drawing.Size(101, 28);
             this.cmbLoc2.TabIndex = 87;
@@ -458,7 +459,7 @@
             this.txtResedinta.Enabled = false;
             this.txtResedinta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResedinta.Location = new System.Drawing.Point(109, 308);
-            this.txtResedinta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtResedinta.Margin = new System.Windows.Forms.Padding(2);
             this.txtResedinta.Name = "txtResedinta";
             this.txtResedinta.Size = new System.Drawing.Size(320, 26);
             this.txtResedinta.TabIndex = 85;
@@ -482,10 +483,11 @@
             this.cmbJudet1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbJudet1.FormattingEnabled = true;
             this.cmbJudet1.Location = new System.Drawing.Point(280, 276);
-            this.cmbJudet1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbJudet1.Margin = new System.Windows.Forms.Padding(2);
             this.cmbJudet1.Name = "cmbJudet1";
             this.cmbJudet1.Size = new System.Drawing.Size(101, 28);
             this.cmbJudet1.TabIndex = 83;
+            this.cmbJudet1.SelectedIndexChanged += new System.EventHandler(this.cmbJudet1_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -503,7 +505,7 @@
             this.cmbLoc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLoc1.FormattingEnabled = true;
             this.cmbLoc1.Location = new System.Drawing.Point(109, 276);
-            this.cmbLoc1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbLoc1.Margin = new System.Windows.Forms.Padding(2);
             this.cmbLoc1.Name = "cmbLoc1";
             this.cmbLoc1.Size = new System.Drawing.Size(101, 28);
             this.cmbLoc1.TabIndex = 81;
@@ -523,7 +525,7 @@
             // 
             this.txtDomiciliu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDomiciliu.Location = new System.Drawing.Point(106, 232);
-            this.txtDomiciliu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDomiciliu.Margin = new System.Windows.Forms.Padding(2);
             this.txtDomiciliu.Name = "txtDomiciliu";
             this.txtDomiciliu.Size = new System.Drawing.Size(322, 26);
             this.txtDomiciliu.TabIndex = 79;
@@ -533,7 +535,7 @@
             this.cb_an.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_an.FormattingEnabled = true;
             this.cb_an.Location = new System.Drawing.Point(368, 166);
-            this.cb_an.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_an.Margin = new System.Windows.Forms.Padding(2);
             this.cb_an.Name = "cb_an";
             this.cb_an.Size = new System.Drawing.Size(61, 28);
             this.cb_an.TabIndex = 78;
@@ -543,7 +545,7 @@
             this.cb_luna.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_luna.FormattingEnabled = true;
             this.cb_luna.Location = new System.Drawing.Point(254, 166);
-            this.cb_luna.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_luna.Margin = new System.Windows.Forms.Padding(2);
             this.cb_luna.Name = "cb_luna";
             this.cb_luna.Size = new System.Drawing.Size(72, 28);
             this.cb_luna.TabIndex = 77;
@@ -553,7 +555,7 @@
             this.cb_zi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_zi.FormattingEnabled = true;
             this.cb_zi.Location = new System.Drawing.Point(146, 166);
-            this.cb_zi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_zi.Margin = new System.Windows.Forms.Padding(2);
             this.cb_zi.Name = "cb_zi";
             this.cb_zi.Size = new System.Drawing.Size(46, 28);
             this.cb_zi.TabIndex = 76;
@@ -584,7 +586,7 @@
             // 
             this.txtPrenume.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrenume.Location = new System.Drawing.Point(290, 43);
-            this.txtPrenume.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrenume.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrenume.Name = "txtPrenume";
             this.txtPrenume.Size = new System.Drawing.Size(138, 26);
             this.txtPrenume.TabIndex = 73;
@@ -593,7 +595,7 @@
             // 
             this.txtNume.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNume.Location = new System.Drawing.Point(80, 45);
-            this.txtNume.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNume.Margin = new System.Windows.Forms.Padding(2);
             this.txtNume.Name = "txtNume";
             this.txtNume.Size = new System.Drawing.Size(124, 26);
             this.txtNume.TabIndex = 72;
@@ -747,7 +749,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormRegisterDonator";
             this.Text = "FormRegisterDonator";
             this.Load += new System.EventHandler(this.FormRegisterDonator_Load);
