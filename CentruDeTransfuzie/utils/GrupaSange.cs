@@ -9,6 +9,6 @@ namespace CentruDeTransfuzie1.utils
         AII,
         BIII,
         ABIV,
-        oI
+        OI
     }   
 }

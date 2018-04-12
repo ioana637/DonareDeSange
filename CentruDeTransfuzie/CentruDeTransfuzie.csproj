@@ -154,6 +154,10 @@
     <Compile Include="Migrations\20180322164733_dbset.Designer.cs">
       <DependentUpon>20180322164733_dbset.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20180408173314_constrangeri.cs" />
+    <Compile Include="Migrations\20180408173314_constrangeri.designer.cs">
+      <DependentUpon>20180408173314_constrangeri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\CTContextModelSnapshot.cs" />
     <Compile Include="model\Analiza.cs" />
     <Compile Include="model\CentruTransfuzie.cs" />
@@ -171,6 +175,7 @@
     <Compile Include="model\UserMedic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="utils\GrupaSange.cs" />
+    <Compile Include="utils\Judet.cs" />
     <Compile Include="utils\TipRh.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -37,7 +37,7 @@ namespace GUI
                 bool result = serviceMedic.Login(username, parola);
                 if (result)
                 {
-                    Form formMainView = new FormMedic(serviceMedic);
+                    Form formMainView = new FormMedic(serviceMedic, username);
                     this.Hide();
                     formMainView.Closed += (s, args) => this.Close();
                     formMainView.ShowDialog();
@@ -50,6 +50,9 @@ namespace GUI
             }
         }
 
-      
+        private void FormLogareMedic_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

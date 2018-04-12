@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
@@ -9,7 +10,11 @@ public class CentruTransfuzie {
   
 
     public int Id { get; set; }
+
+    [Required(ErrorMessage = "Nume is required")]
     public string Nume { get; set; }
+
+    [Required(ErrorMessage = "Zona is required")]
     public string Zona { get; set; }
     public string Oras { get; set; }
     public string Judet { get; set; }

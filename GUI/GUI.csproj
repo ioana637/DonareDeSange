@@ -106,6 +106,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminLogare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminLogare.Designer.cs">
+      <DependentUpon>FormAdminLogare.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAnalizeSange.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +168,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminLogare.resx">
+      <DependentUpon>FormAdminLogare.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAnalizeSange.resx">
       <DependentUpon>FormAnalizeSange.cs</DependentUpon>
     </EmbeddedResource>

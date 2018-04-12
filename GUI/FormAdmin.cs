@@ -10,14 +10,16 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class FormDonator : Form
+    public partial class FormAdmin : Form
     {
-        public FormDonator()
+        public FormAdmin()
         {
             InitializeComponent();
         }
 
-  
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

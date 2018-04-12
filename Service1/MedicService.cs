@@ -1,6 +1,7 @@
 ﻿using Repository;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Service
@@ -27,6 +28,34 @@ namespace Service
             else return false;
             
             
+        }
+
+        public List<Cerere> GetAllCereri()
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<Cerere> cereri = new List<Cerere>();
+
+                unitOfWork.CerereRepo.GetAll().ToList().ForEach(c => { cereri.Add(c); });
+                return cereri;
+
+            }
+
+        }
+
+        public List<Cerere> GetCereriByMedic(string username)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<Cerere> cereri = new List<Cerere>();
+                UserMedic userMedic = unitOfWork.UserMedicRepo.GetBy(um => um.Username.Equals(username));
+                Medic medic = unitOfWork.MedicRepo.GetBy(m => m.UserMedic.Equals(userMedic));
+                //Console.WriteLine("bd:" + unitOfWork.CerereRepo.GetAll().Where(c => c.Medic.Equals(medic)).Count());
+                unitOfWork.CerereRepo.GetAll().Where(c=>c.Medic.UserMedic.Username.Equals(username)).ToList().ForEach(c => { cereri.Add(c); });
+                return cereri;
+
+            }
+
         }
     }
 }

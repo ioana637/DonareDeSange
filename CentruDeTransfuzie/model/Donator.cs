@@ -2,6 +2,7 @@
 using CentruDeTransfuzie1.model;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
@@ -14,8 +15,13 @@ public class Donator
 
     public string Prenume { get; set; }
 
+    [Required(ErrorMessage = "Gender is required")]
+    [MaxLength(1)]
+    [RegularExpression("[FM]", ErrorMessage = "Gender must be F(female) OR M(male)")]
     public string Sex { get; set; }
 
+
+    [Required(ErrorMessage = "DataNastere is required")]
     public DateTime DataNastere { get; set; }
 
     public string Domiciliu { get; set; }
@@ -30,8 +36,12 @@ public class Donator
 
     public string JudetResedinta { get; set; }
 
+    [Required(ErrorMessage = "Telefon is required")]
+    [DataType(DataType.PhoneNumber)]
     public string Telefon { get; set; }
 
+    [Required(ErrorMessage = "Email is required")]
+    [DataType(DataType.EmailAddress)]
     public string Email { get; set; }
 
     public float Greutate { get; set; }
@@ -43,6 +53,13 @@ public class Donator
     public int InterventiiUltimele6Luni { get; set; }
 
     public int SubTratament { get; set; }
+
+
+    
+
+    [MaxLength(1)]
+    [RegularExpression("[TF]", ErrorMessage = "Activ must be T(true) OR F(false)")]
+    public string Activ { get; set; }
 
     public UserDonator UserDonator { get; set; }
     public List<PungaSange> PungiSange { get; set; }
