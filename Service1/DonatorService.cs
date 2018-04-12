@@ -66,5 +66,20 @@ namespace Service
 
             }
         }
+
+        public List<Donator> GetDonatoriByJudet(string judet)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<Donator> donatori = new List<Donator>();
+                //Donator donator = unitOfWork.DonatorRepo.GetBy(dr => dr.JudetResedinta.Equals(judetResedinta));
+                unitOfWork.DonatorRepo.GetAll().Where(d => d.Judet.Equals(judet)).ToList().ForEach(dn => { donatori.Add(dn); });
+                return donatori;
+
+            }
+
+
+        }
+
     }
 }
