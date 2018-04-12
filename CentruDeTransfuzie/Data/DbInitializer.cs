@@ -81,14 +81,14 @@ namespace CentruDeTransfuzie1.Data
             context.Donator.Add(donator1);
             context.UserDonator.Add(userDonator1);
 
-            //context.Donator.Add(d1);
-            //context.UserDonator.Add(ud1);
+            context.Donator.Add(d1);
+            context.UserDonator.Add(ud1);
 
-            //context.Donator.Add(d2);
-            //context.UserDonator.Add(ud2);
+            context.Donator.Add(d2);
+            context.UserDonator.Add(ud2);
 
-            //context.Donator.Add(d3);
-            //context.UserDonator.Add(ud3);
+            context.Donator.Add(d3);
+            context.UserDonator.Add(ud3);
 
             context.SaveChanges();
 
