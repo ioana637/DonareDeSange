@@ -160,6 +160,12 @@
     <Compile Include="FormMedic.Designer.cs">
       <DependentUpon>FormMedic.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormModificareDonator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificareDonator.designer.cs">
+      <DependentUpon>FormModificareDonator.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegisterDonator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMedic.resx">
       <DependentUpon>FormMedic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModificareDonator.resx">
+      <DependentUpon>FormModificareDonator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegisterDonator.resx">
       <DependentUpon>FormRegisterDonator.cs</DependentUpon>
