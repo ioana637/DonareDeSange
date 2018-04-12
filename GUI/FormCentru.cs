@@ -19,13 +19,15 @@ namespace GUI
         private BindingSource bindingSource;
 
 
-        public FormCentru(String judet)
+        public FormCentru(DonatorService service,String judet)
         {
             this.judet = judet;
+            serviceDonator = service;
             InitializeComponent();
+            LoadDataGridView1();
         }
 
-        private void loadDataGridView1()
+        private void LoadDataGridView1()
         {
             listDonatori = serviceDonator.GetDonatoriByJudet(judet);
             bindingSource = new BindingSource(listDonatori, null);
