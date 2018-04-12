@@ -72,8 +72,47 @@ namespace Service
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
                 List<Donator> donatori = new List<Donator>();
-                //Donator donator = unitOfWork.DonatorRepo.GetBy(dr => dr.JudetResedinta.Equals(judetResedinta));
                 unitOfWork.DonatorRepo.GetAll().ToList().ForEach(dn => { donatori.Add(dn); });
+                return donatori;
+            }
+        }
+
+        public List<Donator> GetDonatoriByNume(String nume)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<Donator> donatori = new List<Donator>();
+                unitOfWork.DonatorRepo.GetAll().Where(d => d.Nume.Equals(nume)).ToList().ForEach(don => { donatori.Add(don); });
+                return donatori;
+            }
+        }
+
+        public List<Donator> GetDonatoriByDataNasterii(String dataNasterii)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<Donator> donatori = new List<Donator>();
+                unitOfWork.DonatorRepo.GetAll().Where(d => d.DataNastere.Equals(DateTime.Parse(dataNasterii))).ToList().ForEach(don => { donatori.Add(don); });
+                return donatori;
+            }
+        }
+
+        public List<Donator> GetDonatoriByJudet(String judet)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<Donator> donatori = new List<Donator>();
+                unitOfWork.DonatorRepo.GetAll().Where(d => d.Judet.Equals(judet)).ToList().ForEach(don => { donatori.Add(don); });
+                return donatori;
+            }
+        }
+
+        public List<Donator> GetDonatoriByActivitate(String activ)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<Donator> donatori = new List<Donator>();
+                unitOfWork.DonatorRepo.GetAll().Where(d => d.Activ.Equals(activ)).ToList().ForEach(don => { donatori.Add(don); });
                 return donatori;
             }
         }

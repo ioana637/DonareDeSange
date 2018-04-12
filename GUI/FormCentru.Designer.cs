@@ -40,6 +40,8 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -61,11 +63,13 @@
             this.tabControl1.Location = new System.Drawing.Point(6, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(446, 374);
+            this.tabControl1.Size = new System.Drawing.Size(756, 374);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Controls.Add(this.comboBox1);
@@ -73,7 +77,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(438, 343);
+            this.tabPage1.Size = new System.Drawing.Size(748, 343);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Donatori";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -81,7 +85,7 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(332, 303);
+            this.button2.Location = new System.Drawing.Point(642, 303);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(98, 31);
             this.button2.TabIndex = 4;
@@ -98,17 +102,18 @@
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(424, 208);
+            this.dataGridView1.Size = new System.Drawing.Size(734, 208);
             this.dataGridView1.TabIndex = 2;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
+            "toti donatorii",
             "după nume",
             "după data nastere",
-            "dupa judet",
-            "dupa activitate"});
+            "după judet",
+            "după activitate"});
             this.comboBox1.Location = new System.Drawing.Point(96, 29);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(152, 26);
@@ -192,11 +197,28 @@
             this.dataGridView3.Size = new System.Drawing.Size(424, 242);
             this.dataGridView3.TabIndex = 0;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(264, 29);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(157, 26);
+            this.textBox1.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(449, 25);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 33);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Filtreaza";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormCentru
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 396);
+            this.ClientSize = new System.Drawing.Size(762, 396);
             this.Controls.Add(this.tabControl1);
             this.Name = "FormCentru";
             this.Text = "FormCentru";
@@ -227,5 +249,7 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

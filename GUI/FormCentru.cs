@@ -43,5 +43,86 @@ namespace GUI
             FormModificareDonator form = new FormModificareDonator(donator,this.serviceDonator);
             form.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String selected = comboBox1.SelectedItem.ToString();
+            if (selected.Equals("toti donatorii"))
+                LoadDataGridView1();
+
+            if (selected.Equals("după nume"))
+            {
+                String nume = textBox1.Text;
+                if (nume.Equals(""))
+                    LoadDataGridView1();
+                else
+                {
+                    listDonatori = serviceDonator.GetDonatoriByNume(nume);
+
+                    bindingSource = new BindingSource(listDonatori, null);
+                    dataGridView1.DataSource = bindingSource;
+                    if (bindingSource.Position >= 0)
+                    {
+                        dataGridView1.Rows[bindingSource.Position].Selected = true;
+                    }
+                }
+            }
+
+            else if (selected.Equals("după data nastere"))
+            {
+                String dataNasterii = textBox1.Text;
+
+                if (dataNasterii.Equals(""))
+                    LoadDataGridView1();
+                else
+                {
+                    listDonatori = serviceDonator.GetDonatoriByDataNasterii(dataNasterii);
+
+                    bindingSource = new BindingSource(listDonatori, null);
+                    dataGridView1.DataSource = bindingSource;
+                    if (bindingSource.Position >= 0)
+                    {
+                        dataGridView1.Rows[bindingSource.Position].Selected = true;
+                    }
+                }
+            }
+
+            else if (selected.Equals("după judet"))
+            {
+                String judet = textBox1.Text;
+
+                if (judet.Equals(""))
+                    LoadDataGridView1();
+                else
+                {
+                    listDonatori = serviceDonator.GetDonatoriByJudet(judet);
+
+                    bindingSource = new BindingSource(listDonatori, null);
+                    dataGridView1.DataSource = bindingSource;
+                    if (bindingSource.Position >= 0)
+                    {
+                        dataGridView1.Rows[bindingSource.Position].Selected = true;
+                    }
+                }
+            }
+            else if (selected.Equals("după activitate"))
+            {
+                String activitate = textBox1.Text;
+
+                if (activitate.Equals(""))
+                    LoadDataGridView1();
+                else
+                {
+                    listDonatori = serviceDonator.GetDonatoriByActivitate(activitate);
+
+                    bindingSource = new BindingSource(listDonatori, null);
+                    dataGridView1.DataSource = bindingSource;
+                    if (bindingSource.Position >= 0)
+                    {
+                        dataGridView1.Rows[bindingSource.Position].Selected = true;
+                    }
+                }
+            }
+        }
     }
 }
