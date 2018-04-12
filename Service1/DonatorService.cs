@@ -10,13 +10,22 @@ namespace Service
 {
     public class DonatorService
     {
-        public UserDonator GetUserDonator(string UserName)
+        public UserDonator GetUserDonator(string userName)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
-                UserDonator user = unitOfWork.UserDonatorRepo.GetBy(x => x.Username == UserName);
+                UserDonator user = unitOfWork.UserDonatorRepo.GetBy(x => x.Username == userName);
                 if (user == null) { throw new ValidationException(); }
                 return user;
+            }
+        }
+
+        public Donator GetDonator(string userName) {
+            using(UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                Donator donator = unitOfWork.DonatorRepo.GetBy(x => x.UserDonator.Username == userName);
+                if(donator == null) { throw new ValidationException(); }
+                return donator;
             }
         }
 
@@ -36,7 +45,7 @@ namespace Service
             }
         }
 
-        private  string EncryptPassword(string password)
+        private string EncryptPassword(string password)
         {
             
             MD5 md5 = MD5.Create();
@@ -48,6 +57,12 @@ namespace Service
             }
             return stringBuilder.ToString();
         }
+
+        public string Encrypt(string passw)
+        {
+            return EncryptPassword(passw);
+        }
+
         public void RegisterDonator(string userName, string password, string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
@@ -83,6 +98,15 @@ namespace Service
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
                 unitOfWork.DonatorRepo.Update(donator);
+                unitOfWork.Save();
+            }
+        }
+
+        public void UpdateUserDonator(UserDonator user)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                unitOfWork.UserDonatorRepo.Update(user);
                 unitOfWork.Save();
             }
         }

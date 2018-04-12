@@ -20,7 +20,6 @@ public class Donator
     [RegularExpression("[FM]", ErrorMessage = "Gender must be F(female) OR M(male)")]
     public string Sex { get; set; }
 
-
     [Required(ErrorMessage = "DataNastere is required")]
     public DateTime DataNastere { get; set; }
 
@@ -69,6 +68,7 @@ public class Donator
 
     public Donator(string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email)
     {
+        Activ = "T";
         Nume = nume;
         Prenume = prenume;
         Sex = sex;

@@ -38,8 +38,9 @@ namespace GUI
                 //UserDonator user = service.GetUserDonator(txtUsername.Text);
                 if (service.LogInUserDonator(txtUsername.Text,txtPassw.Text))
                 {
-                    FormDonator formDonator = new FormDonator();
+                    FormDonator formDonator = new FormDonator(new DonatorService(), txtUsername.Text);
                     formDonator.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -54,7 +55,7 @@ namespace GUI
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
