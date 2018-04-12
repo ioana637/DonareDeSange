@@ -17,15 +17,14 @@ namespace GUI
         private List<Donator> listDonatori = new List<Donator>();
         private BindingSource bindingSource;
 
-
-        public FormCentru()
+        public FormCentru(DonatorService service)
         {
+            serviceDonator = service;
             InitializeComponent();
-            loadDataGridView1();
-            
+            LoadDataGridView1();
         }
 
-        private void loadDataGridView1()
+        private void LoadDataGridView1()
         {
             listDonatori = serviceDonator.GetAllDonatori();
 
@@ -35,6 +34,14 @@ namespace GUI
             {
                 dataGridView1.Rows[bindingSource.Position].Selected = true;
             }
+        }
+      
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Donator donator=(Donator)dataGridView1.Rows[e.RowIndex].DataBoundItem;
+            FormModificareDonator form = new FormModificareDonator(donator,this.serviceDonator);
+            form.Show();
         }
     }
 }
