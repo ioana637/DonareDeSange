@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +18,11 @@ namespace GUI
             InitializeComponent();
         }
 
-  
-
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            FormLogareDonator formLogareDonator = new FormLogareDonator(new DonatorService());
+            formLogareDonator.Show();
+            this.Hide();
+        }
     }
 }

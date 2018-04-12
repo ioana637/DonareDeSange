@@ -23,14 +23,19 @@ namespace GUI
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new FormMedic(new Service.UserMedicService(),"ioana"));
             //Application.Run(new FormDonator());
-            //Application.Run(new FormCentru());
-            //Application.Run(new FormAnalizeSange());
-            //Application.Run(new FormLogareCentru());
-            //Application.Run(new FormRegisterDonator());
-            Application.Run(new FormLogareDonator(new Service.DonatorService()));
 
+
+            Application.Run(new FormCentru(new Service.DonatorService()));
+
+            //Application.Run(new FormAnalizeSange());
+            //Application.Run(new FormLogareCentru(new Service.CentruService()));
+            //Application.Run(new FormRegisterDonator());
+            //Application.Run(new FormLogareDonator(new Service.DonatorService()));
+            // Console.WriteLine("dklflkes");
             //Application.Run(new FormLogareMedic(new Service.UserMedicService()));
+           
 
         }
     }
