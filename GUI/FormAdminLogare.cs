@@ -10,14 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class FormDonator : Form
+    public partial class FormAdminLogare : Form
     {
-        public FormDonator()
+        public FormAdminLogare()
         {
             InitializeComponent();
         }
-
-  
-
     }
 }

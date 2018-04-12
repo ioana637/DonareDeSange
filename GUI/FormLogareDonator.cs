@@ -13,11 +13,12 @@ namespace GUI
 {
     public partial class FormLogareDonator : Form
     {
-        DonatorService service = new DonatorService();
+        DonatorService service;
 
-        public FormLogareDonator()
+        public FormLogareDonator(DonatorService service)
         {
             InitializeComponent();
+            this.service = service;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -34,8 +35,8 @@ namespace GUI
         {
             try
             {
-                UserDonator user = service.GetUserDonator(txtUsername.Text);
-                if (user.Username == txtUsername.Text && user.Parola == txtPassw.Text)
+                //UserDonator user = service.GetUserDonator(txtUsername.Text);
+                if (service.LogInUserDonator(txtUsername.Text,txtPassw.Text))
                 {
                     FormDonator formDonator = new FormDonator();
                     formDonator.Show();

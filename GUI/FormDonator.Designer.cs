@@ -153,7 +153,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Cereri sânge";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // label1
             // 
@@ -821,7 +820,6 @@
             this.buttonLogout.Size = new System.Drawing.Size(47, 49);
             this.buttonLogout.TabIndex = 1;
             this.buttonLogout.UseVisualStyleBackColor = true;
-            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // FormDonator
             // 

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
+using CentruDeTransfuzie.utils;
 using Service;
 
 namespace GUI
@@ -7,6 +9,7 @@ namespace GUI
     public partial class FormRegisterDonator : Form
     {
         DonatorService service = new DonatorService();
+        Judet judet = new Judet();
 
         public FormRegisterDonator()
         {
@@ -374,5 +377,46 @@ namespace GUI
         {
             this.Close();
         }
+
+        private void cmbJudet1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbLoc1.Items.Clear();
+
+            int index = cmbJudet1.SelectedIndex;
+            var key = cmbJudet1.Items[index];
+
+            List<string> vector = new List<string>();
+            judet.judet.TryGetValue(key.ToString(), out vector);
+
+            if (judet.judet.ContainsKey(key.ToString()))
+            {
+                foreach (var i in vector)
+                {
+                    cmbLoc1.Items.Add(i);
+                }
+            }
+
+        }
+
+        private void cmbJudet2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbLoc2.Items.Clear();
+
+            int index = cmbJudet2.SelectedIndex;
+            var key = cmbJudet2.Items[index];
+
+            List<string> vector = new List<string>();
+            judet.judet.TryGetValue(key.ToString(), out vector);
+
+            if (judet.judet.ContainsKey(key.ToString()))
+            {
+                foreach (var i in vector)
+                {
+                    cmbLoc2.Items.Add(i);
+                }
+            }
+        }
     }
+
+
 }

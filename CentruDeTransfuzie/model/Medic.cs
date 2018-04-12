@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
@@ -9,14 +10,22 @@ public class Medic
 
     public int Id { get; set; }
 
+    [Required(ErrorMessage = "CNP is required")]
+    [StringLength(13, MinimumLength = 13, ErrorMessage = "CNP must have exactly 13 digits")]
+    [RegularExpression("[1234567890]", ErrorMessage = "cnp must have just digits")]
     public string Cnp { get; set; }
 
+    [Required(ErrorMessage = "Nume is required")]
     public string Nume { get; set; }
 
     public string Prenume { get; set; }
 
+    [Required(ErrorMessage = "Email is required")]
+    [DataType(DataType.EmailAddress)]
     public string Email { get; set; }
 
+    [Required(ErrorMessage = "Telefon is required")]
+    [DataType(DataType.PhoneNumber)]
     public string Telefon { get; set; }
 
     public UserMedic UserMedic { get; set; }
