@@ -24,7 +24,11 @@ public class Cerere {
     public float CantitateGlobuleRosii { get; set; }
     public float CantitatePlasma { get; set; }
     public bool Efectuata { get; set; }
+
+    [Required(ErrorMessage = "Grupa is required")]
     public GrupaSange Grupa { get; set; }
+
+    [Required(ErrorMessage = "RH is required")]
     public TipRh RH { get; set; }
 
     public List<CererePacient> CererePacienti { get; set; }

@@ -1,5 +1,6 @@
 ﻿using CentruDeTransfuzie1;
 using CentruDeTransfuzie1.Data;
+using CentruDeTransfuzie1.model;
 using GUI;
 using Microsoft.EntityFrameworkCore;
 using Service;
@@ -27,7 +28,7 @@ namespace Medic
             Application.SetCompatibleTextRenderingDefault(false);
             UserMedicService service = new UserMedicService();
             Application.Run(new FormLogareMedic(service));
-
+            
         }
     }
 }
