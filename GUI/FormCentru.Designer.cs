@@ -116,11 +116,12 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "după nume",
-            "după grupă",
-            "după RH"});
+            "după data nastere",
+            "dupa judet",
+            "dupa activitate"});
             this.comboBox1.Location = new System.Drawing.Point(96, 29);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 26);
+            this.comboBox1.Size = new System.Drawing.Size(152, 26);
             this.comboBox1.TabIndex = 1;
             // 
             // label1

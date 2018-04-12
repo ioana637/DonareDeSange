@@ -13,21 +13,22 @@ namespace GUI
 {
     public partial class FormCentru : Form
     {
-        private DonatorService serviceDonator;
-        private string judet;
+        private DonatorService serviceDonator = new DonatorService();
         private List<Donator> listDonatori = new List<Donator>();
         private BindingSource bindingSource;
 
 
-        public FormCentru(String judet)
+        public FormCentru()
         {
-            this.judet = judet;
             InitializeComponent();
+            loadDataGridView1();
+            
         }
 
         private void loadDataGridView1()
         {
-            listDonatori = serviceDonator.GetDonatoriByJudet(judet);
+            listDonatori = serviceDonator.GetAllDonatori();
+
             bindingSource = new BindingSource(listDonatori, null);
             dataGridView1.DataSource = bindingSource;
             if (bindingSource.Position >= 0)
@@ -35,6 +36,5 @@ namespace GUI
                 dataGridView1.Rows[bindingSource.Position].Selected = true;
             }
         }
-
     }
 }

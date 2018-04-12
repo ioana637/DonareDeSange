@@ -13,10 +13,10 @@ namespace CentruDeTransfuzie1.Data
         public static void Initialize(CTContext context)
         {
 
-            //context.Database.Migrate();
-            //initializeMedic(context);
-            //InitializeCereri(context);
-            //InitializeDonatori(context);
+            context.Database.Migrate();
+            initializeMedic(context);
+            InitializeCereri(context);
+            InitializeDonatori(context);
 
         }
 
@@ -81,23 +81,17 @@ namespace CentruDeTransfuzie1.Data
             context.Donator.Add(donator1);
             context.UserDonator.Add(userDonator1);
 
-            context.Donator.Add(d1);
-            context.UserDonator.Add(ud1);
+            //context.Donator.Add(d1);
+            //context.UserDonator.Add(ud1);
 
-            context.Donator.Add(d2);
-            context.UserDonator.Add(ud2);
+            //context.Donator.Add(d2);
+            //context.UserDonator.Add(ud2);
 
-            context.Donator.Add(d3);
-            context.UserDonator.Add(ud3);
+            //context.Donator.Add(d3);
+            //context.UserDonator.Add(ud3);
 
             context.SaveChanges();
 
         }
-
-
-
-
-
-
     }
 }
