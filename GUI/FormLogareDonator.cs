@@ -40,6 +40,7 @@ namespace GUI
                 {
                     FormDonator formDonator = new FormDonator();
                     formDonator.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -54,7 +55,7 @@ namespace GUI
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
