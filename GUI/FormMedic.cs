@@ -23,7 +23,6 @@ namespace GUI
             InitializeComponent();
             this.serviceMedic = service;
             this.usernameMedic = username;
-<<<<<<< HEAD
             initComboGrupa();
             initComboRh();
             Refresh();
@@ -32,10 +31,8 @@ namespace GUI
 
         private void Refresh()
         {
-=======
             //createDataGridView2();
             loadDataGridView2();
->>>>>>> master
 
 
             initCampuri();

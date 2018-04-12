@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 ﻿using CentruDeTransfuzie1.model;
 using CentruDeTransfuzie1.utils;
-=======
 ﻿using CentruDeTransfuzie1.utils;
->>>>>>> master
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
