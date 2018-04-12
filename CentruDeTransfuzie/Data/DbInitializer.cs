@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CentruDeTransfuzie1.model;
+using CentruDeTransfuzie1.utils;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +19,24 @@ namespace CentruDeTransfuzie1.Data
             initializeMedic(context);
             InitializeCereri(context);
             InitializeDonatori(context);
+            InitializeStoc(context);
 
         }
 
+        private static void InitializeStoc(CTContext context)
+        {
+            if (context.Stoc.Any()) return;
+            context.Stoc.Add(new Stoc(GrupaSange.OI, TipRh.Pozitiv));
+            context.Stoc.Add(new Stoc(GrupaSange.OI, TipRh.Negativ));
+            context.Stoc.Add(new Stoc(GrupaSange.AII, TipRh.Pozitiv));
+            context.Stoc.Add(new Stoc(GrupaSange.AII, TipRh.Negativ));
+            context.Stoc.Add(new Stoc(GrupaSange.BIII, TipRh.Pozitiv));
+            context.Stoc.Add(new Stoc(GrupaSange.BIII, TipRh.Negativ));
+            context.Stoc.Add(new Stoc(GrupaSange.ABIV, TipRh.Pozitiv));
+            context.Stoc.Add(new Stoc(GrupaSange.ABIV, TipRh.Negativ));
+            context.SaveChanges();
+
+        }
 
         public static void initializeMedic(CTContext context)
         {

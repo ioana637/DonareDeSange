@@ -57,6 +57,37 @@ namespace Service
             }
 
         }
+
+        public void AddCerere(Cerere cerere, String username)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                UserMedic userMedic = unitOfWork.UserMedicRepo.GetBy(um => um.Username.Equals(username));
+                Medic medic = unitOfWork.MedicRepo.GetBy(m => m.UserMedic.Equals(userMedic));
+                cerere.Medic = medic;
+                unitOfWork.CerereRepo.Save(cerere);
+                unitOfWork.Save();
+                Cerere cerereSalvata = unitOfWork.CerereRepo.GetBy(c => c.RH.Equals(cerere.RH) && c.Grupa.Equals(cerere.Grupa) && c.Medic.Equals(cerere.Medic) && c.Data.Equals(cerere.Data));
+                medic.Cereri.Add(cerereSalvata);
+                unitOfWork.Save();
+
+            }
+        }
+
+        public void UpdateCerere(Cerere cerere)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                Cerere cerereSalvata = unitOfWork.CerereRepo.GetBy(c => c.Id.Equals(cerere.Id));
+                cerereSalvata.CantitateSange = cerere.CantitateSange;
+                cerereSalvata.CantitateGlobuleRosii = cerere.CantitateGlobuleRosii;
+                cerereSalvata.CantitatePlasma = cerere.CantitatePlasma;
+                cerereSalvata.CantitateTrombocite = cerere.CantitateTrombocite;
+                unitOfWork.CerereRepo.Update(cerereSalvata);
+                unitOfWork.Save();
+
+            }
+        }
     }
 }
 
