@@ -81,5 +81,14 @@ namespace Service
 
         }
 
+        public void UpdateDonator(Donator donator)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                unitOfWork.DonatorRepo.Update(donator);
+                unitOfWork.Save();
+            }
+        }
+
     }
 }

@@ -158,6 +158,10 @@
     <Compile Include="Migrations\20180408173314_constrangeri.designer.cs">
       <DependentUpon>20180408173314_constrangeri.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20180412130740_AddTensiuneDiastolicaSistolica.cs" />
+    <Compile Include="Migrations\20180412130740_AddTensiuneDiastolicaSistolica.designer.cs">
+      <DependentUpon>20180412130740_AddTensiuneDiastolicaSistolica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\CTContextModelSnapshot.cs" />
     <Compile Include="model\Analiza.cs" />
     <Compile Include="model\CentruTransfuzie.cs" />

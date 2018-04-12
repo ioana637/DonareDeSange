@@ -38,5 +38,13 @@ namespace GUI
             }
         }
 
+      
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Donator donator=(Donator)dataGridView1.Rows[e.RowIndex].DataBoundItem;
+            FormModificareDonator form = new FormModificareDonator(donator,this.serviceDonator);
+            form.Show();
+        }
     }
 }
