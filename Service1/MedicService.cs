@@ -58,6 +58,33 @@ namespace Service
 
             }
         }
-    }
+
+        public List<Pacient> GetAllPacients()
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<Pacient> pacienti = new List<Pacient>();
+
+                unitOfWork.PacientRepo.GetAll();
+                return pacienti;
+            }
+        }
+
+
+        public List<Pacient> GetPacientByMedic(string username)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<Pacient> pacienti = new List<Pacient>();
+                UserMedic userMedic = unitOfWork.UserMedicRepo.GetBy(um => um.Username.Equals(username));
+                Medic medic = unitOfWork.MedicRepo.GetBy(m => m.UserMedic.Equals(userMedic));
+
+                unitOfWork.PacientRepo.GetAll();
+                return pacienti;
+
+            }
+
+            
+        }
 }
 
