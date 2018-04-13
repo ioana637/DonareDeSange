@@ -22,6 +22,7 @@ namespace Repository
         private GenericRepository<UserDonator> userDonatorRepo;
         private GenericRepository<Medic> medicRepo;
         private GenericRepository<UserMedic> userMedicRepo;
+        private GenericRepository<Pacient> pacientRepo;
 
         private CTContext context;
 
@@ -69,6 +70,16 @@ namespace Repository
                 if (userMedicRepo == null)
                     userMedicRepo = new GenericRepository<UserMedic>(context);
                 return userMedicRepo;
+            }
+        }
+
+        public GenericRepository<Pacient> PacientRepo
+        {
+            get
+            {
+                if (pacientRepo == null)
+                    pacientRepo = new GenericRepository<Pacient>(context);
+                return pacientRepo;
             }
         }
 

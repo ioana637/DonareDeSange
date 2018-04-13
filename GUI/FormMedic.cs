@@ -27,5 +27,7 @@ namespace GUI
             formLogareMedic.Closed += (s, args) => this.Close();
             formLogareMedic.ShowDialog();
         }
+
+       
     }
 }
