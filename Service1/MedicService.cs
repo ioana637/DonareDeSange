@@ -42,12 +42,19 @@ namespace Service
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
+
                 Pacient pacient = new Pacient(nume, prenume, email, eDonator);
-                
+                Medic medic = unitOfWork.MedicRepo.GetBy(m => m.Id.Equals(idMedic));
+                pacient.Medic = medic;
+
                 unitOfWork.PacientRepo.Save(pacient);
                 unitOfWork.Save();
-                pacient = unitOfWork.PacientRepo.GetBy(d => d.Email.Equals(email));
+
+                Pacient pacientSalvat = unitOfWork.PacientRepo.GetBy(d => d.Email.Equals(email));
+                medic.Pacienti.Add(pacientSalvat);
                 unitOfWork.Save();
+
+             
 
             }
         }
