@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem96 = new System.Windows.Forms.ListViewItem("- hipertensiune");
-            System.Windows.Forms.ListViewItem listViewItem97 = new System.Windows.Forms.ListViewItem("- boli de inimă");
-            System.Windows.Forms.ListViewItem listViewItem98 = new System.Windows.Forms.ListViewItem("- boli renale");
-            System.Windows.Forms.ListViewItem listViewItem99 = new System.Windows.Forms.ListViewItem("- boli psihice");
-            System.Windows.Forms.ListViewItem listViewItem100 = new System.Windows.Forms.ListViewItem("- boli hepatice");
-            System.Windows.Forms.ListViewItem listViewItem101 = new System.Windows.Forms.ListViewItem("- boli endocrine");
-            System.Windows.Forms.ListViewItem listViewItem102 = new System.Windows.Forms.ListViewItem("-Hepatită( de orice tip)");
-            System.Windows.Forms.ListViewItem listViewItem103 = new System.Windows.Forms.ListViewItem("-TBC");
-            System.Windows.Forms.ListViewItem listViewItem104 = new System.Windows.Forms.ListViewItem("-Sifilis");
-            System.Windows.Forms.ListViewItem listViewItem105 = new System.Windows.Forms.ListViewItem("-Malarie");
-            System.Windows.Forms.ListViewItem listViewItem106 = new System.Windows.Forms.ListViewItem("-Epilepsie și alte boli neurologice");
-            System.Windows.Forms.ListViewItem listViewItem107 = new System.Windows.Forms.ListViewItem("-Boli psihice");
-            System.Windows.Forms.ListViewItem listViewItem108 = new System.Windows.Forms.ListViewItem("-Bruceloză");
-            System.Windows.Forms.ListViewItem listViewItem109 = new System.Windows.Forms.ListViewItem("-Ulcer");
-            System.Windows.Forms.ListViewItem listViewItem110 = new System.Windows.Forms.ListViewItem("-Diabet zaharat");
-            System.Windows.Forms.ListViewItem listViewItem111 = new System.Windows.Forms.ListViewItem("-Boli de inimă");
-            System.Windows.Forms.ListViewItem listViewItem112 = new System.Windows.Forms.ListViewItem("-Boli de piele: psoriazis, vitiligo");
-            System.Windows.Forms.ListViewItem listViewItem113 = new System.Windows.Forms.ListViewItem("-Miopie forte: peste (-) 6 dioptrii");
-            System.Windows.Forms.ListViewItem listViewItem114 = new System.Windows.Forms.ListViewItem("-Cancer");
+            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("- hipertensiune");
+            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("- boli de inimă");
+            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("- boli renale");
+            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("- boli psihice");
+            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("- boli hepatice");
+            System.Windows.Forms.ListViewItem listViewItem25 = new System.Windows.Forms.ListViewItem("- boli endocrine");
+            System.Windows.Forms.ListViewItem listViewItem26 = new System.Windows.Forms.ListViewItem("-Hepatită( de orice tip)");
+            System.Windows.Forms.ListViewItem listViewItem27 = new System.Windows.Forms.ListViewItem("-TBC");
+            System.Windows.Forms.ListViewItem listViewItem28 = new System.Windows.Forms.ListViewItem("-Sifilis");
+            System.Windows.Forms.ListViewItem listViewItem29 = new System.Windows.Forms.ListViewItem("-Malarie");
+            System.Windows.Forms.ListViewItem listViewItem30 = new System.Windows.Forms.ListViewItem("-Epilepsie și alte boli neurologice");
+            System.Windows.Forms.ListViewItem listViewItem31 = new System.Windows.Forms.ListViewItem("-Boli psihice");
+            System.Windows.Forms.ListViewItem listViewItem32 = new System.Windows.Forms.ListViewItem("-Bruceloză");
+            System.Windows.Forms.ListViewItem listViewItem33 = new System.Windows.Forms.ListViewItem("-Ulcer");
+            System.Windows.Forms.ListViewItem listViewItem34 = new System.Windows.Forms.ListViewItem("-Diabet zaharat");
+            System.Windows.Forms.ListViewItem listViewItem35 = new System.Windows.Forms.ListViewItem("-Boli de inimă");
+            System.Windows.Forms.ListViewItem listViewItem36 = new System.Windows.Forms.ListViewItem("-Boli de piele: psoriazis, vitiligo");
+            System.Windows.Forms.ListViewItem listViewItem37 = new System.Windows.Forms.ListViewItem("-Miopie forte: peste (-) 6 dioptrii");
+            System.Windows.Forms.ListViewItem listViewItem38 = new System.Windows.Forms.ListViewItem("-Cancer");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDonator));
             this.tabDonator = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -54,17 +54,17 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.listView2 = new System.Windows.Forms.ListView();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTratament = new System.Windows.Forms.CheckBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxConditii = new System.Windows.Forms.CheckBox();
             this.buttonVreauSaDonez = new System.Windows.Forms.Button();
             this.textBoxPrenume = new System.Windows.Forms.TextBox();
             this.textBoxNume = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBoala = new System.Windows.Forms.CheckBox();
+            this.checkBoxInterventii = new System.Windows.Forms.CheckBox();
+            this.checkBoxGreutate = new System.Windows.Forms.CheckBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -111,6 +111,7 @@
             this.textPswNewR = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.textPswNew = new System.Windows.Forms.TextBox();
+            this.checkBoxInsarcinata = new System.Windows.Forms.CheckBox();
             this.tabDonator.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -178,18 +179,19 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.checkBoxInsarcinata);
+            this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.listView2);
-            this.tabPage2.Controls.Add(this.checkBox5);
+            this.tabPage2.Controls.Add(this.checkBoxTratament);
             this.tabPage2.Controls.Add(this.label29);
             this.tabPage2.Controls.Add(this.label28);
-            this.tabPage2.Controls.Add(this.checkBox4);
+            this.tabPage2.Controls.Add(this.checkBoxConditii);
             this.tabPage2.Controls.Add(this.buttonVreauSaDonez);
             this.tabPage2.Controls.Add(this.textBoxPrenume);
             this.tabPage2.Controls.Add(this.textBoxNume);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.checkBox3);
-            this.tabPage2.Controls.Add(this.checkBox2);
-            this.tabPage2.Controls.Add(this.checkBox1);
+            this.tabPage2.Controls.Add(this.checkBoxBoala);
+            this.tabPage2.Controls.Add(this.checkBoxInterventii);
+            this.tabPage2.Controls.Add(this.checkBoxGreutate);
             this.tabPage2.Controls.Add(this.listView1);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label2);
@@ -205,28 +207,28 @@
             // 
             this.listView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem96,
-            listViewItem97,
-            listViewItem98,
-            listViewItem99,
-            listViewItem100,
-            listViewItem101});
-            this.listView2.Location = new System.Drawing.Point(72, 371);
+            listViewItem20,
+            listViewItem21,
+            listViewItem22,
+            listViewItem23,
+            listViewItem24,
+            listViewItem25});
+            this.listView2.Location = new System.Drawing.Point(72, 389);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(391, 81);
+            this.listView2.Size = new System.Drawing.Size(470, 81);
             this.listView2.TabIndex = 15;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.List;
             // 
-            // checkBox5
+            // checkBoxTratament
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(53, 343);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(451, 28);
-            this.checkBox5.TabIndex = 14;
-            this.checkBox5.Text = "Donatorii să nu fie sub tratament pentru afecțiunile:";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBoxTratament.AutoSize = true;
+            this.checkBoxTratament.Location = new System.Drawing.Point(53, 355);
+            this.checkBoxTratament.Name = "checkBoxTratament";
+            this.checkBoxTratament.Size = new System.Drawing.Size(519, 28);
+            this.checkBoxTratament.TabIndex = 14;
+            this.checkBoxTratament.Text = "Sunt sub tratament pentru una dintre afecțiunile urmatoare:";
+            this.checkBoxTratament.UseVisualStyleBackColor = true;
             // 
             // label29
             // 
@@ -248,26 +250,27 @@
             this.label28.TabIndex = 12;
             this.label28.Text = "Nume";
             // 
-            // checkBox4
+            // checkBoxConditii
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(53, 544);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(398, 28);
-            this.checkBox4.TabIndex = 11;
-            this.checkBox4.Text = "Sunt de acord cu condițiile dinaintea donării";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBoxConditii.AutoSize = true;
+            this.checkBoxConditii.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxConditii.Location = new System.Drawing.Point(53, 544);
+            this.checkBoxConditii.Name = "checkBoxConditii";
+            this.checkBoxConditii.Size = new System.Drawing.Size(398, 28);
+            this.checkBoxConditii.TabIndex = 11;
+            this.checkBoxConditii.Text = "Sunt de acord cu condițiile dinaintea donării";
+            this.checkBoxConditii.UseVisualStyleBackColor = true;
             // 
             // buttonVreauSaDonez
             // 
             this.buttonVreauSaDonez.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonVreauSaDonez.Location = new System.Drawing.Point(162, 589);
+            this.buttonVreauSaDonez.Location = new System.Drawing.Point(133, 589);
             this.buttonVreauSaDonez.Name = "buttonVreauSaDonez";
-            this.buttonVreauSaDonez.Size = new System.Drawing.Size(164, 38);
+            this.buttonVreauSaDonez.Size = new System.Drawing.Size(175, 38);
             this.buttonVreauSaDonez.TabIndex = 10;
             this.buttonVreauSaDonez.Text = "Vreau să donez!";
             this.buttonVreauSaDonez.UseVisualStyleBackColor = true;
+            this.buttonVreauSaDonez.Click += new System.EventHandler(this.buttonVreauSaDonez_Click);
             // 
             // textBoxPrenume
             // 
@@ -287,63 +290,63 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(50, 446);
+            this.label4.Location = new System.Drawing.Point(50, 457);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(214, 24);
             this.label4.TabIndex = 7;
             this.label4.Text = "*Vreau să donez pentru:";
             // 
-            // checkBox3
+            // checkBoxBoala
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(53, 166);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(516, 28);
-            this.checkBox3.TabIndex = 6;
-            this.checkBox3.Text = "Donatorii nu trebuie să aibă sau să fi avut următoarele boli:";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBoxBoala.AutoSize = true;
+            this.checkBoxBoala.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBoala.Location = new System.Drawing.Point(53, 166);
+            this.checkBoxBoala.Name = "checkBoxBoala";
+            this.checkBoxBoala.Size = new System.Drawing.Size(383, 28);
+            this.checkBoxBoala.TabIndex = 6;
+            this.checkBoxBoala.Text = "Sunt suferind de una din bolile de mai jos:";
+            this.checkBoxBoala.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkBoxInterventii
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(53, 138);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(479, 28);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "Să nu fii suferit în ultimele 6 luni intervenții chirurgicale";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBoxInterventii.AutoSize = true;
+            this.checkBoxInterventii.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxInterventii.Location = new System.Drawing.Point(53, 138);
+            this.checkBoxInterventii.Name = "checkBoxInterventii";
+            this.checkBoxInterventii.Size = new System.Drawing.Size(442, 28);
+            this.checkBoxInterventii.TabIndex = 5;
+            this.checkBoxInterventii.Text = "Am suferit intervenții chirurgicale în ultimele 6 luni";
+            this.checkBoxInterventii.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // checkBoxGreutate
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(53, 110);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(199, 28);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Greutate peste 50kg";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxGreutate.AutoSize = true;
+            this.checkBoxGreutate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGreutate.Location = new System.Drawing.Point(53, 110);
+            this.checkBoxGreutate.Name = "checkBoxGreutate";
+            this.checkBoxGreutate.Size = new System.Drawing.Size(199, 28);
+            this.checkBoxGreutate.TabIndex = 4;
+            this.checkBoxGreutate.Text = "Greutate peste 50kg";
+            this.checkBoxGreutate.UseVisualStyleBackColor = true;
             // 
             // listView1
             // 
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem102,
-            listViewItem103,
-            listViewItem104,
-            listViewItem105,
-            listViewItem106,
-            listViewItem107,
-            listViewItem108,
-            listViewItem109,
-            listViewItem110,
-            listViewItem111,
-            listViewItem112,
-            listViewItem113,
-            listViewItem114});
+            listViewItem26,
+            listViewItem27,
+            listViewItem28,
+            listViewItem29,
+            listViewItem30,
+            listViewItem31,
+            listViewItem32,
+            listViewItem33,
+            listViewItem34,
+            listViewItem35,
+            listViewItem36,
+            listViewItem37,
+            listViewItem38});
             this.listView1.Location = new System.Drawing.Point(72, 194);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(535, 155);
@@ -355,7 +358,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(49, 74);
+            this.label3.Location = new System.Drawing.Point(49, 54);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(736, 25);
             this.label3.TabIndex = 1;
@@ -808,6 +811,16 @@
             this.textPswNew.TabIndex = 39;
             this.textPswNew.UseSystemPasswordChar = true;
             // 
+            // checkBoxInsarcinata
+            // 
+            this.checkBoxInsarcinata.AutoSize = true;
+            this.checkBoxInsarcinata.Location = new System.Drawing.Point(53, 82);
+            this.checkBoxInsarcinata.Name = "checkBoxInsarcinata";
+            this.checkBoxInsarcinata.Size = new System.Drawing.Size(121, 28);
+            this.checkBoxInsarcinata.TabIndex = 16;
+            this.checkBoxInsarcinata.Text = "Însărcinată";
+            this.checkBoxInsarcinata.UseVisualStyleBackColor = true;
+            // 
             // FormDonator
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -849,16 +862,16 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBoxInterventii;
+        private System.Windows.Forms.CheckBox checkBoxGreutate;
+        private System.Windows.Forms.CheckBox checkBoxBoala;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxPrenume;
         private System.Windows.Forms.TextBox textBoxNume;
         private System.Windows.Forms.Button buttonVreauSaDonez;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBoxConditii;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ListBox listBox1;
@@ -897,10 +910,11 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBoxTratament;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TextBox textPswNewR;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox textPswNew;
+        private System.Windows.Forms.CheckBox checkBoxInsarcinata;
     }
 }
