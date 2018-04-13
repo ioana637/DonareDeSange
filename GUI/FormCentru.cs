@@ -9,31 +9,22 @@ namespace GUI
 {
     public partial class FormCentru : Form
     {
-<<<<<<< HEAD
-        private DonatorService serviceDonator = new DonatorService();
-=======
         private DonatorService serviceDonator=new DonatorService();
         private CentruService serviceCentru=new CentruService();
         private string judet;
->>>>>>> TasksTeo
         private List<Donator> listDonatori = new List<Donator>();
         private List<Cerere> listCereri = new List<Cerere>();
         private List<Stoc> listStocuri = new List<Stoc>();
         private BindingSource bindingSource;
 
-<<<<<<< HEAD
         public FormCentru(DonatorService service)
         {
             serviceDonator = service;
             InitializeComponent();
             LoadDataGridView1();
-=======
-        public FormCentru()
-        {
-            InitializeComponent();
             loadDataGridView3();
             loadStocSange();
->>>>>>> TasksTeo
+
         }
 
         private void LoadDataGridView1()
@@ -84,7 +75,6 @@ namespace GUI
             {
                 String dataNasterii = textBox1.Text;
 
-<<<<<<< HEAD
                 if (dataNasterii.Equals(""))
                     LoadDataGridView1();
                 else
@@ -137,14 +127,7 @@ namespace GUI
                 }
             }
         }
-=======
-        private void buttonLogOut_Click(object sender, EventArgs e)
-        {
-            FormLogareCentru formLogareCentru = new FormLogareCentru(serviceCentru);
-            this.Hide();
-            formLogareCentru.Closed += (s, args) => this.Close();
-            formLogareCentru.ShowDialog();
-        }
+
 
         private void loadDataGridView3()
         {
@@ -159,6 +142,13 @@ namespace GUI
             dataGridViewStocSange.DataSource = listStocuri;
         }
 
->>>>>>> TasksTeo
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FormLogareCentru formLogareCentru = new FormLogareCentru(serviceCentru);
+            this.Hide();
+            formLogareCentru.Closed += (s, args) => this.Close();
+            formLogareCentru.ShowDialog();
+
+        }
     }
 }
