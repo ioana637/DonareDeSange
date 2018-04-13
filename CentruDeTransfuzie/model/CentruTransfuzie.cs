@@ -21,6 +21,10 @@ public class CentruTransfuzie {
 
     public List<Spital> Spitale { get; set; }
     public List<PungaSange> PungiSange { get; set; }
+
+    [Required(ErrorMessage = "Password is required")]
+    [DataType(DataType.Password)]
+    public string Parola { get; set; }
     public CentruTransfuzie()
     {
     }
