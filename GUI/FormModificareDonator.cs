@@ -14,9 +14,11 @@ namespace GUI
     public partial class FormModificareDonator : Form
     {
         Donator donator;
+        FormCentru parinte;
         DonatorService service;
-        public FormModificareDonator(Donator donator,DonatorService service)
+        public FormModificareDonator(Donator donator,DonatorService service,FormCentru parinte)
         {
+            this.parinte=parinte;
             this.service = service;
             this.donator = donator;
             InitializeComponent();
@@ -40,6 +42,7 @@ namespace GUI
                 textBoxPuls.Clear();
                 textBoxTensSist.Clear();
                 textBoxTensDiast.Clear();
+                parinte.LoadDataGridView1();
 
             }
             catch (System.ComponentModel.DataAnnotations.ValidationException error)

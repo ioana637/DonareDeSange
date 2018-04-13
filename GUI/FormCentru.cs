@@ -27,12 +27,12 @@ namespace GUI
 
         }
 
-        private void LoadDataGridView1()
+        public void LoadDataGridView1()
         {
             listDonatori = serviceDonator.GetAllDonatori();
 
             bindingSource = new BindingSource(listDonatori, null);
-            dataGridView1.DataSource = bindingSource;
+            dataGridView1.DataSource = listDonatori;
             if (bindingSource.Position >= 0)
             {
                 dataGridView1.Rows[bindingSource.Position].Selected = true;
@@ -43,7 +43,7 @@ namespace GUI
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             Donator donator=(Donator)dataGridView1.Rows[e.RowIndex].DataBoundItem;
-            FormModificareDonator form = new FormModificareDonator(donator,this.serviceDonator);
+            FormModificareDonator form = new FormModificareDonator(donator,this.serviceDonator,this);
             form.Show();
         }
 
