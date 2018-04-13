@@ -13,10 +13,10 @@ namespace CentruDeTransfuzie1.Data
         public static void Initialize(CTContext context)
         {
 
-            //context.Database.Migrate();
-            //initializeMedic(context);
-            //InitializeCereri(context);
-            //InitializeDonatori(context);
+            context.Database.Migrate();
+            initializeMedic(context);
+            InitializeCereri(context);
+            InitializeDonatori(context);
 
         }
 
@@ -70,25 +70,25 @@ namespace CentruDeTransfuzie1.Data
             Donator donator1 = new Donator("Popescu", "Ion", "M", DateTime.Parse("12-02-98"), "Cluj-Napoca", "Cluj-Napoca", "Cluj", null, null, null, "0712121212", "popescu@yahoo.com");
             UserDonator userDonator1 = new UserDonator("popescu", "8287458823facb8ff918dbfabcd22ccb"); // parola este "parola"
 
-            Donator d1 = new Donator("Dobrovat", "Mihai", "Masculin", DateTime.Parse("22/10/1996"), "Str. Buftea", "Cluj-Napoca", "Cluj", "Str. Buftea", "Cluj-Napoca", "Cluj", "0123456789", "mihai@yahoo.com");
-            Donator d2 = new Donator("Marin", "Andrei", "Masculin", DateTime.Parse("23/11/1997"), "Str. Garii", "Iasi", "Iasi", "Str. Garii", "Iasi", "Iasi", "0223456789", "andrei@yahoo.com");
-            Donator d3 = new Donator("Acatrinei", "Maria", "Feminin", DateTime.Parse("24/12/1998"), "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "0323456789", "maria@yahoo.com");
+            //Donator d1 = new Donator("Dobrovat", "Mihai", "Masculin", DateTime.Parse("22/10/1996"), "Str. Buftea", "Cluj-Napoca", "Cluj", "Str. Buftea", "Cluj-Napoca", "Cluj", "0123456789", "mihai@yahoo.com");
+            //Donator d2 = new Donator("Marin", "Andrei", "Masculin", DateTime.Parse("23/11/1997"), "Str. Garii", "Iasi", "Iasi", "Str. Garii", "Iasi", "Iasi", "0223456789", "andrei@yahoo.com");
+            //Donator d3 = new Donator("Acatrinei", "Maria", "Feminin", DateTime.Parse("24/12/1998"), "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "0323456789", "maria@yahoo.com");
 
-            UserDonator ud1 = new UserDonator("Dmihai", "1234");
-            UserDonator ud2 = new UserDonator("Mandrei", "1234");
-            UserDonator ud3 = new UserDonator("Amaria", "1234");
+            //UserDonator ud1 = new UserDonator("Dmihai", "1234");
+            //UserDonator ud2 = new UserDonator("Mandrei", "1234");
+            //UserDonator ud3 = new UserDonator("Amaria", "1234");
 
             context.Donator.Add(donator1);
             context.UserDonator.Add(userDonator1);
 
-            context.Donator.Add(d1);
-            context.UserDonator.Add(ud1);
+            //context.Donator.Add(d1);
+            //context.UserDonator.Add(ud1);
 
-            context.Donator.Add(d2);
-            context.UserDonator.Add(ud2);
+            //context.Donator.Add(d2);
+            //context.UserDonator.Add(ud2);
 
-            context.Donator.Add(d3);
-            context.UserDonator.Add(ud3);
+            //context.Donator.Add(d3);
+            //context.UserDonator.Add(ud3);
 
             context.SaveChanges();
 
