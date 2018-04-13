@@ -77,9 +77,8 @@ namespace Service
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
                 List<Pacient> pacienti = new List<Pacient>();
-                UserMedic userMedic = unitOfWork.UserMedicRepo.GetBy(um => um.Id.Equals(idMedic));
                 Medic medic = unitOfWork.MedicRepo.GetBy(m => m.Id.Equals(idMedic));
-                unitOfWork.PacientRepo.GetAll().Where(p => p.Medic.UserMedic.Username.Equals(idMedic)).ToList().ForEach(p => { pacienti.Add(p); });
+                unitOfWork.PacientRepo.GetAll().Where(p => p.Medic.UserMedic.Id.Equals(idMedic)).ToList().ForEach(p => { pacienti.Add(p); });
                 return pacienti;
 
             }
