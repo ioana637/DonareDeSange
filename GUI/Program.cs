@@ -27,7 +27,7 @@ namespace GUI
             //Application.Run(new FormCentru());
             //Application.Run(new FormAnalizeSange());
             //Application.Run(new FormLogareCentru());
-            Application.Run(new FormRegisterDonator());
+           // Application.Run(new FormRegisterDonator());
         }
     }
 }

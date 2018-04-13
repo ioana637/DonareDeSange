@@ -45,11 +45,16 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.buttonLogout = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPrenume = new System.Windows.Forms.TextBox();
+            this.txtNume = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.buttonLogout = new System.Windows.Forms.Button();
+            this.checkDonator = new System.Windows.Forms.CheckBox();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -223,6 +228,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(820, 356);
             this.dataGridView1.TabIndex = 0;
+            
             // 
             // tabControl1
             // 
@@ -240,6 +246,82 @@
             this.tabControl1.Size = new System.Drawing.Size(828, 445);
             this.tabControl1.TabIndex = 0;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.checkDonator);
+            this.tabPage4.Controls.Add(this.button2);
+            this.tabPage4.Controls.Add(this.txtEmail);
+            this.tabPage4.Controls.Add(this.txtPrenume);
+            this.tabPage4.Controls.Add(this.txtNume);
+            this.tabPage4.Controls.Add(this.label8);
+            this.tabPage4.Controls.Add(this.label7);
+            this.tabPage4.Controls.Add(this.label6);
+            this.tabPage4.Location = new System.Drawing.Point(4, 27);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(820, 414);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Adaugare Pacient";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(286, 333);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Adauga";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(167, 249);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(194, 24);
+            this.txtEmail.TabIndex = 5;
+            // 
+            // txtPrenume
+            // 
+            this.txtPrenume.Location = new System.Drawing.Point(167, 177);
+            this.txtPrenume.Name = "txtPrenume";
+            this.txtPrenume.Size = new System.Drawing.Size(194, 24);
+            this.txtPrenume.TabIndex = 4;
+            // 
+            // txtNume
+            // 
+            this.txtNume.Location = new System.Drawing.Point(167, 110);
+            this.txtNume.Name = "txtNume";
+            this.txtNume.Size = new System.Drawing.Size(194, 24);
+            this.txtNume.TabIndex = 3;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(140, 228);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 18);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Email";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(140, 156);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 18);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Prenume";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(140, 89);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(48, 18);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Nume";
+            // 
             // buttonLogout
             // 
             this.buttonLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -252,40 +334,15 @@
             this.buttonLogout.UseVisualStyleBackColor = true;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
-            // tabPage4
+            // checkDonator
             // 
-            this.tabPage4.Controls.Add(this.textBox6);
-            this.tabPage4.Controls.Add(this.textBox5);
-            this.tabPage4.Controls.Add(this.textBox4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 27);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(820, 414);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(142, 60);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(171, 24);
-            this.textBox4.TabIndex = 0;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(142, 164);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(171, 24);
-            this.textBox5.TabIndex = 1;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(142, 112);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(171, 24);
-            this.textBox6.TabIndex = 2;
+            this.checkDonator.AutoSize = true;
+            this.checkDonator.Location = new System.Drawing.Point(167, 291);
+            this.checkDonator.Name = "checkDonator";
+            this.checkDonator.Size = new System.Drawing.Size(115, 22);
+            this.checkDonator.TabIndex = 7;
+            this.checkDonator.Text = "Este Donator";
+            this.checkDonator.UseVisualStyleBackColor = true;
             // 
             // FormMedic
             // 
@@ -332,8 +389,13 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPrenume;
+        private System.Windows.Forms.TextBox txtNume;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox checkDonator;
     }
 }
