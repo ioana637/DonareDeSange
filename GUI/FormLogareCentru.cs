@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,11 @@ namespace GUI
 {
     public partial class FormLogareCentru : Form
     {
-        public FormLogareCentru()
+        private CentruService serviceCentru;
+
+        public FormLogareCentru(CentruService serviceCentru)
         {
+            this.serviceCentru = serviceCentru;
             InitializeComponent();
         }
     }

@@ -1,4 +1,5 @@
 ﻿using CentruDeTransfuzie1;
+using CentruDeTransfuzie1.model;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -24,6 +25,7 @@ namespace Repository
         private GenericRepository<Medic> medicRepo;
         private GenericRepository<UserMedic> userMedicRepo;
         private GenericRepository<Cerere> cerereRepo;
+        private GenericRepository<Stoc> stocRepo;
 
         private CTContext context;
 
@@ -81,6 +83,16 @@ namespace Repository
                 if (cerereRepo == null)
                     cerereRepo = new GenericRepository<Cerere>(context);
                 return cerereRepo;
+            }
+        }
+
+        public GenericRepository<Stoc> StocRepo
+        {
+            get
+            {
+                if (stocRepo == null)
+                    stocRepo = new GenericRepository<Stoc>(context);
+                return stocRepo;
             }
         }
 

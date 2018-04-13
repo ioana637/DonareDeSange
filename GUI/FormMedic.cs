@@ -24,8 +24,6 @@ namespace GUI
             this.usernameMedic = username;
             //createDataGridView2();
             loadDataGridView2();
-            
-
 
         }
 

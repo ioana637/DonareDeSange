@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCentru));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
@@ -40,8 +41,14 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+<<<<<<< HEAD
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+=======
+            this.tabPageStocSange = new System.Windows.Forms.TabPage();
+            this.buttonLogOut = new System.Windows.Forms.Button();
+            this.dataGridViewStocSange = new System.Windows.Forms.DataGridView();
+>>>>>>> TasksTeo
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -49,6 +56,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPageStocSange.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStocSange)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -59,7 +68,8 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Controls.Add(this.tabPageStocSange);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(6, 23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -127,7 +137,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(18, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 18);
+            this.label1.Size = new System.Drawing.Size(64, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Filtrează";
             // 
@@ -197,6 +207,7 @@
             this.dataGridView3.Size = new System.Drawing.Size(424, 242);
             this.dataGridView3.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(264, 29);
@@ -213,12 +224,49 @@
             this.button1.Text = "Filtreaza";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+=======
+            // tabPageStocSange
+            // 
+            this.tabPageStocSange.Controls.Add(this.dataGridViewStocSange);
+            this.tabPageStocSange.Location = new System.Drawing.Point(4, 27);
+            this.tabPageStocSange.Name = "tabPageStocSange";
+            this.tabPageStocSange.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageStocSange.Size = new System.Drawing.Size(438, 343);
+            this.tabPageStocSange.TabIndex = 3;
+            this.tabPageStocSange.Text = "Stoc Sange";
+            this.tabPageStocSange.UseVisualStyleBackColor = true;
+            // 
+            // buttonLogOut
+            // 
+            this.buttonLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonLogOut.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogOut.Image")));
+            this.buttonLogOut.Location = new System.Drawing.Point(383, 3);
+            this.buttonLogOut.Name = "buttonLogOut";
+            this.buttonLogOut.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonLogOut.Size = new System.Drawing.Size(57, 41);
+            this.buttonLogOut.TabIndex = 5;
+            this.buttonLogOut.UseVisualStyleBackColor = true;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
+            // 
+            // dataGridViewStocSange
+            // 
+            this.dataGridViewStocSange.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewStocSange.Location = new System.Drawing.Point(6, 26);
+            this.dataGridViewStocSange.Name = "dataGridViewStocSange";
+            this.dataGridViewStocSange.Size = new System.Drawing.Size(424, 178);
+            this.dataGridViewStocSange.TabIndex = 0;
+>>>>>>> TasksTeo
             // 
             // FormCentru
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(762, 396);
+=======
+            this.ClientSize = new System.Drawing.Size(452, 396);
+            this.Controls.Add(this.buttonLogOut);
+>>>>>>> TasksTeo
             this.Controls.Add(this.tabControl1);
             this.Name = "FormCentru";
             this.Text = "FormCentru";
@@ -231,6 +279,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPageStocSange.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStocSange)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -249,7 +299,13 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView3;
+<<<<<<< HEAD
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
+=======
+        private System.Windows.Forms.Button buttonLogOut;
+        private System.Windows.Forms.TabPage tabPageStocSange;
+        private System.Windows.Forms.DataGridView dataGridViewStocSange;
+>>>>>>> TasksTeo
     }
 }
