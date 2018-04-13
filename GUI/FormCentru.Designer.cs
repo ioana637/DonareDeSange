@@ -42,7 +42,9 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.tabPageStocSange = new System.Windows.Forms.TabPage();
             this.buttonLogOut = new System.Windows.Forms.Button();
+            this.dataGridViewStocSange = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -50,6 +52,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPageStocSange.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStocSange)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -60,6 +64,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPageStocSange);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(6, 23);
             this.tabControl1.Name = "tabControl1";
@@ -203,6 +208,17 @@
             this.dataGridView3.Size = new System.Drawing.Size(424, 242);
             this.dataGridView3.TabIndex = 0;
             // 
+            // tabPageStocSange
+            // 
+            this.tabPageStocSange.Controls.Add(this.dataGridViewStocSange);
+            this.tabPageStocSange.Location = new System.Drawing.Point(4, 27);
+            this.tabPageStocSange.Name = "tabPageStocSange";
+            this.tabPageStocSange.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageStocSange.Size = new System.Drawing.Size(438, 343);
+            this.tabPageStocSange.TabIndex = 3;
+            this.tabPageStocSange.Text = "Stoc Sange";
+            this.tabPageStocSange.UseVisualStyleBackColor = true;
+            // 
             // buttonLogOut
             // 
             this.buttonLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -214,6 +230,14 @@
             this.buttonLogOut.TabIndex = 5;
             this.buttonLogOut.UseVisualStyleBackColor = true;
             this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
+            // 
+            // dataGridViewStocSange
+            // 
+            this.dataGridViewStocSange.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewStocSange.Location = new System.Drawing.Point(6, 26);
+            this.dataGridViewStocSange.Name = "dataGridViewStocSange";
+            this.dataGridViewStocSange.Size = new System.Drawing.Size(424, 178);
+            this.dataGridViewStocSange.TabIndex = 0;
             // 
             // FormCentru
             // 
@@ -233,6 +257,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPageStocSange.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStocSange)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -253,5 +279,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Button buttonLogOut;
+        private System.Windows.Forms.TabPage tabPageStocSange;
+        private System.Windows.Forms.DataGridView dataGridViewStocSange;
     }
 }

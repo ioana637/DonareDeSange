@@ -1,4 +1,5 @@
-﻿using Repository;
+﻿using CentruDeTransfuzie1.model;
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,9 +19,18 @@ namespace Service
 
                 unitOfWork.CerereRepo.GetAll().ToList().ForEach(c => { cereri.Add(c); });
                 return cereri;
-
             }
 
+        }
+
+        public List<Stoc> GetAllStocuri()
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<Stoc> stocuri = new List<Stoc>();
+                unitOfWork.StocRepo.GetAll().ToList().ForEach(s => { stocuri.Add(s); });
+                return stocuri;
+            }
         }
     }
 }

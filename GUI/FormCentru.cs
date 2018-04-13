@@ -1,6 +1,8 @@
-﻿using Service;
+﻿using CentruDeTransfuzie1.model;
+using Service;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace GUI
@@ -12,12 +14,14 @@ namespace GUI
         private string judet;
         private List<Donator> listDonatori = new List<Donator>();
         private List<Cerere> listCereri = new List<Cerere>();
+        private List<Stoc> listStocuri = new List<Stoc>();
         private BindingSource bindingSource;
 
         public FormCentru()
         {
             InitializeComponent();
             loadDataGridView3();
+            loadStocSange();
         }
 
         private void loadDataGridView1()
@@ -42,13 +46,15 @@ namespace GUI
         private void loadDataGridView3()
         {
             listCereri = serviceCentru.GetAllCereri();
-            //bindingSource = new BindingSource(listCereri, null);
             dataGridView3.DataSource = listCereri;
-            //if (bindingSource.Position >= 0)
-            //{
-              //  dataGridView2.Rows[bindingSource.Position].Selected = true;
-            //}
-
+          
         }
+
+        private void loadStocSange()
+        {
+            listStocuri = serviceCentru.GetAllStocuri();
+            dataGridViewStocSange.DataSource = listStocuri;
+        }
+
     }
 }
