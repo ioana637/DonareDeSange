@@ -54,17 +54,17 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.listView2 = new System.Windows.Forms.ListView();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTratament = new System.Windows.Forms.CheckBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBoxConditii = new System.Windows.Forms.CheckBox();
             this.buttonVreauSaDonez = new System.Windows.Forms.Button();
             this.textBoxPrenume = new System.Windows.Forms.TextBox();
             this.textBoxNume = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBoala = new System.Windows.Forms.CheckBox();
+            this.checkBoxInterventii = new System.Windows.Forms.CheckBox();
+            this.checkBoxGreutate = new System.Windows.Forms.CheckBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -80,39 +80,38 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.textTelefon = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textEmail = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cmbJudR = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbLocR = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbLoc = new System.Windows.Forms.ComboBox();
+            this.cmbJud = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textAdresa = new System.Windows.Forms.TextBox();
             this.textBoxSetariPrenume = new System.Windows.Forms.TextBox();
             this.textBoxSetariNume = new System.Windows.Forms.TextBox();
             this.textBoxParola = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBoxUserName = new System.Windows.Forms.TextBox();
             this.buttonLogout = new System.Windows.Forms.Button();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textPswNewR = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.textPswNew = new System.Windows.Forms.TextBox();
+            this.checkBoxInsarcinata = new System.Windows.Forms.CheckBox();
             this.tabDonator.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -180,18 +179,19 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.checkBoxInsarcinata);
+            this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.listView2);
-            this.tabPage2.Controls.Add(this.checkBox5);
+            this.tabPage2.Controls.Add(this.checkBoxTratament);
             this.tabPage2.Controls.Add(this.label29);
             this.tabPage2.Controls.Add(this.label28);
-            this.tabPage2.Controls.Add(this.checkBox4);
+            this.tabPage2.Controls.Add(this.checkBoxConditii);
             this.tabPage2.Controls.Add(this.buttonVreauSaDonez);
             this.tabPage2.Controls.Add(this.textBoxPrenume);
             this.tabPage2.Controls.Add(this.textBoxNume);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.checkBox3);
-            this.tabPage2.Controls.Add(this.checkBox2);
-            this.tabPage2.Controls.Add(this.checkBox1);
+            this.tabPage2.Controls.Add(this.checkBoxBoala);
+            this.tabPage2.Controls.Add(this.checkBoxInterventii);
+            this.tabPage2.Controls.Add(this.checkBoxGreutate);
             this.tabPage2.Controls.Add(this.listView1);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label2);
@@ -213,22 +213,22 @@
             listViewItem23,
             listViewItem24,
             listViewItem25});
-            this.listView2.Location = new System.Drawing.Point(72, 371);
+            this.listView2.Location = new System.Drawing.Point(72, 389);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(391, 81);
+            this.listView2.Size = new System.Drawing.Size(470, 81);
             this.listView2.TabIndex = 15;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.List;
             // 
-            // checkBox5
+            // checkBoxTratament
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(53, 343);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(451, 28);
-            this.checkBox5.TabIndex = 14;
-            this.checkBox5.Text = "Donatorii să nu fie sub tratament pentru afecțiunile:";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBoxTratament.AutoSize = true;
+            this.checkBoxTratament.Location = new System.Drawing.Point(53, 355);
+            this.checkBoxTratament.Name = "checkBoxTratament";
+            this.checkBoxTratament.Size = new System.Drawing.Size(519, 28);
+            this.checkBoxTratament.TabIndex = 14;
+            this.checkBoxTratament.Text = "Sunt sub tratament pentru una dintre afecțiunile urmatoare:";
+            this.checkBoxTratament.UseVisualStyleBackColor = true;
             // 
             // label29
             // 
@@ -250,26 +250,27 @@
             this.label28.TabIndex = 12;
             this.label28.Text = "Nume";
             // 
-            // checkBox4
+            // checkBoxConditii
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(53, 544);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(398, 28);
-            this.checkBox4.TabIndex = 11;
-            this.checkBox4.Text = "Sunt de acord cu condițiile dinaintea donării";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBoxConditii.AutoSize = true;
+            this.checkBoxConditii.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxConditii.Location = new System.Drawing.Point(53, 544);
+            this.checkBoxConditii.Name = "checkBoxConditii";
+            this.checkBoxConditii.Size = new System.Drawing.Size(398, 28);
+            this.checkBoxConditii.TabIndex = 11;
+            this.checkBoxConditii.Text = "Sunt de acord cu condițiile dinaintea donării";
+            this.checkBoxConditii.UseVisualStyleBackColor = true;
             // 
             // buttonVreauSaDonez
             // 
             this.buttonVreauSaDonez.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonVreauSaDonez.Location = new System.Drawing.Point(162, 589);
+            this.buttonVreauSaDonez.Location = new System.Drawing.Point(133, 589);
             this.buttonVreauSaDonez.Name = "buttonVreauSaDonez";
-            this.buttonVreauSaDonez.Size = new System.Drawing.Size(164, 38);
+            this.buttonVreauSaDonez.Size = new System.Drawing.Size(175, 38);
             this.buttonVreauSaDonez.TabIndex = 10;
             this.buttonVreauSaDonez.Text = "Vreau să donez!";
             this.buttonVreauSaDonez.UseVisualStyleBackColor = true;
+            this.buttonVreauSaDonez.Click += new System.EventHandler(this.buttonVreauSaDonez_Click);
             // 
             // textBoxPrenume
             // 
@@ -289,44 +290,44 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(50, 446);
+            this.label4.Location = new System.Drawing.Point(50, 457);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(214, 24);
             this.label4.TabIndex = 7;
             this.label4.Text = "*Vreau să donez pentru:";
             // 
-            // checkBox3
+            // checkBoxBoala
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(53, 166);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(516, 28);
-            this.checkBox3.TabIndex = 6;
-            this.checkBox3.Text = "Donatorii nu trebuie să aibă sau să fi avut următoarele boli:";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBoxBoala.AutoSize = true;
+            this.checkBoxBoala.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxBoala.Location = new System.Drawing.Point(53, 166);
+            this.checkBoxBoala.Name = "checkBoxBoala";
+            this.checkBoxBoala.Size = new System.Drawing.Size(383, 28);
+            this.checkBoxBoala.TabIndex = 6;
+            this.checkBoxBoala.Text = "Sunt suferind de una din bolile de mai jos:";
+            this.checkBoxBoala.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkBoxInterventii
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(53, 138);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(479, 28);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "Să nu fii suferit în ultimele 6 luni intervenții chirurgicale";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBoxInterventii.AutoSize = true;
+            this.checkBoxInterventii.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxInterventii.Location = new System.Drawing.Point(53, 138);
+            this.checkBoxInterventii.Name = "checkBoxInterventii";
+            this.checkBoxInterventii.Size = new System.Drawing.Size(442, 28);
+            this.checkBoxInterventii.TabIndex = 5;
+            this.checkBoxInterventii.Text = "Am suferit intervenții chirurgicale în ultimele 6 luni";
+            this.checkBoxInterventii.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // checkBoxGreutate
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(53, 110);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(199, 28);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Greutate peste 50kg";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxGreutate.AutoSize = true;
+            this.checkBoxGreutate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxGreutate.Location = new System.Drawing.Point(53, 110);
+            this.checkBoxGreutate.Name = "checkBoxGreutate";
+            this.checkBoxGreutate.Size = new System.Drawing.Size(199, 28);
+            this.checkBoxGreutate.TabIndex = 4;
+            this.checkBoxGreutate.Text = "Greutate peste 50kg";
+            this.checkBoxGreutate.UseVisualStyleBackColor = true;
             // 
             // listView1
             // 
@@ -357,7 +358,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(49, 74);
+            this.label3.Location = new System.Drawing.Point(49, 54);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(736, 25);
             this.label3.TabIndex = 1;
@@ -492,34 +493,32 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.label31);
+            this.tabPage5.Controls.Add(this.textPswNewR);
+            this.tabPage5.Controls.Add(this.label30);
+            this.tabPage5.Controls.Add(this.textPswNew);
             this.tabPage5.Controls.Add(this.button2);
-            this.tabPage5.Controls.Add(this.button1);
-            this.tabPage5.Controls.Add(this.textBox6);
+            this.tabPage5.Controls.Add(this.btnUpdate);
+            this.tabPage5.Controls.Add(this.textTelefon);
             this.tabPage5.Controls.Add(this.label27);
-            this.tabPage5.Controls.Add(this.textBox5);
+            this.tabPage5.Controls.Add(this.textEmail);
             this.tabPage5.Controls.Add(this.label26);
             this.tabPage5.Controls.Add(this.label25);
-            this.tabPage5.Controls.Add(this.comboBox4);
+            this.tabPage5.Controls.Add(this.cmbJudR);
             this.tabPage5.Controls.Add(this.label24);
             this.tabPage5.Controls.Add(this.label23);
-            this.tabPage5.Controls.Add(this.comboBox3);
+            this.tabPage5.Controls.Add(this.cmbLocR);
             this.tabPage5.Controls.Add(this.label22);
             this.tabPage5.Controls.Add(this.label21);
-            this.tabPage5.Controls.Add(this.comboBox2);
-            this.tabPage5.Controls.Add(this.comboBox1);
+            this.tabPage5.Controls.Add(this.cmbLoc);
+            this.tabPage5.Controls.Add(this.cmbJud);
             this.tabPage5.Controls.Add(this.label20);
             this.tabPage5.Controls.Add(this.label19);
             this.tabPage5.Controls.Add(this.label18);
             this.tabPage5.Controls.Add(this.label17);
             this.tabPage5.Controls.Add(this.label16);
-            this.tabPage5.Controls.Add(this.textBox4);
-            this.tabPage5.Controls.Add(this.label15);
-            this.tabPage5.Controls.Add(this.label14);
-            this.tabPage5.Controls.Add(this.label13);
             this.tabPage5.Controls.Add(this.label12);
-            this.tabPage5.Controls.Add(this.textBox3);
-            this.tabPage5.Controls.Add(this.textBox2);
-            this.tabPage5.Controls.Add(this.textBox1);
+            this.tabPage5.Controls.Add(this.textAdresa);
             this.tabPage5.Controls.Add(this.textBoxSetariPrenume);
             this.tabPage5.Controls.Add(this.textBoxSetariNume);
             this.tabPage5.Controls.Add(this.textBoxParola);
@@ -542,21 +541,22 @@
             this.button2.Text = "Renunță";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.Location = new System.Drawing.Point(41, 597);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 32);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Modifică";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(41, 597);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(115, 32);
+            this.btnUpdate.TabIndex = 33;
+            this.btnUpdate.Text = "Modifică";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // textBox6
+            // textTelefon
             // 
-            this.textBox6.Location = new System.Drawing.Point(417, 506);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(204, 29);
-            this.textBox6.TabIndex = 32;
+            this.textTelefon.Location = new System.Drawing.Point(417, 506);
+            this.textTelefon.Name = "textTelefon";
+            this.textTelefon.Size = new System.Drawing.Size(204, 29);
+            this.textTelefon.TabIndex = 32;
             // 
             // label27
             // 
@@ -567,12 +567,12 @@
             this.label27.TabIndex = 31;
             this.label27.Text = "Nr. telefon";
             // 
-            // textBox5
+            // textEmail
             // 
-            this.textBox5.Location = new System.Drawing.Point(151, 506);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(204, 29);
-            this.textBox5.TabIndex = 30;
+            this.textEmail.Location = new System.Drawing.Point(151, 506);
+            this.textEmail.Name = "textEmail";
+            this.textEmail.Size = new System.Drawing.Size(204, 29);
+            this.textEmail.TabIndex = 30;
             // 
             // label26
             // 
@@ -592,13 +592,14 @@
             this.label25.TabIndex = 28;
             this.label25.Text = "Date de contact";
             // 
-            // comboBox4
+            // cmbJudR
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(417, 357);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(204, 32);
-            this.comboBox4.TabIndex = 27;
+            this.cmbJudR.FormattingEnabled = true;
+            this.cmbJudR.Location = new System.Drawing.Point(417, 357);
+            this.cmbJudR.Name = "cmbJudR";
+            this.cmbJudR.Size = new System.Drawing.Size(204, 32);
+            this.cmbJudR.TabIndex = 27;
+            this.cmbJudR.SelectedIndexChanged += new System.EventHandler(this.cmbJudR_SelectedIndexChanged);
             // 
             // label24
             // 
@@ -618,13 +619,13 @@
             this.label23.TabIndex = 25;
             this.label23.Text = "Localitate";
             // 
-            // comboBox3
+            // cmbLocR
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(151, 357);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(204, 32);
-            this.comboBox3.TabIndex = 24;
+            this.cmbLocR.FormattingEnabled = true;
+            this.cmbLocR.Location = new System.Drawing.Point(151, 357);
+            this.cmbLocR.Name = "cmbLocR";
+            this.cmbLocR.Size = new System.Drawing.Size(204, 32);
+            this.cmbLocR.TabIndex = 24;
             // 
             // label22
             // 
@@ -645,21 +646,22 @@
             this.label21.TabIndex = 21;
             this.label21.Text = "Județ";
             // 
-            // comboBox2
+            // cmbLoc
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(41, 275);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(204, 32);
-            this.comboBox2.TabIndex = 20;
+            this.cmbLoc.FormattingEnabled = true;
+            this.cmbLoc.Location = new System.Drawing.Point(41, 275);
+            this.cmbLoc.Name = "cmbLoc";
+            this.cmbLoc.Size = new System.Drawing.Size(204, 32);
+            this.cmbLoc.TabIndex = 20;
             // 
-            // comboBox1
+            // cmbJud
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(363, 275);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(190, 32);
-            this.comboBox1.TabIndex = 19;
+            this.cmbJud.FormattingEnabled = true;
+            this.cmbJud.Location = new System.Drawing.Point(363, 275);
+            this.cmbJud.Name = "cmbJud";
+            this.cmbJud.Size = new System.Drawing.Size(190, 32);
+            this.cmbJud.TabIndex = 19;
+            this.cmbJud.SelectedIndexChanged += new System.EventHandler(this.cmbJud_SelectedIndexChanged);
             // 
             // label20
             // 
@@ -706,69 +708,21 @@
             this.label16.TabIndex = 13;
             this.label16.Text = "Username";
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(502, 211);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(51, 29);
-            this.textBox4.TabIndex = 12;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(499, 195);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(58, 24);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "Scara";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(436, 195);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(47, 24);
-            this.label14.TabIndex = 10;
-            this.label14.Text = "Bloc";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(360, 195);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(35, 24);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "Nr.";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(38, 195);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 24);
+            this.label12.Size = new System.Drawing.Size(70, 24);
             this.label12.TabIndex = 8;
-            this.label12.Text = "Strada";
+            this.label12.Text = "Adresă";
             // 
-            // textBox3
+            // textAdresa
             // 
-            this.textBox3.Location = new System.Drawing.Point(439, 211);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(33, 29);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(363, 211);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(34, 29);
-            this.textBox2.TabIndex = 6;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(41, 211);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 29);
-            this.textBox1.TabIndex = 5;
+            this.textAdresa.Location = new System.Drawing.Point(41, 211);
+            this.textAdresa.Name = "textAdresa";
+            this.textAdresa.Size = new System.Drawing.Size(512, 29);
+            this.textAdresa.TabIndex = 5;
             // 
             // textBoxSetariPrenume
             // 
@@ -790,6 +744,7 @@
             this.textBoxParola.Name = "textBoxParola";
             this.textBoxParola.Size = new System.Drawing.Size(190, 29);
             this.textBoxParola.TabIndex = 2;
+            this.textBoxParola.UseSystemPasswordChar = true;
             // 
             // label11
             // 
@@ -822,6 +777,50 @@
             this.buttonLogout.UseVisualStyleBackColor = true;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(753, 66);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(184, 24);
+            this.label31.TabIndex = 42;
+            this.label31.Text = "Reintroduce-ți parola";
+            // 
+            // textPswNewR
+            // 
+            this.textPswNewR.Location = new System.Drawing.Point(756, 83);
+            this.textPswNewR.Name = "textPswNewR";
+            this.textPswNewR.Size = new System.Drawing.Size(190, 29);
+            this.textPswNewR.TabIndex = 41;
+            this.textPswNewR.UseSystemPasswordChar = true;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(557, 66);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(111, 24);
+            this.label30.TabIndex = 40;
+            this.label30.Text = "Parolă nouă";
+            // 
+            // textPswNew
+            // 
+            this.textPswNew.Location = new System.Drawing.Point(560, 83);
+            this.textPswNew.Name = "textPswNew";
+            this.textPswNew.Size = new System.Drawing.Size(190, 29);
+            this.textPswNew.TabIndex = 39;
+            this.textPswNew.UseSystemPasswordChar = true;
+            // 
+            // checkBoxInsarcinata
+            // 
+            this.checkBoxInsarcinata.AutoSize = true;
+            this.checkBoxInsarcinata.Location = new System.Drawing.Point(53, 82);
+            this.checkBoxInsarcinata.Name = "checkBoxInsarcinata";
+            this.checkBoxInsarcinata.Size = new System.Drawing.Size(121, 28);
+            this.checkBoxInsarcinata.TabIndex = 16;
+            this.checkBoxInsarcinata.Text = "Însărcinată";
+            this.checkBoxInsarcinata.UseVisualStyleBackColor = true;
+            // 
             // FormDonator
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -833,6 +832,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "FormDonator";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormDonator_Load);
             this.tabDonator.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -862,16 +862,16 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBoxInterventii;
+        private System.Windows.Forms.CheckBox checkBoxGreutate;
+        private System.Windows.Forms.CheckBox checkBoxBoala;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxPrenume;
         private System.Windows.Forms.TextBox textBoxNume;
         private System.Windows.Forms.Button buttonVreauSaDonez;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBoxConditii;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ListBox listBox1;
@@ -880,33 +880,27 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.TextBox textTelefon;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textEmail;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cmbJudR;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbLocR;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbLoc;
+        private System.Windows.Forms.ComboBox cmbJud;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textAdresa;
         private System.Windows.Forms.TextBox textBoxSetariPrenume;
         private System.Windows.Forms.TextBox textBoxSetariNume;
         private System.Windows.Forms.TextBox textBoxParola;
@@ -916,6 +910,11 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBoxTratament;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox textPswNewR;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox textPswNew;
+        private System.Windows.Forms.CheckBox checkBoxInsarcinata;
     }
 }
