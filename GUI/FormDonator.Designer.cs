@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("- hipertensiune");
-            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("- boli de inimă");
-            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("- boli renale");
-            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("- boli psihice");
-            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("- boli hepatice");
-            System.Windows.Forms.ListViewItem listViewItem25 = new System.Windows.Forms.ListViewItem("- boli endocrine");
-            System.Windows.Forms.ListViewItem listViewItem26 = new System.Windows.Forms.ListViewItem("-Hepatită( de orice tip)");
-            System.Windows.Forms.ListViewItem listViewItem27 = new System.Windows.Forms.ListViewItem("-TBC");
-            System.Windows.Forms.ListViewItem listViewItem28 = new System.Windows.Forms.ListViewItem("-Sifilis");
-            System.Windows.Forms.ListViewItem listViewItem29 = new System.Windows.Forms.ListViewItem("-Malarie");
-            System.Windows.Forms.ListViewItem listViewItem30 = new System.Windows.Forms.ListViewItem("-Epilepsie și alte boli neurologice");
-            System.Windows.Forms.ListViewItem listViewItem31 = new System.Windows.Forms.ListViewItem("-Boli psihice");
-            System.Windows.Forms.ListViewItem listViewItem32 = new System.Windows.Forms.ListViewItem("-Bruceloză");
-            System.Windows.Forms.ListViewItem listViewItem33 = new System.Windows.Forms.ListViewItem("-Ulcer");
-            System.Windows.Forms.ListViewItem listViewItem34 = new System.Windows.Forms.ListViewItem("-Diabet zaharat");
-            System.Windows.Forms.ListViewItem listViewItem35 = new System.Windows.Forms.ListViewItem("-Boli de inimă");
-            System.Windows.Forms.ListViewItem listViewItem36 = new System.Windows.Forms.ListViewItem("-Boli de piele: psoriazis, vitiligo");
-            System.Windows.Forms.ListViewItem listViewItem37 = new System.Windows.Forms.ListViewItem("-Miopie forte: peste (-) 6 dioptrii");
-            System.Windows.Forms.ListViewItem listViewItem38 = new System.Windows.Forms.ListViewItem("-Cancer");
+            System.Windows.Forms.ListViewItem listViewItem96 = new System.Windows.Forms.ListViewItem("- hipertensiune");
+            System.Windows.Forms.ListViewItem listViewItem97 = new System.Windows.Forms.ListViewItem("- boli de inimă");
+            System.Windows.Forms.ListViewItem listViewItem98 = new System.Windows.Forms.ListViewItem("- boli renale");
+            System.Windows.Forms.ListViewItem listViewItem99 = new System.Windows.Forms.ListViewItem("- boli psihice");
+            System.Windows.Forms.ListViewItem listViewItem100 = new System.Windows.Forms.ListViewItem("- boli hepatice");
+            System.Windows.Forms.ListViewItem listViewItem101 = new System.Windows.Forms.ListViewItem("- boli endocrine");
+            System.Windows.Forms.ListViewItem listViewItem102 = new System.Windows.Forms.ListViewItem("-Hepatită( de orice tip)");
+            System.Windows.Forms.ListViewItem listViewItem103 = new System.Windows.Forms.ListViewItem("-TBC");
+            System.Windows.Forms.ListViewItem listViewItem104 = new System.Windows.Forms.ListViewItem("-Sifilis");
+            System.Windows.Forms.ListViewItem listViewItem105 = new System.Windows.Forms.ListViewItem("-Malarie");
+            System.Windows.Forms.ListViewItem listViewItem106 = new System.Windows.Forms.ListViewItem("-Epilepsie și alte boli neurologice");
+            System.Windows.Forms.ListViewItem listViewItem107 = new System.Windows.Forms.ListViewItem("-Boli psihice");
+            System.Windows.Forms.ListViewItem listViewItem108 = new System.Windows.Forms.ListViewItem("-Bruceloză");
+            System.Windows.Forms.ListViewItem listViewItem109 = new System.Windows.Forms.ListViewItem("-Ulcer");
+            System.Windows.Forms.ListViewItem listViewItem110 = new System.Windows.Forms.ListViewItem("-Diabet zaharat");
+            System.Windows.Forms.ListViewItem listViewItem111 = new System.Windows.Forms.ListViewItem("-Boli de inimă");
+            System.Windows.Forms.ListViewItem listViewItem112 = new System.Windows.Forms.ListViewItem("-Boli de piele: psoriazis, vitiligo");
+            System.Windows.Forms.ListViewItem listViewItem113 = new System.Windows.Forms.ListViewItem("-Miopie forte: peste (-) 6 dioptrii");
+            System.Windows.Forms.ListViewItem listViewItem114 = new System.Windows.Forms.ListViewItem("-Cancer");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDonator));
             this.tabDonator = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -80,39 +80,37 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.textTelefon = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textEmail = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cmbJudR = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbLocR = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbLoc = new System.Windows.Forms.ComboBox();
+            this.cmbJud = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textAdresa = new System.Windows.Forms.TextBox();
             this.textBoxSetariPrenume = new System.Windows.Forms.TextBox();
             this.textBoxSetariNume = new System.Windows.Forms.TextBox();
             this.textBoxParola = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBoxUserName = new System.Windows.Forms.TextBox();
             this.buttonLogout = new System.Windows.Forms.Button();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textPswNewR = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.textPswNew = new System.Windows.Forms.TextBox();
             this.tabDonator.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -207,12 +205,12 @@
             // 
             this.listView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem20,
-            listViewItem21,
-            listViewItem22,
-            listViewItem23,
-            listViewItem24,
-            listViewItem25});
+            listViewItem96,
+            listViewItem97,
+            listViewItem98,
+            listViewItem99,
+            listViewItem100,
+            listViewItem101});
             this.listView2.Location = new System.Drawing.Point(72, 371);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(391, 81);
@@ -333,19 +331,19 @@
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem26,
-            listViewItem27,
-            listViewItem28,
-            listViewItem29,
-            listViewItem30,
-            listViewItem31,
-            listViewItem32,
-            listViewItem33,
-            listViewItem34,
-            listViewItem35,
-            listViewItem36,
-            listViewItem37,
-            listViewItem38});
+            listViewItem102,
+            listViewItem103,
+            listViewItem104,
+            listViewItem105,
+            listViewItem106,
+            listViewItem107,
+            listViewItem108,
+            listViewItem109,
+            listViewItem110,
+            listViewItem111,
+            listViewItem112,
+            listViewItem113,
+            listViewItem114});
             this.listView1.Location = new System.Drawing.Point(72, 194);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(535, 155);
@@ -492,34 +490,32 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.label31);
+            this.tabPage5.Controls.Add(this.textPswNewR);
+            this.tabPage5.Controls.Add(this.label30);
+            this.tabPage5.Controls.Add(this.textPswNew);
             this.tabPage5.Controls.Add(this.button2);
-            this.tabPage5.Controls.Add(this.button1);
-            this.tabPage5.Controls.Add(this.textBox6);
+            this.tabPage5.Controls.Add(this.btnUpdate);
+            this.tabPage5.Controls.Add(this.textTelefon);
             this.tabPage5.Controls.Add(this.label27);
-            this.tabPage5.Controls.Add(this.textBox5);
+            this.tabPage5.Controls.Add(this.textEmail);
             this.tabPage5.Controls.Add(this.label26);
             this.tabPage5.Controls.Add(this.label25);
-            this.tabPage5.Controls.Add(this.comboBox4);
+            this.tabPage5.Controls.Add(this.cmbJudR);
             this.tabPage5.Controls.Add(this.label24);
             this.tabPage5.Controls.Add(this.label23);
-            this.tabPage5.Controls.Add(this.comboBox3);
+            this.tabPage5.Controls.Add(this.cmbLocR);
             this.tabPage5.Controls.Add(this.label22);
             this.tabPage5.Controls.Add(this.label21);
-            this.tabPage5.Controls.Add(this.comboBox2);
-            this.tabPage5.Controls.Add(this.comboBox1);
+            this.tabPage5.Controls.Add(this.cmbLoc);
+            this.tabPage5.Controls.Add(this.cmbJud);
             this.tabPage5.Controls.Add(this.label20);
             this.tabPage5.Controls.Add(this.label19);
             this.tabPage5.Controls.Add(this.label18);
             this.tabPage5.Controls.Add(this.label17);
             this.tabPage5.Controls.Add(this.label16);
-            this.tabPage5.Controls.Add(this.textBox4);
-            this.tabPage5.Controls.Add(this.label15);
-            this.tabPage5.Controls.Add(this.label14);
-            this.tabPage5.Controls.Add(this.label13);
             this.tabPage5.Controls.Add(this.label12);
-            this.tabPage5.Controls.Add(this.textBox3);
-            this.tabPage5.Controls.Add(this.textBox2);
-            this.tabPage5.Controls.Add(this.textBox1);
+            this.tabPage5.Controls.Add(this.textAdresa);
             this.tabPage5.Controls.Add(this.textBoxSetariPrenume);
             this.tabPage5.Controls.Add(this.textBoxSetariNume);
             this.tabPage5.Controls.Add(this.textBoxParola);
@@ -542,21 +538,22 @@
             this.button2.Text = "Renunță";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.Location = new System.Drawing.Point(41, 597);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 32);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Modifică";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(41, 597);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(115, 32);
+            this.btnUpdate.TabIndex = 33;
+            this.btnUpdate.Text = "Modifică";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // textBox6
+            // textTelefon
             // 
-            this.textBox6.Location = new System.Drawing.Point(417, 506);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(204, 29);
-            this.textBox6.TabIndex = 32;
+            this.textTelefon.Location = new System.Drawing.Point(417, 506);
+            this.textTelefon.Name = "textTelefon";
+            this.textTelefon.Size = new System.Drawing.Size(204, 29);
+            this.textTelefon.TabIndex = 32;
             // 
             // label27
             // 
@@ -567,12 +564,12 @@
             this.label27.TabIndex = 31;
             this.label27.Text = "Nr. telefon";
             // 
-            // textBox5
+            // textEmail
             // 
-            this.textBox5.Location = new System.Drawing.Point(151, 506);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(204, 29);
-            this.textBox5.TabIndex = 30;
+            this.textEmail.Location = new System.Drawing.Point(151, 506);
+            this.textEmail.Name = "textEmail";
+            this.textEmail.Size = new System.Drawing.Size(204, 29);
+            this.textEmail.TabIndex = 30;
             // 
             // label26
             // 
@@ -592,13 +589,14 @@
             this.label25.TabIndex = 28;
             this.label25.Text = "Date de contact";
             // 
-            // comboBox4
+            // cmbJudR
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(417, 357);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(204, 32);
-            this.comboBox4.TabIndex = 27;
+            this.cmbJudR.FormattingEnabled = true;
+            this.cmbJudR.Location = new System.Drawing.Point(417, 357);
+            this.cmbJudR.Name = "cmbJudR";
+            this.cmbJudR.Size = new System.Drawing.Size(204, 32);
+            this.cmbJudR.TabIndex = 27;
+            this.cmbJudR.SelectedIndexChanged += new System.EventHandler(this.cmbJudR_SelectedIndexChanged);
             // 
             // label24
             // 
@@ -618,13 +616,13 @@
             this.label23.TabIndex = 25;
             this.label23.Text = "Localitate";
             // 
-            // comboBox3
+            // cmbLocR
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(151, 357);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(204, 32);
-            this.comboBox3.TabIndex = 24;
+            this.cmbLocR.FormattingEnabled = true;
+            this.cmbLocR.Location = new System.Drawing.Point(151, 357);
+            this.cmbLocR.Name = "cmbLocR";
+            this.cmbLocR.Size = new System.Drawing.Size(204, 32);
+            this.cmbLocR.TabIndex = 24;
             // 
             // label22
             // 
@@ -645,21 +643,22 @@
             this.label21.TabIndex = 21;
             this.label21.Text = "Județ";
             // 
-            // comboBox2
+            // cmbLoc
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(41, 275);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(204, 32);
-            this.comboBox2.TabIndex = 20;
+            this.cmbLoc.FormattingEnabled = true;
+            this.cmbLoc.Location = new System.Drawing.Point(41, 275);
+            this.cmbLoc.Name = "cmbLoc";
+            this.cmbLoc.Size = new System.Drawing.Size(204, 32);
+            this.cmbLoc.TabIndex = 20;
             // 
-            // comboBox1
+            // cmbJud
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(363, 275);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(190, 32);
-            this.comboBox1.TabIndex = 19;
+            this.cmbJud.FormattingEnabled = true;
+            this.cmbJud.Location = new System.Drawing.Point(363, 275);
+            this.cmbJud.Name = "cmbJud";
+            this.cmbJud.Size = new System.Drawing.Size(190, 32);
+            this.cmbJud.TabIndex = 19;
+            this.cmbJud.SelectedIndexChanged += new System.EventHandler(this.cmbJud_SelectedIndexChanged);
             // 
             // label20
             // 
@@ -706,69 +705,21 @@
             this.label16.TabIndex = 13;
             this.label16.Text = "Username";
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(502, 211);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(51, 29);
-            this.textBox4.TabIndex = 12;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(499, 195);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(58, 24);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "Scara";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(436, 195);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(47, 24);
-            this.label14.TabIndex = 10;
-            this.label14.Text = "Bloc";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(360, 195);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(35, 24);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "Nr.";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(38, 195);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 24);
+            this.label12.Size = new System.Drawing.Size(70, 24);
             this.label12.TabIndex = 8;
-            this.label12.Text = "Strada";
+            this.label12.Text = "Adresă";
             // 
-            // textBox3
+            // textAdresa
             // 
-            this.textBox3.Location = new System.Drawing.Point(439, 211);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(33, 29);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(363, 211);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(34, 29);
-            this.textBox2.TabIndex = 6;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(41, 211);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 29);
-            this.textBox1.TabIndex = 5;
+            this.textAdresa.Location = new System.Drawing.Point(41, 211);
+            this.textAdresa.Name = "textAdresa";
+            this.textAdresa.Size = new System.Drawing.Size(512, 29);
+            this.textAdresa.TabIndex = 5;
             // 
             // textBoxSetariPrenume
             // 
@@ -790,6 +741,7 @@
             this.textBoxParola.Name = "textBoxParola";
             this.textBoxParola.Size = new System.Drawing.Size(190, 29);
             this.textBoxParola.TabIndex = 2;
+            this.textBoxParola.UseSystemPasswordChar = true;
             // 
             // label11
             // 
@@ -822,6 +774,40 @@
             this.buttonLogout.UseVisualStyleBackColor = true;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(753, 66);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(184, 24);
+            this.label31.TabIndex = 42;
+            this.label31.Text = "Reintroduce-ți parola";
+            // 
+            // textPswNewR
+            // 
+            this.textPswNewR.Location = new System.Drawing.Point(756, 83);
+            this.textPswNewR.Name = "textPswNewR";
+            this.textPswNewR.Size = new System.Drawing.Size(190, 29);
+            this.textPswNewR.TabIndex = 41;
+            this.textPswNewR.UseSystemPasswordChar = true;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(557, 66);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(111, 24);
+            this.label30.TabIndex = 40;
+            this.label30.Text = "Parolă nouă";
+            // 
+            // textPswNew
+            // 
+            this.textPswNew.Location = new System.Drawing.Point(560, 83);
+            this.textPswNew.Name = "textPswNew";
+            this.textPswNew.Size = new System.Drawing.Size(190, 29);
+            this.textPswNew.TabIndex = 39;
+            this.textPswNew.UseSystemPasswordChar = true;
+            // 
             // FormDonator
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -833,6 +819,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "FormDonator";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormDonator_Load);
             this.tabDonator.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -880,33 +867,27 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.TextBox textTelefon;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textEmail;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cmbJudR;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbLocR;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbLoc;
+        private System.Windows.Forms.ComboBox cmbJud;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textAdresa;
         private System.Windows.Forms.TextBox textBoxSetariPrenume;
         private System.Windows.Forms.TextBox textBoxSetariNume;
         private System.Windows.Forms.TextBox textBoxParola;
@@ -917,5 +898,9 @@
         private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox textPswNewR;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox textPswNew;
     }
 }

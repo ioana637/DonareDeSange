@@ -36,9 +36,9 @@ namespace Service
             }
         }
 
-        private  string EncryptPassword(string password)
+        private string EncryptPassword(string password)
         {
-            
+
             MD5 md5 = MD5.Create();
             byte[] data = md5.ComputeHash(Encoding.UTF8.GetBytes(password));
             StringBuilder stringBuilder = new StringBuilder();
@@ -48,13 +48,29 @@ namespace Service
             }
             return stringBuilder.ToString();
         }
+
+        public Donator GetDonator(string username)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                Donator donator = unitOfWork.DonatorRepo.GetBy(x => x.UserDonator.Username == username);
+                if (donator == null) { throw new ValidationException(); }
+                return donator;
+            }
+        }
+
+        public string Encrypt(string pass)
+        {
+            return EncryptPassword(pass);
+        }
+
         public void RegisterDonator(string userName, string password, string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
                 Donator donator = new Donator(nume, prenume, sex, dataNastere, domiciliu, localitate, judet, resedinta, localitateResedinta, judetResedinta, telefon, email);
                 unitOfWork.DonatorRepo.Save(donator);
-                string encryptedPassword= EncryptPassword(password);
+                string encryptedPassword = EncryptPassword(password);
                 UserDonator user = new UserDonator(userName, encryptedPassword);
                 unitOfWork.UserDonatorRepo.Save(user);
                 unitOfWork.Save();
@@ -122,6 +138,15 @@ namespace Service
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
                 unitOfWork.DonatorRepo.Update(donator);
+                unitOfWork.Save();
+            }
+        }
+
+        public void UpdateUserDonator(UserDonator user)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                unitOfWork.UserDonatorRepo.Update(user);
                 unitOfWork.Save();
             }
         }
