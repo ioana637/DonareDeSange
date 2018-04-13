@@ -313,7 +313,6 @@ namespace GUI
                     cmbLoc1.Items.Add(i);
                 }
             }
-
         }
 
         private void cmbJudet2_SelectedIndexChanged(object sender, EventArgs e)

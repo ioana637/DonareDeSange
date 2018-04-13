@@ -193,7 +193,26 @@ namespace GUI
             cmbLocR.Text = donator.LocalitateResedinta;
             textTelefon.Text = donator.Telefon;
             textEmail.Text = donator.Email;
-
+            if (donator.Sex == "F")
+            {
+                checkBoxInsarcinata.Visible = true;
+            }
+            else
+            {
+                checkBoxInsarcinata.Visible = false;
+            }
+            if (donator.Greutate > 50)
+            {
+                checkBoxGreutate.Checked = true;
+            }
+            if (donator.InterventiiUltimele6Luni == 1)
+            {
+                checkBoxInterventii.Checked = true;
+            }
+            if(donator.SubTratament == 1)
+            {
+                checkBoxTratament.Checked = true;
+            }
         }
 
         private void cmbJudR_SelectedIndexChanged(object sender, EventArgs e)
@@ -233,6 +252,81 @@ namespace GUI
                 {
                     cmbLoc.Items.Add(i);
                 }
+            }
+        }
+
+        private void buttonVreauSaDonez_Click(object sender, EventArgs e)
+        {
+            string message = string.Empty;
+            if (checkBoxInsarcinata.Checked == true)
+            {
+                message += "! sunteti insarcinata";
+            }
+            if (checkBoxGreutate.Checked == false)
+            {
+                message += "! greutatea minimă admisă este de 50 kg";
+            }
+            if (checkBoxInterventii.Checked == true)
+            {
+                message += "! ați avut intervenții în ultimele 6 luni";
+            }
+            if (checkBoxTratament.Checked == true)
+            {
+                message += "! sunteți sub tratament";
+            }
+            if (checkBoxBoala.Checked == true)
+            {
+                message += "! sunteți suferind de boală";
+            }
+
+            if (checkBoxConditii.Checked == false)
+            {
+                message += "! nu ați fost de acord cu condițiile dinaintea donării";
+            }
+
+            var mesaj = message.Split('!');
+
+            string messageToShow = string.Empty;
+
+            foreach (var i in mesaj)
+            {
+                if (i != "")
+                {
+                    if (messageToShow == string.Empty)
+                    {
+                        messageToShow += $"Ne pare rau, dar nu puteti dona deoarece:  ";
+                    }
+                    messageToShow += i + ",  ";
+                }
+            }
+
+
+            Donator donator = service.GetDonator(Username);
+            if (checkBoxInterventii.Checked)
+            {
+                donator.InterventiiUltimele6Luni = 1;
+            }
+            else
+            {
+                donator.InterventiiUltimele6Luni = 0;
+            }
+            if (checkBoxTratament.Checked)
+            {
+                donator.SubTratament = 1;
+            }
+            else
+            {
+                donator.SubTratament = 0;
+            }
+            service.UpdateDonator(donator);
+
+            if (messageToShow == string.Empty)
+            {
+                MessageBox.Show("Mulțumim pentru dorința de a ajuta. Vă așteptăm la cel mai apropiat centru de colectare");
+            }
+            else
+            {
+                MessageBox.Show(messageToShow);
             }
         }
     }
