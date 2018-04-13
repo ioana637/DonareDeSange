@@ -1,4 +1,5 @@
 
+using CentruDeTransfuzie.utils;
 using CentruDeTransfuzie1.utils;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,9 @@ public class Cerere {
 
     [Required(ErrorMessage = "RH is required")]
     public TipRh RH { get; set; }
+
+    [Required(ErrorMessage = "Prioritate is required")]
+    public GradUrgenta Prioritate { get; set; }
 
     public List<CererePacient> CererePacienti { get; set; }
 

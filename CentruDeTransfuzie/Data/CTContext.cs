@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using CentruDeTransfuzie1.model;
+using CentruDeTransfuzie.model;
 
 namespace CentruDeTransfuzie1
 {
@@ -25,7 +26,7 @@ namespace CentruDeTransfuzie1
         public DbSet<TraseuPunga> TraseuPunga { get; set; }
         public DbSet<Spital> Spital { get; set; }
         public DbSet<SpitalMedic> SpitalMedic { get; set; }
-
+        public DbSet<Admin> Admin { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -46,6 +47,7 @@ namespace CentruDeTransfuzie1
             modelBuilder.Entity<Analiza>().ToTable("Analiza");
             modelBuilder.Entity<Spital>().ToTable("Spital");
             modelBuilder.Entity<SpitalMedic>().ToTable("SpitalMedic");
+            modelBuilder.Entity<Admin>().ToTable("Admin");
 
             modelBuilder.Entity<Stoc>().HasKey(s => new { s.Grupa, s.RH });
 

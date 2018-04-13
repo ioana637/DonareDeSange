@@ -1,4 +1,5 @@
-﻿using CentruDeTransfuzie1.model;
+using CentruDeTransfuzie.utils;
+using CentruDeTransfuzie1.model;
 using CentruDeTransfuzie1.utils;
 ﻿using CentruDeTransfuzie1.utils;
 using Microsoft.EntityFrameworkCore;
@@ -70,9 +71,15 @@ namespace CentruDeTransfuzie1.Data
 
         static void InitializeCereri(CTContext context)
         {
-            if (context.Cerere.Any()) return;
+
+            if (context.Cerere.Any())
+            {
+                return;
+            }
             Cerere c1 = new Cerere("1-1-2018", 5, 1, 3, 1, true, context.Medic.Find(1),GrupaSange.AII,TipRh.Pozitiv);
             Cerere c2 = new Cerere("2-1-2018", 7, 2, 1, 4, false, context.Medic.Find(2), GrupaSange.AII, TipRh.Pozitiv);
+            c1.Prioritate = GradUrgenta.Mediu;
+            c2.Prioritate = GradUrgenta.Ridicat;
             var cereri = new Cerere[] { c1, c2 };
             foreach (Cerere c in cereri)
             {
