@@ -14,10 +14,12 @@ namespace GUI
     public partial class FormMedic : Form
     {
         private UserMedicService serviceMedic;
-        public FormMedic(UserMedicService service)
+        private int idMedicCurent;
+        public FormMedic(UserMedicService service, int idMedicCurent)
         {
             InitializeComponent();
             this.serviceMedic = service;
+            this.idMedicCurent = idMedicCurent;
         }
 
         private void buttonLogout_Click(object sender, EventArgs e)
@@ -43,6 +45,7 @@ namespace GUI
                 string Nume = txtNume.Text;
                 string Prenume = txtPrenume.Text;
                 string Email = txtEmail.Text;
+                int idMedic = idMedicCurent;
                 bool esteDonator;
 
                 if (checkDonator.Checked == true)
@@ -56,7 +59,7 @@ namespace GUI
 
                 #endregion
 
-                serviceMedic.AdaugaPacient(Nume, Prenume, Email, esteDonator);
+                serviceMedic.AdaugaPacient(idMedic,Nume, Prenume, Email, esteDonator);
               
 
             }

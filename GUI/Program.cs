@@ -31,8 +31,8 @@ namespace GUI
             //Application.Run(new FormAnalizeSange());
             //Application.Run(new FormLogareCentru());
             //Application.Run(new FormRegisterDonator());
-            //Application.Run(new FormLogareMedic(us));
-            Application.Run(new FormMedic(us));
+            Application.Run(new FormLogareMedic(us));
+            
             //Application.Run(new FormLogareDonator());
         }
     }
