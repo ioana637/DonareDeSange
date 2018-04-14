@@ -18,14 +18,21 @@ namespace GUI
         private string usernameMedic;
         private List<Cerere> listCereri = new List<Cerere>();
         private BindingSource bindingSource;
-        public FormMedic(UserMedicService service, String username)
+        private int idMedicCurent;
+        private List<Pacient> listPacienti = new List<Pacient>();
+        private BindingSource bindingSourceP;
+
+        public FormMedic(UserMedicService service, int idMedic, string username)
         {
             InitializeComponent();
             this.serviceMedic = service;
+            this.idMedicCurent = idMedic;
             this.usernameMedic = username;
             initComboGrupa();
             initComboRh();
             Refresh();
+            loadDataGridView1();
+            //createDataGridView1();
 
         }
 
@@ -292,6 +299,108 @@ namespace GUI
 
             }
             catch (Exception ex) { MessageBox.Show(this, ex.Message, "Eroare!", MessageBoxButtons.OK); }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            //adaugarePACIENT
+            try
+            {
+                #region Date Pacient
+                string Nume = txtNume.Text;
+                string Prenume = txtPrenume.Text;
+                string Email = txtEmail.Text;
+                int idMedic = idMedicCurent;
+                bool esteDonator;
+
+                if (checkDonator.Checked == true)
+                {
+                    esteDonator = true;
+                }
+                else
+                {
+                    esteDonator = false;
+                }
+
+                if (Nume.Equals("") || Prenume.Equals("") || Email.Equals(""))
+                {
+                    throw new ValidationException();
+                }
+
+                #endregion
+
+                serviceMedic.AdaugaPacient(idMedic, Nume, Prenume, Email, esteDonator);
+                loadDataGridView1();
+
+                #region ClearFieldsAddPacient
+                txtNume.Text = "";
+                txtPrenume.Text = "";
+                txtEmail.Text = "";
+                checkDonator.Checked = false;
+                #endregion
+
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Date invalide! Pacientul nu poate fi adaugat!\n" + error.Message);
+            }
+        }
+
+        private void createDataGridView1()
+        {
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.AllowUserToAddRows = false;
+
+            DataGridViewTextBoxColumn colId = new DataGridViewTextBoxColumn();
+            colId.Name = "Id";
+            colId.HeaderText = "Id";
+            colId.DataPropertyName = "Id";
+
+            DataGridViewTextBoxColumn colEsteDonator = new DataGridViewTextBoxColumn();
+            colId.Name = "Este Donator";
+            colId.HeaderText = "Este Donator";
+            colId.DataPropertyName = "Este Donator";
+
+            DataGridViewTextBoxColumn colEmail = new DataGridViewTextBoxColumn();
+            colId.Name = "Email";
+            colId.HeaderText = "Email";
+            colId.DataPropertyName = "Email";
+
+            DataGridViewTextBoxColumn colNume = new DataGridViewTextBoxColumn();
+            colId.Name = "Nume";
+            colId.HeaderText = "Nume";
+            colId.DataPropertyName = "Nume";
+
+            DataGridViewTextBoxColumn colPrenume = new DataGridViewTextBoxColumn();
+            colId.Name = "Prenume";
+            colId.HeaderText = "Prenume";
+            colId.DataPropertyName = "Prenume";
+
+
+            dataGridView1.Columns.Add(colId);
+            dataGridView1.Columns.Add(colEsteDonator);
+            dataGridView1.Columns.Add(colEmail);
+            dataGridView1.Columns.Add(colNume);
+            dataGridView1.Columns.Add(colPrenume);
+
+        }
+
+        private void loadDataGridView1()
+        {
+            listPacienti = serviceMedic.GetPacientByMedic(idMedicCurent);
+            bindingSourceP = new BindingSource(listPacienti, null);
+            dataGridView1.DataSource = bindingSourceP;
+            if (bindingSourceP.Position >= 0)
+            {
+                dataGridView1.Rows[bindingSourceP.Position].Selected = true;
+            }
+
         }
     }
 }

@@ -26,6 +26,8 @@ namespace Repository
         private GenericRepository<UserMedic> userMedicRepo;
         private GenericRepository<Cerere> cerereRepo;
         private GenericRepository<Stoc> stocRepo;
+        private GenericRepository<Pacient> pacientRepo;
+
 
         private CTContext context;
 
@@ -96,6 +98,16 @@ namespace Repository
             }
         }
 
+        public GenericRepository<Pacient> PacientRepo
+        {
+            get
+            {
+                if (pacientRepo == null)
+                    pacientRepo = new GenericRepository<Pacient>(context);
+                return pacientRepo;
+            }
+        }
+
 
         public void Dispose()
         {
@@ -111,5 +123,7 @@ namespace Repository
         {
             context.SaveChanges();
         }
+
+
     }
 }
