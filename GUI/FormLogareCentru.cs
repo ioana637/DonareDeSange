@@ -33,7 +33,7 @@ namespace GUI
             username = comboBoxNumeCentru.GetItemText(comboBoxNumeCentru.SelectedItem);
             parola = textBoxParolaCentru.Text;
 
-            if (username.Equals("") || username.Equals(""))
+            if (username.Equals("") || parola.Equals(""))
             {
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 MessageBox.Show(this, "Trebuie sa completati ambele campuri", "Eroare!", buttons);

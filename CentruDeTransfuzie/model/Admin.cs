@@ -21,5 +21,18 @@ namespace CentruDeTransfuzie.model
         public Admin()
         {
         }
+
+        public Admin(string username, string parola)
+        {
+            Username = username;
+            Parola = parola;
+        }
+
+        public Admin(int id, string username, string parola)
+        {
+            Id = id;
+            Username = username;
+            Parola = parola;
+        }
     }
 }
