@@ -31,8 +31,9 @@ namespace Repository
 
         public E GetBy(Expression<Func<E, bool>> predicate)
         {
-            if (dbset.Where(predicate) != null) return dbset.Where(predicate).FirstOrDefault();
-            else return null;
+            if (!dbset.Where(predicate).Equals(null))
+                return dbset.Where(predicate).FirstOrDefault();
+            return null;
         }
 
         public void Save(E entity)

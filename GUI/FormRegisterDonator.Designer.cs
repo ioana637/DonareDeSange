@@ -57,9 +57,6 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.cmbJudet2 = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.cmbLoc2 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.txtResedinta = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.cmbJudet1 = new System.Windows.Forms.ComboBox();
@@ -82,6 +79,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cmbLoc2 = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblREpsw
@@ -414,45 +414,12 @@
             this.cmbJudet2.Enabled = false;
             this.cmbJudet2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbJudet2.FormattingEnabled = true;
-            this.cmbJudet2.Location = new System.Drawing.Point(268, 357);
+            this.cmbJudet2.Location = new System.Drawing.Point(106, 357);
             this.cmbJudet2.Margin = new System.Windows.Forms.Padding(2);
             this.cmbJudet2.Name = "cmbJudet2";
-            this.cmbJudet2.Size = new System.Drawing.Size(161, 28);
+            this.cmbJudet2.Size = new System.Drawing.Size(132, 28);
             this.cmbJudet2.TabIndex = 89;
             this.cmbJudet2.SelectedIndexChanged += new System.EventHandler(this.cmbJudet2_SelectedIndexChanged);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(213, 359);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 20);
-            this.label14.TabIndex = 88;
-            this.label14.Text = "Județ:";
-            // 
-            // cmbLoc2
-            // 
-            this.cmbLoc2.Enabled = false;
-            this.cmbLoc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbLoc2.FormattingEnabled = true;
-            this.cmbLoc2.Location = new System.Drawing.Point(109, 357);
-            this.cmbLoc2.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbLoc2.Name = "cmbLoc2";
-            this.cmbLoc2.Size = new System.Drawing.Size(101, 28);
-            this.cmbLoc2.TabIndex = 87;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(32, 359);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(82, 20);
-            this.label15.TabIndex = 86;
-            this.label15.Text = "Localitate:";
             // 
             // txtResedinta
             // 
@@ -482,7 +449,7 @@
             this.cmbJudet1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbJudet1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbJudet1.FormattingEnabled = true;
-            this.cmbJudet1.Location = new System.Drawing.Point(280, 276);
+            this.cmbJudet1.Location = new System.Drawing.Point(109, 276);
             this.cmbJudet1.Margin = new System.Windows.Forms.Padding(2);
             this.cmbJudet1.Name = "cmbJudet1";
             this.cmbJudet1.Size = new System.Drawing.Size(101, 28);
@@ -493,7 +460,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(226, 279);
+            this.label12.Location = new System.Drawing.Point(37, 279);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(53, 20);
@@ -504,7 +471,7 @@
             // 
             this.cmbLoc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLoc1.FormattingEnabled = true;
-            this.cmbLoc1.Location = new System.Drawing.Point(109, 276);
+            this.cmbLoc1.Location = new System.Drawing.Point(315, 271);
             this.cmbLoc1.Margin = new System.Windows.Forms.Padding(2);
             this.cmbLoc1.Name = "cmbLoc1";
             this.cmbLoc1.Size = new System.Drawing.Size(101, 28);
@@ -534,10 +501,10 @@
             // 
             this.cb_an.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_an.FormattingEnabled = true;
-            this.cb_an.Location = new System.Drawing.Point(368, 166);
+            this.cb_an.Location = new System.Drawing.Point(368, 165);
             this.cb_an.Margin = new System.Windows.Forms.Padding(2);
             this.cb_an.Name = "cb_an";
-            this.cb_an.Size = new System.Drawing.Size(61, 28);
+            this.cb_an.Size = new System.Drawing.Size(79, 28);
             this.cb_an.TabIndex = 78;
             // 
             // cb_luna
@@ -626,7 +593,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(30, 281);
+            this.label6.Location = new System.Drawing.Point(229, 279);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 20);
@@ -690,11 +657,47 @@
             this.label1.TabIndex = 64;
             this.label1.Text = "Nume:";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(36, 360);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 20);
+            this.label14.TabIndex = 124;
+            this.label14.Text = "Județ:";
+            // 
+            // cmbLoc2
+            // 
+            this.cmbLoc2.Enabled = false;
+            this.cmbLoc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLoc2.FormattingEnabled = true;
+            this.cmbLoc2.Location = new System.Drawing.Point(333, 357);
+            this.cmbLoc2.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbLoc2.Name = "cmbLoc2";
+            this.cmbLoc2.Size = new System.Drawing.Size(101, 28);
+            this.cmbLoc2.TabIndex = 123;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(247, 360);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(82, 20);
+            this.label15.TabIndex = 122;
+            this.label15.Text = "Localitate:";
+            // 
             // FormRegisterDonator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(448, 478);
+            this.ClientSize = new System.Drawing.Size(472, 478);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.cmbLoc2);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.lblREpsw);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblPassw);
@@ -724,9 +727,6 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.cmbJudet2);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.cmbLoc2);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.txtResedinta);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.cmbJudet1);
@@ -789,9 +789,6 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cmbJudet2;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox cmbLoc2;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtResedinta;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cmbJudet1;
@@ -814,5 +811,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox cmbLoc2;
+        private System.Windows.Forms.Label label15;
     }
 }

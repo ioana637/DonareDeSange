@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service1\Service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medic", "Medic\Medic.csproj", "{97877415-ED7D-4412-85CB-1CCC260D0531}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Donator", "Donator\Donator.csproj", "{DC49060F-315C-45A8-AA98-453DB2991E4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentruT", "CentruT\CentruT.csproj", "{538A7291-00A6-4DFF-81F0-D7DB1585AFA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{97877415-ED7D-4412-85CB-1CCC260D0531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97877415-ED7D-4412-85CB-1CCC260D0531}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97877415-ED7D-4412-85CB-1CCC260D0531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC49060F-315C-45A8-AA98-453DB2991E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC49060F-315C-45A8-AA98-453DB2991E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC49060F-315C-45A8-AA98-453DB2991E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC49060F-315C-45A8-AA98-453DB2991E4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538A7291-00A6-4DFF-81F0-D7DB1585AFA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538A7291-00A6-4DFF-81F0-D7DB1585AFA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538A7291-00A6-4DFF-81F0-D7DB1585AFA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538A7291-00A6-4DFF-81F0-D7DB1585AFA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

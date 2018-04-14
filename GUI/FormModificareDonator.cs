@@ -43,6 +43,8 @@ namespace GUI
                 textBoxTensSist.Clear();
                 textBoxTensDiast.Clear();
                 parinte.LoadDataGridView1();
+                this.Close();
+
 
             }
             catch (System.ComponentModel.DataAnnotations.ValidationException error)
