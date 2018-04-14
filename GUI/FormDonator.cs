@@ -33,9 +33,12 @@ namespace GUI
 
         private void buttonLogout_Click(object sender, EventArgs e)
         {
-            FormLogareDonator formLogareDonator = new FormLogareDonator(new DonatorService());
+            FormLogareDonator formLogareDonator = new FormLogareDonator(service);
             formLogareDonator.Show();
             this.Hide();
+            formLogareDonator.Closed += (s, args) => this.Close();
+
+
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -187,10 +190,11 @@ namespace GUI
             textBoxSetariNume.Text = donator.Nume;
             textBoxSetariPrenume.Text = donator.Prenume;
             textAdresa.Text = donator.Domiciliu;
-            cmbLoc.Text = donator.Localitate;
-            cmbJud.Text = donator.Judet;
-            cmbJudR.Text = donator.JudetResedinta;
-            cmbLocR.Text = donator.LocalitateResedinta;
+            cmbJud.SelectedItem = donator.Judet;
+            cmbLoc.SelectedItem = donator.Localitate;
+            textBoxAdresaR.Text=donator.Resedinta;
+            cmbJudR.SelectedItem = donator.JudetResedinta;
+            cmbLocR.SelectedItem = donator.LocalitateResedinta;
             textTelefon.Text = donator.Telefon;
             textEmail.Text = donator.Email;
             if (donator.Sex == "F")

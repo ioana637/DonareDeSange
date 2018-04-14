@@ -1,13 +1,15 @@
 ﻿using CentruDeTransfuzie1;
 using CentruDeTransfuzie1.Data;
+using GUI;
 using Microsoft.EntityFrameworkCore;
+using Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI
+namespace Donator
 {
     static class Program
     {
@@ -23,19 +25,7 @@ namespace GUI
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FormMedic(new Service.UserMedicService(),"ioana"));
-            //Application.Run(new FormDonator());
-
-
-            //Application.Run(new FormCentru(new Service.DonatorService()));
-            //Application.Run(new FormLogareCentru(new Service.CentruService()));
-
-            //Application.Run(new FormAnalizeSange());
-            //Application.Run(new FormRegisterDonator());
-            Application.Run(new FormLogareDonator(new Service.DonatorService()));
-            // Console.WriteLine("dklflkes");
-            //Application.Run(new FormLogareMedic(new Service.UserMedicService()));
-           
+            Application.Run(new FormLogareDonator(new DonatorService()));
 
         }
     }

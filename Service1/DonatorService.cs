@@ -27,8 +27,8 @@ namespace Service
             {
                 string encryptedPassword = EncryptPassword(password);
 
-                UserDonator user = unitOfWork.UserDonatorRepo.GetBy(x => x.Username == userName);
-                if (user.Parola == encryptedPassword)
+                UserDonator user = unitOfWork.UserDonatorRepo.GetBy(x => x.Username.Equals(userName));
+                if (user.Parola.Equals(encryptedPassword))
                 {
                     return true;
                 }
@@ -53,8 +53,8 @@ namespace Service
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
-                Donator donator = unitOfWork.DonatorRepo.GetBy(x => x.UserDonator.Username == username);
-                if (donator == null) { throw new ValidationException(); }
+                Donator donator = unitOfWork.DonatorRepo.GetBy(x => x.UserDonator.Username.Equals(username));
+                if (donator.Equals(null)) { throw new ValidationException(); }
                 return donator;
             }
         }

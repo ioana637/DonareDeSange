@@ -1,12 +1,10 @@
 using CentruDeTransfuzie.utils;
 using CentruDeTransfuzie1.model;
 using CentruDeTransfuzie1.utils;
-﻿using CentruDeTransfuzie1.utils;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+
 
 namespace CentruDeTransfuzie1.Data
 {
@@ -95,9 +93,9 @@ namespace CentruDeTransfuzie1.Data
             Donator donator1 = new Donator("Popescu", "Ion", "M", DateTime.Parse("12-02-98"), "Cluj-Napoca", "Cluj-Napoca", "Cluj", null, null, null, "0712121212", "popescu@yahoo.com");
             UserDonator userDonator1 = new UserDonator("popescu", "8287458823facb8ff918dbfabcd22ccb"); // parola este "parola"
 
-            Donator d1 = new Donator("Dobrovat", "Mihai", "M", DateTime.Parse("10/22/1996"), "Str. Buftea", "Cluj-Napoca", "Cluj", "Str. Buftea", "Cluj-Napoca", "Cluj", "0123456789", "mihai@yahoo.com");
-            Donator d2 = new Donator("Marin", "Andrei", "M", DateTime.Parse("11/23/1997"), "Str. Garii", "Iasi", "Iasi", "Str. Garii", "Iasi", "Iasi", "0223456789", "andrei@yahoo.com");
-            Donator d3 = new Donator("Acatrinei", "Maria", "F", DateTime.Parse("12/24/1998"), "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "0323456789", "maria@yahoo.com");
+            //Donator d1 = new Donator("Dobrovat", "Mihai", "M", DateTime.Parse("10-22-1996"), "Str. Buftea", "Cluj-Napoca", "Cluj", "Str. Buftea", "Cluj-Napoca", "Cluj", "0123456789", "mihai@yahoo.com");
+            //Donator d2 = new Donator("Marin", "Andrei", "M", DateTime.Parse("11-23-1997"), "Str. Garii", "Iasi", "Iasi", "Str. Garii", "Iasi", "Iasi", "0223456789", "andrei@yahoo.com");
+            //Donator d3 = new Donator("Acatrinei", "Maria", "F", DateTime.Parse("12-24-1998"), "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "0323456789", "maria@yahoo.com");
 
 
             //UserDonator ud1 = new UserDonator("Dmihai", "1234");

@@ -38,9 +38,11 @@ namespace GUI
                 //UserDonator user = service.GetUserDonator(txtUsername.Text);
                 if (service.LogInUserDonator(txtUsername.Text,txtPassw.Text))
                 {
-                    FormDonator formDonator = new FormDonator(new DonatorService(), txtUsername.Text);
-                    formDonator.Show();
+                    FormDonator formDonator = new FormDonator(service, txtUsername.Text);
                     this.Hide();
+                    formDonator.Closed += (s, args) => this.Close();
+                    formDonator.Show();
+                    
                 }
                 else
                 {
@@ -49,7 +51,7 @@ namespace GUI
             }
             catch (Exception err)
             {
-                MessageBox.Show("Username or password incorect!!");
+                MessageBox.Show("Username or password incorect!!" + err.StackTrace);
             }
         }
 
