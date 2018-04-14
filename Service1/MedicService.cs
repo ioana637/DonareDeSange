@@ -19,16 +19,16 @@ namespace Service
             }
         }
 
-        public bool Login(String username, String password)
-        {
-            
+        public int Login(String username,String password)
+        {// returneaza -1 daca datele sunt gresite, id-ul medicului altfel
             UserMedic um = GetUserMedicByUsername(username);
-            if (um == null) return false;
-            if (um.Parola.Equals(password)) return true;
-            else return false;
-            
-            
+            if (um == null) return -1;
+            if (um.Parola.Equals(password))
+                return um.Id;
+            else return -1;
         }
+
+       
 
         public List<Cerere> GetAllCereri()
         {
@@ -85,6 +85,37 @@ namespace Service
                 cerereSalvata.CantitateTrombocite = cerere.CantitateTrombocite;
                 unitOfWork.CerereRepo.Update(cerereSalvata);
                 unitOfWork.Save();
+
+            }
+        }
+
+        public void AdaugaPacient(int idMedic, string nume, string prenume, string email, bool esteDonator)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+
+                Pacient pacient = new Pacient(nume, prenume, email, esteDonator);
+                Medic medic = unitOfWork.MedicRepo.GetBy(m => m.Id.Equals(idMedic));
+                pacient.Medic = medic;
+
+                unitOfWork.PacientRepo.Save(pacient);
+                unitOfWork.Save();
+
+                Pacient pacientSalvat = unitOfWork.PacientRepo.GetBy(d => d.Email.Equals(email));
+                medic.Pacienti.Add(pacientSalvat);
+                unitOfWork.Save();
+
+            }
+        }
+
+        public List<Pacient> GetPacientByMedic(int idMedicCurent)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<Pacient> pacienti = new List<Pacient>();
+                Medic medic = unitOfWork.MedicRepo.GetBy(m => m.Id.Equals(idMedicCurent));
+                unitOfWork.PacientRepo.GetAll().Where(p => p.Medic.UserMedic.Id.Equals(idMedicCurent)).ToList().ForEach(p => { pacienti.Add(p); });
+                return pacienti;
 
             }
         }
