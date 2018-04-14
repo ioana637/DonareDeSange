@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Service1;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,19 @@ namespace GUI
 {
     public partial class FormAdmin : Form
     {
-        public FormAdmin()
+        AdminService adminService;
+        public FormAdmin(AdminService adminService)
         {
             InitializeComponent();
+            this.adminService = adminService;
         }
 
         private void buttonLogout_Click(object sender, EventArgs e)
         {
-
+            FormAdminLogare formAdminLogare = new FormAdminLogare(adminService);
+            this.Hide();
+            formAdminLogare.Closed += (s, args) => this.Close();
+            formAdminLogare.Show();
         }
     }
 }

@@ -1,3 +1,4 @@
+using CentruDeTransfuzie.model;
 using CentruDeTransfuzie.utils;
 using CentruDeTransfuzie1.model;
 using CentruDeTransfuzie1.utils;
@@ -21,7 +22,17 @@ namespace CentruDeTransfuzie1.Data
             InitializeDonatori(context);
             InitializeStoc(context);
             InitializeCentre(context);
+            InitializeAdmin(context);
 
+        }
+
+        private static void InitializeAdmin(CTContext context)
+        {
+            if (context.Admin.Any()) return;
+            context.Admin.Add(new Admin("a", "a"));
+            context.Admin.Add(new Admin("b", "b"));
+            context.Admin.Add(new Admin("c", "c"));
+            context.SaveChanges();
         }
 
         private static void InitializeStoc(CTContext context)
@@ -94,9 +105,9 @@ namespace CentruDeTransfuzie1.Data
             Donator donator1 = new Donator("Popescu", "Ion", "M", DateTime.Parse("12-02-98"), "Cluj-Napoca", "Cluj-Napoca", "Cluj", null, null, null, "0712121212", "popescu@yahoo.com");
             UserDonator userDonator1 = new UserDonator("popescu", "8287458823facb8ff918dbfabcd22ccb"); // parola este "parola"
 
-            Donator d1 = new Donator("Dobrovat", "Mihai", "M", DateTime.Parse("10-22-1996"), "Str. Buftea", "Cluj-Napoca", "Cluj", "Str. Buftea", "Cluj-Napoca", "Cluj", "0723456789", "mihai@yahoo.com");
+            Donator d1 = new Donator("Dobrovat", "Mihai", "M", DateTime.Parse("10-22-1996"), "Str. Buftea", "Cluj-Napoca", "Cluj", "Str. Buftea", "Cluj-Napoca", "Cluj", "0723456799", "mihai@yahoo.com");
             Donator d2 = new Donator("Marin", "Andrei", "M", DateTime.Parse("11-23-1997"), "Str. Garii", "Iasi", "Iasi", "Str. Garii", "Iasi", "Iasi", "0723456789", "andrei@yahoo.com");
-            Donator d3 = new Donator("Acatrinei", "Maria", "F", DateTime.Parse("12-24-1998"), "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "0723456789", "maria@yahoo.com");
+            Donator d3 = new Donator("Acatrinei", "Maria", "F", DateTime.Parse("12-24-1998"), "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "0723456787", "maria@yahoo.com");
 
             UserDonator ud1 = new UserDonator("Dmihai", "parola1");
             UserDonator ud2 = new UserDonator("Mandrei", "parola2");

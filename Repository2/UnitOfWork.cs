@@ -1,4 +1,5 @@
-﻿using CentruDeTransfuzie1;
+﻿using CentruDeTransfuzie.model;
+using CentruDeTransfuzie1;
 using CentruDeTransfuzie1.model;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -29,6 +30,7 @@ namespace Repository
         private GenericRepository<Stoc> stocRepo;
         private GenericRepository<Pacient> pacientRepo;
         private GenericRepository<CentruTransfuzie> centruRepo;
+        private GenericRepository<Admin> adminRepo;
 
 
         private CTContext context;
@@ -116,6 +118,16 @@ namespace Repository
                 if (centruRepo == null)
                     centruRepo = new GenericRepository<CentruTransfuzie>(context);
                 return centruRepo;
+            }
+        }
+
+        public GenericRepository<Admin> AdminRepo
+        {
+            get
+            {
+                if (adminRepo == null)
+                    adminRepo = new GenericRepository<Admin>(context);
+                return adminRepo;
             }
         }
 
