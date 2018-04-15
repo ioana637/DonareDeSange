@@ -23,6 +23,7 @@ namespace CentruDeTransfuzie.utils
                 "Cluj-Napoca"
             };
             judet.Add("Cluj", cluj);
+
             List<string> alba = new List<string> {
                 "Abrud",
                 "Acmariu",

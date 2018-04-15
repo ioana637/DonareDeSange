@@ -184,8 +184,6 @@ namespace GUI
                 total = Int32.Parse(textBoxTotal.Text);
                 cerere.CantitateSange = total;
 
-
-
             }
             else
             {
@@ -216,8 +214,6 @@ namespace GUI
             {
                 total = Int32.Parse(textBoxTotal.Text);
                 cerere.CantitateSange = total;
-               
-
 
             }
             else
