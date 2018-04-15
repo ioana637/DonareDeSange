@@ -32,5 +32,35 @@ namespace Service
                 return stocuri;
             }
         }
+
+        public List<CentruTransfuzie> GetAllCentre()
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<CentruTransfuzie> centre = new List<CentruTransfuzie>();
+
+                unitOfWork.CentruTransfuzieRepo.GetAll().ToList().ForEach(c => { centre.Add(c); });
+                return centre;
+            }
+
+        }
+
+        public CentruTransfuzie GetCentruTransfuzieByName(String name)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                CentruTransfuzie centru = unitOfWork.CentruTransfuzieRepo.GetBy(c => c.Nume.Equals(name));
+                return centru;
+            }
+        }
+
+        public int Login(String username, String password)
+        {
+            CentruTransfuzie ct = GetCentruTransfuzieByName(username);
+            if (ct == null) return -1;
+            if (ct.Parola.Equals(password))
+                return ct.Id;
+            else return -1;
+        }
     }
 }
