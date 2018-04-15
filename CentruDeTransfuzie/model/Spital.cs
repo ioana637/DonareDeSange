@@ -18,6 +18,15 @@ public class Spital {
         SpitalMedici = new List<SpitalMedic>();
     }
 
+    public Spital(CentruTransfuzie centruTransfuzie, string adresa, string oras, string judet)
+    {
+        CentruTransfuzie = centruTransfuzie;
+        Adresa = adresa;
+        Oras = oras;
+        Judet = judet;
+        SpitalMedici = new List<SpitalMedic>();
+    }
+
     public int Id { get; set; }
 
     [Required(ErrorMessage = "CentruTransfuzie is required")]

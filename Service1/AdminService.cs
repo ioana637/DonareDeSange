@@ -40,11 +40,39 @@ namespace Service1
             }
         }
 
+        public IList<Spital> GetAllSpitale()
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                IList<Spital> spitale = new List<Spital>();
+                unitOfWork.SpitalRepo.GetAll().ToList().ForEach(dn => { spitale.Add(dn); });
+                return spitale;
+            }
+        }
+
         public void AddCentru(CentruTransfuzie centru)
         {
             using(UnitOfWork unitOfWork=new UnitOfWork())
             {
                 unitOfWork.CentruTransfuzieRepo.Save(centru);
+                unitOfWork.Save();
+            }
+        }
+
+        public void Delete(CentruTransfuzie centru)
+        {
+            using(UnitOfWork unitOfWork=new UnitOfWork())
+            {
+                unitOfWork.CentruTransfuzieRepo.Delete(centru);
+                unitOfWork.Save();
+            }
+        }
+
+        public void AddSpital(Spital spital)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                unitOfWork.SpitalRepo.Save(spital);
                 unitOfWork.Save();
             }
         }
