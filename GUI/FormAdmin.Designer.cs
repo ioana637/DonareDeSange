@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageCentruTransfuzii = new System.Windows.Forms.TabPage();
+            this.buttonDeleteCentru = new System.Windows.Forms.Button();
             this.textBoxParola = new System.Windows.Forms.TextBox();
             this.labelParola = new System.Windows.Forms.Label();
             this.buttonAddCentruT = new System.Windows.Forms.Button();
@@ -47,11 +48,22 @@
             this.labelNume = new System.Windows.Forms.Label();
             this.tabPageMedici = new System.Windows.Forms.TabPage();
             this.tabPageSpitale = new System.Windows.Forms.TabPage();
+            this.comboBoxCentruT = new System.Windows.Forms.ComboBox();
+            this.labelCentruTransfuzie = new System.Windows.Forms.Label();
+            this.buttonAddSpital = new System.Windows.Forms.Button();
+            this.textBoxAdresaSpital = new System.Windows.Forms.TextBox();
+            this.comboBoxLocalitateSpital = new System.Windows.Forms.ComboBox();
+            this.comboBoxJudetSpital = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dataGridViewSpitale = new System.Windows.Forms.DataGridView();
             this.buttonLogout = new System.Windows.Forms.Button();
-            this.buttonDeleteCentru = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPageCentruTransfuzii.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCentre)).BeginInit();
+            this.tabPageSpitale.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSpitale)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -90,6 +102,16 @@
             this.tabPageCentruTransfuzii.TabIndex = 0;
             this.tabPageCentruTransfuzii.Text = "CentreDeTransfuzii";
             this.tabPageCentruTransfuzii.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteCentru
+            // 
+            this.buttonDeleteCentru.Location = new System.Drawing.Point(817, 419);
+            this.buttonDeleteCentru.Name = "buttonDeleteCentru";
+            this.buttonDeleteCentru.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeleteCentru.TabIndex = 17;
+            this.buttonDeleteCentru.Text = "Delete";
+            this.buttonDeleteCentru.UseVisualStyleBackColor = true;
+            this.buttonDeleteCentru.Click += new System.EventHandler(this.buttonDeleteCentru_Click);
             // 
             // textBoxParola
             // 
@@ -223,6 +245,16 @@
             // 
             // tabPageSpitale
             // 
+            this.tabPageSpitale.Controls.Add(this.comboBoxCentruT);
+            this.tabPageSpitale.Controls.Add(this.labelCentruTransfuzie);
+            this.tabPageSpitale.Controls.Add(this.buttonAddSpital);
+            this.tabPageSpitale.Controls.Add(this.textBoxAdresaSpital);
+            this.tabPageSpitale.Controls.Add(this.comboBoxLocalitateSpital);
+            this.tabPageSpitale.Controls.Add(this.comboBoxJudetSpital);
+            this.tabPageSpitale.Controls.Add(this.label1);
+            this.tabPageSpitale.Controls.Add(this.label2);
+            this.tabPageSpitale.Controls.Add(this.label3);
+            this.tabPageSpitale.Controls.Add(this.dataGridViewSpitale);
             this.tabPageSpitale.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageSpitale.Location = new System.Drawing.Point(4, 22);
             this.tabPageSpitale.Name = "tabPageSpitale";
@@ -230,6 +262,92 @@
             this.tabPageSpitale.TabIndex = 2;
             this.tabPageSpitale.Text = "Spitale";
             this.tabPageSpitale.UseVisualStyleBackColor = true;
+            // 
+            // comboBoxCentruT
+            // 
+            this.comboBoxCentruT.FormattingEnabled = true;
+            this.comboBoxCentruT.Location = new System.Drawing.Point(670, 196);
+            this.comboBoxCentruT.Name = "comboBoxCentruT";
+            this.comboBoxCentruT.Size = new System.Drawing.Size(213, 28);
+            this.comboBoxCentruT.TabIndex = 24;
+            // 
+            // labelCentruTransfuzie
+            // 
+            this.labelCentruTransfuzie.AutoSize = true;
+            this.labelCentruTransfuzie.Location = new System.Drawing.Point(669, 164);
+            this.labelCentruTransfuzie.Name = "labelCentruTransfuzie";
+            this.labelCentruTransfuzie.Size = new System.Drawing.Size(142, 20);
+            this.labelCentruTransfuzie.TabIndex = 23;
+            this.labelCentruTransfuzie.Text = "CentruTransfuzie";
+            // 
+            // buttonAddSpital
+            // 
+            this.buttonAddSpital.Location = new System.Drawing.Point(668, 230);
+            this.buttonAddSpital.Name = "buttonAddSpital";
+            this.buttonAddSpital.Size = new System.Drawing.Size(55, 24);
+            this.buttonAddSpital.TabIndex = 22;
+            this.buttonAddSpital.Text = "Add";
+            this.buttonAddSpital.UseVisualStyleBackColor = true;
+            this.buttonAddSpital.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
+            // textBoxAdresaSpital
+            // 
+            this.textBoxAdresaSpital.Location = new System.Drawing.Point(752, 56);
+            this.textBoxAdresaSpital.Name = "textBoxAdresaSpital";
+            this.textBoxAdresaSpital.Size = new System.Drawing.Size(131, 27);
+            this.textBoxAdresaSpital.TabIndex = 19;
+            // 
+            // comboBoxLocalitateSpital
+            // 
+            this.comboBoxLocalitateSpital.FormattingEnabled = true;
+            this.comboBoxLocalitateSpital.Location = new System.Drawing.Point(752, 123);
+            this.comboBoxLocalitateSpital.Name = "comboBoxLocalitateSpital";
+            this.comboBoxLocalitateSpital.Size = new System.Drawing.Size(131, 28);
+            this.comboBoxLocalitateSpital.TabIndex = 21;
+            // 
+            // comboBoxJudetSpital
+            // 
+            this.comboBoxJudetSpital.FormattingEnabled = true;
+            this.comboBoxJudetSpital.Location = new System.Drawing.Point(752, 89);
+            this.comboBoxJudetSpital.Name = "comboBoxJudetSpital";
+            this.comboBoxJudetSpital.Size = new System.Drawing.Size(131, 28);
+            this.comboBoxJudetSpital.TabIndex = 20;
+            this.comboBoxJudetSpital.SelectedIndexChanged += new System.EventHandler(this.comboBoxJudetSpital_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(669, 97);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Judet";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(664, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 20);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Adresa";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(665, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 20);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Localitate";
+            // 
+            // dataGridViewSpitale
+            // 
+            this.dataGridViewSpitale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSpitale.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewSpitale.Name = "dataGridViewSpitale";
+            this.dataGridViewSpitale.Size = new System.Drawing.Size(640, 440);
+            this.dataGridViewSpitale.TabIndex = 0;
             // 
             // buttonLogout
             // 
@@ -242,16 +360,6 @@
             this.buttonLogout.TabIndex = 2;
             this.buttonLogout.UseVisualStyleBackColor = true;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
-            // 
-            // buttonDeleteCentru
-            // 
-            this.buttonDeleteCentru.Location = new System.Drawing.Point(817, 419);
-            this.buttonDeleteCentru.Name = "buttonDeleteCentru";
-            this.buttonDeleteCentru.Size = new System.Drawing.Size(75, 23);
-            this.buttonDeleteCentru.TabIndex = 17;
-            this.buttonDeleteCentru.Text = "Delete";
-            this.buttonDeleteCentru.UseVisualStyleBackColor = true;
-            this.buttonDeleteCentru.Click += new System.EventHandler(this.buttonDeleteCentru_Click);
             // 
             // FormAdmin
             // 
@@ -266,6 +374,9 @@
             this.tabPageCentruTransfuzii.ResumeLayout(false);
             this.tabPageCentruTransfuzii.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCentre)).EndInit();
+            this.tabPageSpitale.ResumeLayout(false);
+            this.tabPageSpitale.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSpitale)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,5 +403,15 @@
         private System.Windows.Forms.Label labelParola;
         private System.Windows.Forms.Button buttonAddCentruT;
         private System.Windows.Forms.Button buttonDeleteCentru;
+        private System.Windows.Forms.DataGridView dataGridViewSpitale;
+        private System.Windows.Forms.ComboBox comboBoxCentruT;
+        private System.Windows.Forms.Label labelCentruTransfuzie;
+        private System.Windows.Forms.Button buttonAddSpital;
+        private System.Windows.Forms.TextBox textBoxAdresaSpital;
+        private System.Windows.Forms.ComboBox comboBoxLocalitateSpital;
+        private System.Windows.Forms.ComboBox comboBoxJudetSpital;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

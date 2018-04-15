@@ -16,6 +16,8 @@ namespace Repository
         GenericRepository<UserMedic> UserMedicRepo { get; }
         GenericRepository<Cerere> CerereRepo { get; }
         GenericRepository<CentruTransfuzie> CentruTransfuzieRepo { get; }
+        GenericRepository<Admin> AdminRepo { get; }
+        GenericRepository<Spital> SpitalRepo { get; }
 
         void Save();
     }
@@ -31,7 +33,7 @@ namespace Repository
         private GenericRepository<Pacient> pacientRepo;
         private GenericRepository<CentruTransfuzie> centruRepo;
         private GenericRepository<Admin> adminRepo;
-
+        private GenericRepository<Spital> spitalRepo;
 
         private CTContext context;
 
@@ -130,6 +132,17 @@ namespace Repository
                 return adminRepo;
             }
         }
+
+        public GenericRepository<Spital> SpitalRepo
+        {
+            get
+            {
+                if (spitalRepo == null)
+                    spitalRepo = new GenericRepository<Spital>(context);
+                return spitalRepo;
+            }
+        }
+
 
         public void Dispose()
         {

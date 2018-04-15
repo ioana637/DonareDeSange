@@ -46,4 +46,9 @@ public class CentruTransfuzie {
     {
         Parola = parola;
     }
+
+    public override string ToString()
+    {
+        return Nume + "; " + Zona + "; " + Oras + "; " + Judet;
+    }
 }
