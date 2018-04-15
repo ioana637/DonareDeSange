@@ -28,5 +28,28 @@ namespace Service1
                 return admin;
             }
         }
+
+        public IList<CentruTransfuzie> GetAllCentre()
+        {
+
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                IList<CentruTransfuzie> centre = new List<CentruTransfuzie>();
+                unitOfWork.CentruTransfuzieRepo.GetAll().ToList().ForEach(dn => { centre.Add(dn); });
+                return centre;
+            }
+        }
+
+        public void AddCentru(CentruTransfuzie centru)
+        {
+            using(UnitOfWork unitOfWork=new UnitOfWork())
+            {
+                unitOfWork.CentruTransfuzieRepo.Save(centru);
+                unitOfWork.Save();
+            }
+        }
     }
+
+    
 }
+

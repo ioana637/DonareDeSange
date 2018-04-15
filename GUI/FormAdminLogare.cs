@@ -19,7 +19,8 @@ namespace GUI
         {
             InitializeComponent();
             this.adminService = service;
-        
+            this.FormClosing += FormAdminLogare_FormClosing;
+
         }
 
         private void buttonLogIn_Click(object sender, EventArgs e)
@@ -51,6 +52,17 @@ namespace GUI
 
         }
 
-       
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FormAdminLogare_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason.Equals(CloseReason.UserClosing))
+            {
+                Application.Exit();
+            }
+        }
     }
 }
