@@ -9,7 +9,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CentruT
+namespace Admin
 {
     static class Program
     {
@@ -25,9 +25,7 @@ namespace CentruT
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FormCentru(new Service.DonatorService()));
-            Application.Run(new FormLogareCentru(new Service.CentruService()));
-
+            Application.Run(new FormAdminLogare(new AdminService()));
         }
     }
 }

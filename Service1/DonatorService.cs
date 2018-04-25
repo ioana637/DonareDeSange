@@ -1,4 +1,5 @@
 ﻿using Repository;
+using Service1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,7 @@ namespace Service
 
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
-                string encryptedPassword = EncryptPassword(password);
+                string encryptedPassword = Util.EncryptPassword(password);
 
                 UserDonator user = unitOfWork.UserDonatorRepo.GetBy(x => x.Username.Equals(userName));
                 if (user.Parola.Equals(encryptedPassword))
@@ -36,23 +37,13 @@ namespace Service
             }
         }
 
-        private string EncryptPassword(string password)
-        {
-
-            MD5 md5 = MD5.Create();
-            byte[] data = md5.ComputeHash(Encoding.UTF8.GetBytes(password));
-            StringBuilder stringBuilder = new StringBuilder();
-            for (int i = 0; i < data.Length; i++)
-            {
-                stringBuilder.Append(data[i].ToString("x2"));
-            }
-            return stringBuilder.ToString();
-        }
+       
 
         public Donator GetDonator(string username)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
+                //!!!Se arunca exceptie la logare desi userul exista in bd. Donatorul returnat de functie este null!!!!!!
                 Donator donator = unitOfWork.DonatorRepo.GetBy(x => x.UserDonator.Username.Equals(username));
                 if (donator.Equals(null)) { throw new ValidationException(); }
                 return donator;
@@ -61,7 +52,7 @@ namespace Service
 
         public string Encrypt(string pass)
         {
-            return EncryptPassword(pass);
+            return Util.EncryptPassword(pass);
         }
 
         public void RegisterDonator(string userName, string password, string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email)
@@ -70,7 +61,7 @@ namespace Service
             {
                 Donator donator = new Donator(nume, prenume, sex, dataNastere, domiciliu, localitate, judet, resedinta, localitateResedinta, judetResedinta, telefon, email);
                 unitOfWork.DonatorRepo.Save(donator);
-                string encryptedPassword = EncryptPassword(password);
+                string encryptedPassword = Util.EncryptPassword(password);
                 UserDonator user = new UserDonator(userName, encryptedPassword);
                 unitOfWork.UserDonatorRepo.Save(user);
                 unitOfWork.Save();

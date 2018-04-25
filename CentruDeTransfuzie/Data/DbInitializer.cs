@@ -29,9 +29,8 @@ namespace CentruDeTransfuzie1.Data
         private static void InitializeAdmin(CTContext context)
         {
             if (context.Admin.Any()) return;
-            context.Admin.Add(new Admin("a", "a"));
-            context.Admin.Add(new Admin("b", "b"));
-            context.Admin.Add(new Admin("c", "c"));
+            context.Admin.Add(new Admin("admin", "21232f297a57a5a743894a0e4a801fc3"));//parola=admin
+            context.Admin.Add(new Admin("admin1", "e00cf25ad42683b3df678c61f42c6bda"));//parola=admin1
             context.SaveChanges();
         }
 
@@ -60,8 +59,8 @@ namespace CentruDeTransfuzie1.Data
             {
                 context.Medic.Add(m);
             }
-            UserMedic um1 = new UserMedic("ioana", "12345");
-            UserMedic um2 = new UserMedic("raul", "12345");
+            UserMedic um1 = new UserMedic("ioana", "0d20326e6155cae6bb2b510bfc2cc01e");//parola=medic
+            UserMedic um2 = new UserMedic("raul", "0d20326e6155cae6bb2b510bfc2cc01e"); //parola = medic
             var usersM = new UserMedic[]{ um1, um2 };
             foreach (UserMedic um in usersM)
             {
@@ -102,24 +101,25 @@ namespace CentruDeTransfuzie1.Data
         {
             if (context.Donator.Any()) return;
 
-            Donator donator1 = new Donator("Popescu", "Ion", "M", DateTime.Parse("12-02-98"), "Cluj-Napoca", "Cluj-Napoca", "Cluj", null, null, null, "0712121212", "popescu@yahoo.com");
-            UserDonator userDonator1 = new UserDonator("popescu", "8287458823facb8ff918dbfabcd22ccb"); // parola este "parola"
 
-            Donator d1 = new Donator("Dobrovat", "Mihai", "M", DateTime.Parse("10-22-1996"), "Str. Buftea", "Cluj-Napoca", "Cluj", "Str. Buftea", "Cluj-Napoca", "Cluj", "0723456799", "mihai@yahoo.com");
-            Donator d2 = new Donator("Marin", "Andrei", "M", DateTime.Parse("11-23-1997"), "Str. Garii", "Iasi", "Iasi", "Str. Garii", "Iasi", "Iasi", "0723456789", "andrei@yahoo.com");
-            Donator d3 = new Donator("Acatrinei", "Maria", "F", DateTime.Parse("12-24-1998"), "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "0723456787", "maria@yahoo.com");
+            Donator d1 = new Donator("Dobrovat", "Mihai", "M", DateTime.Parse("22-02-96"), "Str. Buftea", "Cluj-Napoca", "Cluj", "Str. Buftea", "Cluj-Napoca", "Cluj", "0723456799", "mihai@yahoo.com");
+            Donator d2 = new Donator("Marin", "Andrei", "M", DateTime.Parse("23-11-97"), "Str. Garii", "Iasi", "Iasi", "Str. Garii", "Iasi", "Iasi", "0723456789", "andrei@yahoo.com");
+            Donator d3 = new Donator("Acatrinei", "Maria", "F", DateTime.Parse("24-12-98"), "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "0723456787", "maria@yahoo.com");
+            Donator d4 = new Donator("Popescu", "Ion", "M", DateTime.Parse("12-02-98"), "Cluj-Napoca", "Cluj-Napoca", "Cluj", null, null, null, "0712121212", "popescu@yahoo.com");
 
-            UserDonator ud1 = new UserDonator("Dmihai", "parola1");
-            UserDonator ud2 = new UserDonator("Mandrei", "parola2");
-            UserDonator ud3 = new UserDonator("Amaria", "parola3");
-            var donatori = new Donator[] { d1, d2, d3 };
+            UserDonator ud1 = new UserDonator("Dmihai", "f63ed3300797216784db8387a2deaff0");//parola=parola1
+            UserDonator ud2 = new UserDonator("Mandrei", "a1442bfc190d52303727e63719962ed6");//parola=parola2
+            UserDonator ud3 = new UserDonator("Amaria", "93a7ffba27902537651fb3dbca8ae802");//parola=parola3
+            UserDonator ud4 = new UserDonator("popescu", "8287458823facb8ff918dbfabcd22ccb"); // parola este "parola"
+
+            var donatori = new Donator[] { d1, d2, d3,d4 };
 
             foreach (Donator d in donatori)
             {
                 context.Donator.Add(d);
             }
 
-            var usersD = new UserDonator[] { ud1, ud2, ud3 };
+            var usersD = new UserDonator[] { ud1, ud2, ud3,ud4 };
             foreach (UserDonator ud in usersD)
             {
 
@@ -134,21 +134,8 @@ namespace CentruDeTransfuzie1.Data
 
             context.SaveChanges();
 
-            /*
-            context.Donator.Add(donator1);
-            context.UserDonator.Add(userDonator1);
-
-            //context.Donator.Add(d1);
-            //context.UserDonator.Add(ud1);
-
-            //context.Donator.Add(d2);
-            //context.UserDonator.Add(ud2);
-
-            //context.Donator.Add(d3);
-            //context.UserDonator.Add(ud3);
-
-            context.SaveChanges();
-            */
+            
+            
         }
 
         static void InitializeCentre(CTContext context)
@@ -161,8 +148,8 @@ namespace CentruDeTransfuzie1.Data
             CentruTransfuzie c1 = new CentruTransfuzie("Centru Donare Sange Cluj", "Piata Mihai Viteazu", "Cluj-Napoca", "Cluj");
             CentruTransfuzie c2 = new CentruTransfuzie("Centru Donare Sange Bucuresti","Militari","Bucuresti","Ilfov");
 
-            c1.Parola = "ParolaCluj";
-            c2.Parola = "ParolaBucuresti";
+            c1.Parola = "e2a7b5972479f8c59ade36a15e5b6146";//parola=ParolaCluj
+            c2.Parola = "311e8c89c2e7f24e3ac63265496297a7";//parola=ParolaBucuresti
             var centre = new CentruTransfuzie[] { c1, c2 };
             foreach (CentruTransfuzie c in centre)
             {
