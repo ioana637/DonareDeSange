@@ -1,4 +1,5 @@
 ﻿using Repository;
+using Service1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +24,7 @@ namespace Service
         {// returneaza -1 daca datele sunt gresite, id-ul medicului altfel
             UserMedic um = GetUserMedicByUsername(username);
             if (um == null) return -1;
-            if (um.Parola.Equals(password))
+            if (um.Parola.Equals(Util.EncryptPassword(password)))
                 return um.Id;
             else return -1;
         }

@@ -14,7 +14,7 @@ namespace Service1
         {
             Admin admin = GetAdminByUsername(username);
             if (admin == null) return -1;
-            if (admin.Parola.Equals(password))
+            if (admin.Parola.Equals(Util.EncryptPassword(password)))
                 return admin.Id;
             else return -1;
         }

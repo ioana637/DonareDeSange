@@ -1,5 +1,6 @@
 ﻿using CentruDeTransfuzie1.model;
 using Repository;
+using Service1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,7 +59,7 @@ namespace Service
         {
             CentruTransfuzie ct = GetCentruTransfuzieByName(username);
             if (ct == null) return -1;
-            if (ct.Parola.Equals(password))
+            if (ct.Parola.Equals(Util.EncryptPassword(password)))
                 return ct.Id;
             else return -1;
         }
