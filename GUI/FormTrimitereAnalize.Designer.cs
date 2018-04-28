@@ -232,6 +232,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormTrimitereAnalize";
             this.Text = "FormTrimitereAnalize";
+            this.Load += new System.EventHandler(this.FormTrimitereAnalize_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

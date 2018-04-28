@@ -21,6 +21,7 @@ namespace CentruT
         {
             using (var db = new CTContext(new DbContextOptions<CTContext>()))
             {
+         
                 DbInitializer.Initialize(db);
             }
             Application.EnableVisualStyles();

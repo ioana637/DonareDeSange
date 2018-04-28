@@ -17,6 +17,9 @@ namespace Repository
         GenericRepository<Cerere> CerereRepo { get; }
         GenericRepository<CentruTransfuzie> CentruTransfuzieRepo { get; }
         GenericRepository<Admin> AdminRepo { get; }
+        GenericRepository<PungaSange> PungaSangeRepo { get; }
+        GenericRepository<Analiza> AnalizaRepo { get; }
+
         GenericRepository<Spital> SpitalRepo { get; }
 
         void Save();
@@ -34,6 +37,8 @@ namespace Repository
         private GenericRepository<CentruTransfuzie> centruRepo;
         private GenericRepository<Admin> adminRepo;
         private GenericRepository<Spital> spitalRepo;
+        private GenericRepository<Analiza> analizaRepo;
+        private GenericRepository<PungaSange> pungaSangeRepo;
 
         private CTContext context;
 
@@ -51,6 +56,16 @@ namespace Repository
                 if (donatorRepo == null)
                     donatorRepo = new GenericRepository<Donator>(context);
                 return donatorRepo;
+            }
+        }
+
+        public GenericRepository<Analiza> AnalizaRepo
+        {
+            get
+            {
+                if (analizaRepo == null)
+                    analizaRepo = new GenericRepository<Analiza>(context);
+                return analizaRepo;
             }
         }
 
@@ -143,6 +158,14 @@ namespace Repository
             }
         }
 
+        public GenericRepository<PungaSange> PungaSangeRepo {
+            get
+            {
+                if (pungaSangeRepo == null)
+                    pungaSangeRepo = new GenericRepository<PungaSange>(context);
+                return pungaSangeRepo;
+            }
+        }
 
         public void Dispose()
         {

@@ -23,7 +23,56 @@ namespace CentruDeTransfuzie1.Data
             InitializeStoc(context);
             InitializeCentre(context);
             InitializeAdmin(context);
+            InitializeTraseuPunga(context);
 
+            InitializePungaSange(context);
+            InitializeAnaliza(context);
+
+
+        }
+
+        private static void InitializeTraseuPunga(CTContext context)
+        {
+            if (context.TraseuPunga.Any()) return;
+            TraseuPunga t1 = new TraseuPunga { Prelevata = true };
+            TraseuPunga t2 = new TraseuPunga { Prelevata = true };
+            TraseuPunga t3 = new TraseuPunga { Prelevata = true };
+            var traseu = new TraseuPunga[] { t1, t2, t3 };
+            foreach (TraseuPunga tp in traseu)
+            {
+                context.TraseuPunga.Add(tp);
+            }
+            context.SaveChanges();
+        }
+
+        private static void InitializePungaSange(CTContext context)
+        {
+            if (context.PungaSange.Any()) return;
+            PungaSange p1 = new PungaSange(DateTime.Parse("24-12-2017"), 300, 30, 20, 10) { TraseuPunga = context.TraseuPunga.Find(1), Donator = context.Donator.Find(1), CentruTransfuzie = context.CentruTransfuzie.Find(1) };
+            PungaSange p2 = new PungaSange(DateTime.Parse("24-12-2017"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(2), Donator = context.Donator.Find(1), CentruTransfuzie = context.CentruTransfuzie.Find(1) };
+            PungaSange p3 = new PungaSange(DateTime.Parse("24-12-2017"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(3), Donator = context.Donator.Find(3), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
+            var pungi = new PungaSange[] { p1, p2, p3 };
+            foreach (PungaSange p in pungi)
+            {
+                context.PungaSange.Add(p);
+            }
+            context.SaveChanges();
+
+        }
+
+        private static void InitializeAnaliza(CTContext context)
+        {
+            if (context.Analiza.Any()) return;
+            //Analiza a1 = new Analiza(GrupaSange.OI, TipRh.Pozitiv, false, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(1), Donator = context.PungaSange.Find(1).Donator };
+            Analiza a2 = new Analiza(GrupaSange.AII, TipRh.Negativ, true, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(2), Donator = context.PungaSange.Find(2).Donator };
+            Analiza a3 = new Analiza(GrupaSange.BIII, TipRh.Pozitiv, false, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(3), Donator = context.PungaSange.Find(3).Donator };
+
+            var analize = new Analiza[] {  a2, a3 };
+            foreach (Analiza a in analize)
+            {
+                context.Analiza.Add(a);
+            }
+            context.SaveChanges();
         }
 
         private static void InitializeAdmin(CTContext context)

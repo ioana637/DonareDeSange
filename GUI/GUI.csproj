@@ -172,6 +172,12 @@
     <Compile Include="FormRegisterDonator.Designer.cs">
       <DependentUpon>FormRegisterDonator.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTrimitereAnalize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrimitereAnalize.Designer.cs">
+      <DependentUpon>FormTrimitereAnalize.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAdmin.resx">
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegisterDonator.resx">
       <DependentUpon>FormRegisterDonator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrimitereAnalize.resx">
+      <DependentUpon>FormTrimitereAnalize.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
