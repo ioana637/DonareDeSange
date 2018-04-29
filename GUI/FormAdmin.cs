@@ -177,7 +177,7 @@ namespace GUI
                 }
                 else
                 {
-                    //adminService.AddSpital(new Spital(centru,adresa, localitate, judet));
+                    adminService.AddSpital(new Spital(centru,adresa, localitate, judet), centru);
                     loadDataGridViewSpitale();
 
                 }
