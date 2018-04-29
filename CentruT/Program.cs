@@ -25,10 +25,7 @@ namespace CentruT
          
                 DbInitializer.Initialize(db);
             }
-            using (var unit=new UnitOfWork())
-            {
-                List<PungaSange> list=unit.PungaSangeRepo.GetPungi();
-            }
+
                 Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormCentru(new Service.DonatorService()));
