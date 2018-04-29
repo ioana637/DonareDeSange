@@ -5,9 +5,9 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Service1
+namespace Service
 {
-    public static class Util
+    public class Util
     {
         public static string EncryptPassword(string password)
         {
@@ -22,7 +22,7 @@ namespace Service1
             return stringBuilder.ToString();
         }
 
-       
+
 
     }
 }

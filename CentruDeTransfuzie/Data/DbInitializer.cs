@@ -47,10 +47,11 @@ namespace CentruDeTransfuzie1.Data
 
         private static void InitializePungaSange(CTContext context)
         {
+
             if (context.PungaSange.Any()) return;
-            PungaSange p1 = new PungaSange(DateTime.Parse("24-12-2017"), 300, 30, 20, 10) { TraseuPunga = context.TraseuPunga.Find(1), Donator = context.Donator.Find(1), CentruTransfuzie = context.CentruTransfuzie.Find(1) };
-            PungaSange p2 = new PungaSange(DateTime.Parse("24-12-2017"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(2), Donator = context.Donator.Find(1), CentruTransfuzie = context.CentruTransfuzie.Find(1) };
-            PungaSange p3 = new PungaSange(DateTime.Parse("24-12-2017"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(3), Donator = context.Donator.Find(3), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
+            PungaSange p1 = new PungaSange(DateTime.Parse("2017-12-24"), 300, 30, 20, 10) { TraseuPunga = context.TraseuPunga.Find(1), Donator = context.Donator.Find(1), CentruTransfuzie = context.CentruTransfuzie.Find(1) };
+            PungaSange p2 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(2), Donator = context.Donator.Find(1), CentruTransfuzie = context.CentruTransfuzie.Find(1) };
+            PungaSange p3 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(3), Donator = context.Donator.Find(2), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
             var pungi = new PungaSange[] { p1, p2, p3 };
             foreach (PungaSange p in pungi)
             {
@@ -151,10 +152,10 @@ namespace CentruDeTransfuzie1.Data
             if (context.Donator.Any()) return;
 
 
-            Donator d1 = new Donator("Dobrovat", "Mihai", "M", DateTime.Parse("22-02-96"), "Str. Buftea", "Cluj-Napoca", "Cluj", "Str. Buftea", "Cluj-Napoca", "Cluj", "0723456799", "mihai@yahoo.com");
-            Donator d2 = new Donator("Marin", "Andrei", "M", DateTime.Parse("23-11-97"), "Str. Garii", "Iasi", "Iasi", "Str. Garii", "Iasi", "Iasi", "0723456789", "andrei@yahoo.com");
-            Donator d3 = new Donator("Acatrinei", "Maria", "F", DateTime.Parse("24-12-98"), "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "0723456787", "maria@yahoo.com");
-            Donator d4 = new Donator("Popescu", "Ion", "M", DateTime.Parse("12-02-98"), "Cluj-Napoca", "Cluj-Napoca", "Cluj", null, null, null, "0712121212", "popescu@yahoo.com");
+            Donator d1 = new Donator("Dobrovat", "Mihai", "M", DateTime.Parse("1996-02-22"), "Str. Buftea", "Cluj-Napoca", "Cluj", "Str. Buftea", "Cluj-Napoca", "Cluj", "0723456799", "mihai@yahoo.com");
+            Donator d2 = new Donator("Marin", "Andrei", "M", DateTime.Parse("1997-11-23"), "Str. Garii", "Iasi", "Iasi", "Str. Garii", "Iasi", "Iasi", "0723456789", "andrei@yahoo.com");
+            Donator d3 = new Donator("Acatrinei", "Maria", "F", DateTime.Parse("1998-12-24"), "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "0723456787", "maria@yahoo.com");
+            Donator d4 = new Donator("Popescu", "Ion", "M", DateTime.Parse("1998-02-12"), "Cluj-Napoca", "Cluj-Napoca", "Cluj", null, null, null, "0712121212", "popescu@yahoo.com");
 
             UserDonator ud1 = new UserDonator("Dmihai", "f63ed3300797216784db8387a2deaff0");//parola=parola1
             UserDonator ud2 = new UserDonator("Mandrei", "a1442bfc190d52303727e63719962ed6");//parola=parola2

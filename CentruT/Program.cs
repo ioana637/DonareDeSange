@@ -2,6 +2,7 @@
 using CentruDeTransfuzie1.Data;
 using GUI;
 using Microsoft.EntityFrameworkCore;
+using Repository;
 using Service1;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,11 @@ namespace CentruT
          
                 DbInitializer.Initialize(db);
             }
-            Application.EnableVisualStyles();
+            using (var unit=new UnitOfWork())
+            {
+                List<PungaSange> list=unit.PungaSangeRepo.GetPungi();
+            }
+                Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormCentru(new Service.DonatorService()));
             Application.Run(new FormLogareCentru(new Service.CentruService()));

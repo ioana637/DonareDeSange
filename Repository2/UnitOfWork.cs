@@ -2,6 +2,7 @@
 using CentruDeTransfuzie1;
 using CentruDeTransfuzie1.model;
 using Microsoft.EntityFrameworkCore;
+using Repository2;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,7 +18,7 @@ namespace Repository
         GenericRepository<Cerere> CerereRepo { get; }
         GenericRepository<CentruTransfuzie> CentruTransfuzieRepo { get; }
         GenericRepository<Admin> AdminRepo { get; }
-        GenericRepository<PungaSange> PungaSangeRepo { get; }
+        PungaSangeRepo PungaSangeRepo { get; }
         GenericRepository<Analiza> AnalizaRepo { get; }
 
         GenericRepository<Spital> SpitalRepo { get; }
@@ -38,7 +39,7 @@ namespace Repository
         private GenericRepository<Admin> adminRepo;
         private GenericRepository<Spital> spitalRepo;
         private GenericRepository<Analiza> analizaRepo;
-        private GenericRepository<PungaSange> pungaSangeRepo;
+        private PungaSangeRepo pungaSangeRepo;
 
         private CTContext context;
 
@@ -158,11 +159,11 @@ namespace Repository
             }
         }
 
-        public GenericRepository<PungaSange> PungaSangeRepo {
+        public PungaSangeRepo PungaSangeRepo {
             get
             {
                 if (pungaSangeRepo == null)
-                    pungaSangeRepo = new GenericRepository<PungaSange>(context);
+                    pungaSangeRepo = new PungaSangeRepo(context);
                 return pungaSangeRepo;
             }
         }

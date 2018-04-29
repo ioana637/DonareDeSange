@@ -157,8 +157,8 @@ namespace GUI
             if (donator == null)
                 MessageBox.Show("Selectati un donator!");
             else {
-                FormTrimitereAnalize form = new FormTrimitereAnalize(this.serviceCentru, donator);
-                form.Show();
+                //FormTrimitereAnalize form = new FormTrimitereAnalize(this.serviceCentru, donator);
+                //form.Show();
             }
            
         }
