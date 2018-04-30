@@ -89,7 +89,7 @@ namespace Service
             
                 List<PungaSange> pungi = new List<PungaSange>();
                 //afisare pungi care nu au analize trimise pentru un donator
-                unitOfWork.PungaSangeRepo.GetAll().ToList().ForEach(p=>pungi.Add(p));//.ForEach(p => {if(p.Donator.Id==d.Id) pungi.Add(p); });
+                unitOfWork.PungaSangeRepo.GetPungi().ToList().ForEach(p => { if (p.Donator.Id == d.Id && p.Analiza==null) pungi.Add(p); });
                 return pungi;
                 
             }

@@ -35,17 +35,24 @@ namespace GUI
         {
             if (ValidateForm())
             {
-                //try
-                //{
+                try
+                {
                     service.AddAnaliza((GrupaSange)comboBoxGrupaSange.SelectedItem, (TipRh)comboBoxRh.SelectedItem, checkBoxHIV.Checked, checkBoxHepatitaB.Checked, checkBoxHepatitaC.Checked, checkBoxSifilis.Checked, checkBoxHTLV.Checked, int.Parse(textBoxNivelALT.Text), (PungaSange)comboBoxPunga.SelectedItem, donator);
                     comboBoxGrupaSange.SelectedItem = null;
                     comboBoxRh.SelectedItem = null;
                     textBoxNivelALT.Text = null;
                     comboBoxPunga.SelectedItem = null;
-                //}catch(Exception e)
-                //{
-                //    MessageBox
-                //}
+                    PopulateComboPungi();
+                    checkBoxHIV.Checked = false;
+                    checkBoxHepatitaB.Checked = false;
+                    checkBoxHepatitaC.Checked = false;
+                    checkBoxSifilis.Checked = false;
+                    checkBoxHTLV.Checked = false;
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
             else
                 MessageBox.Show("Trebuie sa completati toate datele!");
@@ -56,7 +63,14 @@ namespace GUI
             this.Close();
             
         }
+        private void PopulateComboPungi() {
+            comboBoxPunga.Items.Clear();
 
+            foreach (PungaSange p in service.GetPungiSangeByDonator(donator))
+            {
+                comboBoxPunga.Items.Add(p);
+            }
+        }
         private void FormTrimitereAnalize_Load(object sender, EventArgs e)
         {
             foreach (var gs in Enum.GetValues(typeof(GrupaSange)))
@@ -67,10 +81,7 @@ namespace GUI
             {
                 comboBoxRh.Items.Add(rh);
             }
-            foreach (PungaSange p in service.GetPungiSangeByDonator(donator))
-            {
-                comboBoxPunga.Items.Add(p);
-            }
+            PopulateComboPungi();
         }
     }
 }
