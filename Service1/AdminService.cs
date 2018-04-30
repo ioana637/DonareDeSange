@@ -69,10 +69,12 @@ namespace Service1
             }
         }
 
-        public void AddSpital(Spital spital)
+        public void AddSpital(Spital spital, CentruTransfuzie centru)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
+                CentruTransfuzie centruFromBD = unitOfWork.CentruTransfuzieRepo.GetBy(c => c.Id == centru.Id);
+                spital.CentruTransfuzie = centruFromBD;
                 unitOfWork.SpitalRepo.Save(spital);
                 unitOfWork.Save();
             }
