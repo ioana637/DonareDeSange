@@ -83,6 +83,10 @@
       <Project>{DE00485F-97F6-479D-A5D6-0879DCC10CB9}</Project>
       <Name>GUI</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Repository2\Repository.csproj">
+      <Project>{914FFCE7-77AF-45F5-89B3-EA2C93E8832B}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Service1\Service.csproj">
       <Project>{6049F149-EFD4-41DD-A199-A2756750EE02}</Project>
       <Name>Service</Name>

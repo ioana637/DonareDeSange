@@ -2,6 +2,7 @@
 using CentruDeTransfuzie1.Data;
 using GUI;
 using Microsoft.EntityFrameworkCore;
+using Repository;
 using Service1;
 using System;
 using System.Collections.Generic;
@@ -21,9 +22,11 @@ namespace CentruT
         {
             using (var db = new CTContext(new DbContextOptions<CTContext>()))
             {
+         
                 DbInitializer.Initialize(db);
             }
-            Application.EnableVisualStyles();
+
+                Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormCentru(new Service.DonatorService()));
             Application.Run(new FormLogareCentru(new Service.CentruService()));

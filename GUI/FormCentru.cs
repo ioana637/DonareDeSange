@@ -150,5 +150,17 @@ namespace GUI
             formLogareCentru.ShowDialog();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Donator donator = (Donator)dataGridView1.SelectedRows[0].DataBoundItem;
+            if (donator == null)
+                MessageBox.Show("Selectati un donator!");
+            else {
+                FormTrimitereAnalize form = new FormTrimitereAnalize(this.serviceCentru, donator);
+                form.Show();
+            }
+           
+        }
     }
 }

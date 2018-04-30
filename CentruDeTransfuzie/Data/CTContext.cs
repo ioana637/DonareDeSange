@@ -9,7 +9,8 @@ namespace CentruDeTransfuzie1
 {
     public class CTContext : DbContext
     {
-        public CTContext(DbContextOptions<CTContext> options) : base(options) { }
+        public CTContext(DbContextOptions<CTContext> options) : base(options) {
+        }
 
 
         public DbSet<Medic> Medic { get; set; }

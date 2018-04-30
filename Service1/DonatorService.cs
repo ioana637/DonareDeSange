@@ -1,5 +1,4 @@
 ﻿using Repository;
-using Service1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +26,8 @@ namespace Service
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
                 string encryptedPassword = Util.EncryptPassword(password);
+
+                
 
                 UserDonator user = unitOfWork.UserDonatorRepo.GetBy(x => x.Username.Equals(userName));
                 if (user.Parola.Equals(encryptedPassword))
