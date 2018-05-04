@@ -35,8 +35,6 @@
             this.textBoxParola = new System.Windows.Forms.TextBox();
             this.labelParola = new System.Windows.Forms.Label();
             this.buttonAddCentruT = new System.Windows.Forms.Button();
-            this.checkedListBoxSpitale = new System.Windows.Forms.CheckedListBox();
-            this.labelSpitale = new System.Windows.Forms.Label();
             this.textBoxAdresa = new System.Windows.Forms.TextBox();
             this.comboBoxLocalitate = new System.Windows.Forms.ComboBox();
             this.textBoxNume = new System.Windows.Forms.TextBox();
@@ -47,7 +45,26 @@
             this.labelLocalitate = new System.Windows.Forms.Label();
             this.labelNume = new System.Windows.Forms.Label();
             this.tabPageMedici = new System.Windows.Forms.TabPage();
+            this.buttonAddMedic = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.checkedListBoxListSpitale = new System.Windows.Forms.CheckedListBox();
+            this.textBoxNumeMedic = new System.Windows.Forms.TextBox();
+            this.textBoxPrenumeMedic = new System.Windows.Forms.TextBox();
+            this.textBoxEmailMedic = new System.Windows.Forms.TextBox();
+            this.textBoxTelefonMedic = new System.Windows.Forms.TextBox();
+            this.textBoxUsernameMedic = new System.Windows.Forms.TextBox();
+            this.textBoxPasswordMedic = new System.Windows.Forms.TextBox();
+            this.textBoxCNPMedic = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dataGridViewMedici = new System.Windows.Forms.DataGridView();
             this.tabPageSpitale = new System.Windows.Forms.TabPage();
+            this.buttonDeleteSpital = new System.Windows.Forms.Button();
             this.comboBoxCentruT = new System.Windows.Forms.ComboBox();
             this.labelCentruTransfuzie = new System.Windows.Forms.Label();
             this.buttonAddSpital = new System.Windows.Forms.Button();
@@ -59,9 +76,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridViewSpitale = new System.Windows.Forms.DataGridView();
             this.buttonLogout = new System.Windows.Forms.Button();
+            this.buttonDeleteMedic = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPageCentruTransfuzii.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCentre)).BeginInit();
+            this.tabPageMedici.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMedici)).BeginInit();
             this.tabPageSpitale.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSpitale)).BeginInit();
             this.SuspendLayout();
@@ -83,8 +103,6 @@
             this.tabPageCentruTransfuzii.Controls.Add(this.textBoxParola);
             this.tabPageCentruTransfuzii.Controls.Add(this.labelParola);
             this.tabPageCentruTransfuzii.Controls.Add(this.buttonAddCentruT);
-            this.tabPageCentruTransfuzii.Controls.Add(this.checkedListBoxSpitale);
-            this.tabPageCentruTransfuzii.Controls.Add(this.labelSpitale);
             this.tabPageCentruTransfuzii.Controls.Add(this.textBoxAdresa);
             this.tabPageCentruTransfuzii.Controls.Add(this.comboBoxLocalitate);
             this.tabPageCentruTransfuzii.Controls.Add(this.textBoxNume);
@@ -138,23 +156,6 @@
             this.buttonAddCentruT.Text = "Add";
             this.buttonAddCentruT.UseVisualStyleBackColor = true;
             this.buttonAddCentruT.Click += new System.EventHandler(this.buttonAddCentruT_Click);
-            // 
-            // checkedListBoxSpitale
-            // 
-            this.checkedListBoxSpitale.FormattingEnabled = true;
-            this.checkedListBoxSpitale.Location = new System.Drawing.Point(677, 228);
-            this.checkedListBoxSpitale.Name = "checkedListBoxSpitale";
-            this.checkedListBoxSpitale.Size = new System.Drawing.Size(215, 180);
-            this.checkedListBoxSpitale.TabIndex = 7;
-            // 
-            // labelSpitale
-            // 
-            this.labelSpitale.AutoSize = true;
-            this.labelSpitale.Location = new System.Drawing.Point(675, 194);
-            this.labelSpitale.Name = "labelSpitale";
-            this.labelSpitale.Size = new System.Drawing.Size(127, 20);
-            this.labelSpitale.TabIndex = 8;
-            this.labelSpitale.Text = "SpitaleAsignate";
             // 
             // textBoxAdresa
             // 
@@ -234,6 +235,25 @@
             // 
             // tabPageMedici
             // 
+            this.tabPageMedici.Controls.Add(this.buttonDeleteMedic);
+            this.tabPageMedici.Controls.Add(this.buttonAddMedic);
+            this.tabPageMedici.Controls.Add(this.label11);
+            this.tabPageMedici.Controls.Add(this.checkedListBoxListSpitale);
+            this.tabPageMedici.Controls.Add(this.textBoxNumeMedic);
+            this.tabPageMedici.Controls.Add(this.textBoxPrenumeMedic);
+            this.tabPageMedici.Controls.Add(this.textBoxEmailMedic);
+            this.tabPageMedici.Controls.Add(this.textBoxTelefonMedic);
+            this.tabPageMedici.Controls.Add(this.textBoxUsernameMedic);
+            this.tabPageMedici.Controls.Add(this.textBoxPasswordMedic);
+            this.tabPageMedici.Controls.Add(this.textBoxCNPMedic);
+            this.tabPageMedici.Controls.Add(this.label10);
+            this.tabPageMedici.Controls.Add(this.label9);
+            this.tabPageMedici.Controls.Add(this.label8);
+            this.tabPageMedici.Controls.Add(this.label7);
+            this.tabPageMedici.Controls.Add(this.label6);
+            this.tabPageMedici.Controls.Add(this.label5);
+            this.tabPageMedici.Controls.Add(this.label4);
+            this.tabPageMedici.Controls.Add(this.dataGridViewMedici);
             this.tabPageMedici.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageMedici.Location = new System.Drawing.Point(4, 22);
             this.tabPageMedici.Name = "tabPageMedici";
@@ -243,8 +263,160 @@
             this.tabPageMedici.Text = "Medici";
             this.tabPageMedici.UseVisualStyleBackColor = true;
             // 
+            // buttonAddMedic
+            // 
+            this.buttonAddMedic.Location = new System.Drawing.Point(536, 377);
+            this.buttonAddMedic.Name = "buttonAddMedic";
+            this.buttonAddMedic.Size = new System.Drawing.Size(75, 29);
+            this.buttonAddMedic.TabIndex = 17;
+            this.buttonAddMedic.Text = "Add";
+            this.buttonAddMedic.UseVisualStyleBackColor = true;
+            this.buttonAddMedic.Click += new System.EventHandler(this.buttonAddMedic_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(630, 291);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(169, 20);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Spitale unde lucreaza";
+            // 
+            // checkedListBoxListSpitale
+            // 
+            this.checkedListBoxListSpitale.CheckOnClick = true;
+            this.checkedListBoxListSpitale.FormattingEnabled = true;
+            this.checkedListBoxListSpitale.Location = new System.Drawing.Point(633, 326);
+            this.checkedListBoxListSpitale.Name = "checkedListBoxListSpitale";
+            this.checkedListBoxListSpitale.Size = new System.Drawing.Size(250, 114);
+            this.checkedListBoxListSpitale.TabIndex = 15;
+            // 
+            // textBoxNumeMedic
+            // 
+            this.textBoxNumeMedic.Location = new System.Drawing.Point(729, 53);
+            this.textBoxNumeMedic.Name = "textBoxNumeMedic";
+            this.textBoxNumeMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxNumeMedic.TabIndex = 14;
+            // 
+            // textBoxPrenumeMedic
+            // 
+            this.textBoxPrenumeMedic.Location = new System.Drawing.Point(729, 91);
+            this.textBoxPrenumeMedic.Name = "textBoxPrenumeMedic";
+            this.textBoxPrenumeMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxPrenumeMedic.TabIndex = 13;
+            // 
+            // textBoxEmailMedic
+            // 
+            this.textBoxEmailMedic.Location = new System.Drawing.Point(729, 130);
+            this.textBoxEmailMedic.Name = "textBoxEmailMedic";
+            this.textBoxEmailMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxEmailMedic.TabIndex = 12;
+            // 
+            // textBoxTelefonMedic
+            // 
+            this.textBoxTelefonMedic.Location = new System.Drawing.Point(729, 169);
+            this.textBoxTelefonMedic.Name = "textBoxTelefonMedic";
+            this.textBoxTelefonMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxTelefonMedic.TabIndex = 11;
+            // 
+            // textBoxUsernameMedic
+            // 
+            this.textBoxUsernameMedic.Location = new System.Drawing.Point(729, 208);
+            this.textBoxUsernameMedic.Name = "textBoxUsernameMedic";
+            this.textBoxUsernameMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxUsernameMedic.TabIndex = 10;
+            // 
+            // textBoxPasswordMedic
+            // 
+            this.textBoxPasswordMedic.Location = new System.Drawing.Point(729, 247);
+            this.textBoxPasswordMedic.Name = "textBoxPasswordMedic";
+            this.textBoxPasswordMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxPasswordMedic.TabIndex = 9;
+            // 
+            // textBoxCNPMedic
+            // 
+            this.textBoxCNPMedic.Location = new System.Drawing.Point(729, 15);
+            this.textBoxCNPMedic.Name = "textBoxCNPMedic";
+            this.textBoxCNPMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxCNPMedic.TabIndex = 8;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(629, 247);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(78, 20);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Password";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(629, 208);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(85, 20);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Username";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(629, 169);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(64, 20);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Telefon";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(629, 98);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 20);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Prenume";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(629, 133);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 20);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Email";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(629, 56);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 20);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Nume";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(629, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 20);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "CNP";
+            // 
+            // dataGridViewMedici
+            // 
+            this.dataGridViewMedici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMedici.Location = new System.Drawing.Point(7, 6);
+            this.dataGridViewMedici.Name = "dataGridViewMedici";
+            this.dataGridViewMedici.ReadOnly = true;
+            this.dataGridViewMedici.Size = new System.Drawing.Size(604, 365);
+            this.dataGridViewMedici.TabIndex = 0;
+            this.dataGridViewMedici.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMedici_CellClick);
+            this.dataGridViewMedici.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMedici_CellContentClick);
+            // 
             // tabPageSpitale
             // 
+            this.tabPageSpitale.Controls.Add(this.buttonDeleteSpital);
             this.tabPageSpitale.Controls.Add(this.comboBoxCentruT);
             this.tabPageSpitale.Controls.Add(this.labelCentruTransfuzie);
             this.tabPageSpitale.Controls.Add(this.buttonAddSpital);
@@ -262,6 +434,16 @@
             this.tabPageSpitale.TabIndex = 2;
             this.tabPageSpitale.Text = "Spitale";
             this.tabPageSpitale.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteSpital
+            // 
+            this.buttonDeleteSpital.Location = new System.Drawing.Point(668, 273);
+            this.buttonDeleteSpital.Name = "buttonDeleteSpital";
+            this.buttonDeleteSpital.Size = new System.Drawing.Size(75, 31);
+            this.buttonDeleteSpital.TabIndex = 26;
+            this.buttonDeleteSpital.Text = "Delete";
+            this.buttonDeleteSpital.UseVisualStyleBackColor = true;
+            this.buttonDeleteSpital.Click += new System.EventHandler(this.buttonDeleteSpital_Click);
             // 
             // comboBoxCentruT
             // 
@@ -282,9 +464,9 @@
             // 
             // buttonAddSpital
             // 
-            this.buttonAddSpital.Location = new System.Drawing.Point(668, 230);
+            this.buttonAddSpital.Location = new System.Drawing.Point(669, 236);
             this.buttonAddSpital.Name = "buttonAddSpital";
-            this.buttonAddSpital.Size = new System.Drawing.Size(55, 24);
+            this.buttonAddSpital.Size = new System.Drawing.Size(55, 31);
             this.buttonAddSpital.TabIndex = 22;
             this.buttonAddSpital.Text = "Add";
             this.buttonAddSpital.UseVisualStyleBackColor = true;
@@ -346,8 +528,11 @@
             this.dataGridViewSpitale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSpitale.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewSpitale.Name = "dataGridViewSpitale";
+            this.dataGridViewSpitale.ReadOnly = true;
             this.dataGridViewSpitale.Size = new System.Drawing.Size(640, 440);
             this.dataGridViewSpitale.TabIndex = 0;
+            this.dataGridViewSpitale.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSpitale_CellClick);
+            this.dataGridViewSpitale.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSpitale_CellContentClick);
             // 
             // buttonLogout
             // 
@@ -360,6 +545,16 @@
             this.buttonLogout.TabIndex = 2;
             this.buttonLogout.UseVisualStyleBackColor = true;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
+            // 
+            // buttonDeleteMedic
+            // 
+            this.buttonDeleteMedic.Location = new System.Drawing.Point(536, 411);
+            this.buttonDeleteMedic.Name = "buttonDeleteMedic";
+            this.buttonDeleteMedic.Size = new System.Drawing.Size(75, 29);
+            this.buttonDeleteMedic.TabIndex = 18;
+            this.buttonDeleteMedic.Text = "Delete";
+            this.buttonDeleteMedic.UseVisualStyleBackColor = true;
+            this.buttonDeleteMedic.Click += new System.EventHandler(this.buttonDeleteMedic_Click);
             // 
             // FormAdmin
             // 
@@ -374,6 +569,9 @@
             this.tabPageCentruTransfuzii.ResumeLayout(false);
             this.tabPageCentruTransfuzii.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCentre)).EndInit();
+            this.tabPageMedici.ResumeLayout(false);
+            this.tabPageMedici.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMedici)).EndInit();
             this.tabPageSpitale.ResumeLayout(false);
             this.tabPageSpitale.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSpitale)).EndInit();
@@ -392,8 +590,6 @@
         private System.Windows.Forms.Label labelZona;
         private System.Windows.Forms.Label labelJudet;
         private System.Windows.Forms.Label labelLocalitate;
-        private System.Windows.Forms.CheckedListBox checkedListBoxSpitale;
-        private System.Windows.Forms.Label labelSpitale;
         private System.Windows.Forms.TextBox textBoxNume;
         private System.Windows.Forms.TextBox textBoxAdresa;
         private System.Windows.Forms.ComboBox comboBoxJudet;
@@ -413,5 +609,25 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button buttonDeleteSpital;
+        private System.Windows.Forms.TextBox textBoxNumeMedic;
+        private System.Windows.Forms.TextBox textBoxPrenumeMedic;
+        private System.Windows.Forms.TextBox textBoxEmailMedic;
+        private System.Windows.Forms.TextBox textBoxTelefonMedic;
+        private System.Windows.Forms.TextBox textBoxUsernameMedic;
+        private System.Windows.Forms.TextBox textBoxPasswordMedic;
+        private System.Windows.Forms.TextBox textBoxCNPMedic;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dataGridViewMedici;
+        private System.Windows.Forms.Button buttonAddMedic;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.CheckedListBox checkedListBoxListSpitale;
+        private System.Windows.Forms.Button buttonDeleteMedic;
     }
 }

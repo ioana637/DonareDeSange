@@ -69,6 +69,16 @@ namespace Service1
             }
         }
 
+        public IList<Medic> GetAllMedici()
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                IList<Medic> medici = new List<Medic>();
+                unitOfWork.MedicRepo.GetAll().ToList().ForEach(md => { medici.Add(md); });
+                return medici;
+            }
+        }
+
         public void AddSpital(Spital spital, CentruTransfuzie centru)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
@@ -78,6 +88,49 @@ namespace Service1
                 unitOfWork.SpitalRepo.Save(spital);
                 unitOfWork.Save();
             }
+        }
+
+        public void DeleteSpital(Spital spital)
+        {
+            using (UnitOfWork unitOfWork=new UnitOfWork())
+            {
+                unitOfWork.SpitalRepo.Delete(spital);
+                unitOfWork.Save();
+            }
+        }
+
+        public void AddMedic(Medic medic, UserMedic userMedic,List<Spital> spitals)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                medic.UserMedic = userMedic;
+                userMedic.Medic = medic;
+                unitOfWork.UserMedicRepo.Save(userMedic);
+                unitOfWork.MedicRepo.Save(medic);
+                unitOfWork.Save();
+                //unitOfWork.Find()
+            }
+        }
+
+        public void DeleteMedicAndUser(Medic medic,UserMedic user)
+        {
+            using(UnitOfWork unitOfWork=new UnitOfWork())
+            {
+                unitOfWork.MedicRepo.Delete(medic);
+                unitOfWork.UserMedicRepo.Delete(user);
+                unitOfWork.Save();
+            }
+        }
+
+        public UserMedic GetUserMedicByMedic(Medic medic)
+        {
+            UserMedic user= null;
+            using (UnitOfWork unitOfWork=new UnitOfWork())
+            {
+                user=unitOfWork.UserMedicRepo.GetBy((u) => u.Medic==medic);
+                unitOfWork.Save();
+            }
+            return user;
         }
     }
 

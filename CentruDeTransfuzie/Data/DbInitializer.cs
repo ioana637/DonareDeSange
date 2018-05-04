@@ -116,9 +116,9 @@ namespace CentruDeTransfuzie1.Data
             var usersM = new UserMedic[]{ um1, um2 };
             foreach (UserMedic um in usersM)
             {
-
                 context.UserMedic.Add(um);
             }
+            
 
             context.SaveChanges();
             context.UserMedic.Find(1).Medic = context.Medic.Find(1);
