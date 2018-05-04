@@ -37,5 +37,8 @@ public class Spital {
     public string Oras { get; set; }
     public string Judet { get; set; }
 
-
+    public override string ToString()
+    {
+        return Adresa +"; "+ Oras + "; "+Judet;
+    }
 }
