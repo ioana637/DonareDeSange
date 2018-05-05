@@ -20,6 +20,7 @@ namespace GUI
             InitializeComponent();
             this.adminService = service;
             this.FormClosing += FormAdminLogare_FormClosing;
+            
 
         }
 

@@ -45,6 +45,7 @@
             this.labelLocalitate = new System.Windows.Forms.Label();
             this.labelNume = new System.Windows.Forms.Label();
             this.tabPageMedici = new System.Windows.Forms.TabPage();
+            this.buttonDeleteMedic = new System.Windows.Forms.Button();
             this.buttonAddMedic = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.checkedListBoxListSpitale = new System.Windows.Forms.CheckedListBox();
@@ -76,7 +77,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridViewSpitale = new System.Windows.Forms.DataGridView();
             this.buttonLogout = new System.Windows.Forms.Button();
-            this.buttonDeleteMedic = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPageCentruTransfuzii.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCentre)).BeginInit();
@@ -88,13 +88,16 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPageCentruTransfuzii);
             this.tabControl1.Controls.Add(this.tabPageMedici);
             this.tabControl1.Controls.Add(this.tabPageSpitale);
             this.tabControl1.Location = new System.Drawing.Point(1, 35);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(911, 477);
+            this.tabControl1.Size = new System.Drawing.Size(1143, 615);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPageCentruTransfuzii
@@ -112,124 +115,137 @@
             this.tabPageCentruTransfuzii.Controls.Add(this.labelZona);
             this.tabPageCentruTransfuzii.Controls.Add(this.labelLocalitate);
             this.tabPageCentruTransfuzii.Controls.Add(this.labelNume);
-            this.tabPageCentruTransfuzii.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPageCentruTransfuzii.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageCentruTransfuzii.Location = new System.Drawing.Point(4, 22);
             this.tabPageCentruTransfuzii.Name = "tabPageCentruTransfuzii";
             this.tabPageCentruTransfuzii.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCentruTransfuzii.Size = new System.Drawing.Size(903, 451);
+            this.tabPageCentruTransfuzii.Size = new System.Drawing.Size(1135, 589);
             this.tabPageCentruTransfuzii.TabIndex = 0;
-            this.tabPageCentruTransfuzii.Text = "CentreDeTransfuzii";
+            this.tabPageCentruTransfuzii.Text = "Centre de transfuzii";
             this.tabPageCentruTransfuzii.UseVisualStyleBackColor = true;
             // 
             // buttonDeleteCentru
             // 
-            this.buttonDeleteCentru.Location = new System.Drawing.Point(817, 419);
+            this.buttonDeleteCentru.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDeleteCentru.Location = new System.Drawing.Point(1025, 353);
             this.buttonDeleteCentru.Name = "buttonDeleteCentru";
-            this.buttonDeleteCentru.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeleteCentru.Size = new System.Drawing.Size(98, 35);
             this.buttonDeleteCentru.TabIndex = 17;
-            this.buttonDeleteCentru.Text = "Delete";
+            this.buttonDeleteCentru.Text = "Șterge";
             this.buttonDeleteCentru.UseVisualStyleBackColor = true;
             this.buttonDeleteCentru.Click += new System.EventHandler(this.buttonDeleteCentru_Click);
             // 
             // textBoxParola
             // 
-            this.textBoxParola.Location = new System.Drawing.Point(761, 148);
+            this.textBoxParola.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxParola.Location = new System.Drawing.Point(915, 228);
             this.textBoxParola.Name = "textBoxParola";
-            this.textBoxParola.Size = new System.Drawing.Size(131, 27);
+            this.textBoxParola.Size = new System.Drawing.Size(208, 26);
             this.textBoxParola.TabIndex = 16;
             // 
             // labelParola
             // 
             this.labelParola.AutoSize = true;
-            this.labelParola.Location = new System.Drawing.Point(675, 151);
+            this.labelParola.Location = new System.Drawing.Point(831, 231);
             this.labelParola.Name = "labelParola";
-            this.labelParola.Size = new System.Drawing.Size(58, 20);
+            this.labelParola.Size = new System.Drawing.Size(54, 20);
             this.labelParola.TabIndex = 15;
-            this.labelParola.Text = "Parola";
+            this.labelParola.Text = "Parolă";
             // 
             // buttonAddCentruT
             // 
-            this.buttonAddCentruT.Location = new System.Drawing.Point(678, 419);
+            this.buttonAddCentruT.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAddCentruT.Location = new System.Drawing.Point(911, 353);
             this.buttonAddCentruT.Name = "buttonAddCentruT";
-            this.buttonAddCentruT.Size = new System.Drawing.Size(55, 24);
+            this.buttonAddCentruT.Size = new System.Drawing.Size(95, 35);
             this.buttonAddCentruT.TabIndex = 14;
-            this.buttonAddCentruT.Text = "Add";
+            this.buttonAddCentruT.Text = "Adaugă";
             this.buttonAddCentruT.UseVisualStyleBackColor = true;
             this.buttonAddCentruT.Click += new System.EventHandler(this.buttonAddCentruT_Click);
             // 
             // textBoxAdresa
             // 
-            this.textBoxAdresa.Location = new System.Drawing.Point(761, 42);
+            this.textBoxAdresa.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxAdresa.Location = new System.Drawing.Point(911, 66);
             this.textBoxAdresa.Name = "textBoxAdresa";
-            this.textBoxAdresa.Size = new System.Drawing.Size(131, 27);
+            this.textBoxAdresa.Size = new System.Drawing.Size(212, 26);
             this.textBoxAdresa.TabIndex = 11;
             // 
             // comboBoxLocalitate
             // 
+            this.comboBoxLocalitate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxLocalitate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLocalitate.FormattingEnabled = true;
-            this.comboBoxLocalitate.Location = new System.Drawing.Point(761, 109);
+            this.comboBoxLocalitate.Location = new System.Drawing.Point(915, 174);
             this.comboBoxLocalitate.Name = "comboBoxLocalitate";
-            this.comboBoxLocalitate.Size = new System.Drawing.Size(131, 28);
+            this.comboBoxLocalitate.Size = new System.Drawing.Size(208, 28);
             this.comboBoxLocalitate.TabIndex = 13;
             // 
             // textBoxNume
             // 
-            this.textBoxNume.Location = new System.Drawing.Point(761, 8);
+            this.textBoxNume.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxNume.Location = new System.Drawing.Point(911, 20);
             this.textBoxNume.Name = "textBoxNume";
-            this.textBoxNume.Size = new System.Drawing.Size(131, 27);
+            this.textBoxNume.Size = new System.Drawing.Size(212, 26);
             this.textBoxNume.TabIndex = 9;
             // 
             // dataGridViewCentre
             // 
+            this.dataGridViewCentre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dataGridViewCentre.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridViewCentre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCentre.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dataGridViewCentre.Location = new System.Drawing.Point(6, 6);
             this.dataGridViewCentre.Name = "dataGridViewCentre";
-            this.dataGridViewCentre.Size = new System.Drawing.Size(620, 437);
+            this.dataGridViewCentre.Size = new System.Drawing.Size(793, 575);
             this.dataGridViewCentre.TabIndex = 0;
             this.dataGridViewCentre.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // comboBoxJudet
             // 
+            this.comboBoxJudet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxJudet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxJudet.FormattingEnabled = true;
-            this.comboBoxJudet.Location = new System.Drawing.Point(761, 75);
+            this.comboBoxJudet.Location = new System.Drawing.Point(911, 117);
             this.comboBoxJudet.Name = "comboBoxJudet";
-            this.comboBoxJudet.Size = new System.Drawing.Size(131, 28);
+            this.comboBoxJudet.Size = new System.Drawing.Size(212, 28);
             this.comboBoxJudet.TabIndex = 12;
             this.comboBoxJudet.SelectedIndexChanged += new System.EventHandler(this.comboBoxJudet_SelectedIndexChanged);
             // 
             // labelJudet
             // 
             this.labelJudet.AutoSize = true;
-            this.labelJudet.Location = new System.Drawing.Point(678, 83);
+            this.labelJudet.Location = new System.Drawing.Point(831, 120);
             this.labelJudet.Name = "labelJudet";
-            this.labelJudet.Size = new System.Drawing.Size(51, 20);
+            this.labelJudet.Size = new System.Drawing.Size(49, 20);
             this.labelJudet.TabIndex = 5;
-            this.labelJudet.Text = "Judet";
+            this.labelJudet.Text = "Județ";
             // 
             // labelZona
             // 
             this.labelZona.AutoSize = true;
-            this.labelZona.Location = new System.Drawing.Point(673, 49);
+            this.labelZona.Location = new System.Drawing.Point(831, 72);
             this.labelZona.Name = "labelZona";
-            this.labelZona.Size = new System.Drawing.Size(61, 20);
+            this.labelZona.Size = new System.Drawing.Size(60, 20);
             this.labelZona.TabIndex = 4;
-            this.labelZona.Text = "Adresa";
+            this.labelZona.Text = "Adresă";
             // 
             // labelLocalitate
             // 
             this.labelLocalitate.AutoSize = true;
-            this.labelLocalitate.Location = new System.Drawing.Point(674, 117);
+            this.labelLocalitate.Location = new System.Drawing.Point(831, 177);
             this.labelLocalitate.Name = "labelLocalitate";
-            this.labelLocalitate.Size = new System.Drawing.Size(83, 20);
+            this.labelLocalitate.Size = new System.Drawing.Size(78, 20);
             this.labelLocalitate.TabIndex = 6;
             this.labelLocalitate.Text = "Localitate";
             // 
             // labelNume
             // 
             this.labelNume.AutoSize = true;
-            this.labelNume.Location = new System.Drawing.Point(675, 15);
+            this.labelNume.Location = new System.Drawing.Point(831, 23);
             this.labelNume.Name = "labelNume";
-            this.labelNume.Size = new System.Drawing.Size(54, 20);
+            this.labelNume.Size = new System.Drawing.Size(51, 20);
             this.labelNume.TabIndex = 3;
             this.labelNume.Text = "Nume";
             // 
@@ -254,14 +270,24 @@
             this.tabPageMedici.Controls.Add(this.label5);
             this.tabPageMedici.Controls.Add(this.label4);
             this.tabPageMedici.Controls.Add(this.dataGridViewMedici);
-            this.tabPageMedici.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPageMedici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageMedici.Location = new System.Drawing.Point(4, 22);
             this.tabPageMedici.Name = "tabPageMedici";
             this.tabPageMedici.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMedici.Size = new System.Drawing.Size(903, 451);
+            this.tabPageMedici.Size = new System.Drawing.Size(1073, 543);
             this.tabPageMedici.TabIndex = 1;
             this.tabPageMedici.Text = "Medici";
             this.tabPageMedici.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteMedic
+            // 
+            this.buttonDeleteMedic.Location = new System.Drawing.Point(536, 411);
+            this.buttonDeleteMedic.Name = "buttonDeleteMedic";
+            this.buttonDeleteMedic.Size = new System.Drawing.Size(75, 29);
+            this.buttonDeleteMedic.TabIndex = 18;
+            this.buttonDeleteMedic.Text = "Șterge";
+            this.buttonDeleteMedic.UseVisualStyleBackColor = true;
+            this.buttonDeleteMedic.Click += new System.EventHandler(this.buttonDeleteMedic_Click);
             // 
             // buttonAddMedic
             // 
@@ -269,7 +295,7 @@
             this.buttonAddMedic.Name = "buttonAddMedic";
             this.buttonAddMedic.Size = new System.Drawing.Size(75, 29);
             this.buttonAddMedic.TabIndex = 17;
-            this.buttonAddMedic.Text = "Add";
+            this.buttonAddMedic.Text = "Adaugă";
             this.buttonAddMedic.UseVisualStyleBackColor = true;
             this.buttonAddMedic.Click += new System.EventHandler(this.buttonAddMedic_Click);
             // 
@@ -278,9 +304,9 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(630, 291);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(169, 20);
+            this.label11.Size = new System.Drawing.Size(162, 20);
             this.label11.TabIndex = 16;
-            this.label11.Text = "Spitale unde lucreaza";
+            this.label11.Text = "Spitale unde lucrează";
             // 
             // checkedListBoxListSpitale
             // 
@@ -288,56 +314,56 @@
             this.checkedListBoxListSpitale.FormattingEnabled = true;
             this.checkedListBoxListSpitale.Location = new System.Drawing.Point(633, 326);
             this.checkedListBoxListSpitale.Name = "checkedListBoxListSpitale";
-            this.checkedListBoxListSpitale.Size = new System.Drawing.Size(250, 114);
+            this.checkedListBoxListSpitale.Size = new System.Drawing.Size(250, 109);
             this.checkedListBoxListSpitale.TabIndex = 15;
             // 
             // textBoxNumeMedic
             // 
             this.textBoxNumeMedic.Location = new System.Drawing.Point(729, 53);
             this.textBoxNumeMedic.Name = "textBoxNumeMedic";
-            this.textBoxNumeMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxNumeMedic.Size = new System.Drawing.Size(154, 26);
             this.textBoxNumeMedic.TabIndex = 14;
             // 
             // textBoxPrenumeMedic
             // 
             this.textBoxPrenumeMedic.Location = new System.Drawing.Point(729, 91);
             this.textBoxPrenumeMedic.Name = "textBoxPrenumeMedic";
-            this.textBoxPrenumeMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxPrenumeMedic.Size = new System.Drawing.Size(154, 26);
             this.textBoxPrenumeMedic.TabIndex = 13;
             // 
             // textBoxEmailMedic
             // 
             this.textBoxEmailMedic.Location = new System.Drawing.Point(729, 130);
             this.textBoxEmailMedic.Name = "textBoxEmailMedic";
-            this.textBoxEmailMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxEmailMedic.Size = new System.Drawing.Size(154, 26);
             this.textBoxEmailMedic.TabIndex = 12;
             // 
             // textBoxTelefonMedic
             // 
             this.textBoxTelefonMedic.Location = new System.Drawing.Point(729, 169);
             this.textBoxTelefonMedic.Name = "textBoxTelefonMedic";
-            this.textBoxTelefonMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxTelefonMedic.Size = new System.Drawing.Size(154, 26);
             this.textBoxTelefonMedic.TabIndex = 11;
             // 
             // textBoxUsernameMedic
             // 
             this.textBoxUsernameMedic.Location = new System.Drawing.Point(729, 208);
             this.textBoxUsernameMedic.Name = "textBoxUsernameMedic";
-            this.textBoxUsernameMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxUsernameMedic.Size = new System.Drawing.Size(154, 26);
             this.textBoxUsernameMedic.TabIndex = 10;
             // 
             // textBoxPasswordMedic
             // 
             this.textBoxPasswordMedic.Location = new System.Drawing.Point(729, 247);
             this.textBoxPasswordMedic.Name = "textBoxPasswordMedic";
-            this.textBoxPasswordMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxPasswordMedic.Size = new System.Drawing.Size(154, 26);
             this.textBoxPasswordMedic.TabIndex = 9;
             // 
             // textBoxCNPMedic
             // 
             this.textBoxCNPMedic.Location = new System.Drawing.Point(729, 15);
             this.textBoxCNPMedic.Name = "textBoxCNPMedic";
-            this.textBoxCNPMedic.Size = new System.Drawing.Size(154, 27);
+            this.textBoxCNPMedic.Size = new System.Drawing.Size(154, 26);
             this.textBoxCNPMedic.TabIndex = 8;
             // 
             // label10
@@ -354,7 +380,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(629, 208);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 20);
+            this.label9.Size = new System.Drawing.Size(83, 20);
             this.label9.TabIndex = 6;
             this.label9.Text = "Username";
             // 
@@ -363,7 +389,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(629, 169);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 20);
+            this.label8.Size = new System.Drawing.Size(62, 20);
             this.label8.TabIndex = 5;
             this.label8.Text = "Telefon";
             // 
@@ -372,7 +398,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(629, 98);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 20);
+            this.label7.Size = new System.Drawing.Size(73, 20);
             this.label7.TabIndex = 4;
             this.label7.Text = "Prenume";
             // 
@@ -381,7 +407,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(629, 133);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 20);
+            this.label6.Size = new System.Drawing.Size(48, 20);
             this.label6.TabIndex = 3;
             this.label6.Text = "Email";
             // 
@@ -390,7 +416,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(629, 56);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 20);
+            this.label5.Size = new System.Drawing.Size(51, 20);
             this.label5.TabIndex = 2;
             this.label5.Text = "Nume";
             // 
@@ -399,7 +425,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(629, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 20);
+            this.label4.Size = new System.Drawing.Size(41, 20);
             this.label4.TabIndex = 1;
             this.label4.Text = "CNP";
             // 
@@ -416,6 +442,7 @@
             // 
             // tabPageSpitale
             // 
+            this.tabPageSpitale.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPageSpitale.Controls.Add(this.buttonDeleteSpital);
             this.tabPageSpitale.Controls.Add(this.comboBoxCentruT);
             this.tabPageSpitale.Controls.Add(this.labelCentruTransfuzie);
@@ -427,10 +454,10 @@
             this.tabPageSpitale.Controls.Add(this.label2);
             this.tabPageSpitale.Controls.Add(this.label3);
             this.tabPageSpitale.Controls.Add(this.dataGridViewSpitale);
-            this.tabPageSpitale.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPageSpitale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageSpitale.Location = new System.Drawing.Point(4, 22);
             this.tabPageSpitale.Name = "tabPageSpitale";
-            this.tabPageSpitale.Size = new System.Drawing.Size(903, 451);
+            this.tabPageSpitale.Size = new System.Drawing.Size(1073, 543);
             this.tabPageSpitale.TabIndex = 2;
             this.tabPageSpitale.Text = "Spitale";
             this.tabPageSpitale.UseVisualStyleBackColor = true;
@@ -441,12 +468,15 @@
             this.buttonDeleteSpital.Name = "buttonDeleteSpital";
             this.buttonDeleteSpital.Size = new System.Drawing.Size(75, 31);
             this.buttonDeleteSpital.TabIndex = 26;
-            this.buttonDeleteSpital.Text = "Delete";
+            this.buttonDeleteSpital.Text = "Șterge";
             this.buttonDeleteSpital.UseVisualStyleBackColor = true;
             this.buttonDeleteSpital.Click += new System.EventHandler(this.buttonDeleteSpital_Click);
             // 
             // comboBoxCentruT
             // 
+            this.comboBoxCentruT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxCentruT.FormattingEnabled = true;
             this.comboBoxCentruT.Location = new System.Drawing.Point(670, 196);
             this.comboBoxCentruT.Name = "comboBoxCentruT";
@@ -458,7 +488,7 @@
             this.labelCentruTransfuzie.AutoSize = true;
             this.labelCentruTransfuzie.Location = new System.Drawing.Point(669, 164);
             this.labelCentruTransfuzie.Name = "labelCentruTransfuzie";
-            this.labelCentruTransfuzie.Size = new System.Drawing.Size(142, 20);
+            this.labelCentruTransfuzie.Size = new System.Drawing.Size(131, 20);
             this.labelCentruTransfuzie.TabIndex = 23;
             this.labelCentruTransfuzie.Text = "CentruTransfuzie";
             // 
@@ -466,9 +496,9 @@
             // 
             this.buttonAddSpital.Location = new System.Drawing.Point(669, 236);
             this.buttonAddSpital.Name = "buttonAddSpital";
-            this.buttonAddSpital.Size = new System.Drawing.Size(55, 31);
+            this.buttonAddSpital.Size = new System.Drawing.Size(74, 31);
             this.buttonAddSpital.TabIndex = 22;
-            this.buttonAddSpital.Text = "Add";
+            this.buttonAddSpital.Text = "Adaugă";
             this.buttonAddSpital.UseVisualStyleBackColor = true;
             this.buttonAddSpital.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -476,7 +506,7 @@
             // 
             this.textBoxAdresaSpital.Location = new System.Drawing.Point(752, 56);
             this.textBoxAdresaSpital.Name = "textBoxAdresaSpital";
-            this.textBoxAdresaSpital.Size = new System.Drawing.Size(131, 27);
+            this.textBoxAdresaSpital.Size = new System.Drawing.Size(131, 26);
             this.textBoxAdresaSpital.TabIndex = 19;
             // 
             // comboBoxLocalitateSpital
@@ -501,25 +531,25 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(669, 97);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.Size = new System.Drawing.Size(49, 20);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Judet";
+            this.label1.Text = "Județ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(664, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 20);
+            this.label2.Size = new System.Drawing.Size(60, 20);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Adresa";
+            this.label2.Text = "Adresă";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(665, 131);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
+            this.label3.Size = new System.Drawing.Size(78, 20);
             this.label3.TabIndex = 17;
             this.label3.Text = "Localitate";
             // 
@@ -538,7 +568,7 @@
             // 
             this.buttonLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonLogout.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogout.Image")));
-            this.buttonLogout.Location = new System.Drawing.Point(865, 2);
+            this.buttonLogout.Location = new System.Drawing.Point(1097, 2);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.buttonLogout.Size = new System.Drawing.Size(47, 49);
@@ -546,25 +576,17 @@
             this.buttonLogout.UseVisualStyleBackColor = true;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
-            // buttonDeleteMedic
-            // 
-            this.buttonDeleteMedic.Location = new System.Drawing.Point(536, 411);
-            this.buttonDeleteMedic.Name = "buttonDeleteMedic";
-            this.buttonDeleteMedic.Size = new System.Drawing.Size(75, 29);
-            this.buttonDeleteMedic.TabIndex = 18;
-            this.buttonDeleteMedic.Text = "Delete";
-            this.buttonDeleteMedic.UseVisualStyleBackColor = true;
-            this.buttonDeleteMedic.Click += new System.EventHandler(this.buttonDeleteMedic_Click);
-            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(920, 512);
+            this.ClientSize = new System.Drawing.Size(1152, 650);
             this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.tabControl1);
             this.Name = "FormAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "FormAdmin";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tabControl1.ResumeLayout(false);
             this.tabPageCentruTransfuzii.ResumeLayout(false);
             this.tabPageCentruTransfuzii.PerformLayout();

@@ -50,6 +50,7 @@ namespace GUI
 
         private void loadDataGridViewSpitale()
         {
+           
             listaSpitale = adminService.GetAllSpitale();
             bindingSourceSpitale = new BindingSource(listaSpitale, null);
             dataGridViewSpitale.DataSource = bindingSourceSpitale;
@@ -58,6 +59,9 @@ namespace GUI
             dataGridViewSpitale.Columns[1].Visible = false;
             //dataGridViewSpitale.Columns.Add("NumeCentruTransfuzie", "NumeCentruTransfuzie");
             //dataGridViewSpitale.Columns["NumeCentruTransfuzie"].ReadOnly = true;
+
+            //dataGridViewSpitale.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+           
         }
 
         private void loadDataGrdViewMedici()
@@ -68,6 +72,8 @@ namespace GUI
             dataGridViewMedici.DataSource = bindingSourceMedici;
             dataGridViewMedici_CellClick(this, new DataGridViewCellEventArgs(0, 0));
             dataGridViewMedici.Columns["UserMedic"].Visible = false;
+
+            //dataGridViewMedici.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
         }
 
@@ -82,6 +88,7 @@ namespace GUI
 
         private void loadDataGridViewCentreT()
         {
+            dataGridViewCentre.AutoResizeColumns();
             listaCentreT = adminService.GetAllCentre();
             bindingSourceCentre = new BindingSource(listaCentreT, null);
             dataGridViewCentre.DataSource = bindingSourceCentre;
@@ -89,6 +96,8 @@ namespace GUI
             {
                 dataGridViewCentre.Rows[bindingSourceCentre.Position].Selected = true;
             }
+
+            dataGridViewCentre.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         private void buttonLogout_Click(object sender, EventArgs e)
@@ -306,5 +315,6 @@ namespace GUI
             return true;
 
         }
+
     }
 }

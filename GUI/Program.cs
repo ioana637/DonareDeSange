@@ -24,8 +24,16 @@ namespace GUI
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            //Application.Run(new FormAdminLogare(new AdminService()));
+            //Application.Run(new FormAdmin(new AdminService()));
+            Application.Run(new FormLogareDonator(new Service.DonatorService()));
+            //Application.Run(new FormDonator(new Service.DonatorService(), "popescu"));
+
+
+
             //Application.Run(new FormMedic(new Service.UserMedicService(),"ioana"));
-            //Application.Run(new FormDonator());
+            //Application.Run(new FormDonator(new Service.DonatorService(),"popescu"));
 
 
             //Application.Run(new FormCentru(new Service.DonatorService()));
@@ -36,8 +44,8 @@ namespace GUI
             //Application.Run(new FormLogareDonator(new Service.DonatorService()));
             // Console.WriteLine("dklflkes");
             //Application.Run(new FormLogareMedic(new Service.UserMedicService()));
-            Application.Run(new FormAdminLogare(new AdminService()));
-           
+            //Application.Run(new FormAdminLogare(new AdminService()));
+
 
         }
     }
