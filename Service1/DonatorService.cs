@@ -25,10 +25,12 @@ namespace Service
 
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
-                string encryptedPassword = EncryptPassword(password);
+                string encryptedPassword = Util.EncryptPassword(password);
 
-                UserDonator user = unitOfWork.UserDonatorRepo.GetBy(x => x.Username == userName);
-                if (user.Parola == encryptedPassword)
+                
+
+                UserDonator user = unitOfWork.UserDonatorRepo.GetBy(x => x.Username.Equals(userName));
+                if (user.Parola.Equals(encryptedPassword))
                 {
                     return true;
                 }
@@ -36,25 +38,31 @@ namespace Service
             }
         }
 
-        private  string EncryptPassword(string password)
+       
+
+        public Donator GetDonator(string username)
         {
-            
-            MD5 md5 = MD5.Create();
-            byte[] data = md5.ComputeHash(Encoding.UTF8.GetBytes(password));
-            StringBuilder stringBuilder = new StringBuilder();
-            for (int i = 0; i < data.Length; i++)
+            using (UnitOfWork unitOfWork = new UnitOfWork())
             {
-                stringBuilder.Append(data[i].ToString("x2"));
+                //!!!Se arunca exceptie la logare desi userul exista in bd. Donatorul returnat de functie este null!!!!!!
+                Donator donator = unitOfWork.DonatorRepo.GetBy(x => x.UserDonator.Username.Equals(username));
+                if (donator.Equals(null)) { throw new ValidationException(); }
+                return donator;
             }
-            return stringBuilder.ToString();
         }
+
+        public string Encrypt(string pass)
+        {
+            return Util.EncryptPassword(pass);
+        }
+
         public void RegisterDonator(string userName, string password, string nume, string prenume, string sex, DateTime dataNastere, string domiciliu, string localitate, string judet, string resedinta, string localitateResedinta, string judetResedinta, string telefon, string email)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
                 Donator donator = new Donator(nume, prenume, sex, dataNastere, domiciliu, localitate, judet, resedinta, localitateResedinta, judetResedinta, telefon, email);
                 unitOfWork.DonatorRepo.Save(donator);
-                string encryptedPassword= EncryptPassword(password);
+                string encryptedPassword = Util.EncryptPassword(password);
                 UserDonator user = new UserDonator(userName, encryptedPassword);
                 unitOfWork.UserDonatorRepo.Save(user);
                 unitOfWork.Save();
@@ -122,6 +130,15 @@ namespace Service
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
                 unitOfWork.DonatorRepo.Update(donator);
+                unitOfWork.Save();
+            }
+        }
+
+        public void UpdateUserDonator(UserDonator user)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                unitOfWork.UserDonatorRepo.Update(user);
                 unitOfWork.Save();
             }
         }

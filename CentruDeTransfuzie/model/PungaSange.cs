@@ -37,6 +37,8 @@ public class PungaSange {
     public TraseuPunga TraseuPunga { get; set; }
     public Analiza Analiza { get; set; }
 
-
-
+    public override string ToString()
+    {
+        return "Nr. " + Id + " din data " + DataPreluarii;
+    }
 }

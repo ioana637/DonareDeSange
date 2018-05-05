@@ -1,20 +1,20 @@
-﻿using Service;
+﻿using CentruDeTransfuzie1.model;
+using Service;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GUI
 {
     public partial class FormCentru : Form
     {
-        private DonatorService serviceDonator = new DonatorService();
+        private DonatorService serviceDonator=new DonatorService();
+        private CentruService serviceCentru=new CentruService();
+        private string judet;
         private List<Donator> listDonatori = new List<Donator>();
+        private List<Cerere> listCereri = new List<Cerere>();
+        private List<Stoc> listStocuri = new List<Stoc>();
         private BindingSource bindingSource;
 
         public FormCentru(DonatorService service)
@@ -22,14 +22,17 @@ namespace GUI
             serviceDonator = service;
             InitializeComponent();
             LoadDataGridView1();
+            loadDataGridView3();
+            loadStocSange();
+
         }
 
-        private void LoadDataGridView1()
+        public void LoadDataGridView1()
         {
             listDonatori = serviceDonator.GetAllDonatori();
 
             bindingSource = new BindingSource(listDonatori, null);
-            dataGridView1.DataSource = bindingSource;
+            dataGridView1.DataSource = listDonatori;
             if (bindingSource.Position >= 0)
             {
                 dataGridView1.Rows[bindingSource.Position].Selected = true;
@@ -40,7 +43,7 @@ namespace GUI
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             Donator donator=(Donator)dataGridView1.Rows[e.RowIndex].DataBoundItem;
-            FormModificareDonator form = new FormModificareDonator(donator,this.serviceDonator);
+            FormModificareDonator form = new FormModificareDonator(donator,this.serviceDonator,this);
             form.Show();
         }
 
@@ -123,6 +126,41 @@ namespace GUI
                     }
                 }
             }
+        }
+
+
+        private void loadDataGridView3()
+        {
+            listCereri = serviceCentru.GetAllCereri();
+            dataGridView3.DataSource = listCereri;
+          
+        }
+
+        private void loadStocSange()
+        {
+            listStocuri = serviceCentru.GetAllStocuri();
+            dataGridViewStocSange.DataSource = listStocuri;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FormLogareCentru formLogareCentru = new FormLogareCentru(serviceCentru);
+            this.Hide();
+            formLogareCentru.Closed += (s, args) => this.Close();
+            formLogareCentru.ShowDialog();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Donator donator = (Donator)dataGridView1.SelectedRows[0].DataBoundItem;
+            if (donator == null)
+                MessageBox.Show("Selectati un donator!");
+            else {
+                FormTrimitereAnalize form = new FormTrimitereAnalize(this.serviceCentru, donator);
+                form.Show();
+            }
+           
         }
     }
 }

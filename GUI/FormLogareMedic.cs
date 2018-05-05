@@ -34,10 +34,10 @@ namespace GUI
             }
             else
             {
-                bool result = serviceMedic.Login(username, parola);
-                if (result)
+                int result = serviceMedic.Login(username, parola);
+                if (result>=0)
                 {
-                    Form formMainView = new FormMedic(serviceMedic, username);
+                    Form formMainView = new FormMedic(serviceMedic, result,username);
                     this.Hide();
                     formMainView.Closed += (s, args) => this.Close();
                     formMainView.ShowDialog();

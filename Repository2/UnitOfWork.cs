@@ -1,5 +1,8 @@
-﻿using CentruDeTransfuzie1;
+﻿using CentruDeTransfuzie.model;
+using CentruDeTransfuzie1;
+using CentruDeTransfuzie1.model;
 using Microsoft.EntityFrameworkCore;
+using Repository2;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,6 +16,12 @@ namespace Repository
         GenericRepository<Medic> MedicRepo { get; }
         GenericRepository<UserMedic> UserMedicRepo { get; }
         GenericRepository<Cerere> CerereRepo { get; }
+        GenericRepository<CentruTransfuzie> CentruTransfuzieRepo { get; }
+        GenericRepository<Admin> AdminRepo { get; }
+        PungaSangeRepo PungaSangeRepo { get; }
+        GenericRepository<Analiza> AnalizaRepo { get; }
+
+        GenericRepository<Spital> SpitalRepo { get; }
 
         void Save();
     }
@@ -24,6 +33,13 @@ namespace Repository
         private GenericRepository<Medic> medicRepo;
         private GenericRepository<UserMedic> userMedicRepo;
         private GenericRepository<Cerere> cerereRepo;
+        private GenericRepository<Stoc> stocRepo;
+        private GenericRepository<Pacient> pacientRepo;
+        private GenericRepository<CentruTransfuzie> centruRepo;
+        private GenericRepository<Admin> adminRepo;
+        private GenericRepository<Spital> spitalRepo;
+        private GenericRepository<Analiza> analizaRepo;
+        private PungaSangeRepo pungaSangeRepo;
 
         private CTContext context;
 
@@ -41,6 +57,16 @@ namespace Repository
                 if (donatorRepo == null)
                     donatorRepo = new GenericRepository<Donator>(context);
                 return donatorRepo;
+            }
+        }
+
+        public GenericRepository<Analiza> AnalizaRepo
+        {
+            get
+            {
+                if (analizaRepo == null)
+                    analizaRepo = new GenericRepository<Analiza>(context);
+                return analizaRepo;
             }
         }
 
@@ -84,6 +110,63 @@ namespace Repository
             }
         }
 
+        public GenericRepository<Stoc> StocRepo
+        {
+            get
+            {
+                if (stocRepo == null)
+                    stocRepo = new GenericRepository<Stoc>(context);
+                return stocRepo;
+            }
+        }
+
+        public GenericRepository<Pacient> PacientRepo
+        {
+            get
+            {
+                if (pacientRepo == null)
+                    pacientRepo = new GenericRepository<Pacient>(context);
+                return pacientRepo;
+            }
+        }
+
+        public GenericRepository<CentruTransfuzie> CentruTransfuzieRepo {
+            get
+            {
+                if (centruRepo == null)
+                    centruRepo = new GenericRepository<CentruTransfuzie>(context);
+                return centruRepo;
+            }
+        }
+
+        public GenericRepository<Admin> AdminRepo
+        {
+            get
+            {
+                if (adminRepo == null)
+                    adminRepo = new GenericRepository<Admin>(context);
+                return adminRepo;
+            }
+        }
+
+        public GenericRepository<Spital> SpitalRepo
+        {
+            get
+            {
+                if (spitalRepo == null)
+                    spitalRepo = new GenericRepository<Spital>(context);
+                return spitalRepo;
+            }
+        }
+
+        public PungaSangeRepo PungaSangeRepo {
+            get
+            {
+                if (pungaSangeRepo == null)
+                    pungaSangeRepo = new PungaSangeRepo(context);
+                return pungaSangeRepo;
+            }
+        }
 
         public void Dispose()
         {
@@ -99,5 +182,7 @@ namespace Repository
         {
             context.SaveChanges();
         }
+
+
     }
 }
