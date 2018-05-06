@@ -59,6 +59,7 @@ namespace CentruDeTransfuzie1.Data
             {
                 context.PungaSange.Add(p);
             }
+
             context.SaveChanges();
 
         }
