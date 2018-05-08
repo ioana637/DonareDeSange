@@ -19,13 +19,6 @@ namespace GUI
         {
             InitializeComponent();
             this.service = service;
-            label1.BackColor = Color.Transparent;
-            label2.BackColor = Color.Transparent;
-            linkLabel1.BackColor = Color.Transparent;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

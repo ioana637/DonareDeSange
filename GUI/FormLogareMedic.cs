@@ -54,5 +54,43 @@ namespace GUI
         {
 
         }
+
+        private void textBoxUsername_Enter(object sender, EventArgs e)
+        {
+            if (textBoxUsername.Text == "Username")
+            {
+                textBoxUsername.Text = "";
+                textBoxUsername.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxUsername_Leave(object sender, EventArgs e)
+        {
+            if (textBoxUsername.Text == "")
+            {
+                textBoxUsername.Text = "Username";
+                textBoxUsername.ForeColor = Color.Silver;
+            }
+        }
+
+        private void textBoxPassword_Enter(object sender, EventArgs e)
+        {
+            if (textBoxPassword.Text == "Parolă")
+            {
+                textBoxPassword.Text = "";
+                textBoxPassword.ForeColor = Color.Black;
+                textBoxPassword.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void textBoxPassword_Leave(object sender, EventArgs e)
+        {
+            if (textBoxPassword.Text == "")
+            {
+                textBoxPassword.UseSystemPasswordChar = false;
+                textBoxPassword.Text = "Parolă";
+                textBoxPassword.ForeColor = Color.Silver;
+            }
+        }
     }
 }
