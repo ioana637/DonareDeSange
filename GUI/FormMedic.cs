@@ -21,6 +21,7 @@ namespace GUI
         private int idMedicCurent;
         private List<Pacient> listPacienti = new List<Pacient>();
         private BindingSource bindingSourceP;
+        
 
         public FormMedic(UserMedicService service, int idMedic, string username)
         {
@@ -32,7 +33,8 @@ namespace GUI
             initComboRh();
             Refresh();
             loadDataGridView1();
-            //createDataGridView1();
+            
+            // createDataGridView1();
 
         }
 
@@ -40,7 +42,6 @@ namespace GUI
         {
             //createDataGridView2();
             loadDataGridView2();
-
 
             initCampuri();
             //createDataGridView2();
@@ -297,10 +298,7 @@ namespace GUI
             catch (Exception ex) { MessageBox.Show(this, ex.Message, "Eroare!", MessageBoxButtons.OK); }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -352,6 +350,7 @@ namespace GUI
         {
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.AllowUserToAddRows = false;
+          
 
             DataGridViewTextBoxColumn colId = new DataGridViewTextBoxColumn();
             colId.Name = "Id";
@@ -378,26 +377,36 @@ namespace GUI
             colId.HeaderText = "Prenume";
             colId.DataPropertyName = "Prenume";
 
-
+            
             dataGridView1.Columns.Add(colId);
             dataGridView1.Columns.Add(colEsteDonator);
             dataGridView1.Columns.Add(colEmail);
             dataGridView1.Columns.Add(colNume);
             dataGridView1.Columns.Add(colPrenume);
+       
 
         }
 
         private void loadDataGridView1()
         {
+           
             listPacienti = serviceMedic.GetPacientByMedic(idMedicCurent);
+
             bindingSourceP = new BindingSource(listPacienti, null);
             dataGridView1.DataSource = bindingSourceP;
-            if (bindingSourceP.Position >= 0)
-            {
-                dataGridView1.Rows[bindingSourceP.Position].Selected = true;
-            }
 
+            dataGridView1.Columns.RemoveAt(5);
+            
+
+            if (bindingSourceP.Position >= 0)
+                {
+                    dataGridView1.Rows[bindingSourceP.Position].Selected = true;
+                }
+             
+           
+            
         }
+
 
     }
 }
