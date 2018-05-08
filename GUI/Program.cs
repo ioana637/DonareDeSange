@@ -3,6 +3,7 @@ using CentruDeTransfuzie1.Data;
 using Microsoft.EntityFrameworkCore;
 using Service1;
 using System;
+using Service;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,6 +23,8 @@ namespace GUI
             {
                 DbInitializer.Initialize(db);
             }
+            UserMedicService us = new UserMedicService();
+            DonatorService ds = new DonatorService();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
@@ -44,6 +47,13 @@ namespace GUI
             //Application.Run(new FormLogareCentru(new Service.CentruService()));
 
             //Application.Run(new FormAnalizeSange());
+<<<<<<< HEAD
+            //Application.Run(new FormLogareCentru());
+            //Application.Run(new FormRegisterDonator());
+            Application.Run(new FormLogareMedic(us));
+            
+            //Application.Run(new FormLogareDonator());
+=======
             //Application.Run(new FormRegisterDonator());
             //Application.Run(new FormLogareDonator(new Service.DonatorService()));
             // Console.WriteLine("dklflkes");
@@ -51,6 +61,7 @@ namespace GUI
             //Application.Run(new FormAdminLogare(new AdminService()));
 
 
+>>>>>>> master
         }
     }
 }

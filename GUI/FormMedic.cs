@@ -15,13 +15,27 @@ namespace GUI
     public partial class FormMedic : Form
     {
         private UserMedicService serviceMedic;
+<<<<<<< HEAD
+=======
         private string usernameMedic;
         private List<Cerere> listCereri = new List<Cerere>();
         private BindingSource bindingSource;
+>>>>>>> master
         private int idMedicCurent;
         private List<Pacient> listPacienti = new List<Pacient>();
         private BindingSource bindingSourceP;
 
+<<<<<<< HEAD
+
+        public FormMedic(UserMedicService service, int idMedicCurent)
+        {
+            InitializeComponent();
+            this.serviceMedic = service;
+            this.idMedicCurent = idMedicCurent;
+            //createDataGridView1();
+            loadDataGridView1();
+
+=======
         public FormMedic(UserMedicService service, int idMedic, string username)
         {
             InitializeComponent();
@@ -57,6 +71,7 @@ namespace GUI
             textBoxTotal.Text = "";
             textBoxTrombocite.Text = "";
             Console.WriteLine("aici");
+>>>>>>> master
         }
 
         private void buttonLogout_Click(object sender, EventArgs e)
@@ -67,6 +82,13 @@ namespace GUI
             formLogareMedic.ShowDialog();
         }
 
+<<<<<<< HEAD
+     
+        private void button2_Click(object sender, EventArgs e)  //adaugare pacient
+        {
+            try
+            {
+=======
         private void createDataGridView2()
         {
             dataGridView2.AutoGenerateColumns = false;
@@ -307,6 +329,7 @@ namespace GUI
             //adaugarePACIENT
             try
             {
+>>>>>>> master
                 #region Date Pacient
                 string Nume = txtNume.Text;
                 string Prenume = txtPrenume.Text;
@@ -323,6 +346,20 @@ namespace GUI
                     esteDonator = false;
                 }
 
+<<<<<<< HEAD
+                #endregion
+
+                serviceMedic.AdaugaPacient(idMedic,Nume, Prenume, Email, esteDonator);
+                loadDataGridView1();
+
+
+            }
+            catch (System.ComponentModel.DataAnnotations.ValidationException error)
+            {
+               
+            }
+
+=======
                 if (Nume.Equals("") || Prenume.Equals("") || Email.Equals(""))
                 {
                     throw new ValidationException();
@@ -346,6 +383,7 @@ namespace GUI
             {
                 MessageBox.Show("Date invalide! Pacientul nu poate fi adaugat!\n" + error.Message);
             }
+>>>>>>> master
         }
 
         private void createDataGridView1()
@@ -398,5 +436,11 @@ namespace GUI
             }
 
         }
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> master
     }
 }

@@ -13,9 +13,14 @@ namespace GUI
 {
     public partial class FormLogareDonator : Form
     {
+<<<<<<< HEAD
+        private DonatorService serviceDonator = new DonatorService();
+        public FormLogareDonator()
+=======
         DonatorService service;
 
         public FormLogareDonator(DonatorService service)
+>>>>>>> master
         {
             InitializeComponent();
             this.service = service;
@@ -30,6 +35,12 @@ namespace GUI
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+<<<<<<< HEAD
+            FormRegisterDonator formRegisterDonator = new FormRegisterDonator();
+            this.Hide();
+            formRegisterDonator.Closed += (s, args) => this.Close();
+            formRegisterDonator.ShowDialog();
+=======
             FormRegisterDonator formRegister = new FormRegisterDonator();
             formRegister.Show();
         }
@@ -99,6 +110,7 @@ namespace GUI
                 txtPassw.Text = "Parolă";
                 txtPassw.ForeColor = Color.Silver;
             }
+>>>>>>> master
         }
     }
 }

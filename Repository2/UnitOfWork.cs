@@ -32,6 +32,9 @@ namespace Repository
         private GenericRepository<UserDonator> userDonatorRepo;
         private GenericRepository<Medic> medicRepo;
         private GenericRepository<UserMedic> userMedicRepo;
+<<<<<<< HEAD
+        private GenericRepository<Pacient> pacientRepo;
+=======
         private GenericRepository<Cerere> cerereRepo;
         private GenericRepository<Stoc> stocRepo;
         private GenericRepository<Pacient> pacientRepo;
@@ -40,6 +43,7 @@ namespace Repository
         private GenericRepository<Spital> spitalRepo;
         private GenericRepository<Analiza> analizaRepo;
         private PungaSangeRepo pungaSangeRepo;
+>>>>>>> master
 
         private CTContext context;
 
@@ -100,6 +104,8 @@ namespace Repository
             }
         }
 
+<<<<<<< HEAD
+=======
         public GenericRepository<Cerere> CerereRepo
         {
             get
@@ -120,6 +126,7 @@ namespace Repository
             }
         }
 
+>>>>>>> master
         public GenericRepository<Pacient> PacientRepo
         {
             get
@@ -130,6 +137,8 @@ namespace Repository
             }
         }
 
+<<<<<<< HEAD
+=======
         public GenericRepository<CentruTransfuzie> CentruTransfuzieRepo {
             get
             {
@@ -167,6 +176,7 @@ namespace Repository
                 return pungaSangeRepo;
             }
         }
+>>>>>>> master
 
         public void Dispose()
         {

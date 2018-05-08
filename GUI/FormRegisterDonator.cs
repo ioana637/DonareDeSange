@@ -296,6 +296,8 @@ namespace GUI
             this.Close();
         }
 
+<<<<<<< HEAD
+=======
         private void cmbJudet1_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbLoc1.Items.Clear();
@@ -334,6 +336,7 @@ namespace GUI
             }
         }
 
+>>>>>>> master
         
     }
 

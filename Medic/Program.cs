@@ -29,6 +29,10 @@ namespace Medic
             UserMedicService service = new UserMedicService();
             Application.Run(new FormLogareMedic(service));
             
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
         }
     }
 }

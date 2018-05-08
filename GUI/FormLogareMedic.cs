@@ -34,10 +34,17 @@ namespace GUI
             }
             else
             {
+<<<<<<< HEAD
+                int result = serviceMedic.Login(username, parola); 
+                if (result >= 0)
+                {
+                    Form formMainView = new FormMedic(serviceMedic,result); //result = id-ul medicului care s-a logat
+=======
                 int result = serviceMedic.Login(username, parola);
                 if (result>=0)
                 {
                     Form formMainView = new FormMedic(serviceMedic, result,username);
+>>>>>>> master
                     this.Hide();
                     formMainView.Closed += (s, args) => this.Close();
                     formMainView.ShowDialog();
@@ -50,9 +57,13 @@ namespace GUI
             }
         }
 
+<<<<<<< HEAD
+        
+=======
         private void FormLogareMedic_Load(object sender, EventArgs e)
         {
 
         }
+>>>>>>> master
     }
 }

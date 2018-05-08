@@ -52,7 +52,18 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPrenume = new System.Windows.Forms.TextBox();
+            this.txtNume = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.buttonLogout = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+            this.checkDonator = new System.Windows.Forms.CheckBox();
+=======
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.checkDonator = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -62,6 +73,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+>>>>>>> master
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -93,7 +105,11 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
+<<<<<<< HEAD
+            this.tabPage3.Size = new System.Drawing.Size(820, 414);
+=======
             this.tabPage3.Size = new System.Drawing.Size(848, 423);
+>>>>>>> master
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Creeaza o cerere";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -166,49 +182,82 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(18, 248);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(251, 19);
+            this.label5.Size = new System.Drawing.Size(250, 18);
             this.label5.TabIndex = 9;
             this.label5.Text = "Pacienții ce au nevoie de sânge:";
             // 
             // Pacienti
             // 
+<<<<<<< HEAD
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(22, 270);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(601, 99);
+            this.checkedListBox1.TabIndex = 8;
+=======
             this.Pacienti.FormattingEnabled = true;
             this.Pacienti.Location = new System.Drawing.Point(22, 270);
             this.Pacienti.Margin = new System.Windows.Forms.Padding(4);
             this.Pacienti.Name = "Pacienti";
             this.Pacienti.Size = new System.Drawing.Size(601, 88);
             this.Pacienti.TabIndex = 8;
+>>>>>>> master
             // 
             // textBoxPlasma
             // 
+<<<<<<< HEAD
+            this.textBox3.Location = new System.Drawing.Point(140, 173);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(88, 24);
+            this.textBox3.TabIndex = 6;
+=======
             this.textBoxPlasma.Location = new System.Drawing.Point(91, 175);
             this.textBoxPlasma.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPlasma.Name = "textBoxPlasma";
             this.textBoxPlasma.Size = new System.Drawing.Size(88, 26);
             this.textBoxPlasma.TabIndex = 6;
             this.textBoxPlasma.TextChanged += new System.EventHandler(this.textBoxPlasma_TextChanged);
+>>>>>>> master
             // 
             // textBoxGlobule
             // 
+<<<<<<< HEAD
+            this.textBox2.Location = new System.Drawing.Point(140, 129);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(90, 24);
+            this.textBox2.TabIndex = 5;
+=======
             this.textBoxGlobule.Location = new System.Drawing.Point(324, 175);
             this.textBoxGlobule.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxGlobule.Name = "textBoxGlobule";
             this.textBoxGlobule.Size = new System.Drawing.Size(90, 26);
             this.textBoxGlobule.TabIndex = 5;
             this.textBoxGlobule.TextChanged += new System.EventHandler(this.textBoxGlobule_TextChanged);
+>>>>>>> master
             // 
             // textBoxTrombocite
             // 
+<<<<<<< HEAD
+            this.textBox1.Location = new System.Drawing.Point(141, 80);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(88, 24);
+            this.textBox1.TabIndex = 1;
+=======
             this.textBoxTrombocite.Location = new System.Drawing.Point(537, 175);
             this.textBoxTrombocite.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrombocite.Name = "textBoxTrombocite";
             this.textBoxTrombocite.Size = new System.Drawing.Size(88, 26);
             this.textBoxTrombocite.TabIndex = 1;
             this.textBoxTrombocite.TextChanged += new System.EventHandler(this.textBoxTrombocite_TextChanged);
+>>>>>>> master
             // 
             // label4
             // 
@@ -216,7 +265,7 @@
             this.label4.Location = new System.Drawing.Point(20, 183);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 18);
+            this.label4.Size = new System.Drawing.Size(62, 18);
             this.label4.TabIndex = 4;
             this.label4.Text = "Plasmă:";
             // 
@@ -226,7 +275,7 @@
             this.label3.Location = new System.Drawing.Point(212, 178);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 18);
+            this.label3.Size = new System.Drawing.Size(95, 18);
             this.label3.TabIndex = 3;
             this.label3.Text = "Globule roșii:";
             // 
@@ -236,18 +285,23 @@
             this.label2.Location = new System.Drawing.Point(437, 178);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 18);
+            this.label2.Size = new System.Drawing.Size(88, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Trombocite:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+<<<<<<< HEAD
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(20, 33);
+=======
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(19, 85);
+>>>>>>> master
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 23);
+            this.label1.Size = new System.Drawing.Size(159, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cantitate sânge:";
             // 
@@ -259,7 +313,11 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
+<<<<<<< HEAD
+            this.tabPage2.Size = new System.Drawing.Size(820, 414);
+=======
             this.tabPage2.Size = new System.Drawing.Size(848, 423);
+>>>>>>> master
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Cereri sânge";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -312,6 +370,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(848, 365);
             this.dataGridView1.TabIndex = 0;
+            
             // 
             // tabControl1
             // 
@@ -329,6 +388,82 @@
             this.tabControl1.Size = new System.Drawing.Size(856, 454);
             this.tabControl1.TabIndex = 0;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.checkDonator);
+            this.tabPage4.Controls.Add(this.button2);
+            this.tabPage4.Controls.Add(this.txtEmail);
+            this.tabPage4.Controls.Add(this.txtPrenume);
+            this.tabPage4.Controls.Add(this.txtNume);
+            this.tabPage4.Controls.Add(this.label8);
+            this.tabPage4.Controls.Add(this.label7);
+            this.tabPage4.Controls.Add(this.label6);
+            this.tabPage4.Location = new System.Drawing.Point(4, 27);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(820, 414);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Adaugare Pacient";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(286, 333);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Adauga";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(167, 249);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(194, 24);
+            this.txtEmail.TabIndex = 5;
+            // 
+            // txtPrenume
+            // 
+            this.txtPrenume.Location = new System.Drawing.Point(167, 177);
+            this.txtPrenume.Name = "txtPrenume";
+            this.txtPrenume.Size = new System.Drawing.Size(194, 24);
+            this.txtPrenume.TabIndex = 4;
+            // 
+            // txtNume
+            // 
+            this.txtNume.Location = new System.Drawing.Point(167, 110);
+            this.txtNume.Name = "txtNume";
+            this.txtNume.Size = new System.Drawing.Size(194, 24);
+            this.txtNume.TabIndex = 3;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(140, 228);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 18);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Email";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(140, 156);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 18);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Prenume";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(140, 89);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(48, 18);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Nume";
+            // 
             // buttonLogout
             // 
             this.buttonLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -341,6 +476,18 @@
             this.buttonLogout.UseVisualStyleBackColor = true;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
+<<<<<<< HEAD
+            // checkDonator
+            // 
+            this.checkDonator.AutoSize = true;
+            this.checkDonator.Location = new System.Drawing.Point(167, 291);
+            this.checkDonator.Name = "checkDonator";
+            this.checkDonator.Size = new System.Drawing.Size(115, 22);
+            this.checkDonator.TabIndex = 7;
+            this.checkDonator.Text = "Este Donator";
+            this.checkDonator.UseVisualStyleBackColor = true;
+            // 
+=======
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.checkDonator);
@@ -427,6 +574,7 @@
             this.label11.TabIndex = 8;
             this.label11.Text = "Nume";
             // 
+>>>>>>> master
             // FormMedic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -434,7 +582,7 @@
             this.ClientSize = new System.Drawing.Size(844, 478);
             this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.tabControl1);
-            this.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMedic";
             this.Text = "Medic";
@@ -470,6 +618,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Button buttonLogout;
+<<<<<<< HEAD
+        private System.Windows.Forms.TabPage tabPage4;
+=======
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TextBox textBoxTotal;
         private System.Windows.Forms.Label label7;
@@ -480,12 +631,20 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.CheckBox checkDonator;
+>>>>>>> master
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPrenume;
         private System.Windows.Forms.TextBox txtNume;
+<<<<<<< HEAD
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox checkDonator;
+=======
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+>>>>>>> master
     }
 }
