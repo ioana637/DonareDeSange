@@ -44,26 +44,19 @@
             this.lblJud = new System.Windows.Forms.Label();
             this.lblLoc = new System.Windows.Forms.Label();
             this.lblDom = new System.Windows.Forms.Label();
-            this.lblKg = new System.Windows.Forms.Label();
             this.lblDn = new System.Windows.Forms.Label();
             this.lblPren = new System.Windows.Forms.Label();
             this.lblNume = new System.Windows.Forms.Label();
             this.btnInapoi = new System.Windows.Forms.Button();
             this.btnInregistreaza = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtGreutate = new System.Windows.Forms.TextBox();
             this.rdB_M = new System.Windows.Forms.RadioButton();
             this.rdB_F = new System.Windows.Forms.RadioButton();
-            this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.txtTelefon = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.cmbJudet2 = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.cmbLoc2 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.txtResedinta = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.cmbJudet1 = new System.Windows.Forms.ComboBox();
@@ -86,8 +79,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.chB_Tratament = new System.Windows.Forms.CheckBox();
-            this.chB_Interventie = new System.Windows.Forms.CheckBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cmbLoc2 = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblREpsw
@@ -134,6 +128,7 @@
             this.txtREpsw.Name = "txtREpsw";
             this.txtREpsw.Size = new System.Drawing.Size(158, 26);
             this.txtREpsw.TabIndex = 118;
+            this.txtREpsw.UseSystemPasswordChar = true;
             // 
             // txtPsw
             // 
@@ -143,6 +138,7 @@
             this.txtPsw.Name = "txtPsw";
             this.txtPsw.Size = new System.Drawing.Size(155, 26);
             this.txtPsw.TabIndex = 117;
+            this.txtPsw.UseSystemPasswordChar = true;
             // 
             // txtUsername
             // 
@@ -208,7 +204,11 @@
             this.lblDateInvalide.AutoSize = true;
             this.lblDateInvalide.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateInvalide.ForeColor = System.Drawing.Color.Red;
+<<<<<<< HEAD
             this.lblDateInvalide.Location = new System.Drawing.Point(142, 483);
+=======
+            this.lblDateInvalide.Location = new System.Drawing.Point(133, 438);
+>>>>>>> master
             this.lblDateInvalide.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDateInvalide.Name = "lblDateInvalide";
             this.lblDateInvalide.Size = new System.Drawing.Size(124, 20);
@@ -276,6 +276,7 @@
             this.lblDom.Text = "*";
             this.lblDom.Visible = false;
             // 
+<<<<<<< HEAD
             // lblKg
             // 
             this.lblKg.AutoSize = true;
@@ -288,6 +289,8 @@
             this.lblKg.Text = "*";
             this.lblKg.Visible = false;
             // 
+=======
+>>>>>>> master
             // lblDn
             // 
             this.lblDn.AutoSize = true;
@@ -327,7 +330,11 @@
             // btnInapoi
             // 
             this.btnInapoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.btnInapoi.Location = new System.Drawing.Point(32, 477);
+=======
+            this.btnInapoi.Location = new System.Drawing.Point(23, 432);
+>>>>>>> master
             this.btnInapoi.Margin = new System.Windows.Forms.Padding(2);
             this.btnInapoi.Name = "btnInapoi";
             this.btnInapoi.Size = new System.Drawing.Size(91, 31);
@@ -339,7 +346,11 @@
             // btnInregistreaza
             // 
             this.btnInregistreaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.btnInregistreaza.Location = new System.Drawing.Point(290, 477);
+=======
+            this.btnInregistreaza.Location = new System.Drawing.Point(281, 432);
+>>>>>>> master
             this.btnInregistreaza.Margin = new System.Windows.Forms.Padding(2);
             this.btnInregistreaza.Name = "btnInregistreaza";
             this.btnInregistreaza.Size = new System.Drawing.Size(143, 31);
@@ -348,6 +359,7 @@
             this.btnInregistreaza.UseVisualStyleBackColor = true;
             this.btnInregistreaza.Click += new System.EventHandler(this.btnInregistreaza_Click_1);
             // 
+<<<<<<< HEAD
             // label20
             // 
             this.label20.AutoSize = true;
@@ -368,6 +380,8 @@
             this.txtGreutate.Size = new System.Drawing.Size(53, 26);
             this.txtGreutate.TabIndex = 98;
             // 
+=======
+>>>>>>> master
             // rdB_M
             // 
             this.rdB_M.AutoSize = true;
@@ -394,6 +408,7 @@
             this.rdB_F.Text = "F";
             this.rdB_F.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
             // label19
             // 
             this.label19.AutoSize = true;
@@ -405,6 +420,8 @@
             this.label19.TabIndex = 95;
             this.label19.Text = "Greutate:";
             // 
+=======
+>>>>>>> master
             // label18
             // 
             this.label18.AutoSize = true;
@@ -461,6 +478,7 @@
             this.cmbJudet2.Enabled = false;
             this.cmbJudet2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbJudet2.FormattingEnabled = true;
+<<<<<<< HEAD
             this.cmbJudet2.Location = new System.Drawing.Point(268, 357);
             this.cmbJudet2.Margin = new System.Windows.Forms.Padding(2);
             this.cmbJudet2.Name = "cmbJudet2";
@@ -499,6 +517,14 @@
             this.label15.Size = new System.Drawing.Size(82, 20);
             this.label15.TabIndex = 86;
             this.label15.Text = "Localitate:";
+=======
+            this.cmbJudet2.Location = new System.Drawing.Point(106, 357);
+            this.cmbJudet2.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbJudet2.Name = "cmbJudet2";
+            this.cmbJudet2.Size = new System.Drawing.Size(132, 28);
+            this.cmbJudet2.TabIndex = 89;
+            this.cmbJudet2.SelectedIndexChanged += new System.EventHandler(this.cmbJudet2_SelectedIndexChanged);
+>>>>>>> master
             // 
             // txtResedinta
             // 
@@ -525,20 +551,29 @@
             // cmbJudet1
             // 
             this.cmbJudet1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.cmbJudet1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
+            this.cmbJudet1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbJudet1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbJudet1.FormattingEnabled = true;
+<<<<<<< HEAD
             this.cmbJudet1.Location = new System.Drawing.Point(280, 276);
+=======
+            this.cmbJudet1.Location = new System.Drawing.Point(109, 276);
+>>>>>>> master
             this.cmbJudet1.Margin = new System.Windows.Forms.Padding(2);
             this.cmbJudet1.Name = "cmbJudet1";
             this.cmbJudet1.Size = new System.Drawing.Size(101, 28);
             this.cmbJudet1.TabIndex = 83;
+            this.cmbJudet1.SelectedIndexChanged += new System.EventHandler(this.cmbJudet1_SelectedIndexChanged);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label12.Location = new System.Drawing.Point(226, 279);
+=======
+            this.label12.Location = new System.Drawing.Point(37, 279);
+>>>>>>> master
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(53, 20);
@@ -549,7 +584,11 @@
             // 
             this.cmbLoc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLoc1.FormattingEnabled = true;
+<<<<<<< HEAD
             this.cmbLoc1.Location = new System.Drawing.Point(109, 276);
+=======
+            this.cmbLoc1.Location = new System.Drawing.Point(315, 271);
+>>>>>>> master
             this.cmbLoc1.Margin = new System.Windows.Forms.Padding(2);
             this.cmbLoc1.Name = "cmbLoc1";
             this.cmbLoc1.Size = new System.Drawing.Size(101, 28);
@@ -579,10 +618,17 @@
             // 
             this.cb_an.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_an.FormattingEnabled = true;
+<<<<<<< HEAD
             this.cb_an.Location = new System.Drawing.Point(368, 166);
             this.cb_an.Margin = new System.Windows.Forms.Padding(2);
             this.cb_an.Name = "cb_an";
             this.cb_an.Size = new System.Drawing.Size(61, 28);
+=======
+            this.cb_an.Location = new System.Drawing.Point(368, 165);
+            this.cb_an.Margin = new System.Windows.Forms.Padding(2);
+            this.cb_an.Name = "cb_an";
+            this.cb_an.Size = new System.Drawing.Size(79, 28);
+>>>>>>> master
             this.cb_an.TabIndex = 78;
             // 
             // cb_luna
@@ -672,7 +718,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label6.Location = new System.Drawing.Point(30, 281);
+=======
+            this.label6.Location = new System.Drawing.Point(229, 279);
+>>>>>>> master
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 20);
@@ -736,8 +786,20 @@
             this.label1.TabIndex = 64;
             this.label1.Text = "Nume:";
             // 
-            // chB_Tratament
+            // label14
             // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(36, 360);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 20);
+            this.label14.TabIndex = 124;
+            this.label14.Text = "Județ:";
+            // 
+            // cmbLoc2
+            // 
+<<<<<<< HEAD
             this.chB_Tratament.AutoSize = true;
             this.chB_Tratament.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chB_Tratament.Location = new System.Drawing.Point(14, 434);
@@ -747,9 +809,20 @@
             this.chB_Tratament.TabIndex = 123;
             this.chB_Tratament.Text = "Sub tratament";
             this.chB_Tratament.UseVisualStyleBackColor = true;
+=======
+            this.cmbLoc2.Enabled = false;
+            this.cmbLoc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLoc2.FormattingEnabled = true;
+            this.cmbLoc2.Location = new System.Drawing.Point(333, 357);
+            this.cmbLoc2.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbLoc2.Name = "cmbLoc2";
+            this.cmbLoc2.Size = new System.Drawing.Size(101, 28);
+            this.cmbLoc2.TabIndex = 123;
+>>>>>>> master
             // 
-            // chB_Interventie
+            // label15
             // 
+<<<<<<< HEAD
             this.chB_Interventie.AutoSize = true;
             this.chB_Interventie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chB_Interventie.Location = new System.Drawing.Point(164, 434);
@@ -759,14 +832,31 @@
             this.chB_Interventie.TabIndex = 124;
             this.chB_Interventie.Text = "Intervenție în ultimele 6 luni";
             this.chB_Interventie.UseVisualStyleBackColor = true;
+=======
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(247, 360);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(82, 20);
+            this.label15.TabIndex = 122;
+            this.label15.Text = "Localitate:";
+>>>>>>> master
             // 
             // FormRegisterDonator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(455, 518);
             this.Controls.Add(this.chB_Interventie);
             this.Controls.Add(this.chB_Tratament);
+=======
+            this.ClientSize = new System.Drawing.Size(472, 478);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.cmbLoc2);
+            this.Controls.Add(this.label15);
+>>>>>>> master
             this.Controls.Add(this.lblREpsw);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblPassw);
@@ -783,26 +873,19 @@
             this.Controls.Add(this.lblJud);
             this.Controls.Add(this.lblLoc);
             this.Controls.Add(this.lblDom);
-            this.Controls.Add(this.lblKg);
             this.Controls.Add(this.lblDn);
             this.Controls.Add(this.lblPren);
             this.Controls.Add(this.lblNume);
             this.Controls.Add(this.btnInapoi);
             this.Controls.Add(this.btnInregistreaza);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.txtGreutate);
             this.Controls.Add(this.rdB_M);
             this.Controls.Add(this.rdB_F);
-            this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.txtTelefon);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.cmbJudet2);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.cmbLoc2);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.txtResedinta);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.cmbJudet1);
@@ -852,26 +935,19 @@
         private System.Windows.Forms.Label lblJud;
         private System.Windows.Forms.Label lblLoc;
         private System.Windows.Forms.Label lblDom;
-        private System.Windows.Forms.Label lblKg;
         private System.Windows.Forms.Label lblDn;
         private System.Windows.Forms.Label lblPren;
         private System.Windows.Forms.Label lblNume;
         private System.Windows.Forms.Button btnInapoi;
         private System.Windows.Forms.Button btnInregistreaza;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txtGreutate;
         private System.Windows.Forms.RadioButton rdB_M;
         private System.Windows.Forms.RadioButton rdB_F;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txtTelefon;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cmbJudet2;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox cmbLoc2;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtResedinta;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cmbJudet1;
@@ -894,7 +970,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox chB_Tratament;
-        private System.Windows.Forms.CheckBox chB_Interventie;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox cmbLoc2;
+        private System.Windows.Forms.Label label15;
     }
 }

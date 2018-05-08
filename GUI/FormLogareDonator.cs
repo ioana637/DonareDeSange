@@ -13,23 +13,104 @@ namespace GUI
 {
     public partial class FormLogareDonator : Form
     {
+<<<<<<< HEAD
         private DonatorService serviceDonator = new DonatorService();
         public FormLogareDonator()
+=======
+        DonatorService service;
+
+        public FormLogareDonator(DonatorService service)
+>>>>>>> master
         {
             InitializeComponent();
+            this.service = service;
+            label1.BackColor = Color.Transparent;
+            label2.BackColor = Color.Transparent;
+            linkLabel1.BackColor = Color.Transparent;
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+<<<<<<< HEAD
             FormRegisterDonator formRegisterDonator = new FormRegisterDonator();
             this.Hide();
             formRegisterDonator.Closed += (s, args) => this.Close();
             formRegisterDonator.ShowDialog();
+=======
+            FormRegisterDonator formRegister = new FormRegisterDonator();
+            formRegister.Show();
+        }
+
+        private void buttonLogIn2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //UserDonator user = service.GetUserDonator(txtUsername.Text);
+                if (service.LogInUserDonator(txtUsername.Text,txtPassw.Text))
+                {
+                    FormDonator formDonator = new FormDonator(service, txtUsername.Text);
+                    this.Hide();
+                    formDonator.Closed += (s, args) => this.Close();
+                    formDonator.Show();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Username or password incorect!!");
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Username or password incorect!!" + err.StackTrace);
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void txtUsername_Enter(object sender, EventArgs e)
+        {
+            if(txtUsername.Text == "Username")
+            {
+                txtUsername.Text = "";
+                txtUsername.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtUsername_Leave(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == "")
+            {
+                txtUsername.Text = "Username";
+                txtUsername.ForeColor = Color.Silver;
+            }
+        }
+
+        private void txtPassw_Enter(object sender, EventArgs e)
+        {
+            if (txtPassw.Text == "Parolă")
+            {
+                txtPassw.Text = "";
+                txtPassw.ForeColor = Color.Black;
+                txtPassw.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txtPassw_Leave(object sender, EventArgs e)
+        {
+            if (txtPassw.Text == "")
+            {
+                txtPassw.UseSystemPasswordChar = false;
+                txtPassw.Text = "Parolă";
+                txtPassw.ForeColor = Color.Silver;
+            }
+>>>>>>> master
         }
     }
 }

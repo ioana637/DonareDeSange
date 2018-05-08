@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
+using CentruDeTransfuzie.utils;
 using Service;
 
 namespace GUI
@@ -7,13 +9,14 @@ namespace GUI
     public partial class FormRegisterDonator : Form
     {
         DonatorService service = new DonatorService();
+        Judet judet = new Judet();
 
         public FormRegisterDonator()
         {
             InitializeComponent();
         }
 
-        public void ValidateDonator(string username, string password, string rePassword, string nume, string prenume, string greutate, string domiciliu, string localitate, string judet, string Email, string telefon)
+        public void ValidateDonator(string username, string password, string rePassword, string nume, string prenume, string domiciliu, string localitate, string judet, string Email, string telefon)
         {
             string error = "";
 
@@ -50,19 +53,7 @@ namespace GUI
             {
                 error += " reconfirm";
             }
-            try
-            {
-                float g = float.Parse(greutate);
-                if (g < 50)
-                {
-                    error += " greutate";
-                }
-            }
-            catch (Exception ex)
-            {
-                error += " greutate";
-            }
-
+            
             if (localitate == string.Empty || localitate == null)
             {
                 error += " localitate";
@@ -112,88 +103,12 @@ namespace GUI
             #endregion
 
             #region Judet
-
-            cmbJudet1.Items.Add("Alba");
-            cmbJudet1.Items.Add("Arad");
-            cmbJudet1.Items.Add("Argeș");
-            cmbJudet1.Items.Add("Bacău");
-            cmbJudet1.Items.Add("Bihor");
-            cmbJudet1.Items.Add("Bistrița-Năsăud");
-            cmbJudet1.Items.Add("Botoșani");
-            cmbJudet1.Items.Add("Brașov");
-            cmbJudet1.Items.Add("Brăila");
-            cmbJudet1.Items.Add("Caraș-Severin");
-            cmbJudet1.Items.Add("Călărași");
-            cmbJudet1.Items.Add("Cluj");
-            cmbJudet1.Items.Add("Constanța");
-            cmbJudet1.Items.Add("Covasna");
-            cmbJudet1.Items.Add("Dâmbovița");
-            cmbJudet1.Items.Add("Dolj");
-            cmbJudet1.Items.Add("Galați");
-            cmbJudet1.Items.Add("Giurgiu");
-            cmbJudet1.Items.Add("Gorj");
-            cmbJudet1.Items.Add("Harghita");
-            cmbJudet1.Items.Add("Hunedoara");
-            cmbJudet1.Items.Add("Ialomița");
-            cmbJudet1.Items.Add("Iași");
-            cmbJudet1.Items.Add("Ilfov");
-            cmbJudet1.Items.Add("Maramureș");
-            cmbJudet1.Items.Add("Mehedinți");
-            cmbJudet1.Items.Add("Mureș");
-            cmbJudet1.Items.Add("Neamț");
-            cmbJudet1.Items.Add("Olt");
-            cmbJudet1.Items.Add("Prahova");
-            cmbJudet1.Items.Add("Satu Mare");
-            cmbJudet1.Items.Add("Sălaj");
-            cmbJudet1.Items.Add("Sibiu");
-            cmbJudet1.Items.Add("Suceava");
-            cmbJudet1.Items.Add("Teleorman");
-            cmbJudet1.Items.Add("Timiș");
-            cmbJudet1.Items.Add("Tulcea");
-            cmbJudet1.Items.Add("Vaslui");
-            cmbJudet1.Items.Add("Vâlcea");
-            cmbJudet1.Items.Add("Vrancea");
-
-            cmbJudet2.Items.Add("Alba");
-            cmbJudet2.Items.Add("Arad");
-            cmbJudet2.Items.Add("Argeș");
-            cmbJudet2.Items.Add("Bacău");
-            cmbJudet2.Items.Add("Bihor");
-            cmbJudet2.Items.Add("Bistrița-Năsăud");
-            cmbJudet2.Items.Add("Botoșani");
-            cmbJudet2.Items.Add("Brașov");
-            cmbJudet2.Items.Add("Brăila");
-            cmbJudet2.Items.Add("Caraș-Severin");
-            cmbJudet2.Items.Add("Călărași");
-            cmbJudet2.Items.Add("Cluj");
-            cmbJudet2.Items.Add("Constanța");
-            cmbJudet2.Items.Add("Covasna");
-            cmbJudet2.Items.Add("Dâmbovița");
-            cmbJudet2.Items.Add("Dolj");
-            cmbJudet2.Items.Add("Galați");
-            cmbJudet2.Items.Add("Giurgiu");
-            cmbJudet2.Items.Add("Gorj");
-            cmbJudet2.Items.Add("Harghita");
-            cmbJudet2.Items.Add("Hunedoara");
-            cmbJudet2.Items.Add("Ialomița");
-            cmbJudet2.Items.Add("Iași");
-            cmbJudet2.Items.Add("Ilfov");
-            cmbJudet2.Items.Add("Maramureș");
-            cmbJudet2.Items.Add("Mehedinți");
-            cmbJudet2.Items.Add("Mureș");
-            cmbJudet2.Items.Add("Neamț");
-            cmbJudet2.Items.Add("Olt");
-            cmbJudet2.Items.Add("Prahova");
-            cmbJudet2.Items.Add("Satu Mare");
-            cmbJudet2.Items.Add("Sălaj");
-            cmbJudet2.Items.Add("Sibiu");
-            cmbJudet2.Items.Add("Suceava");
-            cmbJudet2.Items.Add("Teleorman");
-            cmbJudet2.Items.Add("Timiș");
-            cmbJudet2.Items.Add("Tulcea");
-            cmbJudet2.Items.Add("Vaslui");
-            cmbJudet2.Items.Add("Vâlcea");
-            cmbJudet2.Items.Add("Vrancea");
+            
+            foreach(var i in judet.judet.Keys)
+            {
+                cmbJudet1.Items.Add(i.ToString());
+                cmbJudet2.Items.Add(i.ToString());
+            }
 
             #endregion
 
@@ -217,7 +132,6 @@ namespace GUI
             string Zi = cb_zi.Text;
             string Luna = cb_luna.Text;
             string An = cb_an.Text;
-            string Greutate = txtGreutate.Text;
             string sex;
             if (rdB_F.Checked == true)
             {
@@ -235,31 +149,13 @@ namespace GUI
             string Judet2 = cmbJudet2.Text;
             string Email = txtEmail.Text;
             string Telefon = txtTelefon.Text;
-            int SubTratament;
-            if (chB_Tratament.Checked == true)
-            {
-                SubTratament = 1;
-            }
-            else
-            {
-                SubTratament = 0;
-            }
-            int interventiiUltimele6Luni;
-            if (chB_Interventie.Checked == true)
-            {
-                interventiiUltimele6Luni = 1;
-            }
-            else
-            {
-                interventiiUltimele6Luni = 0;
-            }
 
             #endregion
 
             try
             {
                 #region Validation
-                ValidateDonator(Username, Password, RePassword, Nume, Prenume, Greutate, Domiciliu, Localitate1, Judet1, Email, Telefon);
+                ValidateDonator(Username, Password, RePassword, Nume, Prenume, Domiciliu, Localitate1, Judet1, Email, Telefon);
 
                 DateTime DataNasterii = new DateTime(Int32.Parse(An), Int32.Parse(Luna), Int32.Parse(Zi));
 
@@ -268,7 +164,6 @@ namespace GUI
                 lblDom.Visible = false;
                 lblEmail.Visible = false;
                 lblJud.Visible = false;
-                lblKg.Visible = false;
                 lblLoc.Visible = false;
                 lblNume.Visible = false;
                 lblNume.Visible = false;
@@ -276,14 +171,7 @@ namespace GUI
                 lblTel.Visible = false;
                 #endregion
 
-                #region Add Localitate
-                cmbLoc1.Items.Add(Localitate1);
-                cmbLoc2.Items.Add(Localitate1);
-                #endregion
-
-                float greutate = float.Parse(Greutate);
-
-                service.RegisterDonator(Username, Password, Nume, Prenume, sex, DataNasterii, Domiciliu, Localitate1, Judet1, Resedinta, Localitate2, Judet2, Telefon, Email, greutate, interventiiUltimele6Luni, SubTratament);
+                service.RegisterDonator(Username, Password, Nume, Prenume, sex, DataNasterii, Domiciliu, Localitate1, Judet1, Resedinta, Localitate2, Judet2, Telefon, Email);
                 try
                 {
                     service.GetUserDonator(Username);
@@ -357,14 +245,7 @@ namespace GUI
                 {
                     lblDom.Visible = false;
                 }
-                if (error.Message.Contains("greutate"))
-                {
-                    lblKg.Visible = true;
-                }
-                else
-                {
-                    lblKg.Visible = false;
-                }
+               
 
                 if (error.Message.Contains("judet"))
                 {
@@ -415,6 +296,49 @@ namespace GUI
             this.Close();
         }
 
+<<<<<<< HEAD
+=======
+        private void cmbJudet1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbLoc1.Items.Clear();
+
+            int index = cmbJudet1.SelectedIndex;
+            var key = cmbJudet1.Items[index];
+
+            List<string> vector = new List<string>();
+            judet.judet.TryGetValue(key.ToString(), out vector);
+
+            if (judet.judet.ContainsKey(key.ToString()))
+            {
+                foreach (var i in vector)
+                {
+                    cmbLoc1.Items.Add(i);
+                }
+            }
+        }
+
+        private void cmbJudet2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbLoc2.Items.Clear();
+
+            int index = cmbJudet2.SelectedIndex;
+            var key = cmbJudet2.Items[index];
+
+            List<string> vector = new List<string>();
+            judet.judet.TryGetValue(key.ToString(), out vector);
+
+            if (judet.judet.ContainsKey(key.ToString()))
+            {
+                foreach (var i in vector)
+                {
+                    cmbLoc2.Items.Add(i);
+                }
+            }
+        }
+
+>>>>>>> master
         
     }
+
+
 }

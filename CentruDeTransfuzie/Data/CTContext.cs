@@ -3,12 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using CentruDeTransfuzie1.model;
+using CentruDeTransfuzie.model;
 
 namespace CentruDeTransfuzie1
 {
     public class CTContext : DbContext
     {
-        public CTContext(DbContextOptions<CTContext> options) : base(options) { }
+        public CTContext(DbContextOptions<CTContext> options) : base(options) {
+        }
 
 
         public DbSet<Medic> Medic { get; set; }
@@ -25,7 +27,7 @@ namespace CentruDeTransfuzie1
         public DbSet<TraseuPunga> TraseuPunga { get; set; }
         public DbSet<Spital> Spital { get; set; }
         public DbSet<SpitalMedic> SpitalMedic { get; set; }
-
+        public DbSet<Admin> Admin { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -46,8 +48,45 @@ namespace CentruDeTransfuzie1
             modelBuilder.Entity<Analiza>().ToTable("Analiza");
             modelBuilder.Entity<Spital>().ToTable("Spital");
             modelBuilder.Entity<SpitalMedic>().ToTable("SpitalMedic");
+            modelBuilder.Entity<Admin>().ToTable("Admin");
 
+            modelBuilder.Entity<Stoc>().HasKey(s => new { s.Grupa, s.RH });
 
+            //constrangeri donator
+            modelBuilder.Entity<Donator>()
+            .HasIndex(u => u.Email)
+            .IsUnique();
+            modelBuilder.Entity<Donator>()
+            .HasIndex(u => u.Telefon)
+            .IsUnique();
+
+            modelBuilder.Entity<UserDonator>()
+            .HasIndex(u => u.Username)
+            .IsUnique();
+
+            modelBuilder.Entity<CentruTransfuzie>()
+            .HasIndex(u => u.Nume)
+            .IsUnique();
+
+            modelBuilder.Entity<Medic>()
+            .HasIndex(u => u.Email)
+            .IsUnique();
+
+            modelBuilder.Entity<Medic>()
+            .HasIndex(u => u.Telefon)
+            .IsUnique();
+
+            modelBuilder.Entity<Medic>()
+            .HasIndex(u => u.Cnp)
+            .IsUnique();
+
+            modelBuilder.Entity<UserMedic>()
+            .HasIndex(u => u.Username)
+            .IsUnique();
+
+            modelBuilder.Entity<Pacient>()
+            .HasIndex(u => u.Email)
+            .IsUnique();
             //modelBuilder.Entity<Medic>().HasKey(m => m.Id);
             //modelBuilder.Entity<UserMedic>().HasKey(u => u.Id);
             //modelBuilder.Entity<Medic>().HasOne<UserMedic>().WithOne().HasForeignKey<Medic>();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CentruDeTransfuzie1.utils;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,7 +7,6 @@ namespace CentruDeTransfuzie1.model
 {
     public class Stoc
     {
-        public int Id { get; set; }
         public float TotalSange { get; set; }
         public float Trombocite { get; set; }
         public float GlobuleRosii { get; set; }
@@ -14,20 +14,25 @@ namespace CentruDeTransfuzie1.model
         public int TermenTrombocite { get; set; }
         public int TermenGlobuleRosii { get; set; }
         public int TermenPlasma { get; set; }
+        public GrupaSange Grupa { get; set; }
+        public TipRh RH { get; set; }
+       
 
         public Stoc()
         {
+            TotalSange = 0;
         }
 
-        public Stoc(float totalSange, float trombocite, float globuleRosii, float plasma, int termenTrombocite, int termenGlobuleRosii, int termenPlasma)
+        public Stoc(GrupaSange grupa, TipRh tipRh)
         {
-            TotalSange = totalSange;
-            Trombocite = trombocite;
-            GlobuleRosii = globuleRosii;
-            Plasma = plasma;
-            TermenTrombocite = termenTrombocite;
-            TermenGlobuleRosii = termenGlobuleRosii;
-            TermenPlasma = termenPlasma;
+            Grupa = grupa;
+            RH = tipRh;
+            Trombocite = 0;
+            GlobuleRosii = 0;
+            Plasma = 0;
+            TermenTrombocite = 0;
+            TermenGlobuleRosii = 0;
+            TermenPlasma = 0;
         }
     }
 }
