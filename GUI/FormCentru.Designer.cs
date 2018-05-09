@@ -95,7 +95,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 33);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Filtreaza";
+            this.button1.Text = "Filtrează";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -232,7 +232,7 @@
             this.tabPageStocSange.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageStocSange.Size = new System.Drawing.Size(748, 343);
             this.tabPageStocSange.TabIndex = 3;
-            this.tabPageStocSange.Text = "Stoc sange";
+            this.tabPageStocSange.Text = "Stoc sânge";
             this.tabPageStocSange.UseVisualStyleBackColor = true;
             // 
             // dataGridViewStocSange

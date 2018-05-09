@@ -51,7 +51,7 @@ namespace CentruDeTransfuzie.utils
                 "Bogați",
                 "Boțești"
             };
-            judet.Add("Arges", arges);
+            judet.Add("Argeș", arges);
             List<string> bacau = new List<string>
             {
                 "Asău",
@@ -59,7 +59,7 @@ namespace CentruDeTransfuzie.utils
                 "Blaga",
                 "Buciumi",
             };
-            judet.Add("Bacau", bacau);
+            judet.Add("Bacău", bacau);
             List<string> bihor = new List<string>
             {
                 "Abram",
