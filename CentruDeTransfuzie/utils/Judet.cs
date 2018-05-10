@@ -13,6 +13,7 @@ namespace CentruDeTransfuzie.utils
         public Judet()
         {
             List<string> cluj = new List<string> {
+                "Transilvania",
                 "Agârbiciu",
                 "Aghireș",
                 "Apahida",
@@ -25,6 +26,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Cluj", cluj);
 
             List<string> alba = new List<string> {
+                "Transilvania",
                 "Abrud",
                 "Acmariu",
                 "Aiud",
@@ -34,6 +36,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Alba", alba);
             List<string> arad = new List<string>
             {
+                "Crisana",
                 "Adea",
                 "Almaș",
                 "Arad",
@@ -44,6 +47,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Arad", arad);
             List<string> arges = new List<string>
             {
+                "Muntenia",
                 "Adunați",
                 "Albești",
                 "Bascov",
@@ -51,17 +55,19 @@ namespace CentruDeTransfuzie.utils
                 "Bogați",
                 "Boțești"
             };
-            judet.Add("Argeș", arges);
+            judet.Add("Arges", arges);
             List<string> bacau = new List<string>
             {
+                "Moldova",
                 "Asău",
                 "Balcani",
                 "Blaga",
                 "Buciumi",
             };
-            judet.Add("Bacău", bacau);
+            judet.Add("Bacau", bacau);
             List<string> bihor = new List<string>
             {
+                "Crisana",
                 "Abram",
                 "Abrămuț",
                 "Albiș",
@@ -71,6 +77,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Bihor", bihor);
             List<string> bistrita = new List<string>
             {
+                "Transilvania",
                 "Agrieș",
                 "Bața",
                 "Budacu de Sus",
@@ -80,6 +87,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Bistrița Năsăud", bistrita);
             List<string> botosani = new List<string>
             {
+                "Moldova",
                 "Alba",
                 "Albești",
                 "Bucecea",
@@ -89,6 +97,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Botoșani", botosani);
             List<string> braila = new List<string>
             {
+                "Muntenia",
                 "Dudești",
                 "Lacu Sărat",
                 "Măxineni",
@@ -98,6 +107,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Brăila", braila);
             List<string> brasov = new List<string>
             {
+                "Transilvania",
                 "Bărcuț",
                 "Bogata Olteană",
                 "Brașov",
@@ -107,6 +117,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Brașov", brasov);
             List<string> bucuresti = new List<string>
             {
+                "Muntenia",
                 "Sector 1",
                 "Sector 2",
                 "Sector 3",
@@ -117,6 +128,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("București", bucuresti);
             List<string> buzau = new List<string>
             {
+                "Muntenia",
                 "Bisoca",
                 "Blăjani",
                 "Budești",
@@ -126,6 +138,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Buzău", buzau);
             List<string> calarasi = new List<string>
             {
+                "Muntenia",
                 "Arțari",
                 "Bogata",
                 "Crivăț",
@@ -135,6 +148,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Călărași", calarasi);
             List<string> caras_severin = new List<string>
             {
+                "Banat",
                 "Brebu",
                 "Cornea",
                 "Copăcele",
@@ -144,6 +158,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Caraș-Severin", caras_severin);
             List<string> constanta = new List<string>
             {
+                "Dobrogea",
                 "Constanța",
                 "Costinești",
                 "Lipnița",
@@ -153,6 +168,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Constanța", constanta);
             List<string> covasna = new List<string>
             {
+                "Transilvania",
                 "Albiș",
                 "Băcel",
                 "Brețcu",
@@ -162,6 +178,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Covasna", covasna);
             List<string> dambovita = new List<string>
             {
+                "Muntenia",
                 "Râncăciov",
                 "Samurcași",
                 "Săcueni",
@@ -171,6 +188,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Dâmbovița", dambovita);
             List<string> dolj = new List<string>
             {
+                "Oltenia",
                 "Afumați",
                 "Almăj",
                 "Dobrotești",
@@ -180,6 +198,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Dolj", dolj);
             List<string> galati = new List<string>
             {
+                "Moldova",
                 "Adam",
                 "Corcioveni",
                 "Cudalbi",
@@ -189,6 +208,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Galați", galati);
             List<string> giurgiu = new List<string>
             {
+                "Muntenia",
                 "Bila",
                 "Clejani",
                 "Comana",
@@ -198,6 +218,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Giurgiu", giurgiu);
             List<string> gorj = new List<string>
             {
+                "Oltenia",
                 "Aluniș",
                 "Aninoasa",
                 "Barza",
@@ -207,6 +228,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Gorj", gorj);
             List<string> harghita = new List<string>
             {
+                "Transilvania",
                 "Alexandrița",
                 "Barațcoș",
                 "Căpâlnița",
@@ -216,6 +238,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Harghita", harghita);
             List<string> hunedoara = new List<string>
             {
+                "Transilvania",
                 "Ardeu",
                 "Bacea",
                 "Banpotoc",
@@ -225,6 +248,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Hunedoara", hunedoara);
             List<string> ialomita = new List<string>
             {
+                "Muntenia",
                 "Bordușelu",
                 "Cotorca",
                 "Țăndărei",
@@ -234,6 +258,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Ialomița", ialomita);
             List<string> iasi = new List<string>
             {
+                "Moldova",
                 "Albești",
                 "Hârlău",
                 "Podu Iloaiei",
@@ -243,6 +268,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Iași", iasi);
             List<string> ilfov = new List<string>
             {
+                "Calarasi",
                 "Balotești",
                 "Bălteni",
                 "Buda",
@@ -252,6 +278,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Ilfov", ilfov);
             List<string> maramures = new List<string>
             {
+                "Maramures",
                 "Ardusat",
                 "Borșa",
                 "Cavnic",
@@ -261,6 +288,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Maramureș", maramures);
             List<string> mehedinti = new List<string>
             {
+                "Oltenia",
                 "Balta",
                 "Batoți",
                 "Brateșul",
@@ -270,6 +298,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Mehedinți", mehedinti);
             List<string> mures = new List<string>
             {
+                "Transilvania",
                 "Abuș",
                 "Blidireasa",
                 "Bozed",
@@ -279,6 +308,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Mureș", mures);
             List<string> neamt = new List<string>
             {
+                "Moldova",
                 "Bețești",
                 "Bicaz",
                 "Dobreni",
@@ -288,6 +318,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Neamț", neamt);
             List<string> olt = new List<string>
             {
+                "Oltenia",
                 "Alunișu",
                 "Curtișoara",
                 "Frunzaru",
@@ -297,6 +328,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Olt", olt);
             List<string> prahova = new List<string>
             {
+                "Muntenia",
                 "Antofiloaia",
                 "Băltița",
                 "Bighilin",
@@ -306,6 +338,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Prahova", prahova);
             List<string> salaj = new List<string>
             {
+                "Crisana",
                 "Aleuș",
                 "Ban",
                 "Bârsa",
@@ -315,6 +348,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Sălaj", salaj);
             List<string> satuMare = new List<string>
             {
+                "Maramures",
                 "Agriș",
                 "Baba Novac",
                 "Hodișa",
@@ -324,6 +358,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Satu Mare", satuMare);
             List<string> sibiu = new List<string>
             {
+                "Transilvania",
                 "Alma",
                 "Armeni",
                 "Bradu",
@@ -333,6 +368,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Sibiu", sibiu);
             List<string> suceava = new List<string>
             {
+                "Bucovina",
                 "Arbore",
                 "Brașca",
                 "Catrinari",
@@ -342,6 +378,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Suceava", suceava);
             List<string> teleorman = new List<string>
             {
+                "Muntenia",
                 "Teleormanu",
                 "Udeni",
                 "Vitănești",
@@ -351,6 +388,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Teleorman", teleorman);
             List<string> timis = new List<string>
             {
+                "Banat",
                 "Bacova",
                 "Bârna",
                 "Bobda",
@@ -360,6 +398,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Timiș", timis);
             List<string> tulcea = new List<string>
             {
+                "Dobrogea",
                 "Babadag",
                 "Baia",
                 "Isaccea",
@@ -369,6 +408,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Tulcea", tulcea);
             List<string> valcea = new List<string>
             {
+                "Oltenia",
                 "Aurești",
                 "Balota",
                 "Becșani",
@@ -378,6 +418,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Vâlcea", valcea);
             List<string> vaslui = new List<string>
             {
+                "Moldova",
                 "Armășeni",
                 "Bogdana",
                 "Bârlad",
@@ -387,6 +428,7 @@ namespace CentruDeTransfuzie.utils
             judet.Add("Vaslui", vaslui);
             List<string> vrancea = new List<string>
             {
+                "Moldova",
                 "Bizighești",
                 "Bordești",
                 "Cârligele",

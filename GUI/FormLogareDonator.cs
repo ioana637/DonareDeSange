@@ -93,5 +93,10 @@ namespace GUI
                 txtPassw.ForeColor = Color.Silver;
             }
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
