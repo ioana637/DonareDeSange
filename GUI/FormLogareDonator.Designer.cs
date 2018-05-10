@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogareDonator));
             this.buttonLogIn2 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.btnExit = new System.Windows.Forms.Button();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassw = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,13 +45,13 @@
             // 
             // buttonLogIn2
             // 
-            this.buttonLogIn2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.buttonLogIn2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonLogIn2.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
             this.buttonLogIn2.FlatAppearance.BorderSize = 0;
             this.buttonLogIn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogIn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogIn2.ForeColor = System.Drawing.Color.White;
-            this.buttonLogIn2.Location = new System.Drawing.Point(143, 166);
+            this.buttonLogIn2.ForeColor = System.Drawing.Color.Firebrick;
+            this.buttonLogIn2.Location = new System.Drawing.Point(136, 185);
             this.buttonLogIn2.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogIn2.Name = "buttonLogIn2";
             this.buttonLogIn2.Size = new System.Drawing.Size(134, 31);
@@ -67,30 +66,13 @@
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(222, 223);
+            this.linkLabel1.Location = new System.Drawing.Point(222, 244);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(120, 15);
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "ÎNREGISTREAZĂ-TE";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateGray;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(261, 297);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(112, 32);
-            this.btnExit.TabIndex = 7;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // txtUsername
             // 
@@ -140,7 +122,6 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.txtUsername);
-            this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.txtPassw);
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.buttonLogIn2);
@@ -156,7 +137,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(78, 223);
+            this.label2.Location = new System.Drawing.Point(78, 244);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 15);
             this.label2.TabIndex = 12;
@@ -204,7 +185,6 @@
         #endregion
         private System.Windows.Forms.Button buttonLogIn2;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassw;
         private System.Windows.Forms.Label label1;

@@ -35,39 +35,39 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtNume = new System.Windows.Forms.TextBox();
-            this.txtPrenume = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.checkDonator = new System.Windows.Forms.CheckBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPrenume = new System.Windows.Forms.TextBox();
+            this.txtNume = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBoxTrombocite = new System.Windows.Forms.TextBox();
-            this.textBoxGlobule = new System.Windows.Forms.TextBox();
-            this.textBoxPlasma = new System.Windows.Forms.TextBox();
-            this.Pacienti = new System.Windows.Forms.CheckedListBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBoxTotal = new System.Windows.Forms.TextBox();
-            this.comboBoxGrupa = new System.Windows.Forms.ComboBox();
-            this.comboBoxRH = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.buttonSave = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBoxRH = new System.Windows.Forms.ComboBox();
+            this.comboBoxGrupa = new System.Windows.Forms.ComboBox();
+            this.textBoxTotal = new System.Windows.Forms.TextBox();
+            this.textBoxPlasma = new System.Windows.Forms.TextBox();
+            this.textBoxGlobule = new System.Windows.Forms.TextBox();
+            this.textBoxTrombocite = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Pacienti = new System.Windows.Forms.CheckedListBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -86,10 +86,10 @@
             // 
             this.buttonLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonLogout.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogout.Image")));
-            this.buttonLogout.Location = new System.Drawing.Point(901, 12);
+            this.buttonLogout.Location = new System.Drawing.Point(904, 12);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.buttonLogout.Size = new System.Drawing.Size(58, 31);
+            this.buttonLogout.Size = new System.Drawing.Size(55, 31);
             this.buttonLogout.TabIndex = 1;
             this.buttonLogout.UseVisualStyleBackColor = true;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
@@ -154,25 +154,54 @@
             this.tabPage4.Text = "Adăugare pacient";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // label11
+            // checkDonator
             // 
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label11.Location = new System.Drawing.Point(338, 78);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 18);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Nume";
+            this.checkDonator.AutoSize = true;
+            this.checkDonator.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkDonator.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.checkDonator.Location = new System.Drawing.Point(341, 280);
+            this.checkDonator.Name = "checkDonator";
+            this.checkDonator.Size = new System.Drawing.Size(115, 22);
+            this.checkDonator.TabIndex = 15;
+            this.checkDonator.Text = "Este Donator";
+            this.checkDonator.UseVisualStyleBackColor = true;
             // 
-            // label10
+            // button2
             // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label10.Location = new System.Drawing.Point(338, 145);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 18);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Prenume";
+            this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Firebrick;
+            this.button2.Location = new System.Drawing.Point(507, 313);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(79, 35);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Adaugă";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(341, 238);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(245, 24);
+            this.txtEmail.TabIndex = 13;
+            // 
+            // txtPrenume
+            // 
+            this.txtPrenume.Location = new System.Drawing.Point(341, 166);
+            this.txtPrenume.Name = "txtPrenume";
+            this.txtPrenume.Size = new System.Drawing.Size(245, 24);
+            this.txtPrenume.TabIndex = 12;
+            // 
+            // txtNume
+            // 
+            this.txtNume.Location = new System.Drawing.Point(341, 99);
+            this.txtNume.Name = "txtNume";
+            this.txtNume.Size = new System.Drawing.Size(245, 24);
+            this.txtNume.TabIndex = 11;
             // 
             // label9
             // 
@@ -184,52 +213,25 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "Email";
             // 
-            // txtNume
+            // label10
             // 
-            this.txtNume.Location = new System.Drawing.Point(341, 99);
-            this.txtNume.Name = "txtNume";
-            this.txtNume.Size = new System.Drawing.Size(245, 24);
-            this.txtNume.TabIndex = 11;
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label10.Location = new System.Drawing.Point(338, 145);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(68, 18);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Prenume";
             // 
-            // txtPrenume
+            // label11
             // 
-            this.txtPrenume.Location = new System.Drawing.Point(341, 166);
-            this.txtPrenume.Name = "txtPrenume";
-            this.txtPrenume.Size = new System.Drawing.Size(245, 24);
-            this.txtPrenume.TabIndex = 12;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(341, 238);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(245, 24);
-            this.txtEmail.TabIndex = 13;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(507, 313);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(79, 35);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Adaugă";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // checkDonator
-            // 
-            this.checkDonator.AutoSize = true;
-            this.checkDonator.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkDonator.Location = new System.Drawing.Point(341, 280);
-            this.checkDonator.Name = "checkDonator";
-            this.checkDonator.Size = new System.Drawing.Size(115, 22);
-            this.checkDonator.TabIndex = 15;
-            this.checkDonator.Text = "Este Donator";
-            this.checkDonator.UseVisualStyleBackColor = true;
+            this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label11.Location = new System.Drawing.Point(338, 78);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(48, 18);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Nume";
             // 
             // tabPage3
             // 
@@ -261,65 +263,89 @@
             this.tabPage3.Text = "Creează o cerere";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // label14
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(113, 218);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cantitate sânge necesar:";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Firebrick;
+            this.label14.Location = new System.Drawing.Point(113, 44);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(362, 24);
+            this.label14.TabIndex = 17;
+            this.label14.Text = "Completați câmpurile  cu datele necesare:";
             // 
-            // label2
+            // buttonSave
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(587, 283);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 18);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Trombocite:";
+            this.buttonSave.BackColor = System.Drawing.Color.Firebrick;
+            this.buttonSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSave.FlatAppearance.BorderSize = 0;
+            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonSave.Location = new System.Drawing.Point(367, 573);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(107, 48);
+            this.buttonSave.TabIndex = 16;
+            this.buttonSave.Text = "Salvează";
+            this.buttonSave.UseVisualStyleBackColor = false;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
-            // label3
+            // label8
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(353, 283);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 18);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Globule roșii:";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(161, 341);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 18);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Total:";
             // 
-            // label4
+            // label7
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(161, 283);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 18);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Plasmă:";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(170, 131);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 18);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Grupa:";
             // 
-            // textBoxTrombocite
+            // label6
             // 
-            this.textBoxTrombocite.Location = new System.Drawing.Point(683, 280);
-            this.textBoxTrombocite.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxTrombocite.Name = "textBoxTrombocite";
-            this.textBoxTrombocite.Size = new System.Drawing.Size(88, 24);
-            this.textBoxTrombocite.TabIndex = 1;
-            this.textBoxTrombocite.TextChanged += new System.EventHandler(this.textBoxTrombocite_TextChanged);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(480, 131);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(34, 18);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "RH:";
             // 
-            // textBoxGlobule
+            // comboBoxRH
             // 
-            this.textBoxGlobule.Location = new System.Drawing.Point(456, 280);
-            this.textBoxGlobule.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxGlobule.Name = "textBoxGlobule";
-            this.textBoxGlobule.Size = new System.Drawing.Size(90, 24);
-            this.textBoxGlobule.TabIndex = 5;
-            this.textBoxGlobule.TextChanged += new System.EventHandler(this.textBoxGlobule_TextChanged);
+            this.comboBoxRH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRH.FormattingEnabled = true;
+            this.comboBoxRH.Location = new System.Drawing.Point(521, 128);
+            this.comboBoxRH.Name = "comboBoxRH";
+            this.comboBoxRH.Size = new System.Drawing.Size(121, 26);
+            this.comboBoxRH.TabIndex = 12;
+            // 
+            // comboBoxGrupa
+            // 
+            this.comboBoxGrupa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxGrupa.FormattingEnabled = true;
+            this.comboBoxGrupa.Location = new System.Drawing.Point(230, 128);
+            this.comboBoxGrupa.Name = "comboBoxGrupa";
+            this.comboBoxGrupa.Size = new System.Drawing.Size(121, 26);
+            this.comboBoxGrupa.TabIndex = 11;
+            // 
+            // textBoxTotal
+            // 
+            this.textBoxTotal.Location = new System.Drawing.Point(230, 335);
+            this.textBoxTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTotal.Name = "textBoxTotal";
+            this.textBoxTotal.Size = new System.Drawing.Size(90, 24);
+            this.textBoxTotal.TabIndex = 10;
+            this.textBoxTotal.TextChanged += new System.EventHandler(this.textBoxTotal_TextChanged);
             // 
             // textBoxPlasma
             // 
@@ -330,14 +356,23 @@
             this.textBoxPlasma.TabIndex = 6;
             this.textBoxPlasma.TextChanged += new System.EventHandler(this.textBoxPlasma_TextChanged);
             // 
-            // Pacienti
+            // textBoxGlobule
             // 
-            this.Pacienti.FormattingEnabled = true;
-            this.Pacienti.Location = new System.Drawing.Point(104, 486);
-            this.Pacienti.Margin = new System.Windows.Forms.Padding(4);
-            this.Pacienti.Name = "Pacienti";
-            this.Pacienti.Size = new System.Drawing.Size(601, 80);
-            this.Pacienti.TabIndex = 8;
+            this.textBoxGlobule.Location = new System.Drawing.Point(456, 280);
+            this.textBoxGlobule.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGlobule.Name = "textBoxGlobule";
+            this.textBoxGlobule.Size = new System.Drawing.Size(90, 24);
+            this.textBoxGlobule.TabIndex = 5;
+            this.textBoxGlobule.TextChanged += new System.EventHandler(this.textBoxGlobule_TextChanged);
+            // 
+            // textBoxTrombocite
+            // 
+            this.textBoxTrombocite.Location = new System.Drawing.Point(683, 280);
+            this.textBoxTrombocite.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTrombocite.Name = "textBoxTrombocite";
+            this.textBoxTrombocite.Size = new System.Drawing.Size(88, 24);
+            this.textBoxTrombocite.TabIndex = 1;
+            this.textBoxTrombocite.TextChanged += new System.EventHandler(this.textBoxTrombocite_TextChanged);
             // 
             // label5
             // 
@@ -351,88 +386,56 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Pacienții ce au nevoie de sânge:";
             // 
-            // textBoxTotal
+            // Pacienti
             // 
-            this.textBoxTotal.Location = new System.Drawing.Point(230, 335);
-            this.textBoxTotal.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxTotal.Name = "textBoxTotal";
-            this.textBoxTotal.Size = new System.Drawing.Size(90, 24);
-            this.textBoxTotal.TabIndex = 10;
-            this.textBoxTotal.TextChanged += new System.EventHandler(this.textBoxTotal_TextChanged);
+            this.Pacienti.FormattingEnabled = true;
+            this.Pacienti.Location = new System.Drawing.Point(104, 486);
+            this.Pacienti.Margin = new System.Windows.Forms.Padding(4);
+            this.Pacienti.Name = "Pacienti";
+            this.Pacienti.Size = new System.Drawing.Size(601, 80);
+            this.Pacienti.TabIndex = 8;
             // 
-            // comboBoxGrupa
+            // label4
             // 
-            this.comboBoxGrupa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxGrupa.FormattingEnabled = true;
-            this.comboBoxGrupa.Location = new System.Drawing.Point(230, 128);
-            this.comboBoxGrupa.Name = "comboBoxGrupa";
-            this.comboBoxGrupa.Size = new System.Drawing.Size(121, 26);
-            this.comboBoxGrupa.TabIndex = 11;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(161, 283);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 18);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Plasmă:";
             // 
-            // comboBoxRH
+            // label3
             // 
-            this.comboBoxRH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxRH.FormattingEnabled = true;
-            this.comboBoxRH.Location = new System.Drawing.Point(521, 128);
-            this.comboBoxRH.Name = "comboBoxRH";
-            this.comboBoxRH.Size = new System.Drawing.Size(121, 26);
-            this.comboBoxRH.TabIndex = 12;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(353, 283);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 18);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Globule roșii:";
             // 
-            // label6
+            // label2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(480, 131);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 18);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "RH:";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(587, 283);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 18);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Trombocite:";
             // 
-            // label7
+            // label1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(170, 131);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 18);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Grupa:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(161, 341);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 18);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Total:";
-            // 
-            // buttonSave
-            // 
-            this.buttonSave.BackColor = System.Drawing.Color.Firebrick;
-            this.buttonSave.FlatAppearance.BorderSize = 0;
-            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonSave.Location = new System.Drawing.Point(367, 573);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(107, 48);
-            this.buttonSave.TabIndex = 16;
-            this.buttonSave.Text = "Salvează";
-            this.buttonSave.UseVisualStyleBackColor = false;
-            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Firebrick;
-            this.label14.Location = new System.Drawing.Point(113, 44);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(362, 24);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "Completați câmpurile  cu datele necesare:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
+            this.label1.Location = new System.Drawing.Point(113, 218);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(216, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Cantitate sânge necesar:";
             // 
             // tabPage2
             // 
@@ -448,6 +451,36 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Cereri sânge";
             // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label13.Location = new System.Drawing.Point(403, 18);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(225, 24);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Cererile actuale de sânge";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Brown;
+            this.button1.Location = new System.Drawing.Point(778, 460);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(145, 40);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Modifică cerere";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // dataGridView2
             // 
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -460,35 +493,6 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(991, 382);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(775, 468);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 32);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Modifică cerere";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label13
-            // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label13.Location = new System.Drawing.Point(403, 18);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(225, 24);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Cererile actuale de sânge";
             // 
             // tabPage1
             // 
@@ -504,20 +508,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pacienți";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 69);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(975, 350);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // label12
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -531,6 +521,20 @@
             this.label12.TabIndex = 1;
             this.label12.Text = "Listă pacienți";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 69);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(975, 350);
+            this.dataGridView1.TabIndex = 0;
             // 
             // tabControl1
             // 
@@ -552,7 +556,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(980, 648);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);

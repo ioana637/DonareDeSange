@@ -53,16 +53,55 @@ namespace GUI
 
         }
 
-        private void buttonExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        //private void buttonExit_Click(object sender, EventArgs e)
+        //{
+          //  Application.Exit();
+        //}
 
         private void FormAdminLogare_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason.Equals(CloseReason.UserClosing))
             {
                 Application.Exit();
+            }
+        }
+
+        private void textBoxUsername_Enter(object sender, EventArgs e)
+        {
+            if (textBoxUsername.Text == "Username")
+            {
+                textBoxUsername.Text = "";
+                textBoxUsername.ForeColor = Color.Black;
+            }
+
+        }
+
+        private void textBoxUsername_Leave(object sender, EventArgs e)
+        {
+            if (textBoxUsername.Text == "")
+            {
+                textBoxUsername.Text = "Username";
+                textBoxUsername.ForeColor = Color.Silver;
+            }
+        }
+
+        private void textBoxPassword_Enter(object sender, EventArgs e)
+        {
+            if (textBoxPassword.Text == "Parolă")
+            {
+                textBoxPassword.Text = "";
+                textBoxPassword.ForeColor = Color.Black;
+                textBoxPassword.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void textBoxPassword_Leave(object sender, EventArgs e)
+        {
+            if (textBoxPassword.Text == "")
+            {
+                textBoxPassword.UseSystemPasswordChar = false;
+                textBoxPassword.Text = "Parolă";
+                textBoxPassword.ForeColor = Color.Silver;
             }
         }
     }
