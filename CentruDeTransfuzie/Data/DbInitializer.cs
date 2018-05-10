@@ -1,4 +1,4 @@
-using CentruDeTransfuzie.model;
+﻿using CentruDeTransfuzie.model;
 using CentruDeTransfuzie.utils;
 using CentruDeTransfuzie1.model;
 using CentruDeTransfuzie1.utils;
@@ -198,8 +198,8 @@ namespace CentruDeTransfuzie1.Data
             {
                 return;
             }
-            CentruTransfuzie c1 = new CentruTransfuzie("Centru Donare Sange Cluj", "Piata Mihai Viteazu", "Cluj-Napoca", "Cluj");
-            CentruTransfuzie c2 = new CentruTransfuzie("Centru Donare Sange Bucuresti","Militari","Bucuresti","Ilfov");
+            CentruTransfuzie c1 = new CentruTransfuzie("Centru Donare Sânge Cluj", "Piața Mihai Viteazu", "Cluj-Napoca", "Cluj");
+            CentruTransfuzie c2 = new CentruTransfuzie("Centru Donare Sânge București","Militari","Bucuresti","Ilfov");
 
             c1.Parola = "e2a7b5972479f8c59ade36a15e5b6146";//parola=ParolaCluj
             c2.Parola = "311e8c89c2e7f24e3ac63265496297a7";//parola=ParolaBucuresti

@@ -51,10 +51,10 @@ namespace GUI
             }
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        //private void btnExit_Click(object sender, EventArgs e)
+        //{
+          //  Application.Exit();
+        //}
 
         private void txtUsername_Enter(object sender, EventArgs e)
         {

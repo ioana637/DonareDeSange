@@ -28,11 +28,12 @@ namespace GUI
             //Application.Run(new FormLogareDonator(new Service.DonatorService()));
             //Application.Run(new FormDonator(new Service.DonatorService(), "popescu"));
             //Application.Run(new FormLogareMedic(new Service.UserMedicService()));
+            //Application.Run(new FormMedic(new Service.UserMedicService(),1, "ioana"));
+            //Application.Run(new FormLogareCentru(new Service.CentruService()));
+            //Application.Run(new FormCentru(new Service.DonatorService()));
 
-            Application.Run(new FormMedic(new Service.UserMedicService(),1, "ioana"));
 
-
-            //Application.Run(new FormAdminLogare(new AdminService()));
+            Application.Run(new FormAdminLogare(new AdminService()));
             //Application.Run(new FormAdmin(new AdminService()));
 
 
@@ -40,8 +41,8 @@ namespace GUI
             //Application.Run(new FormDonator(new Service.DonatorService(),"popescu"));
 
 
-            //Application.Run(new FormCentru(new Service.DonatorService()));
-            //Application.Run(new FormLogareCentru(new Service.CentruService()));
+            
+
 
             //Application.Run(new FormAnalizeSange());
             //Application.Run(new FormRegisterDonator());
