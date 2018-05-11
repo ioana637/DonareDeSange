@@ -42,11 +42,11 @@
             // 
             // buttonLogIn
             // 
-            this.buttonLogIn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.buttonLogIn.BackColor = System.Drawing.Color.White;
             this.buttonLogIn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonLogIn.FlatAppearance.BorderSize = 0;
             this.buttonLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogIn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonLogIn.ForeColor = System.Drawing.Color.Firebrick;
             this.buttonLogIn.Location = new System.Drawing.Point(137, 240);
             this.buttonLogIn.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogIn.Name = "buttonLogIn";
