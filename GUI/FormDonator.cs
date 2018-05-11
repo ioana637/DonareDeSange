@@ -192,9 +192,9 @@ namespace GUI
             textAdresa.Text = donator.Domiciliu;
             cmbJud.SelectedItem = donator.Judet;
             cmbLoc.SelectedItem = donator.Localitate;
-            textBoxAdresaR.Text=donator.Resedinta;
-            cmbJudR.SelectedItem = donator.JudetResedinta;
-            cmbLocR.SelectedItem = donator.LocalitateResedinta;
+            textBoxAdresaR.Text = donator.Resedinta != "" ? donator.Resedinta : donator.Domiciliu;
+            cmbJudR.SelectedItem = donator.JudetResedinta != "" ? donator.JudetResedinta : donator.Judet;
+            cmbLocR.SelectedItem = donator.LocalitateResedinta != "" ? donator.LocalitateResedinta : donator.Localitate;
             textTelefon.Text = donator.Telefon;
             textEmail.Text = donator.Email;
             if (donator.Sex == "F")
@@ -213,7 +213,7 @@ namespace GUI
             {
                 checkBoxInterventii.Checked = true;
             }
-            if(donator.SubTratament == 1)
+            if (donator.SubTratament == 1)
             {
                 checkBoxTratament.Checked = true;
             }
@@ -222,6 +222,7 @@ namespace GUI
         private void cmbJudR_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbLocR.Text = string.Empty;
+            cmbLocR.Items.Clear();
 
             int index = cmbJudR.SelectedIndex;
             var key = cmbJudR.Items[index];
@@ -231,10 +232,18 @@ namespace GUI
 
             if (judet.judet.ContainsKey(key.ToString()))
             {
+                bool ok = true;
+
                 foreach (var i in vector)
                 {
-                    cmbLocR.Items.Clear();
-                    cmbLocR.Items.Add(i);
+                    if (ok != true)
+                    {
+                        cmbLocR.Items.Add(i);
+                    }
+                    else
+                    {
+                        ok = false;
+                    }
                 }
             }
         }
@@ -252,9 +261,18 @@ namespace GUI
 
             if (judet.judet.ContainsKey(key.ToString()))
             {
+                bool ok = true;
+
                 foreach (var i in vector)
                 {
-                    cmbLoc.Items.Add(i);
+                    if (ok != true)
+                    {
+                        cmbLoc.Items.Add(i);
+                    }
+                    else
+                    {
+                        ok = false;
+                    }
                 }
             }
         }
