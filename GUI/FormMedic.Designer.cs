@@ -156,7 +156,6 @@
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // checkDonator
-<<<<<<< HEAD
             // 
             this.checkDonator.AutoSize = true;
             this.checkDonator.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -166,7 +165,6 @@
             this.checkDonator.TabIndex = 15;
             this.checkDonator.Text = "Este Donator";
             this.checkDonator.UseVisualStyleBackColor = true;
-=======
             // 
             this.checkDonator.AutoSize = true;
             this.checkDonator.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -214,7 +212,6 @@
             this.txtNume.Name = "txtNume";
             this.txtNume.Size = new System.Drawing.Size(245, 24);
             this.txtNume.TabIndex = 11;
->>>>>>> master
             // 
             // label9
             // 
@@ -226,7 +223,6 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "Email";
             // 
-<<<<<<< HEAD
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(341, 238);
@@ -260,10 +256,8 @@
             // 
             // label10
             // 
-=======
             // label10
             // 
->>>>>>> master
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label10.Location = new System.Drawing.Point(338, 145);
@@ -326,223 +320,7 @@
             // buttonSave
             // 
             this.buttonSave.BackColor = System.Drawing.Color.Firebrick;
-<<<<<<< HEAD
-=======
-            this.buttonSave.Cursor = System.Windows.Forms.Cursors.Hand;
->>>>>>> master
-            this.buttonSave.FlatAppearance.BorderSize = 0;
-            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonSave.Location = new System.Drawing.Point(367, 573);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(107, 48);
-            this.buttonSave.TabIndex = 16;
-            this.buttonSave.Text = "Salvează";
-            this.buttonSave.UseVisualStyleBackColor = false;
-            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(161, 341);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 18);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Total:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(170, 131);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 18);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Grupa:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(480, 131);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 18);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "RH:";
-            // 
-            // comboBoxRH
-            // 
-            this.comboBoxRH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxRH.FormattingEnabled = true;
-            this.comboBoxRH.Location = new System.Drawing.Point(521, 128);
-            this.comboBoxRH.Name = "comboBoxRH";
-            this.comboBoxRH.Size = new System.Drawing.Size(121, 26);
-            this.comboBoxRH.TabIndex = 12;
-            // 
-            // comboBoxGrupa
-            // 
-            this.comboBoxGrupa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxGrupa.FormattingEnabled = true;
-            this.comboBoxGrupa.Location = new System.Drawing.Point(230, 128);
-            this.comboBoxGrupa.Name = "comboBoxGrupa";
-            this.comboBoxGrupa.Size = new System.Drawing.Size(121, 26);
-            this.comboBoxGrupa.TabIndex = 11;
-            // 
-            // textBoxTotal
-            // 
-            this.textBoxTotal.Location = new System.Drawing.Point(230, 335);
-            this.textBoxTotal.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxTotal.Name = "textBoxTotal";
-            this.textBoxTotal.Size = new System.Drawing.Size(90, 24);
-            this.textBoxTotal.TabIndex = 10;
-            this.textBoxTotal.TextChanged += new System.EventHandler(this.textBoxTotal_TextChanged);
-            // 
-            // textBoxPlasma
-            // 
-            this.textBoxPlasma.Location = new System.Drawing.Point(230, 280);
-            this.textBoxPlasma.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxPlasma.Name = "textBoxPlasma";
-            this.textBoxPlasma.Size = new System.Drawing.Size(88, 24);
-            this.textBoxPlasma.TabIndex = 6;
-            this.textBoxPlasma.TextChanged += new System.EventHandler(this.textBoxPlasma_TextChanged);
-            // 
-            // textBoxGlobule
-            // 
-            this.textBoxGlobule.Location = new System.Drawing.Point(456, 280);
-            this.textBoxGlobule.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxGlobule.Name = "textBoxGlobule";
-            this.textBoxGlobule.Size = new System.Drawing.Size(90, 24);
-            this.textBoxGlobule.TabIndex = 5;
-            this.textBoxGlobule.TextChanged += new System.EventHandler(this.textBoxGlobule_TextChanged);
-            // 
-            // textBoxTrombocite
-            // 
-            this.textBoxTrombocite.Location = new System.Drawing.Point(683, 280);
-            this.textBoxTrombocite.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxTrombocite.Name = "textBoxTrombocite";
-            this.textBoxTrombocite.Size = new System.Drawing.Size(88, 24);
-            this.textBoxTrombocite.TabIndex = 1;
-            this.textBoxTrombocite.TextChanged += new System.EventHandler(this.textBoxTrombocite_TextChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Firebrick;
-            this.label5.Location = new System.Drawing.Point(113, 458);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(283, 24);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Pacienții ce au nevoie de sânge:";
-            // 
-            // Pacienti
-            // 
-            this.Pacienti.FormattingEnabled = true;
-            this.Pacienti.Location = new System.Drawing.Point(104, 486);
-            this.Pacienti.Margin = new System.Windows.Forms.Padding(4);
-            this.Pacienti.Name = "Pacienti";
-            this.Pacienti.Size = new System.Drawing.Size(601, 80);
-            this.Pacienti.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(161, 283);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 18);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Plasmă:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(353, 283);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 18);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Globule roșii:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(587, 283);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 18);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Trombocite:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(113, 218);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cantitate sânge necesar:";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tabPage2.Controls.Add(this.label13);
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 27);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(975, 579);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Cereri sânge";
-            // 
-            // label13
-            // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label13.Location = new System.Drawing.Point(403, 18);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(225, 24);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Cererile actuale de sânge";
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Brown;
-            this.button1.Location = new System.Drawing.Point(778, 460);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 40);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Modifică cerere";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-<<<<<<< HEAD
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-=======
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
->>>>>>> master
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(0, 57);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
