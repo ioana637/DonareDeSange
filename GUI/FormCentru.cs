@@ -50,7 +50,7 @@ namespace GUI
         private void button1_Click(object sender, EventArgs e)
         {
             String selected = comboBox1.SelectedItem.ToString();
-            if (selected.Equals("toti donatorii"))
+            if (selected.Equals("toți donatorii"))
                 LoadDataGridView1();
 
             if (selected.Equals("după nume"))
@@ -71,7 +71,7 @@ namespace GUI
                 }
             }
 
-            else if (selected.Equals("după data nastere"))
+            else if (selected.Equals("după data nașterii"))
             {
                 String dataNasterii = textBox1.Text;
 
@@ -90,7 +90,7 @@ namespace GUI
                 }
             }
 
-            else if (selected.Equals("după judet"))
+            else if (selected.Equals("după județ"))
             {
                 String judet = textBox1.Text;
 
@@ -155,7 +155,7 @@ namespace GUI
         {
             Donator donator = (Donator)dataGridView1.SelectedRows[0].DataBoundItem;
             if (donator == null)
-                MessageBox.Show("Selectati un donator!");
+                MessageBox.Show("Selectați un donator!");
             else {
                 FormTrimitereAnalize form = new FormTrimitereAnalize(this.serviceCentru, donator);
                 form.Show();

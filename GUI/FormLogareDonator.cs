@@ -51,10 +51,10 @@ namespace GUI
             }
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        //private void btnExit_Click(object sender, EventArgs e)
+        //{
+          //  Application.Exit();
+        //}
 
         private void txtUsername_Enter(object sender, EventArgs e)
         {
@@ -92,6 +92,11 @@ namespace GUI
                 txtPassw.Text = "Parolă";
                 txtPassw.ForeColor = Color.Silver;
             }
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

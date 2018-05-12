@@ -67,6 +67,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label12 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,10 +87,10 @@
             // 
             this.buttonLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonLogout.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogout.Image")));
-            this.buttonLogout.Location = new System.Drawing.Point(901, 12);
+            this.buttonLogout.Location = new System.Drawing.Point(904, 12);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.buttonLogout.Size = new System.Drawing.Size(58, 31);
+            this.buttonLogout.Size = new System.Drawing.Size(55, 31);
             this.buttonLogout.TabIndex = 1;
             this.buttonLogout.UseVisualStyleBackColor = true;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
@@ -155,8 +156,20 @@
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // checkDonator
+<<<<<<< HEAD
             // 
             this.checkDonator.AutoSize = true;
+            this.checkDonator.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.checkDonator.Location = new System.Drawing.Point(341, 280);
+            this.checkDonator.Name = "checkDonator";
+            this.checkDonator.Size = new System.Drawing.Size(115, 22);
+            this.checkDonator.TabIndex = 15;
+            this.checkDonator.Text = "Este Donator";
+            this.checkDonator.UseVisualStyleBackColor = true;
+=======
+            // 
+            this.checkDonator.AutoSize = true;
+            this.checkDonator.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkDonator.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.checkDonator.Location = new System.Drawing.Point(341, 280);
             this.checkDonator.Name = "checkDonator";
@@ -167,11 +180,12 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.ForeColor = System.Drawing.Color.Firebrick;
             this.button2.Location = new System.Drawing.Point(507, 313);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(79, 35);
@@ -180,6 +194,39 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(341, 238);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(245, 24);
+            this.txtEmail.TabIndex = 13;
+            // 
+            // txtPrenume
+            // 
+            this.txtPrenume.Location = new System.Drawing.Point(341, 166);
+            this.txtPrenume.Name = "txtPrenume";
+            this.txtPrenume.Size = new System.Drawing.Size(245, 24);
+            this.txtPrenume.TabIndex = 12;
+            // 
+            // txtNume
+            // 
+            this.txtNume.Location = new System.Drawing.Point(341, 99);
+            this.txtNume.Name = "txtNume";
+            this.txtNume.Size = new System.Drawing.Size(245, 24);
+            this.txtNume.TabIndex = 11;
+>>>>>>> master
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label9.Location = new System.Drawing.Point(341, 217);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(45, 18);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Email";
+            // 
+<<<<<<< HEAD
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(341, 238);
@@ -213,6 +260,10 @@
             // 
             // label10
             // 
+=======
+            // label10
+            // 
+>>>>>>> master
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label10.Location = new System.Drawing.Point(338, 145);
@@ -275,6 +326,10 @@
             // buttonSave
             // 
             this.buttonSave.BackColor = System.Drawing.Color.Firebrick;
+<<<<<<< HEAD
+=======
+            this.buttonSave.Cursor = System.Windows.Forms.Cursors.Hand;
+>>>>>>> master
             this.buttonSave.FlatAppearance.BorderSize = 0;
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -463,15 +518,16 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(775, 468);
+            this.button1.ForeColor = System.Drawing.Color.Brown;
+            this.button1.Location = new System.Drawing.Point(778, 460);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 32);
+            this.button1.Size = new System.Drawing.Size(145, 40);
             this.button1.TabIndex = 1;
             this.button1.Text = "Modifică cerere";
             this.button1.UseVisualStyleBackColor = false;
@@ -482,7 +538,11 @@
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+<<<<<<< HEAD
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+=======
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+>>>>>>> master
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(0, 57);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
@@ -518,6 +578,20 @@
             this.label12.Text = "Listă pacienți";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 69);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(975, 350);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // tabControl1
             // 
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -552,7 +626,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(980, 648);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
