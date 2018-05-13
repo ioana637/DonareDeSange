@@ -24,6 +24,18 @@ namespace Service
 
         }
 
+        public List<PungaSange> GetAllPungiSange()
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<PungaSange> pungi = new List<PungaSange>();
+
+                unitOfWork.PungaSangeRepo.GetAll().ToList().ForEach(c => { pungi.Add(c); });
+                return pungi;
+            }
+
+        }
+
         public List<Stoc> GetAllStocuri()
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())

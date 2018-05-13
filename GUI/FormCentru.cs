@@ -15,6 +15,7 @@ namespace GUI
         private List<Donator> listDonatori = new List<Donator>();
         private List<Cerere> listCereri = new List<Cerere>();
         private List<Stoc> listStocuri = new List<Stoc>();
+        private List<PungaSange> listPungiSange = new List<PungaSange>();
         private BindingSource bindingSource;
         private string centru;
 
@@ -26,6 +27,7 @@ namespace GUI
             LoadDataGridView1();
             loadDataGridView3();
             loadStocSange();
+            loadDataGridView2();
 
         }
 
@@ -187,6 +189,66 @@ namespace GUI
                 serviceCentru.AddPungaSange(punga, donator, centru);
 
             }
+
+        }
+        /*
+        private void createDataGridView2()
+        {
+            dataGridView2.AutoGenerateColumns = false;
+            dataGridView2.AllowUserToAddRows = false;
+
+            DataGridViewTextBoxColumn colData = new DataGridViewTextBoxColumn();
+            colData.Name = "Data";
+            colData.HeaderText = "Data";
+            colData.DataPropertyName = "Data";
+
+            DataGridViewTextBoxColumn colTrimisa = new DataGridViewTextBoxColumn();
+            colTrimisa.Name = "Trimisa la analize";
+            colTrimisa.HeaderText = "Trimisa la analize";
+            colTrimisa.DataPropertyName = "Trimisa la analize";
+
+            DataGridViewTextBoxColumn colSosire = new DataGridViewTextBoxColumn();
+            colSosire.Name = "Sosita la analize";
+            colSosire.HeaderText = "Sosita la analize";
+            colSosire.DataPropertyName = "Sosita la analize";
+
+            DataGridViewTextBoxColumn colSpital = new DataGridViewTextBoxColumn();
+            colSpital.Name = "Spital";
+            colSpital.HeaderText = "Spital";
+            colSpital.DataPropertyName = "Spital";
+
+            DataGridViewTextBoxColumn colStoc = new DataGridViewTextBoxColumn();
+            colStoc.Name = "Stoc";
+            colStoc.HeaderText = "Stoc";
+            colStoc.DataPropertyName = "Stoc";
+
+
+            dataGridView2.Columns.Add(colData);
+            dataGridView2.Columns.Add(colTrimisa);
+            dataGridView2.Columns.Add(colSosire);
+            dataGridView2.Columns.Add(colSpital);
+            dataGridView2.Columns.Add(colStoc);
+
+        }
+        */
+        private void loadDataGridView2()
+        {
+            listPungiSange = serviceCentru.GetAllPungiSange();
+            bindingSource = new BindingSource(listPungiSange, null);
+            dataGridView2.DataSource = bindingSource;
+            if (bindingSource.Position >= 0)
+            {
+                dataGridView1.Rows[bindingSource.Position].Selected = true;
+
+            }
+            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[5].Visible = false;
+
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
