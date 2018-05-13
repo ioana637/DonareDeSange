@@ -40,6 +40,8 @@ namespace Repository
         private GenericRepository<Spital> spitalRepo;
         private GenericRepository<Analiza> analizaRepo;
         private PungaSangeRepo pungaSangeRepo;
+        private GenericRepository<CererePacient> cererePacientRepo;
+
 
         private CTContext context;
 
@@ -67,6 +69,17 @@ namespace Repository
                 if (analizaRepo == null)
                     analizaRepo = new GenericRepository<Analiza>(context);
                 return analizaRepo;
+            }
+        }
+
+
+        public GenericRepository<CererePacient> CererePacientRepo
+        {
+            get
+            {
+                if (cererePacientRepo == null)
+                    cererePacientRepo = new GenericRepository<CererePacient>(context);
+                return cererePacientRepo;
             }
         }
 

@@ -69,6 +69,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.label15 = new System.Windows.Forms.Label();
+            this.comboBoxPr = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -237,6 +239,8 @@
             // 
             this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage3.Controls.Add(this.comboBoxPr);
+            this.tabPage3.Controls.Add(this.label15);
             this.tabPage3.Controls.Add(this.label14);
             this.tabPage3.Controls.Add(this.buttonSave);
             this.tabPage3.Controls.Add(this.label8);
@@ -303,7 +307,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(170, 131);
+            this.label7.Location = new System.Drawing.Point(105, 131);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 18);
@@ -313,7 +317,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(480, 131);
+            this.label6.Location = new System.Drawing.Point(343, 131);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 18);
@@ -324,7 +328,7 @@
             // 
             this.comboBoxRH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRH.FormattingEnabled = true;
-            this.comboBoxRH.Location = new System.Drawing.Point(521, 128);
+            this.comboBoxRH.Location = new System.Drawing.Point(384, 128);
             this.comboBoxRH.Name = "comboBoxRH";
             this.comboBoxRH.Size = new System.Drawing.Size(121, 26);
             this.comboBoxRH.TabIndex = 12;
@@ -333,7 +337,7 @@
             // 
             this.comboBoxGrupa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxGrupa.FormattingEnabled = true;
-            this.comboBoxGrupa.Location = new System.Drawing.Point(230, 128);
+            this.comboBoxGrupa.Location = new System.Drawing.Point(165, 128);
             this.comboBoxGrupa.Name = "comboBoxGrupa";
             this.comboBoxGrupa.Size = new System.Drawing.Size(121, 26);
             this.comboBoxGrupa.TabIndex = 11;
@@ -394,6 +398,7 @@
             this.Pacienti.Name = "Pacienti";
             this.Pacienti.Size = new System.Drawing.Size(601, 80);
             this.Pacienti.TabIndex = 8;
+            this.Pacienti.SelectedIndexChanged += new System.EventHandler(this.Pacienti_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -483,6 +488,8 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -490,7 +497,9 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(0, 57);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(991, 382);
             this.dataGridView2.TabIndex = 0;
             // 
@@ -524,6 +533,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -551,6 +562,25 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(983, 610);
             this.tabControl1.TabIndex = 0;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(546, 131);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(71, 18);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "Prioritate:";
+            // 
+            // comboBoxPr
+            // 
+            this.comboBoxPr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPr.FormattingEnabled = true;
+            this.comboBoxPr.Location = new System.Drawing.Point(624, 128);
+            this.comboBoxPr.Name = "comboBoxPr";
+            this.comboBoxPr.Size = new System.Drawing.Size(121, 26);
+            this.comboBoxPr.TabIndex = 19;
             // 
             // FormMedic
             // 
@@ -629,5 +659,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox comboBoxPr;
     }
 }
