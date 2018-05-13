@@ -20,6 +20,7 @@ namespace Repository
         GenericRepository<Admin> AdminRepo { get; }
         PungaSangeRepo PungaSangeRepo { get; }
         GenericRepository<Analiza> AnalizaRepo { get; }
+        GenericRepository<Notificari> NotificariRepo { get; }
 
         GenericRepository<Spital> SpitalRepo { get; }
 
@@ -41,7 +42,7 @@ namespace Repository
         private GenericRepository<Analiza> analizaRepo;
         private PungaSangeRepo pungaSangeRepo;
         private GenericRepository<CererePacient> cererePacientRepo;
-
+        private GenericRepository<Notificari> notificariRepo;
 
         private CTContext context;
 
@@ -178,6 +179,16 @@ namespace Repository
                 if (pungaSangeRepo == null)
                     pungaSangeRepo = new PungaSangeRepo(context);
                 return pungaSangeRepo;
+            }
+        }
+
+        public GenericRepository<Notificari> NotificariRepo
+        {
+            get
+            {
+                if (notificariRepo == null)
+                    notificariRepo = new GenericRepository<Notificari>(context);
+                return notificariRepo;
             }
         }
 

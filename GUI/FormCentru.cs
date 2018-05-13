@@ -9,9 +9,10 @@ namespace GUI
 {
     public partial class FormCentru : Form
     {
-        private DonatorService serviceDonator=new DonatorService();
-        private CentruService serviceCentru=new CentruService();
+        private DonatorService serviceDonator = new DonatorService();
+        private CentruService serviceCentru = new CentruService();
         private string judet;
+        public string username;
         private List<Donator> listDonatori = new List<Donator>();
         private List<Cerere> listCereri = new List<Cerere>();
         private List<Stoc> listStocuri = new List<Stoc>();
@@ -20,6 +21,18 @@ namespace GUI
         public FormCentru(DonatorService service)
         {
             serviceDonator = service;
+            this.username = username;
+            InitializeComponent();
+            LoadDataGridView1();
+            loadDataGridView3();
+            loadStocSange();
+
+        }
+
+        public FormCentru(DonatorService service, string username)
+        {
+            serviceDonator = service;
+            this.username = username;
             InitializeComponent();
             LoadDataGridView1();
             loadDataGridView3();
@@ -38,12 +51,12 @@ namespace GUI
                 dataGridView1.Rows[bindingSource.Position].Selected = true;
             }
         }
-      
+
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            Donator donator=(Donator)dataGridView1.Rows[e.RowIndex].DataBoundItem;
-            FormModificareDonator form = new FormModificareDonator(donator,this.serviceDonator,this);
+            Donator donator = (Donator)dataGridView1.Rows[e.RowIndex].DataBoundItem;
+            FormModificareDonator form = new FormModificareDonator(donator, this.serviceDonator, this);
             form.Show();
         }
 
@@ -133,7 +146,7 @@ namespace GUI
         {
             listCereri = serviceCentru.GetAllCereri();
             dataGridView3.DataSource = listCereri;
-          
+
         }
 
         private void loadStocSange()
@@ -156,11 +169,68 @@ namespace GUI
             Donator donator = (Donator)dataGridView1.SelectedRows[0].DataBoundItem;
             if (donator == null)
                 MessageBox.Show("Selectați un donator!");
-            else {
+            else
+            {
                 FormTrimitereAnalize form = new FormTrimitereAnalize(this.serviceCentru, donator);
                 form.Show();
             }
-           
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string message = "";
+
+            Cerere cerere_de_selectat = (Cerere)dataGridView3.SelectedRows[0].DataBoundItem;
+            var lista_cereri = serviceCentru.GetAllCereri();
+            Cerere cerere = null;
+            foreach (var i in lista_cereri)
+            {
+                if (i.Id == cerere_de_selectat.Id)
+                {
+                    cerere = i;
+                }
+            }
+
+            if (cerere != null)
+            {
+
+                var stoc = serviceCentru.GetAllStocuri();
+
+                int grupa;
+
+                Stoc stocBun = null;
+
+                foreach (var i in stoc)
+                {
+                    if (cerere.Grupa == i.Grupa && cerere.RH == i.RH)
+                    {
+                        stocBun = i;
+                        if (cerere.CantitateGlobuleRosii <= i.GlobuleRosii &&
+                        cerere.CantitatePlasma <= i.Plasma &&
+                        cerere.CantitateTrombocite <= i.Trombocite &&
+                        cerere.CantitateSange <= i.TotalSange)
+                        {
+                            message = "Cantitate suficienta pentru a implini cererea";
+                        }
+                        else
+                        {
+                            message = "Insuficient sange. Notificati donatori sau trimiteti cantitatea din stoc.";
+                        }
+                    }
+                }
+
+                if (stocBun != null)
+                {
+
+                    CentruService cService = new CentruService();
+
+                    CentruTransfuzie ctr = cService.GetCentruTransfuzieByName(username);
+
+                    CerereForm formCerere = new CerereForm(message, cerere, stocBun, ctr);
+                    formCerere.Show();
+                }
+            }
         }
     }
 }
