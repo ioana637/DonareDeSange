@@ -186,6 +186,10 @@
     <Compile Include="Migrations\20180513082826_cererePacienti1.designer.cs">
       <DependentUpon>20180513082826_cererePacienti1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20180513171327_notificari.cs" />
+    <Compile Include="Migrations\20180513171327_notificari.designer.cs">
+      <DependentUpon>20180513171327_notificari.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\CTContextModelSnapshot.cs" />
     <Compile Include="model\Admin.cs" />
     <Compile Include="model\Analiza.cs" />
@@ -194,6 +198,7 @@
     <Compile Include="model\CererePacient.cs" />
     <Compile Include="model\Donator.cs" />
     <Compile Include="model\Medic.cs" />
+    <Compile Include="model\Notificari.cs" />
     <Compile Include="model\Pacient.cs" />
     <Compile Include="model\PungaSange.cs" />
     <Compile Include="model\Spital.cs" />
