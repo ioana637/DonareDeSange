@@ -58,7 +58,7 @@ namespace Service
 
         }
 
-        public void AddCerere(Cerere cerere, String username)
+        public void AddCerere(Cerere cerere, String username, List<Pacient> pacienti)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
@@ -69,6 +69,18 @@ namespace Service
                 unitOfWork.Save();
                 Cerere cerereSalvata = unitOfWork.CerereRepo.GetBy(c => c.RH.Equals(cerere.RH) && c.Grupa.Equals(cerere.Grupa) && c.Medic.Equals(cerere.Medic) && c.Data.Equals(cerere.Data));
                 medic.Cereri.Add(cerereSalvata);
+                List<Pacient> pacientiFromDb = new List<Pacient>();
+                pacienti.ForEach(p => pacientiFromDb.Add(unitOfWork.PacientRepo.GetBy(pdb=>pdb.Id.Equals(p.Id))));
+                pacientiFromDb.ForEach(p =>
+                {
+                    CererePacient cp = new CererePacient() { IdCerere = cerereSalvata.Id, Pacient = p, Cerere = cerereSalvata, IdPacient = p.Id };
+                    
+                    p.CereriPacienti.Add(cp);
+                    cerereSalvata.CererePacienti.Add(cp);
+                });
+
+                
+                
                 unitOfWork.Save();
 
             }
@@ -116,6 +128,17 @@ namespace Service
                 Medic medic = unitOfWork.MedicRepo.GetBy(m => m.Id.Equals(idMedicCurent));
                 unitOfWork.PacientRepo.GetAll().Where(p => p.Medic.UserMedic.Id.Equals(idMedicCurent)).ToList().ForEach(p => { pacienti.Add(p); });
                 return pacienti;
+
+            }
+        }
+        public Pacient GetPacientByMedicAndId(int idMedic, int idPacient)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                Pacient pacient;
+                Medic medic = unitOfWork.MedicRepo.GetBy(m => m.Id.Equals(idMedic));
+                pacient = unitOfWork.PacientRepo.GetAll().Where(p => p.Medic.UserMedic.Id.Equals(idMedic) && p.Id.Equals(idPacient)).FirstOrDefault();
+                return pacient;
 
             }
         }

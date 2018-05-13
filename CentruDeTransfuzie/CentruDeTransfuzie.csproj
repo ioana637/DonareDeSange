@@ -178,6 +178,14 @@
     <Compile Include="Migrations\20180413164105_Prioritate.designer.cs">
       <DependentUpon>20180413164105_Prioritate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20180512140458_cererePacienti.cs" />
+    <Compile Include="Migrations\20180512140458_cererePacienti.designer.cs">
+      <DependentUpon>20180512140458_cererePacienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20180513082826_cererePacienti1.cs" />
+    <Compile Include="Migrations\20180513082826_cererePacienti1.designer.cs">
+      <DependentUpon>20180513082826_cererePacienti1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\CTContextModelSnapshot.cs" />
     <Compile Include="model\Admin.cs" />
     <Compile Include="model\Analiza.cs" />
