@@ -16,10 +16,12 @@ namespace GUI
         private List<Cerere> listCereri = new List<Cerere>();
         private List<Stoc> listStocuri = new List<Stoc>();
         private BindingSource bindingSource;
+        private string centru;
 
-        public FormCentru(DonatorService service)
+        public FormCentru(DonatorService service, string user )
         {
             serviceDonator = service;
+            centru = user;
             InitializeComponent();
             LoadDataGridView1();
             loadDataGridView3();
@@ -161,6 +163,31 @@ namespace GUI
                 form.Show();
             }
            
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            PungaSange punga = new PungaSange();
+            if (textBoxNume.Text == "" || textBoxPrenume.Text == "" || textBoxEmail.Text == "")
+            {
+                MessageBox.Show("Completati toate datele despre donator!");
+
+            }
+            else
+            {
+                Donator donator = new Donator();
+                donator.Email = textBoxEmail.Text;
+                donator.Nume = textBoxNume.Text;
+                donator.Prenume = textBoxPrenume.Text;
+                punga.CantitateSange = 0.5F;
+                punga.CantitatePlasma = 0.275F;
+                punga.CantitateGlobuleRosii = 25;//trilioane
+                punga.CantitateTrombocite = 150;//miliarde
+               
+                serviceCentru.AddPungaSange(punga, donator, centru);
+
+            }
+
         }
     }
 }

@@ -103,5 +103,39 @@ namespace Service
                 unitOfWork.Save();
             }
         }
+
+        public void AddPungaSange(PungaSange punga, Donator donator, string centru)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                Donator donatorFromDb = unitOfWork.DonatorRepo.GetBy(d => d.Nume.Equals(donator.Nume) && d.Prenume.Equals(donator.Prenume) && d.Email.Equals(donator.Email));
+                punga.DataPreluarii = DateTime.Now.Date;//.ToShortDateString();
+                punga.CentruTransfuzie = unitOfWork.CentruTransfuzieRepo.GetBy(ct => ct.Nume.Equals(centru));
+                if (donator == null) { unitOfWork.PungaSangeRepo.Save(punga); unitOfWork.Save(); }
+                else
+                {
+                    punga.Donator = donatorFromDb;
+                    unitOfWork.PungaSangeRepo.Save(punga);
+                    unitOfWork.Save();
+                    PungaSange pungafromdb = unitOfWork.PungaSangeRepo.GetBy(p => p.Donator.Email.Equals(donator.Email) && p.DataPreluarii.Equals(punga.DataPreluarii));
+
+                    TraseuPunga traseu = new TraseuPunga();
+                    traseu.Prelevata = true;
+                    traseu.PungaSange = pungafromdb;
+                    traseu.SosireAnalize = false;
+                    traseu.SpitalPacient = false;
+                    traseu.StocCentru = false;
+                    traseu.TrimiseLaAnalize = false;
+
+                    unitOfWork.TraseuPungaRepo.Save(traseu);
+                    unitOfWork.Save();
+                    pungafromdb.TraseuPunga = unitOfWork.TraseuPungaRepo.GetBy(t => t.PungaSange.Id.Equals(pungafromdb.Id));
+                    donatorFromDb.PungiSange.Add(pungafromdb);
+                    unitOfWork.Save();
+                }
+
+            }
+
+        }
     }
 }

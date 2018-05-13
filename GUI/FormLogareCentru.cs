@@ -43,7 +43,7 @@ namespace GUI
                 int result = serviceCentru.Login(username, parola);
                 if (result >= 0)
                 {
-                    Form formMainView = new FormCentru(serviceDonator);
+                    Form formMainView = new FormCentru(serviceDonator, username);
                     this.Hide();
                     formMainView.Closed += (s, args) => this.Close();
                     formMainView.ShowDialog();

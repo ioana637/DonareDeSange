@@ -39,7 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,6 +49,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridViewStocSange = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
+            this.textBoxNume = new System.Windows.Forms.TextBox();
+            this.textBoxPrenume = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -175,8 +178,11 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.tabPage2.Controls.Add(this.textBoxEmail);
+            this.tabPage2.Controls.Add(this.textBoxPrenume);
+            this.tabPage2.Controls.Add(this.textBoxNume);
             this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.button3);
+            this.tabPage2.Controls.Add(this.btnAdd);
             this.tabPage2.Controls.Add(this.dataGridView2);
             this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Name = "tabPage2";
@@ -197,19 +203,20 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Lista pungilor de sânge";
             // 
-            // button3
+            // btnAdd
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Firebrick;
-            this.button3.Location = new System.Drawing.Point(578, 300);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(132, 29);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Modifică";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnAdd.Location = new System.Drawing.Point(578, 300);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(132, 29);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "Adauga";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dataGridView2
             // 
@@ -218,9 +225,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(-4, 69);
+            this.dataGridView2.Location = new System.Drawing.Point(32, 69);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(768, 214);
+            this.dataGridView2.Size = new System.Drawing.Size(502, 214);
             this.dataGridView2.TabIndex = 0;
             // 
             // tabPage3
@@ -321,6 +328,30 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // textBoxNume
+            // 
+            this.textBoxNume.Location = new System.Drawing.Point(578, 69);
+            this.textBoxNume.Name = "textBoxNume";
+            this.textBoxNume.Size = new System.Drawing.Size(100, 24);
+            this.textBoxNume.TabIndex = 3;
+            this.textBoxNume.Text = "Nume";
+            // 
+            // textBoxPrenume
+            // 
+            this.textBoxPrenume.Location = new System.Drawing.Point(578, 115);
+            this.textBoxPrenume.Name = "textBoxPrenume";
+            this.textBoxPrenume.Size = new System.Drawing.Size(100, 24);
+            this.textBoxPrenume.TabIndex = 4;
+            this.textBoxPrenume.Text = "Prenume";
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Location = new System.Drawing.Point(578, 163);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(100, 24);
+            this.textBoxEmail.TabIndex = 5;
+            this.textBoxEmail.Text = "Email";
+            // 
             // FormCentru
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,7 +389,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button button4;
@@ -373,5 +404,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.TextBox textBoxPrenume;
+        private System.Windows.Forms.TextBox textBoxNume;
     }
 }
