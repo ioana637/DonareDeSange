@@ -20,6 +20,7 @@ namespace Repository
         GenericRepository<Admin> AdminRepo { get; }
         PungaSangeRepo PungaSangeRepo { get; }
         GenericRepository<Analiza> AnalizaRepo { get; }
+        GenericRepository<Notificari> NotificariRepo { get; }
 
         GenericRepository<Spital> SpitalRepo { get; }
 
@@ -40,6 +41,12 @@ namespace Repository
         private GenericRepository<Spital> spitalRepo;
         private GenericRepository<Analiza> analizaRepo;
         private PungaSangeRepo pungaSangeRepo;
+        private GenericRepository<CererePacient> cererePacientRepo;
+
+        private GenericRepository<TraseuPunga> traseuPungaRepo;
+
+        private GenericRepository<Notificari> notificariRepo;
+
 
         private CTContext context;
 
@@ -60,6 +67,17 @@ namespace Repository
             }
         }
 
+        public GenericRepository<TraseuPunga> TraseuPungaRepo
+        {
+            get
+            {
+                if (traseuPungaRepo == null)
+                    traseuPungaRepo = new GenericRepository<TraseuPunga>(context);
+                return traseuPungaRepo;
+            }
+        }
+
+
         public GenericRepository<Analiza> AnalizaRepo
         {
             get
@@ -67,6 +85,17 @@ namespace Repository
                 if (analizaRepo == null)
                     analizaRepo = new GenericRepository<Analiza>(context);
                 return analizaRepo;
+            }
+        }
+
+
+        public GenericRepository<CererePacient> CererePacientRepo
+        {
+            get
+            {
+                if (cererePacientRepo == null)
+                    cererePacientRepo = new GenericRepository<CererePacient>(context);
+                return cererePacientRepo;
             }
         }
 
@@ -165,6 +194,16 @@ namespace Repository
                 if (pungaSangeRepo == null)
                     pungaSangeRepo = new PungaSangeRepo(context);
                 return pungaSangeRepo;
+            }
+        }
+
+        public GenericRepository<Notificari> NotificariRepo
+        {
+            get
+            {
+                if (notificariRepo == null)
+                    notificariRepo = new GenericRepository<Notificari>(context);
+                return notificariRepo;
             }
         }
 

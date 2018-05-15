@@ -13,9 +13,10 @@ using System;
 namespace CentruDeTransfuzie1.Migrations
 {
     [DbContext(typeof(CTContext))]
-    partial class CTContextModelSnapshot : ModelSnapshot
+    [Migration("20180513082826_cererePacienti1")]
+    partial class cererePacienti1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -36,23 +37,6 @@ namespace CentruDeTransfuzie1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Admin");
-                });
-
-            modelBuilder.Entity("CentruDeTransfuzie.model.Notificari", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("id_cerere");
-
-                    b.Property<int>("id_donator");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Id")
-                        .IsUnique();
-
-                    b.ToTable("Notificari");
                 });
 
             modelBuilder.Entity("CentruDeTransfuzie1.model.Analiza", b =>

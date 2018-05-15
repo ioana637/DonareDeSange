@@ -111,6 +111,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CentruTransfuziiDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CerereForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CerereForm.Designer.cs">
+      <DependentUpon>CerereForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CerereForm.resx">
+      <DependentUpon>CerereForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>

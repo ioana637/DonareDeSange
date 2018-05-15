@@ -8,6 +8,7 @@ using System.Text;
 public class Pacient {
 
     public Pacient() {
+        CereriPacienti = new List<CererePacient>();
     }
 
     public Pacient(string nume, string prenume, string email, bool eDonator)
@@ -16,7 +17,8 @@ public class Pacient {
         Prenume = prenume;
         Email = email;
         EDonator = eDonator;
- 
+        CereriPacienti = new List<CererePacient>();
+
     }
 
     public int Id { get; set; }

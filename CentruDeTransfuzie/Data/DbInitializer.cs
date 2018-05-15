@@ -26,8 +26,16 @@ namespace CentruDeTransfuzie1.Data
             InitializeTraseuPunga(context);
             InitializePungaSange(context);
             InitializeAnaliza(context);
+            InitializeNotificari(context);
 
+        }
 
+        private static void InitializeNotificari(CTContext context)
+        {
+            if (context.Notificari.Any()) return;
+            Notificari not = new Notificari(1,1);
+            context.Notificari.Add(not);
+            context.SaveChanges();
         }
 
         private static void InitializeTraseuPunga(CTContext context)

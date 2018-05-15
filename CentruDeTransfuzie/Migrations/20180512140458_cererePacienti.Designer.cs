@@ -13,9 +13,10 @@ using System;
 namespace CentruDeTransfuzie1.Migrations
 {
     [DbContext(typeof(CTContext))]
-    partial class CTContextModelSnapshot : ModelSnapshot
+    [Migration("20180512140458_cererePacienti")]
+    partial class cererePacienti
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -36,23 +37,6 @@ namespace CentruDeTransfuzie1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Admin");
-                });
-
-            modelBuilder.Entity("CentruDeTransfuzie.model.Notificari", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("id_cerere");
-
-                    b.Property<int>("id_donator");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Id")
-                        .IsUnique();
-
-                    b.ToTable("Notificari");
                 });
 
             modelBuilder.Entity("CentruDeTransfuzie1.model.Analiza", b =>
@@ -180,9 +164,15 @@ namespace CentruDeTransfuzie1.Migrations
 
                     b.Property<int>("IdPacient");
 
+                    b.Property<int?>("CerereId");
+
+                    b.Property<int?>("PacientId");
+
                     b.HasKey("IdCerere", "IdPacient");
 
-                    b.HasIndex("IdPacient");
+                    b.HasIndex("CerereId");
+
+                    b.HasIndex("PacientId");
 
                     b.ToTable("CererePacient");
                 });
@@ -474,13 +464,11 @@ namespace CentruDeTransfuzie1.Migrations
                 {
                     b.HasOne("Cerere", "Cerere")
                         .WithMany("CererePacienti")
-                        .HasForeignKey("IdCerere")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("CerereId");
 
                     b.HasOne("Pacient", "Pacient")
                         .WithMany("CereriPacienti")
-                        .HasForeignKey("IdPacient")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("PacientId");
                 });
 
             modelBuilder.Entity("Donator", b =>

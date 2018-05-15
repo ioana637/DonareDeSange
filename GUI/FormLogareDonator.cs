@@ -38,6 +38,10 @@ namespace GUI
                     this.Hide();
                     formDonator.Closed += (s, args) => this.Close();
                     formDonator.Show();
+                    if (DonatorService.NeedsToBeNotified(service.GetUserDonator(txtUsername.Text).Id))
+                    {
+                        MessageBox.Show("E nevoie de sangele tau!!! Sangele tau poate salva vieti. Doneaza acum");
+                    }
                     
                 }
                 else

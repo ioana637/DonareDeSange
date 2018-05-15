@@ -10,6 +10,8 @@ using System.Text;
 public class Cerere {
 
     public Cerere() {
+        CererePacienti = new List<CererePacient>();
+
     }
 
     public int Id { get; set; }
@@ -50,5 +52,6 @@ public class Cerere {
         CererePacienti = new List<CererePacient>();
         Grupa = grupaSange;
         RH = tipRh;
+        CererePacienti = new List<CererePacient>();
     }
 }

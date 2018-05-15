@@ -28,6 +28,7 @@ namespace CentruDeTransfuzie1
         public DbSet<Spital> Spital { get; set; }
         public DbSet<SpitalMedic> SpitalMedic { get; set; }
         public DbSet<Admin> Admin { get; set; }
+        public DbSet<Notificari> Notificari { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -49,8 +50,10 @@ namespace CentruDeTransfuzie1
             modelBuilder.Entity<Spital>().ToTable("Spital");
             modelBuilder.Entity<SpitalMedic>().ToTable("SpitalMedic");
             modelBuilder.Entity<Admin>().ToTable("Admin");
+            modelBuilder.Entity<Notificari>().ToTable("Notificari");
 
             modelBuilder.Entity<Stoc>().HasKey(s => new { s.Grupa, s.RH });
+            modelBuilder.Entity<CererePacient>().HasKey(cp => new { cp.IdCerere, cp.IdPacient });
 
             //constrangeri donator
             modelBuilder.Entity<Donator>()
@@ -87,9 +90,23 @@ namespace CentruDeTransfuzie1
             modelBuilder.Entity<Pacient>()
             .HasIndex(u => u.Email)
             .IsUnique();
+
+            modelBuilder.Entity<CererePacient>()
+                .HasOne(cp => cp.Pacient)
+                .WithMany(p => p.CereriPacienti)
+                .HasForeignKey(cp => cp.IdPacient);
+            modelBuilder.Entity<CererePacient>()
+                .HasOne(cp => cp.Cerere)
+                .WithMany(c => c.CererePacienti)
+                .HasForeignKey(cp => cp.IdCerere);
             //modelBuilder.Entity<Medic>().HasKey(m => m.Id);
             //modelBuilder.Entity<UserMedic>().HasKey(u => u.Id);
             //modelBuilder.Entity<Medic>().HasOne<UserMedic>().WithOne().HasForeignKey<Medic>();
+
+            modelBuilder.Entity<Notificari>()
+                .HasIndex(u => u.Id)
+                .IsUnique();
+
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
