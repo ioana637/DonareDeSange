@@ -23,9 +23,7 @@ namespace GUI
         public FormCentru(DonatorService service, string user )
         {
             serviceDonator = service;
-<<<<<<< HEAD
             centru = user;
-=======
             this.username = username;
             InitializeComponent();
             LoadDataGridView1();
@@ -34,18 +32,7 @@ namespace GUI
 
         }
 
-        public FormCentru(DonatorService service, string username)
-        {
-            serviceDonator = service;
-            this.username = username;
->>>>>>> master
-            InitializeComponent();
-            LoadDataGridView1();
-            loadDataGridView3();
-            loadStocSange();
-            loadDataGridView2();
-
-        }
+       
 
         public void LoadDataGridView1()
         {
