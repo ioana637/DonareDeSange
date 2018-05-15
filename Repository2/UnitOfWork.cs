@@ -42,11 +42,11 @@ namespace Repository
         private GenericRepository<Analiza> analizaRepo;
         private PungaSangeRepo pungaSangeRepo;
         private GenericRepository<CererePacient> cererePacientRepo;
-<<<<<<< HEAD
+
         private GenericRepository<TraseuPunga> traseuPungaRepo;
-=======
+
         private GenericRepository<Notificari> notificariRepo;
->>>>>>> master
+
 
         private CTContext context;
 
