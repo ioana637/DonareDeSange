@@ -90,5 +90,7 @@ public class Donator
 
     public Donator()
     {
+        PungiSange = new List<PungaSange>();
+        Analize = new List<Analiza>();
     }
 }

@@ -42,7 +42,11 @@ namespace Repository
         private GenericRepository<Analiza> analizaRepo;
         private PungaSangeRepo pungaSangeRepo;
         private GenericRepository<CererePacient> cererePacientRepo;
+<<<<<<< HEAD
+        private GenericRepository<TraseuPunga> traseuPungaRepo;
+=======
         private GenericRepository<Notificari> notificariRepo;
+>>>>>>> master
 
         private CTContext context;
 
@@ -62,6 +66,17 @@ namespace Repository
                 return donatorRepo;
             }
         }
+
+        public GenericRepository<TraseuPunga> TraseuPungaRepo
+        {
+            get
+            {
+                if (traseuPungaRepo == null)
+                    traseuPungaRepo = new GenericRepository<TraseuPunga>(context);
+                return traseuPungaRepo;
+            }
+        }
+
 
         public GenericRepository<Analiza> AnalizaRepo
         {
