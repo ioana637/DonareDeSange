@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="AdminService.cs" />
     <Compile Include="CentruService.cs" />
+    <Compile Include="CerereService.cs" />
     <Compile Include="DonatorService.cs" />
     <Compile Include="MedicService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

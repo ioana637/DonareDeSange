@@ -1,4 +1,5 @@
-﻿using Repository;
+﻿using CentruDeTransfuzie.model;
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -141,6 +142,21 @@ namespace Service
                 unitOfWork.UserDonatorRepo.Update(user);
                 unitOfWork.Save();
             }
+        }
+
+        public static bool NeedsToBeNotified(int idDon)
+        {
+            CerereService service = new CerereService();
+
+            foreach(var i in service.GetNotificari())
+            {
+                if(i.id_donator == idDon)
+                {
+                    service.DeleteNotificare(idDon);
+                    return true;
+                }
+            }
+            return false;
         }
 
     }
