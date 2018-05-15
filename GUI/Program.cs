@@ -16,7 +16,7 @@ namespace GUI
         /// The main entry point for the application.
         /// </summary>
         /// 
-        /*
+        
         [STAThread]
         static void Main()
         {
@@ -33,7 +33,7 @@ namespace GUI
             //Application.Run(new FormMedic(new Service.UserMedicService(),1, "ioana"));
             //Application.Run(new FormLogareCentru(new Service.CentruService()));
 
-            Application.Run(new FormCentru(new Service.DonatorService()));
+            //Application.Run(new FormCentru(new Service.DonatorService()));
 
             //Application.Run(new FormCentru(new Service.DonatorService()));
 
@@ -48,22 +48,8 @@ namespace GUI
 
 
         }
-        */
+        
 
-        [STAThread]
-        static void Main()
-        {
-            using (var db = new CTContext(new DbContextOptions<CTContext>()))
-            {
-
-                DbInitializer.Initialize(db);
-            }
-
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FormCentru(new Service.DonatorService()));
-            Application.Run(new FormLogareCentru(new Service.CentruService()));
-
-        }
+        
     }
 }
