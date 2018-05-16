@@ -31,7 +31,7 @@ namespace GUI
             //Application.Run(new FormMedic(new Service.UserMedicService(),1, "ioana"));
             //Application.Run(new FormLogareCentru(new Service.CentruService()));
 
-            Application.Run(new FormCentru(new Service.DonatorService()));
+            //Application.Run(new FormCentru(new Service.DonatorService()));
 
             //Application.Run(new FormCentru(new Service.DonatorService()));
 
