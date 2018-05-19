@@ -1,13 +1,12 @@
-﻿using CentruDeTransfuzie1;
-using CentruDeTransfuzie1.Data;
+﻿
+using CentruDeTransfuzie;
+using CentruDeTransfuzie.Data;
+
 using GUI;
 using Microsoft.EntityFrameworkCore;
-using Repository;
-using Service1;
+using Service;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
 
 namespace CentruT
@@ -29,7 +28,7 @@ namespace CentruT
                 Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormCentru(new Service.DonatorService()));
-            Application.Run(new FormLogareCentru(new Service.CentruService()));
+            Application.Run(new FormLogareCentru(new CentruService()));
 
         }
     }

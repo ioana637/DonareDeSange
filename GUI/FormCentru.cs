@@ -1,4 +1,4 @@
-﻿using CentruDeTransfuzie1.model;
+﻿using CentruDeTransfuzie.model;
 using Service;
 using System;
 using System.Collections.Generic;

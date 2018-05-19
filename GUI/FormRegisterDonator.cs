@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using CentruDeTransfuzie.utils;
 using Service;
+using CentruDeTransfuzie.model;
 
 namespace GUI
 {

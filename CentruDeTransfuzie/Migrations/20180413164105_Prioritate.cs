@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace CentruDeTransfuzie1.Migrations
+namespace CentruDeTransfuzie.Migrations
 {
     public partial class Prioritate : Migration
     {

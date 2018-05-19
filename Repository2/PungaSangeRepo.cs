@@ -1,4 +1,6 @@
-﻿using CentruDeTransfuzie1;
+﻿using CentruDeTransfuzie;
+using CentruDeTransfuzie.model;
+using CentruDeTransfuzie1;
 using Microsoft.EntityFrameworkCore;
 using Repository;
 using System;
@@ -7,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Repository2
+namespace Repository
 {
     public class PungaSangeRepo: GenericRepository<PungaSange>
     {

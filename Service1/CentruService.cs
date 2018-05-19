@@ -1,5 +1,5 @@
-﻿using CentruDeTransfuzie1.model;
-using CentruDeTransfuzie1.utils;
+﻿using CentruDeTransfuzie.model;
+using CentruDeTransfuzie.utils;
 using Repository;
 using System;
 using System.Collections.Generic;

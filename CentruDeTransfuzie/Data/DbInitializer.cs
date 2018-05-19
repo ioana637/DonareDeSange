@@ -1,13 +1,12 @@
 ﻿using CentruDeTransfuzie.model;
 using CentruDeTransfuzie.utils;
-using CentruDeTransfuzie1.model;
-using CentruDeTransfuzie1.utils;
+
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
 
-namespace CentruDeTransfuzie1.Data
+namespace CentruDeTransfuzie.Data
 {
     public static class DbInitializer
     {

@@ -2,10 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using CentruDeTransfuzie1.model;
 using CentruDeTransfuzie.model;
 
-namespace CentruDeTransfuzie1
+namespace CentruDeTransfuzie
 {
     public class CTContext : DbContext
     {
