@@ -1,8 +1,6 @@
-﻿using CentruDeTransfuzie.model;
-using CentruDeTransfuzie1;
-using CentruDeTransfuzie1.model;
+﻿using CentruDeTransfuzie;
+using CentruDeTransfuzie.model;
 using Microsoft.EntityFrameworkCore;
-using Repository2;
 using System;
 using System.Collections.Generic;
 using System.Text;

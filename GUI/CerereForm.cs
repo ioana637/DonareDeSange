@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CentruDeTransfuzie1.model;
+using CentruDeTransfuzie.model;
 using Service;
 
 namespace GUI

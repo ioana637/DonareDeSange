@@ -1,9 +1,9 @@
-﻿using CentruDeTransfuzie1.utils;
+﻿using CentruDeTransfuzie.utils;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CentruDeTransfuzie1.model
+namespace CentruDeTransfuzie.model
 {
     public class Stoc
     {
@@ -16,7 +16,7 @@ namespace CentruDeTransfuzie1.model
         public int TermenPlasma { get; set; }
         public GrupaSange Grupa { get; set; }
         public TipRh RH { get; set; }
-       
+
 
         public Stoc()
         {
@@ -36,3 +36,4 @@ namespace CentruDeTransfuzie1.model
         }
     }
 }
+

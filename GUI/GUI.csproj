@@ -260,7 +260,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CentruDeTransfuzie\CentruDeTransfuzie.csproj">
-      <Project>{83AA4644-FE3B-4904-AF3B-120DD520696B}</Project>
+      <Project>{83aa4644-fe3b-4904-af3b-120dd520696b}</Project>
       <Name>CentruDeTransfuzie</Name>
     </ProjectReference>
     <ProjectReference Include="..\Service1\Service.csproj">
