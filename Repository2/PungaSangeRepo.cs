@@ -19,9 +19,13 @@ namespace Repository
         public List<PungaSange> GetPungi()
         {
             List<PungaSange> pungi = new List<PungaSange>();
-            dbset.Include(p=>p.Donator).Include(p=>p.Analiza).ToList().ForEach(p => pungi.Add(p));
+            dbset.Include(p=>p.Donator).Include(p=>p.Analiza).Include(p=>p.TraseuPunga).ToList().ForEach(p => pungi.Add(p));
             return pungi;
             
         }
+        public PungaSange GetPunga(int id) {
+            return dbset.Include(p => p.TraseuPunga).Include(p => p.Donator).Include(p => p.Analiza).Where(p => p.Id.Equals(id)).FirstOrDefault();
+        }
+
     }
 }

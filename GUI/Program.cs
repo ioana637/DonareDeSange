@@ -38,8 +38,8 @@ namespace GUI
             //Application.Run(new FormMedic(new Service.UserMedicService(),1, "ioana"));
 
             //Application.Run(new FormCentru(new Service.DonatorService()));
-
-            //Application.Run(new FormCentru(new Service.DonatorService()));
+            
+           // Application.Run(new FormCentru(new Service.DonatorService(), "Centru Donare Sange Cluj"));
 
             //Application.Run(new FormAdminLogare(new AdminService()));
             //Application.Run(new FormAdmin(new AdminService()));
