@@ -25,7 +25,7 @@ namespace GUI
         {
             serviceDonator = service;
             centru = user;
-            this.username = username;
+            this.username = user;
             InitializeComponent();
             LoadDataGridView1();
             loadDataGridView2();
