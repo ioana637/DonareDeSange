@@ -44,7 +44,7 @@ namespace CentruDeTransfuzie.Data
             TraseuPunga t2 = new TraseuPunga { Prelevata = true };
             TraseuPunga t3 = new TraseuPunga { Prelevata = true };
             TraseuPunga t4 = new TraseuPunga { Prelevata = true };
-            var traseu = new TraseuPunga[] { t1, t2, t3 };
+            var traseu = new TraseuPunga[] { t1, t2, t3,t4 };
             foreach (TraseuPunga tp in traseu)
             {
                 context.TraseuPunga.Add(tp);
@@ -59,7 +59,7 @@ namespace CentruDeTransfuzie.Data
             PungaSange p1 = new PungaSange(DateTime.Parse("2017-12-24"), 300, 30, 20, 10) { TraseuPunga = context.TraseuPunga.Find(1), Donator = context.Donator.Find(1), CentruTransfuzie = context.CentruTransfuzie.Find(1) };
             PungaSange p2 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(2), Donator = context.Donator.Find(1), CentruTransfuzie = context.CentruTransfuzie.Find(1) };
             PungaSange p3 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(3), Donator = context.Donator.Find(2), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
-            PungaSange p4 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(3), Donator = context.Donator.Find(2), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
+            PungaSange p4 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(4), Donator = context.Donator.Find(2), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
 
             var pungi = new PungaSange[] { p1, p2, p3,p4 };
             foreach (PungaSange p in pungi)
