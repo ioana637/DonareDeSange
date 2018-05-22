@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{DE00485F-97F6-479D-A5D6-0879DCC10CB9}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admin", "Admin\Admin.csproj", "{D4EDC018-00BD-4A24-AB5C-73AA1649255A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Centru", "Centru\Centru.csproj", "{C3EE04FB-4B82-48D1-B243-B1AEE2A2A40B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject1\UnitTestProject.csproj", "{3C269C79-CD49-4CC7-8A82-E0F929546BD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{C3EE04FB-4B82-48D1-B243-B1AEE2A2A40B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3EE04FB-4B82-48D1-B243-B1AEE2A2A40B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3EE04FB-4B82-48D1-B243-B1AEE2A2A40B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C269C79-CD49-4CC7-8A82-E0F929546BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C269C79-CD49-4CC7-8A82-E0F929546BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C269C79-CD49-4CC7-8A82-E0F929546BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C269C79-CD49-4CC7-8A82-E0F929546BD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

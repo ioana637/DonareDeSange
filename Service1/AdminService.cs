@@ -20,7 +20,7 @@ namespace Service
             else return -1;
         }
 
-        private Admin GetAdminByUsername(string username)
+        public Admin GetAdminByUsername(string username)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
