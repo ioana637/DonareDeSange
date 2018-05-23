@@ -28,7 +28,7 @@ namespace GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new FormLogareCentru(new CentruService()));
+            //Application.Run(new FormLogareCentru(new CentruService()));
             //Application.Run(new FormLogareDonator(new Service.DonatorService()));
             
             
@@ -42,7 +42,7 @@ namespace GUI
            // Application.Run(new FormCentru(new Service.DonatorService(), "Centru Donare Sange Cluj"));
 
             //Application.Run(new FormAdminLogare(new AdminService()));
-            //Application.Run(new FormAdmin(new AdminService()));
+            Application.Run(new FormAdmin(new AdminService()));
             //Application.Run(new FormAnalizeSange());
 
 

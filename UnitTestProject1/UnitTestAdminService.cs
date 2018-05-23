@@ -25,6 +25,14 @@ namespace UnitTestProject1
             CentruTransfuzie centru = new CentruTransfuzie("CentruTest", "Test", "Test", "Test", "Test");
             adminService.AddCentru(centru);
             Assert.AreEqual(count + 1, adminService.GetAllCentre().Count);
+            try
+            {
+                adminService.AddCentru(centru);
+            }
+            catch (Exception e)
+            {
+                Assert.AreEqual(count + 1, adminService.GetAllCentre().Count);
+            }
             adminService.Delete(centru);
             Assert.AreEqual(count, adminService.GetAllCentre().Count);
         }
@@ -38,6 +46,14 @@ namespace UnitTestProject1
             Spital spital = new Spital("Test", "Test", "Test");
             adminService.AddSpital(spital, centru);
             Assert.AreEqual(count + 1, adminService.GetAllSpitale().Count);
+            try
+            {
+                adminService.AddSpital(spital, centru);
+            }
+            catch (Exception e)
+            {
+                Assert.AreEqual(count + 1, adminService.GetAllSpitale().Count);
+            }
             adminService.DeleteSpital(spital);
             adminService.Delete(centru);
         }
