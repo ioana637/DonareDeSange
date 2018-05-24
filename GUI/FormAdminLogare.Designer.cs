@@ -93,7 +93,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 27);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Sing In";
+            this.label1.Text = "Sign In";
             // 
             // pictureBox1
             // 

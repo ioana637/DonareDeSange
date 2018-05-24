@@ -32,8 +32,15 @@ namespace CentruDeTransfuzie.Data
         private static void InitializeNotificari(CTContext context)
         {
             if (context.Notificari.Any()) return;
-            Notificari not = new Notificari(1,1);
-            context.Notificari.Add(not);
+            Notificari n1 = new Notificari(2,1);
+            Notificari n2 = new Notificari(1,2);
+            Notificari n3 = new Notificari(1,1);
+            Notificari n4 = new Notificari(3, 2);
+            var notificari =new Notificari[] { n1, n2, n3,n4};
+            foreach(Notificari n in notificari)
+            {
+                context.Notificari.Add(n);
+            }
             context.SaveChanges();
         }
 
