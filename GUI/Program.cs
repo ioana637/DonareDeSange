@@ -28,8 +28,8 @@ namespace GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //Application.Run(new FormLogareCentru(new CentruService()));
-            Application.Run(new FormLogareDonator(new Service.DonatorService()));
+            Application.Run(new FormLogareCentru(new CentruService()));
+           // Application.Run(new FormLogareDonator(new Service.DonatorService()));
             
             
             

@@ -20,6 +20,16 @@ namespace Service
             }
         }
 
+        public Medic GetMedicByUsername(String username)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                Medic medic = unitOfWork.MedicRepo.GetBy(m => m.UserMedic.Username.Equals(username));
+                return medic;
+            }
+        }
+
+
         public int Login(String username,String password)
         {// returneaza -1 daca datele sunt gresite, id-ul medicului altfel
             UserMedic um = GetUserMedicByUsername(username);
@@ -141,6 +151,15 @@ namespace Service
                 pacient = unitOfWork.PacientRepo.GetAll().Where(p => p.Medic.UserMedic.Id.Equals(idMedic) && p.Id.Equals(idPacient)).FirstOrDefault();
                 return pacient;
 
+            }
+        }
+
+        public void DeleteCerere(Cerere cerere)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                unitOfWork.MedicRepo.GetBy(m => m.Equals(cerere.Medic)).Cereri.Remove(cerere);
+                unitOfWork.CerereRepo.Delete(cerere);
             }
         }
     }
