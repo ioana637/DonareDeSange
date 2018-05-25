@@ -46,6 +46,9 @@
             // 
             // textBoxGreutate
             // 
+            this.textBoxGreutate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxGreutate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxGreutate.Location = new System.Drawing.Point(206, 33);
             this.textBoxGreutate.Name = "textBoxGreutate";
@@ -54,6 +57,9 @@
             // 
             // textBoxPuls
             // 
+            this.textBoxPuls.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxPuls.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.textBoxPuls.Location = new System.Drawing.Point(206, 79);
             this.textBoxPuls.Name = "textBoxPuls";
@@ -62,6 +68,9 @@
             // 
             // textBoxTensSist
             // 
+            this.textBoxTensSist.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxTensSist.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.textBoxTensSist.Location = new System.Drawing.Point(206, 122);
             this.textBoxTensSist.Name = "textBoxTensSist";
@@ -70,6 +79,9 @@
             // 
             // textBoxTensDiast
             // 
+            this.textBoxTensDiast.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxTensDiast.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.textBoxTensDiast.Location = new System.Drawing.Point(206, 168);
             this.textBoxTensDiast.Name = "textBoxTensDiast";
@@ -78,8 +90,12 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
             this.label1.Location = new System.Drawing.Point(97, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 20);
@@ -88,8 +104,12 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Firebrick;
             this.label2.Location = new System.Drawing.Point(109, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 20);
@@ -98,8 +118,12 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label3.ForeColor = System.Drawing.Color.Firebrick;
             this.label3.Location = new System.Drawing.Point(46, 122);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 20);
@@ -108,8 +132,12 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label4.ForeColor = System.Drawing.Color.Firebrick;
             this.label4.Location = new System.Drawing.Point(46, 170);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(147, 20);
@@ -118,8 +146,12 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Firebrick;
             this.label5.Location = new System.Drawing.Point(312, 36);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(26, 18);
@@ -128,8 +160,12 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.Firebrick;
             this.label6.Location = new System.Drawing.Point(312, 82);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 18);
@@ -138,8 +174,12 @@
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.Firebrick;
             this.label7.Location = new System.Drawing.Point(312, 125);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 18);
@@ -148,8 +188,12 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.Firebrick;
             this.label8.Location = new System.Drawing.Point(312, 171);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 18);
@@ -158,30 +202,45 @@
             // 
             // buttonSave
             // 
+            this.buttonSave.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSave.BackColor = System.Drawing.Color.Firebrick;
+            this.buttonSave.FlatAppearance.BorderSize = 0;
+            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSave.ForeColor = System.Drawing.Color.White;
             this.buttonSave.Location = new System.Drawing.Point(101, 234);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(107, 32);
             this.buttonSave.TabIndex = 12;
             this.buttonSave.Text = "Salvează";
-            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.UseVisualStyleBackColor = false;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // buttonAnulare
             // 
+            this.buttonAnulare.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAnulare.BackColor = System.Drawing.Color.Firebrick;
+            this.buttonAnulare.FlatAppearance.BorderSize = 0;
+            this.buttonAnulare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAnulare.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAnulare.ForeColor = System.Drawing.Color.White;
             this.buttonAnulare.Location = new System.Drawing.Point(270, 234);
             this.buttonAnulare.Name = "buttonAnulare";
             this.buttonAnulare.Size = new System.Drawing.Size(99, 32);
             this.buttonAnulare.TabIndex = 13;
             this.buttonAnulare.Text = "Anulează";
-            this.buttonAnulare.UseVisualStyleBackColor = true;
+            this.buttonAnulare.UseVisualStyleBackColor = false;
             this.buttonAnulare.Click += new System.EventHandler(this.buttonAnulare_Click);
             // 
-            // ModificareDonator
+            // FormModificareDonator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(476, 329);
             this.Controls.Add(this.buttonAnulare);
             this.Controls.Add(this.buttonSave);
@@ -197,8 +256,9 @@
             this.Controls.Add(this.textBoxTensSist);
             this.Controls.Add(this.textBoxPuls);
             this.Controls.Add(this.textBoxGreutate);
-            this.Name = "ModificareDonator";
-            this.Text = "ModificareDonator";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Name = "FormModificareDonator";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

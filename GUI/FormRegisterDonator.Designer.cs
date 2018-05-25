@@ -86,9 +86,13 @@
             // 
             // lblREpsw
             // 
+            this.lblREpsw.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblREpsw.AutoSize = true;
+            this.lblREpsw.BackColor = System.Drawing.Color.Transparent;
             this.lblREpsw.ForeColor = System.Drawing.Color.Red;
-            this.lblREpsw.Location = new System.Drawing.Point(16, 119);
+            this.lblREpsw.Location = new System.Drawing.Point(7, 119);
             this.lblREpsw.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblREpsw.Name = "lblREpsw";
             this.lblREpsw.Size = new System.Drawing.Size(11, 13);
@@ -98,9 +102,13 @@
             // 
             // lblUsername
             // 
+            this.lblUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             this.lblUsername.ForeColor = System.Drawing.Color.Red;
-            this.lblUsername.Location = new System.Drawing.Point(16, 84);
+            this.lblUsername.Location = new System.Drawing.Point(11, 84);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(11, 13);
@@ -110,9 +118,12 @@
             // 
             // lblPassw
             // 
+            this.lblPassw.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPassw.AutoSize = true;
+            this.lblPassw.BackColor = System.Drawing.Color.Transparent;
             this.lblPassw.ForeColor = System.Drawing.Color.Red;
-            this.lblPassw.Location = new System.Drawing.Point(213, 82);
+            this.lblPassw.Location = new System.Drawing.Point(366, 81);
             this.lblPassw.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassw.Name = "lblPassw";
             this.lblPassw.Size = new System.Drawing.Size(11, 13);
@@ -122,6 +133,8 @@
             // 
             // txtREpsw
             // 
+            this.txtREpsw.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.txtREpsw.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtREpsw.Location = new System.Drawing.Point(182, 119);
             this.txtREpsw.Margin = new System.Windows.Forms.Padding(2);
@@ -132,8 +145,10 @@
             // 
             // txtPsw
             // 
+            this.txtPsw.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPsw.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPsw.Location = new System.Drawing.Point(274, 82);
+            this.txtPsw.Location = new System.Drawing.Point(443, 81);
             this.txtPsw.Margin = new System.Windows.Forms.Padding(2);
             this.txtPsw.Name = "txtPsw";
             this.txtPsw.Size = new System.Drawing.Size(155, 26);
@@ -142,6 +157,8 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(106, 84);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
@@ -152,23 +169,29 @@
             // label23
             // 
             this.label23.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.SystemColors.Control;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Firebrick;
             this.label23.Location = new System.Drawing.Point(22, 119);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(161, 20);
+            this.label23.Size = new System.Drawing.Size(156, 20);
             this.label23.TabIndex = 115;
-            this.label23.Text = "Reintroduce-ti parola:";
+            this.label23.Text = "Reintroduceți parola:";
             // 
             // label22
             // 
             this.label22.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.SystemColors.Control;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(219, 84);
+            this.label22.ForeColor = System.Drawing.Color.Firebrick;
+            this.label22.Location = new System.Drawing.Point(381, 84);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(58, 20);
@@ -178,9 +201,12 @@
             // label21
             // 
             this.label21.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.SystemColors.Control;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Firebrick;
             this.label21.Location = new System.Drawing.Point(22, 84);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
@@ -190,6 +216,9 @@
             // 
             // checkRes
             // 
+            this.checkRes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.checkRes.AutoSize = true;
             this.checkRes.Location = new System.Drawing.Point(14, 313);
             this.checkRes.Margin = new System.Windows.Forms.Padding(2);
@@ -201,10 +230,13 @@
             // 
             // lblDateInvalide
             // 
+            this.lblDateInvalide.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDateInvalide.AutoSize = true;
+            this.lblDateInvalide.BackColor = System.Drawing.Color.White;
             this.lblDateInvalide.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateInvalide.ForeColor = System.Drawing.Color.Red;
-            this.lblDateInvalide.Location = new System.Drawing.Point(133, 438);
+            this.lblDateInvalide.Location = new System.Drawing.Point(250, 438);
             this.lblDateInvalide.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDateInvalide.Name = "lblDateInvalide";
             this.lblDateInvalide.Size = new System.Drawing.Size(124, 20);
@@ -214,9 +246,12 @@
             // 
             // lblTel
             // 
+            this.lblTel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTel.AutoSize = true;
+            this.lblTel.BackColor = System.Drawing.Color.Transparent;
             this.lblTel.ForeColor = System.Drawing.Color.Red;
-            this.lblTel.Location = new System.Drawing.Point(213, 393);
+            this.lblTel.Location = new System.Drawing.Point(376, 390);
             this.lblTel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTel.Name = "lblTel";
             this.lblTel.Size = new System.Drawing.Size(11, 13);
@@ -226,9 +261,13 @@
             // 
             // lblEmail
             // 
+            this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.ForeColor = System.Drawing.Color.Red;
-            this.lblEmail.Location = new System.Drawing.Point(22, 397);
+            this.lblEmail.Location = new System.Drawing.Point(23, 390);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(11, 13);
@@ -238,9 +277,12 @@
             // 
             // lblJud
             // 
+            this.lblJud.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblJud.AutoSize = true;
+            this.lblJud.BackColor = System.Drawing.Color.Transparent;
             this.lblJud.ForeColor = System.Drawing.Color.Red;
-            this.lblJud.Location = new System.Drawing.Point(214, 281);
+            this.lblJud.Location = new System.Drawing.Point(394, 271);
             this.lblJud.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblJud.Name = "lblJud";
             this.lblJud.Size = new System.Drawing.Size(11, 13);
@@ -250,7 +292,11 @@
             // 
             // lblLoc
             // 
+            this.lblLoc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLoc.AutoSize = true;
+            this.lblLoc.BackColor = System.Drawing.Color.Transparent;
             this.lblLoc.ForeColor = System.Drawing.Color.Red;
             this.lblLoc.Location = new System.Drawing.Point(22, 281);
             this.lblLoc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -262,7 +308,11 @@
             // 
             // lblDom
             // 
+            this.lblDom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDom.AutoSize = true;
+            this.lblDom.BackColor = System.Drawing.Color.Transparent;
             this.lblDom.ForeColor = System.Drawing.Color.Red;
             this.lblDom.Location = new System.Drawing.Point(22, 236);
             this.lblDom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -274,9 +324,13 @@
             // 
             // lblDn
             // 
+            this.lblDn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDn.AutoSize = true;
+            this.lblDn.BackColor = System.Drawing.Color.Transparent;
             this.lblDn.ForeColor = System.Drawing.Color.Red;
-            this.lblDn.Location = new System.Drawing.Point(22, 166);
+            this.lblDn.Location = new System.Drawing.Point(18, 165);
             this.lblDn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDn.Name = "lblDn";
             this.lblDn.Size = new System.Drawing.Size(11, 13);
@@ -286,9 +340,12 @@
             // 
             // lblPren
             // 
+            this.lblPren.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPren.AutoSize = true;
+            this.lblPren.BackColor = System.Drawing.Color.Transparent;
             this.lblPren.ForeColor = System.Drawing.Color.Red;
-            this.lblPren.Location = new System.Drawing.Point(207, 45);
+            this.lblPren.Location = new System.Drawing.Point(365, 45);
             this.lblPren.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPren.Name = "lblPren";
             this.lblPren.Size = new System.Drawing.Size(11, 13);
@@ -298,9 +355,13 @@
             // 
             // lblNume
             // 
+            this.lblNume.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNume.AutoSize = true;
+            this.lblNume.BackColor = System.Drawing.Color.Transparent;
             this.lblNume.ForeColor = System.Drawing.Color.Red;
-            this.lblNume.Location = new System.Drawing.Point(16, 45);
+            this.lblNume.Location = new System.Drawing.Point(11, 43);
             this.lblNume.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNume.Name = "lblNume";
             this.lblNume.Size = new System.Drawing.Size(11, 13);
@@ -310,33 +371,47 @@
             // 
             // btnInapoi
             // 
+            this.btnInapoi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnInapoi.BackColor = System.Drawing.Color.Firebrick;
+            this.btnInapoi.FlatAppearance.BorderSize = 0;
+            this.btnInapoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInapoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInapoi.ForeColor = System.Drawing.Color.White;
             this.btnInapoi.Location = new System.Drawing.Point(23, 432);
             this.btnInapoi.Margin = new System.Windows.Forms.Padding(2);
             this.btnInapoi.Name = "btnInapoi";
-            this.btnInapoi.Size = new System.Drawing.Size(91, 31);
+            this.btnInapoi.Size = new System.Drawing.Size(91, 32);
             this.btnInapoi.TabIndex = 101;
             this.btnInapoi.Text = "Anulează";
-            this.btnInapoi.UseVisualStyleBackColor = true;
+            this.btnInapoi.UseVisualStyleBackColor = false;
             this.btnInapoi.Click += new System.EventHandler(this.btnInapoi_Click);
             // 
             // btnInregistreaza
             // 
+            this.btnInregistreaza.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInregistreaza.BackColor = System.Drawing.Color.Firebrick;
+            this.btnInregistreaza.FlatAppearance.BorderSize = 0;
+            this.btnInregistreaza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInregistreaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInregistreaza.Location = new System.Drawing.Point(281, 432);
+            this.btnInregistreaza.ForeColor = System.Drawing.Color.White;
+            this.btnInregistreaza.Location = new System.Drawing.Point(453, 426);
             this.btnInregistreaza.Margin = new System.Windows.Forms.Padding(2);
             this.btnInregistreaza.Name = "btnInregistreaza";
-            this.btnInregistreaza.Size = new System.Drawing.Size(143, 31);
+            this.btnInregistreaza.Size = new System.Drawing.Size(143, 32);
             this.btnInregistreaza.TabIndex = 100;
             this.btnInregistreaza.Text = "Înregistrează-mă";
-            this.btnInregistreaza.UseVisualStyleBackColor = true;
+            this.btnInregistreaza.UseVisualStyleBackColor = false;
             this.btnInregistreaza.Click += new System.EventHandler(this.btnInregistreaza_Click_1);
             // 
             // rdB_M
             // 
+            this.rdB_M.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.rdB_M.AutoSize = true;
             this.rdB_M.Checked = true;
             this.rdB_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdB_M.ForeColor = System.Drawing.Color.Firebrick;
             this.rdB_M.Location = new System.Drawing.Point(118, 202);
             this.rdB_M.Margin = new System.Windows.Forms.Padding(2);
             this.rdB_M.Name = "rdB_M";
@@ -348,8 +423,11 @@
             // 
             // rdB_F
             // 
+            this.rdB_F.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.rdB_F.AutoSize = true;
             this.rdB_F.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdB_F.ForeColor = System.Drawing.Color.Firebrick;
             this.rdB_F.Location = new System.Drawing.Point(80, 202);
             this.rdB_F.Margin = new System.Windows.Forms.Padding(2);
             this.rdB_F.Name = "rdB_F";
@@ -360,8 +438,11 @@
             // 
             // label18
             // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Firebrick;
             this.label18.Location = new System.Drawing.Point(32, 203);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
@@ -371,8 +452,10 @@
             // 
             // txtTelefon
             // 
+            this.txtTelefon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefon.Location = new System.Drawing.Point(290, 392);
+            this.txtTelefon.Location = new System.Drawing.Point(458, 390);
             this.txtTelefon.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefon.Name = "txtTelefon";
             this.txtTelefon.Size = new System.Drawing.Size(138, 26);
@@ -380,9 +463,12 @@
             // 
             // label17
             // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(223, 393);
+            this.label17.ForeColor = System.Drawing.Color.Firebrick;
+            this.label17.Location = new System.Drawing.Point(385, 393);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(66, 20);
@@ -391,6 +477,8 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(86, 392);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
@@ -400,8 +488,11 @@
             // 
             // label16
             // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Firebrick;
             this.label16.Location = new System.Drawing.Point(32, 394);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
@@ -411,6 +502,8 @@
             // 
             // cmbJudet2
             // 
+            this.cmbJudet2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbJudet2.Enabled = false;
             this.cmbJudet2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbJudet2.FormattingEnabled = true;
@@ -423,6 +516,8 @@
             // 
             // txtResedinta
             // 
+            this.txtResedinta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.txtResedinta.Enabled = false;
             this.txtResedinta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResedinta.Location = new System.Drawing.Point(109, 308);
@@ -433,8 +528,11 @@
             // 
             // label13
             // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Firebrick;
             this.label13.Location = new System.Drawing.Point(33, 332);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
@@ -445,6 +543,8 @@
             // 
             // cmbJudet1
             // 
+            this.cmbJudet1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbJudet1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.cmbJudet1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbJudet1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -458,8 +558,11 @@
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Firebrick;
             this.label12.Location = new System.Drawing.Point(37, 279);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
@@ -469,9 +572,11 @@
             // 
             // cmbLoc1
             // 
+            this.cmbLoc1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbLoc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLoc1.FormattingEnabled = true;
-            this.cmbLoc1.Location = new System.Drawing.Point(315, 271);
+            this.cmbLoc1.Location = new System.Drawing.Point(495, 271);
             this.cmbLoc1.Margin = new System.Windows.Forms.Padding(2);
             this.cmbLoc1.Name = "cmbLoc1";
             this.cmbLoc1.Size = new System.Drawing.Size(101, 28);
@@ -479,8 +584,11 @@
             // 
             // label11
             // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Firebrick;
             this.label11.Location = new System.Drawing.Point(34, 259);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
@@ -490,6 +598,8 @@
             // 
             // txtDomiciliu
             // 
+            this.txtDomiciliu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.txtDomiciliu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDomiciliu.Location = new System.Drawing.Point(106, 232);
             this.txtDomiciliu.Margin = new System.Windows.Forms.Padding(2);
@@ -499,6 +609,8 @@
             // 
             // cb_an
             // 
+            this.cb_an.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cb_an.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_an.FormattingEnabled = true;
             this.cb_an.Location = new System.Drawing.Point(368, 165);
@@ -509,6 +621,8 @@
             // 
             // cb_luna
             // 
+            this.cb_luna.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cb_luna.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_luna.FormattingEnabled = true;
             this.cb_luna.Location = new System.Drawing.Point(254, 166);
@@ -519,6 +633,8 @@
             // 
             // cb_zi
             // 
+            this.cb_zi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cb_zi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_zi.FormattingEnabled = true;
             this.cb_zi.Location = new System.Drawing.Point(146, 166);
@@ -529,8 +645,12 @@
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Firebrick;
             this.label10.Location = new System.Drawing.Point(329, 169);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
@@ -540,8 +660,11 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Firebrick;
             this.label9.Location = new System.Drawing.Point(205, 168);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
@@ -551,8 +674,10 @@
             // 
             // txtPrenume
             // 
+            this.txtPrenume.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPrenume.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrenume.Location = new System.Drawing.Point(290, 43);
+            this.txtPrenume.Location = new System.Drawing.Point(460, 43);
             this.txtPrenume.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrenume.Name = "txtPrenume";
             this.txtPrenume.Size = new System.Drawing.Size(138, 26);
@@ -560,6 +685,8 @@
             // 
             // txtNume
             // 
+            this.txtNume.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.txtNume.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNume.Location = new System.Drawing.Point(80, 45);
             this.txtNume.Margin = new System.Windows.Forms.Padding(2);
@@ -569,19 +696,25 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(8, 12);
+            this.label8.ForeColor = System.Drawing.Color.Firebrick;
+            this.label8.Location = new System.Drawing.Point(230, 9);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(188, 20);
+            this.label8.Size = new System.Drawing.Size(194, 20);
             this.label8.TabIndex = 71;
-            this.label8.Text = "Vreau să donez sînge!";
+            this.label8.Text = "Vreau să donez sânge!";
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Firebrick;
             this.label7.Location = new System.Drawing.Point(30, 310);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
@@ -591,9 +724,12 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(229, 279);
+            this.label6.ForeColor = System.Drawing.Color.Firebrick;
+            this.label6.Location = new System.Drawing.Point(409, 276);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 20);
@@ -602,8 +738,11 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Firebrick;
             this.label5.Location = new System.Drawing.Point(30, 236);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -613,8 +752,12 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Firebrick;
             this.label4.Location = new System.Drawing.Point(122, 168);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -624,8 +767,11 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Firebrick;
             this.label3.Location = new System.Drawing.Point(28, 168);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -635,9 +781,12 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(213, 46);
+            this.label2.ForeColor = System.Drawing.Color.Firebrick;
+            this.label2.Location = new System.Drawing.Point(375, 46);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 20);
@@ -647,9 +796,12 @@
             // label1
             // 
             this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
             this.label1.Location = new System.Drawing.Point(22, 47);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
@@ -659,8 +811,11 @@
             // 
             // label14
             // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Firebrick;
             this.label14.Location = new System.Drawing.Point(36, 360);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
@@ -670,10 +825,12 @@
             // 
             // cmbLoc2
             // 
+            this.cmbLoc2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbLoc2.Enabled = false;
             this.cmbLoc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLoc2.FormattingEnabled = true;
-            this.cmbLoc2.Location = new System.Drawing.Point(333, 357);
+            this.cmbLoc2.Location = new System.Drawing.Point(495, 357);
             this.cmbLoc2.Margin = new System.Windows.Forms.Padding(2);
             this.cmbLoc2.Name = "cmbLoc2";
             this.cmbLoc2.Size = new System.Drawing.Size(101, 28);
@@ -681,9 +838,12 @@
             // 
             // label15
             // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(247, 360);
+            this.label15.ForeColor = System.Drawing.Color.Firebrick;
+            this.label15.Location = new System.Drawing.Point(409, 360);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(82, 20);
@@ -694,7 +854,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 478);
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.ClientSize = new System.Drawing.Size(631, 479);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.cmbLoc2);
             this.Controls.Add(this.label15);
@@ -749,9 +910,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormRegisterDonator";
-            this.Text = "FormRegisterDonator";
             this.Load += new System.EventHandler(this.FormRegisterDonator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

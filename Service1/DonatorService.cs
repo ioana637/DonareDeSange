@@ -1,4 +1,5 @@
-﻿using Repository;
+﻿using CentruDeTransfuzie.model;
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +28,7 @@ namespace Service
             {
                 string encryptedPassword = Util.EncryptPassword(password);
 
-                
+
 
                 UserDonator user = unitOfWork.UserDonatorRepo.GetBy(x => x.Username.Equals(userName));
                 if (user.Parola.Equals(encryptedPassword))
@@ -38,7 +39,7 @@ namespace Service
             }
         }
 
-       
+
 
         public Donator GetDonator(string username)
         {
@@ -143,5 +144,38 @@ namespace Service
             }
         }
 
+        public static bool NeedsToBeNotified(int idDon)
+        {
+            CerereService service = new CerereService();
+
+            foreach (var i in service.GetNotificari())
+            {
+                if (i.id_donator == idDon)
+                {
+                    //de ce delete?
+                    //service.DeleteNotificare(idDon);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
+        public List<Cerere> GetAllCereriByIdDonator(string username)
+        {
+            List<int> idCereri = new List<int>();
+            List<Cerere> cereri = new List<Cerere>();
+            UserDonator user;
+            Donator donator;
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                user=unitOfWork.UserDonatorRepo.GetBy(u => u.Username.Equals(username));
+                donator=unitOfWork.DonatorRepo.GetBy(d => d.UserDonator.Equals(user));
+                unitOfWork.NotificariRepo.GetAll().Where(n => n.id_donator.Equals(donator.Id)).ToList().ForEach(n => { idCereri.Add(n.id_cerere); });
+                idCereri.ForEach(id => cereri.Add(unitOfWork.CerereRepo.GetBy(x => x.Id.Equals(id))));
+                unitOfWork.Save();
+            }
+            return cereri;
+        }
     }
 }

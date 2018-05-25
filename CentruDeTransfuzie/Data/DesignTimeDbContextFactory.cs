@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CentruDeTransfuzie1.Data
+namespace CentruDeTransfuzie.Data
 {
     public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<CTContext>
     {

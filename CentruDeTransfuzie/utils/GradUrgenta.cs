@@ -10,6 +10,6 @@ namespace CentruDeTransfuzie.utils
     {
         Ridicat,
         Mediu,
-        Scazut
+        Scăzut
     }
 }

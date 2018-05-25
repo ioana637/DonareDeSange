@@ -1,5 +1,6 @@
-﻿using CentruDeTransfuzie.utils;
-using Service1;
+﻿using CentruDeTransfuzie.model;
+using CentruDeTransfuzie.utils;
+using Service;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -306,7 +307,7 @@ namespace GUI
             loadDataGrdViewMedici();
         }
 
-        private bool validareCampuriMedic(string cnp,string nume,string prenume, string telefon, string email,string parola, string username)
+        private bool validareCampuriMedic(string cnp, string nume, string prenume, string telefon, string email, string parola, string username)
         {
             if (cnp.Equals("") || nume.Equals("") || prenume.Equals("") || telefon.Equals("") ||
                 email.Equals("") || parola.Equals("") || username.Equals(""))
@@ -315,6 +316,5 @@ namespace GUI
             return true;
 
         }
-
     }
 }

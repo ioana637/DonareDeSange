@@ -1,13 +1,12 @@
-using CentruDeTransfuzie.model;
+﻿using CentruDeTransfuzie.model;
 using CentruDeTransfuzie.utils;
-using CentruDeTransfuzie1.model;
-using CentruDeTransfuzie1.utils;
+
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
 
-namespace CentruDeTransfuzie1.Data
+namespace CentruDeTransfuzie.Data
 {
     public static class DbInitializer
     {
@@ -26,8 +25,23 @@ namespace CentruDeTransfuzie1.Data
             InitializeTraseuPunga(context);
             InitializePungaSange(context);
             InitializeAnaliza(context);
+            InitializeNotificari(context);
 
+        }
 
+        private static void InitializeNotificari(CTContext context)
+        {
+            if (context.Notificari.Any()) return;
+            Notificari n1 = new Notificari(2,1);
+            Notificari n2 = new Notificari(1,2);
+            Notificari n3 = new Notificari(1,1);
+            Notificari n4 = new Notificari(3, 2);
+            var notificari =new Notificari[] { n1, n2, n3,n4};
+            foreach(Notificari n in notificari)
+            {
+                context.Notificari.Add(n);
+            }
+            context.SaveChanges();
         }
 
         private static void InitializeTraseuPunga(CTContext context)
@@ -37,7 +51,7 @@ namespace CentruDeTransfuzie1.Data
             TraseuPunga t2 = new TraseuPunga { Prelevata = true };
             TraseuPunga t3 = new TraseuPunga { Prelevata = true };
             TraseuPunga t4 = new TraseuPunga { Prelevata = true };
-            var traseu = new TraseuPunga[] { t1, t2, t3 };
+            var traseu = new TraseuPunga[] { t1, t2, t3,t4 };
             foreach (TraseuPunga tp in traseu)
             {
                 context.TraseuPunga.Add(tp);
@@ -52,7 +66,7 @@ namespace CentruDeTransfuzie1.Data
             PungaSange p1 = new PungaSange(DateTime.Parse("2017-12-24"), 300, 30, 20, 10) { TraseuPunga = context.TraseuPunga.Find(1), Donator = context.Donator.Find(1), CentruTransfuzie = context.CentruTransfuzie.Find(1) };
             PungaSange p2 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(2), Donator = context.Donator.Find(1), CentruTransfuzie = context.CentruTransfuzie.Find(1) };
             PungaSange p3 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(3), Donator = context.Donator.Find(2), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
-            PungaSange p4 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(3), Donator = context.Donator.Find(2), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
+            PungaSange p4 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(4), Donator = context.Donator.Find(2), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
 
             var pungi = new PungaSange[] { p1, p2, p3,p4 };
             foreach (PungaSange p in pungi)
@@ -198,8 +212,8 @@ namespace CentruDeTransfuzie1.Data
             {
                 return;
             }
-            CentruTransfuzie c1 = new CentruTransfuzie("Centru Donare Sange Cluj", "Piata Mihai Viteazu", "Cluj-Napoca", "Cluj");
-            CentruTransfuzie c2 = new CentruTransfuzie("Centru Donare Sange Bucuresti","Militari","Bucuresti","Ilfov");
+            CentruTransfuzie c1 = new CentruTransfuzie("Centru Donare Sânge Cluj", "Piața Mihai Viteazu", "Cluj-Napoca", "Cluj");
+            CentruTransfuzie c2 = new CentruTransfuzie("Centru Donare Sânge București","Militari","Bucuresti","Ilfov");
 
             c1.Parola = "e2a7b5972479f8c59ade36a15e5b6146";//parola=ParolaCluj
             c2.Parola = "311e8c89c2e7f24e3ac63265496297a7";//parola=ParolaBucuresti

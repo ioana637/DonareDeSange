@@ -1,4 +1,5 @@
-﻿using CentruDeTransfuzie1.utils;
+﻿using CentruDeTransfuzie.model;
+using CentruDeTransfuzie.utils;
 using Service;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,8 @@ namespace GUI
             this.usernameMedic = username;
             initComboGrupa();
             initComboRh();
+            initComboPr();
+            initPacienti();
             Refresh();
             loadDataGridView1();
             //createDataGridView1();
@@ -49,6 +52,7 @@ namespace GUI
             comboBoxRH.Enabled = true;
             comboBoxGrupa.SelectedItem = null;
             comboBoxRH.SelectedItem = null;
+            Pacienti.SelectedItems.Clear();
         }
         private void initCampuri()
         {
@@ -57,6 +61,13 @@ namespace GUI
             textBoxTotal.Text = "";
             textBoxTrombocite.Text = "";
             Console.WriteLine("aici");
+        }
+
+        private void initPacienti()
+        {
+            List<Pacient> pacienti = serviceMedic.GetPacientByMedic(idMedicCurent);
+            pacienti.ForEach(p => Pacienti.Items.Add(p.Nume));
+            
         }
 
         private void buttonLogout_Click(object sender, EventArgs e)
@@ -126,6 +137,7 @@ namespace GUI
             {
                 dataGridView2.Rows[bindingSource.Position].Selected = true;
             }
+            dataGridView2.Columns[1].Visible = false;
 
         }
 
@@ -145,16 +157,24 @@ namespace GUI
             comboBoxGrupa.Items.Add(GrupaSange.ABIV.ToString());
         }
 
+        private void initComboPr()
+        {
+            comboBoxPr.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxPr.Items.Add(GradUrgenta.Scăzut.ToString());
+            comboBoxPr.Items.Add(GradUrgenta.Mediu.ToString());
+            comboBoxPr.Items.Add(GradUrgenta.Ridicat.ToString());
+
+        }
         private void buttonSave_Click(object sender, EventArgs e)
         {
             try
             {
-                if (comboBoxRH.SelectedItem == null||comboBoxGrupa.SelectedItem==null) throw new Exception("Trebuie selectata grupa si Rh-ul!");
+                if (comboBoxRH.SelectedItem == null || comboBoxGrupa.SelectedItem == null||comboBoxPr==null) throw new Exception("Trebuie selectata grupa, Rh-ul si gradul de urgenta!");
 
                 if (comboBoxGrupa.Enabled)
                 {
                     Cerere cerere = BuildCerereSave();
-                    serviceMedic.AddCerere(cerere, usernameMedic);
+                    serviceMedic.AddCerere(cerere, usernameMedic, GetPacientiSelectati());
                 }
                 else
                 {
@@ -165,13 +185,22 @@ namespace GUI
                 Refresh();
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(this, ex.Message, "Eroare!", MessageBoxButtons.OK);
             }
-        
+
         }
 
+        private List<Pacient> GetPacientiSelectati()
+        {
+            List<Pacient> pacienti = new List<Pacient>();
+            foreach (object item in Pacienti.CheckedItems)
+            {
+                pacienti.Add(serviceMedic.GetPacientByMedic(idMedicCurent).Where(p => p.Nume.Equals(item)).FirstOrDefault());
+            }
+            return pacienti;
+        }
         private Cerere BuildCerereUpdate()
         {
             Cerere cerere = new Cerere();
@@ -210,12 +239,17 @@ namespace GUI
             cerere.Grupa = grupa;
             cerere.RH = RH;
             Int32 total, plasma, trombocite, globule;
+           
+            
+
+
             if (textBoxTotal.Enabled)
             {
                 total = Int32.Parse(textBoxTotal.Text);
                 cerere.CantitateSange = total;
 
             }
+
             else
             {
                 plasma = Int32.Parse(textBoxPlasma.Text);
@@ -226,7 +260,7 @@ namespace GUI
                 cerere.CantitatePlasma = plasma;
                 cerere.CantitateTrombocite = trombocite;
                 cerere.CantitateSange = total;
-              
+
             }
 
             return cerere;
@@ -279,14 +313,14 @@ namespace GUI
                 if (!dataGridView2.CurrentRow.Selected) throw new Exception("Trebuie selectat tot randul");
                 DataGridViewRow row = dataGridView2.SelectedRows[0];
                 if ((bool)row.Cells[7].Value) throw new Exception("Cererea a fost tratata deja!");
-                comboBoxGrupa.SelectedItem =row.Cells[8].Value.ToString();
+                comboBoxGrupa.SelectedItem = row.Cells[8].Value.ToString();
                 comboBoxRH.SelectedItem = row.Cells[9].Value.ToString();
                 comboBoxRH.Enabled = false;
                 comboBoxGrupa.Enabled = false;
                 textBoxGlobule.Text = row.Cells[5].Value.ToString();
                 textBoxPlasma.Text = row.Cells[6].Value.ToString();
                 textBoxTotal.Text = row.Cells[3].Value.ToString();
-                textBoxTrombocite.Text= row.Cells[4].Value.ToString();
+                textBoxTrombocite.Text = row.Cells[4].Value.ToString();
                 textBoxTotal.Enabled = true;
                 tabControl1.SelectedTab = tabPage3;
 
@@ -395,7 +429,21 @@ namespace GUI
             if (bindingSourceP.Position >= 0)
             {
                 dataGridView1.Rows[bindingSourceP.Position].Selected = true;
+                
             }
+            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[5].Visible = false;
+
+
+        }
+
+        private void Pacienti_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

@@ -1,10 +1,10 @@
-﻿using CentruDeTransfuzie1.utils;
+﻿using CentruDeTransfuzie.utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace CentruDeTransfuzie1.model
+namespace CentruDeTransfuzie.model
 {
     
     public class Analiza

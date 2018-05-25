@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CentruDeTransfuzie1
+namespace CentruDeTransfuzie
 {
     public static class Configuration
     {

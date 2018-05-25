@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CentruDeTransfuzie1.utils
+namespace CentruDeTransfuzie.utils
 {
     public enum TipRh { Pozitiv,Negativ}
 }

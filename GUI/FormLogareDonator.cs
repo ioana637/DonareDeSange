@@ -19,13 +19,6 @@ namespace GUI
         {
             InitializeComponent();
             this.service = service;
-            label1.BackColor = Color.Transparent;
-            label2.BackColor = Color.Transparent;
-            linkLabel1.BackColor = Color.Transparent;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -45,6 +38,10 @@ namespace GUI
                     this.Hide();
                     formDonator.Closed += (s, args) => this.Close();
                     formDonator.Show();
+                    if (DonatorService.NeedsToBeNotified(service.GetUserDonator(txtUsername.Text).Id))
+                    {
+                        MessageBox.Show("E nevoie de sangele tau!!! Sangele tau poate salva vieti. Doneaza acum");
+                    }
                     
                 }
                 else
@@ -58,10 +55,10 @@ namespace GUI
             }
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        //private void btnExit_Click(object sender, EventArgs e)
+        //{
+          //  Application.Exit();
+        //}
 
         private void txtUsername_Enter(object sender, EventArgs e)
         {
@@ -99,6 +96,11 @@ namespace GUI
                 txtPassw.Text = "Parolă";
                 txtPassw.ForeColor = Color.Silver;
             }
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
