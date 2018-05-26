@@ -219,6 +219,7 @@ namespace GUI
                 checkBoxTratament.Checked = true;
             }
             LoadCereriSange();
+            LoadAnalizeDonator();
 
         }
 
@@ -235,6 +236,17 @@ namespace GUI
             dataGridViewCereri.Columns["Grupa"].Visible = false;
             dataGridViewCereri.Columns["RH"].Visible = false;
 
+        }
+
+        private void LoadAnalizeDonator()
+        {
+            List<Analiza> listaAnalize = service.GetAllAnalizeByIdDonator(Username);
+            BindingSource bindingSource = new BindingSource(listaAnalize, null);
+            dataGridViewAnalize.DataSource = listaAnalize;
+            dataGridViewAnalize.Columns["Id"].Visible = false;
+            dataGridViewAnalize.Columns["Donator"].Visible = false;
+            dataGridViewAnalize.Columns["PungaSange"].Visible = false;
+            dataGridViewAnalize.Columns["NivelALT"].Visible = false;
         }
 
         private void cmbJudR_SelectedIndexChanged(object sender, EventArgs e)
@@ -369,5 +381,6 @@ namespace GUI
                 MessageBox.Show(messageToShow);
             }
         }
+
     }
 }

@@ -177,5 +177,23 @@ namespace Service
             }
             return cereri;
         }
+
+        public List<Analiza> GetAllAnalizeByIdDonator(string username)
+        {
+            List<int> idAnalize = new List<int>();
+            List<Analiza> analize = new List<Analiza>();
+            UserDonator user;
+            Donator donator;
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                user = unitOfWork.UserDonatorRepo.GetBy(u => u.Username.Equals(username));
+                donator = unitOfWork.DonatorRepo.GetBy(d => d.UserDonator.Equals(user));
+                unitOfWork.NotificariRepo.GetAll().Where(n => n.id_donator.Equals(donator.Id)).ToList().ForEach(n => { idAnalize.Add(n.id_cerere); });
+                idAnalize.ForEach(id => analize.Add(unitOfWork.AnalizaRepo.GetBy(x => x.Id.Equals(id))));
+                unitOfWork.Save();
+            }
+
+            return analize;
+        }
     }
 }
