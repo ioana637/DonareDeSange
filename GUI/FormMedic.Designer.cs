@@ -71,7 +71,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -81,8 +80,8 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonLogout
@@ -160,15 +159,6 @@
             // checkDonator
             // 
             this.checkDonator.AutoSize = true;
-            this.checkDonator.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkDonator.Location = new System.Drawing.Point(341, 280);
-            this.checkDonator.Name = "checkDonator";
-            this.checkDonator.Size = new System.Drawing.Size(115, 22);
-            this.checkDonator.TabIndex = 15;
-            this.checkDonator.Text = "Este Donator";
-            this.checkDonator.UseVisualStyleBackColor = true;
-            // 
-            this.checkDonator.AutoSize = true;
             this.checkDonator.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkDonator.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.checkDonator.Location = new System.Drawing.Point(341, 280);
@@ -224,39 +214,6 @@
             this.label9.Size = new System.Drawing.Size(117, 44);
             this.label9.TabIndex = 10;
             this.label9.Text = "Email";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(341, 238);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(245, 24);
-            this.txtEmail.TabIndex = 13;
-            // 
-            // txtPrenume
-            // 
-            this.txtPrenume.Location = new System.Drawing.Point(341, 166);
-            this.txtPrenume.Name = "txtPrenume";
-            this.txtPrenume.Size = new System.Drawing.Size(245, 24);
-            this.txtPrenume.TabIndex = 12;
-            // 
-            // txtNume
-            // 
-            this.txtNume.Location = new System.Drawing.Point(341, 99);
-            this.txtNume.Name = "txtNume";
-            this.txtNume.Size = new System.Drawing.Size(245, 24);
-            this.txtNume.TabIndex = 11;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label9.Location = new System.Drawing.Point(341, 217);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 18);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Email";
-            // 
-            // label10
             // 
             // label10
             // 
@@ -343,8 +300,6 @@
             // buttonSave
             // 
             this.buttonSave.BackColor = System.Drawing.Color.Firebrick;
-<<<<<<< HEAD
-=======
             this.buttonSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSave.FlatAppearance.BorderSize = 0;
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -557,7 +512,6 @@
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
->>>>>>> master
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(0, 57);
@@ -571,8 +525,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Controls.Add(this.label12);
+            this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabPage1.Location = new System.Drawing.Point(10, 59);
@@ -629,20 +583,6 @@
             this.tabControl1.Size = new System.Drawing.Size(983, 610);
             this.tabControl1.TabIndex = 0;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 43);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(971, 532);
-            this.dataGridView1.TabIndex = 2;
-            // 
             // FormMedic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(22F, 42F);
@@ -673,8 +613,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -718,12 +658,9 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TabControl tabControl1;
-<<<<<<< HEAD
         private System.Windows.Forms.DataGridView dataGridView1;
-=======
+        private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox comboBoxPr;
->>>>>>> master
     }
 }
