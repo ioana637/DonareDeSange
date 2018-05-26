@@ -48,6 +48,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DonatorServiceTests.cs" />
     <Compile Include="UnitTestAdminService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
