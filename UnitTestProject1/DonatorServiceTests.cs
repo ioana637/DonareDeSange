@@ -42,8 +42,20 @@ namespace Service.Tests
         [TestMethod()]
         public void RegisterDonatorTest()
         {
-            Donator donator = null;
-            Assert.AreEqual(donator, null);
+            //nu merge delete-ul, nu rulati testul asta! 
+
+            Donator donator = new Donator("Popescu", "Ion", "M", DateTime.Parse("1998-02-12"), "Cluj-Napoca", "Cluj-Napoca", "Cluj", null, null, null, "0712121213", "popescupopescu@yahoo.com");
+            UserDonator userDonator = new UserDonator("popescupopescu", "8287458823facb8ff918dbfabcd22ccb"); // parola este "parola"
+
+            int count = donatorService.GetAllDonatori().Count;
+
+            donatorService.RegisterDonator("popescupopescu", "parola", "Popescu", "Ion", "M", DateTime.Parse("1998-02-12"), "Cluj-Napoca", "Cluj-Napoca", "Cluj", null, null, null, "0712121213", "popescupopescu@yahoo.com");
+
+            Assert.AreEqual(count, donatorService.GetAllDonatori().Count);
+
+            donatorService.DeleteDonatorAndUser(donator, userDonator);
+
+            Assert.AreEqual(count, donatorService.GetAllDonatori().Count);
 
         }
 
@@ -57,6 +69,22 @@ namespace Service.Tests
             List<Donator> list2 = donatorService.GetDonatoriByDataNasterii("1-1-1");
             int count2 = list2.Count;
             Assert.AreEqual(0, count2);
+        }
+
+        [TestMethod()]
+        public void UpdateDonatorTest()
+        {
+            Donator donator = donatorService.GetDonator("Dmihai");
+
+            donator.Prenume = "Mihaiiiiiiiiiii";
+            donatorService.UpdateDonator(donator);
+
+            Assert.AreEqual(donator.Prenume, "Mihaiiiiiiiiiii");
+
+            donator.Prenume = "Mihai";
+            donatorService.UpdateDonator(donator);
+            
+            Assert.AreEqual(donator.Prenume, "Mihai");
         }
     }
 }

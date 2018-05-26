@@ -72,6 +72,7 @@ namespace UnitTestProject1
 
             Assert.AreEqual(count + 1, adminService.GetAllMedici().Count);
             adminService.DeleteMedicAndUser(medic, userMedic);
+            Assert.AreEqual(count, adminService.GetAllMedici().Count);
         }
        
     }

@@ -116,8 +116,8 @@ namespace Service
         {
             using(UnitOfWork unitOfWork=new UnitOfWork())
             {
-                unitOfWork.MedicRepo.Delete(medic);
                 unitOfWork.UserMedicRepo.Delete(user);
+                unitOfWork.MedicRepo.Delete(medic);
                 unitOfWork.Save();
             }
         }
