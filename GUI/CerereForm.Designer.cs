@@ -84,9 +84,9 @@
             this.Controls.Add(this.lblmesaj);
             this.Controls.Add(this.btnTrimiteSange);
             this.Controls.Add(this.btnNotifica);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CerereForm";
-            this.Text = "CerereForm";
             this.Load += new System.EventHandler(this.CerereForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
