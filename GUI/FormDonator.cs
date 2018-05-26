@@ -246,7 +246,6 @@ namespace GUI
             dataGridViewAnalize.Columns["Id"].Visible = false;
             dataGridViewAnalize.Columns["Donator"].Visible = false;
             dataGridViewAnalize.Columns["PungaSange"].Visible = false;
-            dataGridViewAnalize.Columns["NivelALT"].Visible = false;
         }
 
         private void cmbJudR_SelectedIndexChanged(object sender, EventArgs e)
