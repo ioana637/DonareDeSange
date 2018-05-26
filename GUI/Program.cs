@@ -28,25 +28,8 @@ namespace GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            //Application.Run(new FormLogareDonator(new Service.DonatorService()));
-            //Application.Run(new FormDonator(new Service.DonatorService(),"Dmihai"));
-=======
-=======
-           // Application.Run(new FormLogareCentru(new Service.CentruService()));
-
->>>>>>> master
-=======
-            //Application.Run(new FormLogareCentru(new CentruService()));
->>>>>>> master
-            Application.Run(new FormLogareDonator(new Service.DonatorService()));
-            
-            
-            
-            //Application.Run(new FormDonator(new Service.DonatorService(), "popescu"));
->>>>>>> master
+                        
+            Application.Run(new FormDonator(new Service.DonatorService(), "Dmihai"))
             //Application.Run(new FormLogareMedic(new Service.UserMedicService()));
             //Application.Run(new FormMedic(new Service.UserMedicService(),1, "ioana"));
 
