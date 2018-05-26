@@ -1,4 +1,5 @@
-﻿using CentruDeTransfuzie.utils;
+﻿using CentruDeTransfuzie.model;
+using CentruDeTransfuzie.utils;
 using Service;
 using System;
 using System.Collections.Generic;
@@ -217,6 +218,23 @@ namespace GUI
             {
                 checkBoxTratament.Checked = true;
             }
+            LoadCereriSange();
+
+        }
+
+        private void LoadCereriSange()
+        {
+            List<Cerere> cereriSange = service.GetAllCereriByIdDonator(Username);
+            BindingSource bindingSource = new BindingSource(cereriSange, null);
+            dataGridViewCereri.DataSource = cereriSange;
+            dataGridViewCereri.Columns["Id"].Visible = false;
+            dataGridViewCereri.Columns["CantitateGlobuleRosii"].Visible = false;
+            dataGridViewCereri.Columns["CantitatePlasma"].Visible = false;
+            dataGridViewCereri.Columns["CantitateTrombocite"].Visible = false;
+            dataGridViewCereri.Columns["Medic"].Visible = false;
+            dataGridViewCereri.Columns["Grupa"].Visible = false;
+            dataGridViewCereri.Columns["RH"].Visible = false;
+
         }
 
         private void cmbJudR_SelectedIndexChanged(object sender, EventArgs e)

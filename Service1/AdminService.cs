@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Service1
+namespace Service
 {
     public class AdminService
     {
@@ -20,7 +20,7 @@ namespace Service1
             else return -1;
         }
 
-        private Admin GetAdminByUsername(string username)
+        public Admin GetAdminByUsername(string username)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {

@@ -1,8 +1,8 @@
-﻿using CentruDeTransfuzie1;
-using CentruDeTransfuzie1.Data;
+﻿using CentruDeTransfuzie;
+using CentruDeTransfuzie.Data;
 using GUI;
 using Microsoft.EntityFrameworkCore;
-using Service1;
+using Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;

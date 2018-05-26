@@ -1,4 +1,5 @@
-﻿using Repository;
+﻿using CentruDeTransfuzie.model;
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -5,40 +5,45 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
-public class Spital {
-
-    public Spital() {
-    }
-
-    public Spital(string adresa, string oras, string judet)
+namespace CentruDeTransfuzie.model
+{
+    public class Spital
     {
-        Adresa = adresa;
-        Oras = oras;
-        Judet = judet;
-        SpitalMedici = new List<SpitalMedic>();
-    }
 
-    public Spital(CentruTransfuzie centruTransfuzie, string adresa, string oras, string judet)
-    {
-        CentruTransfuzie = centruTransfuzie;
-        Adresa = adresa;
-        Oras = oras;
-        Judet = judet;
-        SpitalMedici = new List<SpitalMedic>();
-    }
+        public Spital()
+        {
+        }
 
-    public int Id { get; set; }
+        public Spital(string adresa, string oras, string judet)
+        {
+            Adresa = adresa;
+            Oras = oras;
+            Judet = judet;
+            SpitalMedici = new List<SpitalMedic>();
+        }
 
-    [Required(ErrorMessage = "CentruTransfuzie is required")]
-    public CentruTransfuzie CentruTransfuzie { get; set; }
+        public Spital(CentruTransfuzie centruTransfuzie, string adresa, string oras, string judet)
+        {
+            CentruTransfuzie = centruTransfuzie;
+            Adresa = adresa;
+            Oras = oras;
+            Judet = judet;
+            SpitalMedici = new List<SpitalMedic>();
+        }
 
-    public List<SpitalMedic> SpitalMedici { get; set; }
-    public string Adresa { get; set; }
-    public string Oras { get; set; }
-    public string Judet { get; set; }
+        public int Id { get; set; }
 
-    public override string ToString()
-    {
-        return Adresa +"; "+ Oras + "; "+Judet;
+        [Required(ErrorMessage = "CentruTransfuzie is required")]
+        public CentruTransfuzie CentruTransfuzie { get; set; }
+
+        public List<SpitalMedic> SpitalMedici { get; set; }
+        public string Adresa { get; set; }
+        public string Oras { get; set; }
+        public string Judet { get; set; }
+
+        public override string ToString()
+        {
+            return Adresa + "; " + Oras + "; " + Judet;
+        }
     }
 }

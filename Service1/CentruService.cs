@@ -1,5 +1,5 @@
-﻿using CentruDeTransfuzie1.model;
-using CentruDeTransfuzie1.utils;
+﻿using CentruDeTransfuzie.model;
+using CentruDeTransfuzie.utils;
 using Repository;
 using System;
 using System.Collections.Generic;
@@ -11,6 +11,63 @@ namespace Service
 {
     public class CentruService
     {
+
+        public class PungaSangeTraseu
+        {
+            public int Id { get; set; }
+            public String numeDonator { get; set; }
+
+            public DateTime DataPrelevarii { get; set; }
+
+            public float CantitateSange { get; set; }
+            public float CantitateTrombocite { get; set; }
+            public float CantitateGlobuleRosii { get; set; }
+            public float CantitatePlasma { get; set; }
+
+            public bool Prelevata { get; set; }
+
+            public bool TrimiseLaAnalize { get; set; }
+
+            public bool SosireAnalize { get; set; }
+
+            public bool StocCentru { get; set; }
+            public bool SpitalPacient { get; set; }
+
+            public PungaSangeTraseu(int id, string numeDonator, DateTime dataPrelevarii, float cantitateSange, float cantitateTrombocite, float cantitateGlobuleRosii, float cantitatePlasma, bool prelevata, bool trimiseLaAnalize, bool sosireAnalize, bool stocCentru, bool spitalPacient)
+            {
+                Id = id;
+                this.numeDonator = numeDonator;
+                DataPrelevarii = dataPrelevarii;
+                CantitateSange = cantitateSange;
+                CantitateTrombocite = cantitateTrombocite;
+                CantitateGlobuleRosii = cantitateGlobuleRosii;
+                CantitatePlasma = cantitatePlasma;
+                Prelevata = prelevata;
+                TrimiseLaAnalize = trimiseLaAnalize;
+                SosireAnalize = sosireAnalize;
+                StocCentru = stocCentru;
+                SpitalPacient = spitalPacient;
+            }
+        }
+        public List<PungaSangeTraseu> GetAllPungaSangeTraseu()
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork()) {
+
+                List<PungaSange> pungi = unitOfWork.PungaSangeRepo.GetPungi();
+            List < PungaSangeTraseu > pungiTraseu = new List<PungaSangeTraseu>();
+            pungi.ForEach(p => pungiTraseu.Add(new PungaSangeTraseu(p.Id,p.Donator.Nume, p.DataPreluarii, p.CantitateSange, p.CantitateTrombocite, p.CantitateGlobuleRosii, p.CantitatePlasma, p.TraseuPunga.Prelevata, p.TraseuPunga.TrimiseLaAnalize, p.TraseuPunga.SosireAnalize, p.TraseuPunga.StocCentru, p.TraseuPunga.SpitalPacient)));
+            return pungiTraseu;
+        }
+        }
+
+        public PungaSange GetPunga(int id)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                PungaSange punga = unitOfWork.PungaSangeRepo.GetPunga(id);
+                return punga;
+            }
+        }
 
         public List<Cerere> GetAllCereri()
         {
@@ -112,6 +169,15 @@ namespace Service
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
                 unitOfWork.PungaSangeRepo.Update(punga);
+                unitOfWork.Save();
+            }
+        }
+
+        public void UpdateTraseu(TraseuPunga traseu)
+        {
+            using (UnitOfWork unitOfWork=new UnitOfWork())
+            {
+                unitOfWork.TraseuPungaRepo.Update(traseu);
                 unitOfWork.Save();
             }
         }
