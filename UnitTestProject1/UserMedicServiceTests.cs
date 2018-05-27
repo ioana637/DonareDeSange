@@ -15,7 +15,7 @@ namespace Service.Tests
     public class UserMedicServiceTests
     {
         UserMedicService medicService = new UserMedicService();
-
+        /*
         [TestMethod()]
         public void TestUpdateCerere()
         {
@@ -44,6 +44,27 @@ namespace Service.Tests
             medicService.DeleteCerere(cerereSalvata);
             Assert.AreEqual(count, medicService.GetAllCereri().Count());
         }
+        */
+        [TestMethod]
+        public void TestAddCerere()
+        {
+            int count = medicService.GetAllCereri().Count;
+            Cerere cerere = new Cerere("xx-xx-xxxx", 1, 1, 1, 1, false, null, GrupaSange.AII, TipRh.Pozitiv);
+            medicService.AddCerere(cerere, "ioana", new List<Pacient>());
+            Cerere cerereSalvata = medicService.GetCereriByMedic("ioana").Where(c => c.Data.Equals("xx-xx-xxxx") && c.Grupa.Equals(GrupaSange.AII) && c.RH.Equals(TipRh.Pozitiv)).FirstOrDefault();
+            Assert.AreEqual(count + 1, medicService.GetAllCereri().Count);
+            try
+            {
+                medicService.AddCerere(cerereSalvata, "ioana", new List<Pacient>());
+            }
+            catch (Exception ex)
+            {
+                Assert.AreEqual(count + 1, medicService.GetAllCereri().Count);
+            }
+            medicService.DeleteCerere(cerereSalvata);
+            Assert.AreEqual(count, medicService.GetAllCereri().Count());
+        }
+
 
         [TestMethod()]
         public void TestVizualizarePacienti()
@@ -75,6 +96,15 @@ namespace Service.Tests
             else Assert.IsTrue(medicService.GetPacientByMedic(1).Count > 0);
 
 
+        }
+
+        [TestMethod]
+        public void TestLoginMedic()
+        {
+            Assert.AreEqual(medicService.Login("maria", "parqqola"), -1);
+            Assert.AreEqual(medicService.Login("blabla", "123456"), -1);
+            Assert.AreEqual(medicService.Login("raul", "medic"), 2);
+            Assert.AreEqual(medicService.Login("ioana", "medic"), 1);
         }
     }
 }
