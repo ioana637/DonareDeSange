@@ -15,7 +15,7 @@ namespace Repository
 
         public Medic GetMedic(int id)
         {
-            return dbset.Include(m => m.UserMedic).Include(m => m.Cereri).Where(m => m.Id.Equals(id)).FirstOrDefault();
+            return dbset.Include(m => m.UserMedic).Include(m=>m.Pacienti).Include(m => m.Cereri).Where(m => m.Id.Equals(id)).FirstOrDefault();
         }
     }
 }
