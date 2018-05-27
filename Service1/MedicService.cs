@@ -107,6 +107,8 @@ namespace Service
                 cerereSalvata.CantitateGlobuleRosii = cerere.CantitateGlobuleRosii;
                 cerereSalvata.CantitatePlasma = cerere.CantitatePlasma;
                 cerereSalvata.CantitateTrombocite = cerere.CantitateTrombocite;
+                cerereSalvata.Efectuata = cerere.Efectuata;
+                //cerereSalvata.Prioritate = cerere.Prioritate;
                 unitOfWork.CerereRepo.Update(cerereSalvata);
                 unitOfWork.Save();
 
@@ -159,7 +161,8 @@ namespace Service
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
-                unitOfWork.MedicRepo.GetBy(m => m.Equals(cerere.Medic)).Cereri.Remove(cerere);
+                var medic = unitOfWork.MedicRepo.GetBy(m => m.Equals(cerere.Medic));
+                //.Cereri.Remove(cerere);
                 unitOfWork.CerereRepo.Delete(cerere);
             }
         }

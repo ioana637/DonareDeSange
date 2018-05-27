@@ -37,13 +37,12 @@ namespace Service.Tests
             cerereSalvata.CantitateSange = 100;
             medicService.UpdateCerere(cerereSalvata);
             cerereSalvata = medicService.GetCereriByMedic("ioana").Where(c => c.Data.Equals("xx-xx-xxxx") && c.Grupa.Equals(GrupaSange.AII) && c.RH.Equals(TipRh.Negativ)).FirstOrDefault();
+
             Assert.AreEqual(true, cerereSalvata.Efectuata);
             Assert.AreEqual(100, cerereSalvata.CantitateSange);
 
             medicService.DeleteCerere(cerereSalvata);
             Assert.AreEqual(count, medicService.GetAllCereri().Count());
-
-
         }
 
         [TestMethod()]
@@ -53,7 +52,7 @@ namespace Service.Tests
             if (count == 0)
             {
                 medicService.AdaugaPacient(1, "test", "test", "test", true);
-                Assert.AreEqual(count + 1, medicService.GetPacientByMedic(1));
+                Assert.AreEqual(count + 1, medicService.GetPacientByMedic(1).Count);
                 medicService.DeletePacient("test");
             }
             else Assert.IsTrue(medicService.GetPacientByMedic(1).Count > 0);
