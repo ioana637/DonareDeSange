@@ -41,7 +41,6 @@ namespace GUI
                     Form formMainView = new FormMedic(serviceMedic, result,username);
                     this.Hide();
 
-                    Console.WriteLine(formMainView.GetType().InvokeMember("GetNrPacientiAfisati", System.Reflection.BindingFlags.Public,null,null, null ));
                     formMainView.Closed += (s, args) => this.Close();
                     formMainView.ShowDialog();
                 }

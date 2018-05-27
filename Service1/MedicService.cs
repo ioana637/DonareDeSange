@@ -69,6 +69,7 @@ namespace Service
 
         }
 
+
         public void AddCerere(Cerere cerere, String username, List<Pacient> pacienti)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
@@ -162,6 +163,17 @@ namespace Service
                 unitOfWork.CerereRepo.Delete(cerere);
             }
         }
+
+        public void DeletePacient(string v)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                Pacient pacient = unitOfWork.PacientRepo.GetBy(p => p.Email.Equals(v));
+                unitOfWork.MedicRepo.GetBy(m => m.Equals(pacient.Medic)).Pacienti.Remove(pacient);
+                unitOfWork.PacientRepo.Delete(pacient);
+            }
+        }
+
     }
 }
 
