@@ -148,10 +148,10 @@
             this.tabPage4.Controls.Add(this.label9);
             this.tabPage4.Controls.Add(this.label10);
             this.tabPage4.Controls.Add(this.label11);
-            this.tabPage4.Location = new System.Drawing.Point(10, 59);
+            this.tabPage4.Location = new System.Drawing.Point(4, 27);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(963, 541);
+            this.tabPage4.Size = new System.Drawing.Size(975, 579);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Adăugare pacient";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -163,7 +163,7 @@
             this.checkDonator.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.checkDonator.Location = new System.Drawing.Point(341, 280);
             this.checkDonator.Name = "checkDonator";
-            this.checkDonator.Size = new System.Drawing.Size(279, 48);
+            this.checkDonator.Size = new System.Drawing.Size(115, 22);
             this.checkDonator.TabIndex = 15;
             this.checkDonator.Text = "Este Donator";
             this.checkDonator.UseVisualStyleBackColor = true;
@@ -188,21 +188,21 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(341, 238);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(245, 50);
+            this.txtEmail.Size = new System.Drawing.Size(245, 24);
             this.txtEmail.TabIndex = 13;
             // 
             // txtPrenume
             // 
             this.txtPrenume.Location = new System.Drawing.Point(341, 166);
             this.txtPrenume.Name = "txtPrenume";
-            this.txtPrenume.Size = new System.Drawing.Size(245, 50);
+            this.txtPrenume.Size = new System.Drawing.Size(245, 24);
             this.txtPrenume.TabIndex = 12;
             // 
             // txtNume
             // 
             this.txtNume.Location = new System.Drawing.Point(341, 99);
             this.txtNume.Name = "txtNume";
-            this.txtNume.Size = new System.Drawing.Size(245, 50);
+            this.txtNume.Size = new System.Drawing.Size(245, 24);
             this.txtNume.TabIndex = 11;
             // 
             // label9
@@ -211,7 +211,7 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label9.Location = new System.Drawing.Point(341, 217);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 44);
+            this.label9.Size = new System.Drawing.Size(45, 18);
             this.label9.TabIndex = 10;
             this.label9.Text = "Email";
             // 
@@ -221,7 +221,7 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label10.Location = new System.Drawing.Point(338, 145);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(175, 44);
+            this.label10.Size = new System.Drawing.Size(68, 18);
             this.label10.TabIndex = 9;
             this.label10.Text = "Prenume";
             // 
@@ -231,7 +231,7 @@
             this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label11.Location = new System.Drawing.Point(338, 78);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(122, 44);
+            this.label11.Size = new System.Drawing.Size(48, 18);
             this.label11.TabIndex = 8;
             this.label11.Text = "Nume";
             // 
@@ -258,11 +258,11 @@
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.label2);
             this.tabPage3.Controls.Add(this.label1);
-            this.tabPage3.Location = new System.Drawing.Point(10, 59);
+            this.tabPage3.Location = new System.Drawing.Point(4, 27);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(963, 541);
+            this.tabPage3.Size = new System.Drawing.Size(975, 579);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Creează o cerere";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -273,7 +273,7 @@
             this.comboBoxPr.FormattingEnabled = true;
             this.comboBoxPr.Location = new System.Drawing.Point(624, 128);
             this.comboBoxPr.Name = "comboBoxPr";
-            this.comboBoxPr.Size = new System.Drawing.Size(121, 50);
+            this.comboBoxPr.Size = new System.Drawing.Size(121, 26);
             this.comboBoxPr.TabIndex = 19;
             // 
             // label15
@@ -282,7 +282,7 @@
             this.label15.Location = new System.Drawing.Point(546, 131);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(185, 44);
+            this.label15.Size = new System.Drawing.Size(71, 18);
             this.label15.TabIndex = 18;
             this.label15.Text = "Prioritate:";
             // 
@@ -293,7 +293,7 @@
             this.label14.ForeColor = System.Drawing.Color.Firebrick;
             this.label14.Location = new System.Drawing.Point(113, 44);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(920, 55);
+            this.label14.Size = new System.Drawing.Size(362, 24);
             this.label14.TabIndex = 17;
             this.label14.Text = "Completați câmpurile  cu datele necesare:";
             // 
@@ -319,7 +319,7 @@
             this.label8.Location = new System.Drawing.Point(161, 341);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 44);
+            this.label8.Size = new System.Drawing.Size(45, 18);
             this.label8.TabIndex = 15;
             this.label8.Text = "Total:";
             // 
@@ -329,7 +329,7 @@
             this.label7.Location = new System.Drawing.Point(105, 131);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(137, 44);
+            this.label7.Size = new System.Drawing.Size(53, 18);
             this.label7.TabIndex = 14;
             this.label7.Text = "Grupa:";
             // 
@@ -339,7 +339,7 @@
             this.label6.Location = new System.Drawing.Point(343, 131);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 44);
+            this.label6.Size = new System.Drawing.Size(34, 18);
             this.label6.TabIndex = 13;
             this.label6.Text = "RH:";
             // 
@@ -349,7 +349,7 @@
             this.comboBoxRH.FormattingEnabled = true;
             this.comboBoxRH.Location = new System.Drawing.Point(384, 128);
             this.comboBoxRH.Name = "comboBoxRH";
-            this.comboBoxRH.Size = new System.Drawing.Size(121, 50);
+            this.comboBoxRH.Size = new System.Drawing.Size(121, 26);
             this.comboBoxRH.TabIndex = 12;
             // 
             // comboBoxGrupa
@@ -358,7 +358,7 @@
             this.comboBoxGrupa.FormattingEnabled = true;
             this.comboBoxGrupa.Location = new System.Drawing.Point(165, 128);
             this.comboBoxGrupa.Name = "comboBoxGrupa";
-            this.comboBoxGrupa.Size = new System.Drawing.Size(121, 50);
+            this.comboBoxGrupa.Size = new System.Drawing.Size(121, 26);
             this.comboBoxGrupa.TabIndex = 11;
             // 
             // textBoxTotal
@@ -366,7 +366,7 @@
             this.textBoxTotal.Location = new System.Drawing.Point(230, 335);
             this.textBoxTotal.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTotal.Name = "textBoxTotal";
-            this.textBoxTotal.Size = new System.Drawing.Size(90, 50);
+            this.textBoxTotal.Size = new System.Drawing.Size(90, 24);
             this.textBoxTotal.TabIndex = 10;
             this.textBoxTotal.TextChanged += new System.EventHandler(this.textBoxTotal_TextChanged);
             // 
@@ -375,7 +375,7 @@
             this.textBoxPlasma.Location = new System.Drawing.Point(230, 280);
             this.textBoxPlasma.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPlasma.Name = "textBoxPlasma";
-            this.textBoxPlasma.Size = new System.Drawing.Size(88, 50);
+            this.textBoxPlasma.Size = new System.Drawing.Size(88, 24);
             this.textBoxPlasma.TabIndex = 6;
             this.textBoxPlasma.TextChanged += new System.EventHandler(this.textBoxPlasma_TextChanged);
             // 
@@ -384,7 +384,7 @@
             this.textBoxGlobule.Location = new System.Drawing.Point(456, 280);
             this.textBoxGlobule.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxGlobule.Name = "textBoxGlobule";
-            this.textBoxGlobule.Size = new System.Drawing.Size(90, 50);
+            this.textBoxGlobule.Size = new System.Drawing.Size(90, 24);
             this.textBoxGlobule.TabIndex = 5;
             this.textBoxGlobule.TextChanged += new System.EventHandler(this.textBoxGlobule_TextChanged);
             // 
@@ -393,7 +393,7 @@
             this.textBoxTrombocite.Location = new System.Drawing.Point(683, 280);
             this.textBoxTrombocite.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTrombocite.Name = "textBoxTrombocite";
-            this.textBoxTrombocite.Size = new System.Drawing.Size(88, 50);
+            this.textBoxTrombocite.Size = new System.Drawing.Size(88, 24);
             this.textBoxTrombocite.TabIndex = 1;
             this.textBoxTrombocite.TextChanged += new System.EventHandler(this.textBoxTrombocite_TextChanged);
             // 
@@ -405,7 +405,7 @@
             this.label5.Location = new System.Drawing.Point(113, 458);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(715, 55);
+            this.label5.Size = new System.Drawing.Size(283, 24);
             this.label5.TabIndex = 9;
             this.label5.Text = "Pacienții ce au nevoie de sânge:";
             // 
@@ -415,7 +415,7 @@
             this.Pacienti.Location = new System.Drawing.Point(104, 486);
             this.Pacienti.Margin = new System.Windows.Forms.Padding(4);
             this.Pacienti.Name = "Pacienti";
-            this.Pacienti.Size = new System.Drawing.Size(601, 49);
+            this.Pacienti.Size = new System.Drawing.Size(601, 42);
             this.Pacienti.TabIndex = 8;
             this.Pacienti.SelectedIndexChanged += new System.EventHandler(this.Pacienti_SelectedIndexChanged);
             // 
@@ -425,7 +425,7 @@
             this.label4.Location = new System.Drawing.Point(161, 283);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 44);
+            this.label4.Size = new System.Drawing.Size(62, 18);
             this.label4.TabIndex = 4;
             this.label4.Text = "Plasmă:";
             // 
@@ -435,7 +435,7 @@
             this.label3.Location = new System.Drawing.Point(353, 283);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(244, 44);
+            this.label3.Size = new System.Drawing.Size(95, 18);
             this.label3.TabIndex = 3;
             this.label3.Text = "Globule roșii:";
             // 
@@ -445,7 +445,7 @@
             this.label2.Location = new System.Drawing.Point(587, 283);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(223, 44);
+            this.label2.Size = new System.Drawing.Size(88, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Trombocite:";
             // 
@@ -457,7 +457,7 @@
             this.label1.Location = new System.Drawing.Point(113, 218);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(559, 55);
+            this.label1.Size = new System.Drawing.Size(216, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cantitate sânge necesar:";
             // 
@@ -467,11 +467,11 @@
             this.tabPage2.Controls.Add(this.label13);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Location = new System.Drawing.Point(10, 59);
+            this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(963, 541);
+            this.tabPage2.Size = new System.Drawing.Size(975, 579);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Cereri sânge";
             // 
@@ -483,7 +483,7 @@
             this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label13.Location = new System.Drawing.Point(403, 18);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(572, 55);
+            this.label13.Size = new System.Drawing.Size(225, 24);
             this.label13.TabIndex = 2;
             this.label13.Text = "Cererile actuale de sânge";
             // 
@@ -529,10 +529,10 @@
             this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tabPage1.Location = new System.Drawing.Point(10, 59);
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(0);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(963, 541);
+            this.tabPage1.Size = new System.Drawing.Size(975, 579);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pacienți";
             // 
@@ -545,7 +545,7 @@
             this.label12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label12.Location = new System.Drawing.Point(375, 15);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(303, 55);
+            this.label12.Size = new System.Drawing.Size(117, 24);
             this.label12.TabIndex = 1;
             this.label12.Text = "Listă pacienți";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -585,7 +585,7 @@
             // 
             // FormMedic
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(22F, 42F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(980, 648);
@@ -597,6 +597,7 @@
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMedic";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

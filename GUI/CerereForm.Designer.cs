@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CerereForm));
             this.btnNotifica = new System.Windows.Forms.Button();
             this.btnTrimiteSange = new System.Windows.Forms.Button();
             this.lblmesaj = new System.Windows.Forms.Label();
@@ -41,7 +42,7 @@
             this.btnNotifica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNotifica.ForeColor = System.Drawing.Color.White;
             this.btnNotifica.Location = new System.Drawing.Point(7, 61);
-            this.btnNotifica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNotifica.Margin = new System.Windows.Forms.Padding(2);
             this.btnNotifica.Name = "btnNotifica";
             this.btnNotifica.Size = new System.Drawing.Size(201, 86);
             this.btnNotifica.TabIndex = 0;
@@ -58,7 +59,7 @@
             this.btnTrimiteSange.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTrimiteSange.ForeColor = System.Drawing.Color.White;
             this.btnTrimiteSange.Location = new System.Drawing.Point(212, 61);
-            this.btnTrimiteSange.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTrimiteSange.Margin = new System.Windows.Forms.Padding(2);
             this.btnTrimiteSange.Name = "btnTrimiteSange";
             this.btnTrimiteSange.Size = new System.Drawing.Size(217, 86);
             this.btnTrimiteSange.TabIndex = 1;
@@ -85,7 +86,8 @@
             this.Controls.Add(this.btnTrimiteSange);
             this.Controls.Add(this.btnNotifica);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CerereForm";
             this.Load += new System.EventHandler(this.CerereForm_Load);
             this.ResumeLayout(false);

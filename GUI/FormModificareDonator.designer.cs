@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormModificareDonator));
             this.textBoxGreutate = new System.Windows.Forms.TextBox();
             this.textBoxPuls = new System.Windows.Forms.TextBox();
             this.textBoxTensSist = new System.Windows.Forms.TextBox();
@@ -257,6 +258,7 @@
             this.Controls.Add(this.textBoxPuls);
             this.Controls.Add(this.textBoxGreutate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormModificareDonator";
             this.Text = " ";
             this.ResumeLayout(false);

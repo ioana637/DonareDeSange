@@ -308,6 +308,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.Firebrick;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTrimitereAnalize";
             this.Load += new System.EventHandler(this.FormTrimitereAnalize_Load);
             this.ResumeLayout(false);
