@@ -161,7 +161,7 @@ namespace Service
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
-                var medic = unitOfWork.MedicRepo.GetBy(m => m.Equals(cerere.Medic));
+                var medic = unitOfWork.MedicRepo.GetMedic(cerere.Medic.Id);
                 //.Cereri.Remove(cerere);
                 unitOfWork.CerereRepo.Delete(cerere);
             }

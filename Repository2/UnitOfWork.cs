@@ -11,7 +11,7 @@ namespace Repository
     {
         GenericRepository<Donator> DonatorRepo { get; }
         GenericRepository<UserDonator> UserDonatorRepo { get; }
-        GenericRepository<Medic> MedicRepo { get; }
+        MedicRepo MedicRepo { get; }
         GenericRepository<UserMedic> UserMedicRepo { get; }
         GenericRepository<Cerere> CerereRepo { get; }
         GenericRepository<CentruTransfuzie> CentruTransfuzieRepo { get; }
@@ -29,7 +29,7 @@ namespace Repository
     {
         private GenericRepository<Donator> donatorRepo;
         private GenericRepository<UserDonator> userDonatorRepo;
-        private GenericRepository<Medic> medicRepo;
+        private MedicRepo medicRepo;
         private GenericRepository<UserMedic> userMedicRepo;
         private GenericRepository<Cerere> cerereRepo;
         private GenericRepository<Stoc> stocRepo;
@@ -107,12 +107,12 @@ namespace Repository
             }
         }
 
-        public GenericRepository<Medic> MedicRepo
+        public MedicRepo MedicRepo
         {
             get
             {
                 if (medicRepo == null)
-                    medicRepo = new GenericRepository<Medic>(context);
+                    medicRepo = new MedicRepo(context);
                 return medicRepo;
             }
         }

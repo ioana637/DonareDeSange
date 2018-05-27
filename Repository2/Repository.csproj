@@ -103,6 +103,7 @@
   <ItemGroup>
     <Compile Include="GenericRepository.cs" />
     <Compile Include="IRepository.cs" />
+    <Compile Include="MedicRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PungaSangeRepo.cs" />
     <Compile Include="UnitOfWork.cs" />
