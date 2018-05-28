@@ -3,6 +3,7 @@ using CentruDeTransfuzie.utils;
 using Service;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace GUI
@@ -33,12 +34,8 @@ namespace GUI
         private void initListaSpitalePaginaMedic()
         {
             checkedListBoxListSpitale.Items.Clear();
-            foreach (Spital sp in adminService.GetAllSpitale())
-            {
-                //DE CE NU MERGEEE!!!???
-                Console.WriteLine(sp.ToString());
-                checkedListBoxListSpitale.Items.Add(new Object());
-            }
+            List<Spital> spitale = (List<Spital>)adminService.GetAllSpitale();
+            spitale.ForEach(s => checkedListBoxListSpitale.Items.Add(s.Adresa));
         }
 
         private void loadComboBoxCentreTranfuzii()
@@ -97,7 +94,6 @@ namespace GUI
             {
                 dataGridViewCentre.Rows[bindingSourceCentre.Position].Selected = true;
             }
-
             dataGridViewCentre.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
@@ -140,6 +136,7 @@ namespace GUI
                     CentruTransfuzie centru = new CentruTransfuzie(nume, adresa, localitate, judet, parola);
                     adminService.AddCentru(centru);
                     loadDataGridViewCentreT();
+                    loadComboBoxCentreTranfuzii();
                 }
             }
             else
@@ -176,6 +173,7 @@ namespace GUI
                 adminService.Delete(centruTransfuzie);
                 MessageBox.Show(this, "Centru de transfuzie a fost sters cu succes!", "Informatie");
                 loadDataGridViewCentreT();
+                loadComboBoxCentreTranfuzii();
             }
             else
             {
@@ -205,7 +203,7 @@ namespace GUI
                 {
                     adminService.AddSpital(new Spital(centru, adresa, localitate, judet), centru);
                     loadDataGridViewSpitale();
-
+                    initListaSpitalePaginaMedic();
                 }
             }
             else
@@ -235,7 +233,7 @@ namespace GUI
 
         private void buttonDeleteSpital_Click(object sender, EventArgs e)
         {
-            Spital spital = listaSpitale[bindingSourceCentre.Position];
+            Spital spital = listaSpitale[bindingSourceSpitale.Position];
             adminService.DeleteSpital(spital);
             loadDataGridViewSpitale();
         }
@@ -303,8 +301,19 @@ namespace GUI
 
             Medic medic = new Medic(cnp, nume, prenume, email, telefon);
             UserMedic user = new UserMedic(username, parola);
-            adminService.AddMedic(medic, user, new List<Spital>());
+
+            adminService.AddMedic(medic, user,GetSpitaleSelectate());
             loadDataGrdViewMedici();
+        }
+
+        private List<Spital> GetSpitaleSelectate()
+        {
+            List<Spital> spitals = new List<Spital>();
+            foreach(object item in checkedListBoxListSpitale.CheckedItems)
+            {
+                spitals.Add(adminService.GetAllSpitale().Where(s => s.Adresa.Equals(item)).FirstOrDefault());
+            }
+            return spitals;
         }
 
         private bool validareCampuriMedic(string cnp, string nume, string prenume, string telefon, string email, string parola, string username)

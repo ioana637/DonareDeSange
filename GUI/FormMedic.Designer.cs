@@ -402,7 +402,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
-            this.label5.Location = new System.Drawing.Point(113, 458);
+            this.label5.Location = new System.Drawing.Point(113, 425);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(283, 24);
@@ -412,10 +412,10 @@
             // Pacienti
             // 
             this.Pacienti.FormattingEnabled = true;
-            this.Pacienti.Location = new System.Drawing.Point(104, 486);
+            this.Pacienti.Location = new System.Drawing.Point(108, 453);
             this.Pacienti.Margin = new System.Windows.Forms.Padding(4);
             this.Pacienti.Name = "Pacienti";
-            this.Pacienti.Size = new System.Drawing.Size(601, 42);
+            this.Pacienti.Size = new System.Drawing.Size(601, 99);
             this.Pacienti.TabIndex = 8;
             this.Pacienti.SelectedIndexChanged += new System.EventHandler(this.Pacienti_SelectedIndexChanged);
             // 
