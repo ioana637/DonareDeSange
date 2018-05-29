@@ -81,8 +81,8 @@ namespace CentruDeTransfuzie.Data
         private static void InitializeAnaliza(CTContext context)
         {
             if (context.Analiza.Any()) return;
-            //Analiza a1 = new Analiza(GrupaSange.OI, TipRh.Pozitiv, false, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(1), Donator = context.PungaSange.Find(1).Donator };
-            //Analiza a2 = new Analiza(GrupaSange.AII, TipRh.Negativ, true, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(2), Donator = context.PungaSange.Find(2).Donator };
+            Analiza a1 = new Analiza(GrupaSange.OI, TipRh.Pozitiv, false, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(1), Donator = context.PungaSange.Find(1).Donator };
+            Analiza a2 = new Analiza(GrupaSange.AII, TipRh.Negativ, true, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(2), Donator = context.PungaSange.Find(2).Donator };
             Analiza a3 = new Analiza(GrupaSange.BIII, TipRh.Pozitiv, false, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(3), Donator = context.PungaSange.Find(3).Donator };
 
             var analize = new Analiza[] {   a3 };
