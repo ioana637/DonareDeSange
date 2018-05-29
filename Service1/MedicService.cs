@@ -172,7 +172,7 @@ namespace Service
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
                 Pacient pacient = unitOfWork.PacientRepo.GetBy(p => p.Email.Equals(v));
-                unitOfWork.MedicRepo.GetBy(m => m.Equals(pacient.Medic)).Pacienti.Remove(pacient);
+                unitOfWork.MedicRepo.GetMedic(pacient.Medic.Id).Pacienti.Remove(pacient);
                 unitOfWork.PacientRepo.Delete(pacient);
             }
         }
