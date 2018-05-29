@@ -27,17 +27,17 @@ namespace GUI
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            //Application.Run(new FormLogareCentru(new CentruService()));
+       
+            Application.Run(new FormLogareCentru(new CentruService()));
            // Application.Run(new FormLogareDonator(new Service.DonatorService()));
             
             
             
-            Application.Run(new FormDonator(new Service.DonatorService(), "Mandrei"));
+            //Application.Run(new FormDonator(new Service.DonatorService(), "Dmihai"));
             //Application.Run(new FormLogareMedic(new Service.UserMedicService()));
             //Application.Run(new FormMedic(new Service.UserMedicService(),1, "ioana"));
 
-            //Application.Run(new FormCentru(new Service.DonatorService()));
+           //Application.Run(new FormCentru(new Service.DonatorService()));
             
            // Application.Run(new FormCentru(new Service.DonatorService(), "Centru Donare Sange Cluj"));
 
