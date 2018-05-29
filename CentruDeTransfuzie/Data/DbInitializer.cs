@@ -170,6 +170,7 @@ namespace CentruDeTransfuzie.Data
 
 
             Donator d1 = new Donator("Dobrovat", "Mihai", "M", DateTime.Parse("1996-02-22"), "Str. Buftea", "Cluj-Napoca", "Cluj", "Str. Buftea", "Cluj-Napoca", "Cluj", "0723456799", "mihai@yahoo.com");
+            d1.Activ = "T";
             Donator d2 = new Donator("Marin", "Andrei", "M", DateTime.Parse("1997-11-23"), "Str. Garii", "Iasi", "Iasi", "Str. Garii", "Iasi", "Iasi", "0723456789", "andrei@yahoo.com");
             Donator d3 = new Donator("Acatrinei", "Maria", "F", DateTime.Parse("1998-12-24"), "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "Str. Lacu Rosu", "Cluj-Napoca", "Cluj", "0723456787", "maria@yahoo.com");
             Donator d4 = new Donator("Popescu", "Ion", "M", DateTime.Parse("1998-02-12"), "Cluj-Napoca", "Cluj-Napoca", "Cluj", null, null, null, "0712121212", "popescu@yahoo.com");

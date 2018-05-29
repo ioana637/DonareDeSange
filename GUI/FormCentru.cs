@@ -33,9 +33,7 @@ namespace GUI
             loadStocSange();
 
         }
-
        
-
         public void LoadDataGridView1()
         {
             listDonatori = serviceDonator.GetAllDonatori();
@@ -163,8 +161,11 @@ namespace GUI
         private void button2_Click(object sender, EventArgs e)
         {
             Donator donator = (Donator)dataGridView1.SelectedRows[0].DataBoundItem;
+            
             if (donator == null)
                 MessageBox.Show("Selectați un donator!");
+            else if (donator.Greutate == 0 || donator.Puls == 0 || donator.TensiuneSistolica == 0 || donator.TensiuneDiastolica == 0)
+                MessageBox.Show("Completati mai intai datele donatorului(greutate, puls, tensiune sistolica, tensiune diastolica) pentru a putea trimite analizele!");
             else
             {
                 FormTrimitereAnalize form = new FormTrimitereAnalize(this.serviceCentru, donator);
