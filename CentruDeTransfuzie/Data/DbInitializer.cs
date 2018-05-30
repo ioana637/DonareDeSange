@@ -63,9 +63,9 @@ namespace CentruDeTransfuzie.Data
         {
 
             if (context.PungaSange.Any()) return;
-            PungaSange p1 = new PungaSange(DateTime.Parse("2017-12-24"), 300, 30, 20, 10) { TraseuPunga = context.TraseuPunga.Find(1), Donator = context.Donator.Find(1), CentruTransfuzie = context.CentruTransfuzie.Find(1) };
+            PungaSange p1 = new PungaSange(DateTime.Parse("2018-05-25 21:50:48"), 300, 30, 20, 10) { TraseuPunga = context.TraseuPunga.Find(1), Donator = context.Donator.Find(1), CentruTransfuzie = context.CentruTransfuzie.Find(1) };
             PungaSange p2 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(2), Donator = context.Donator.Find(1), CentruTransfuzie = context.CentruTransfuzie.Find(1) };
-            PungaSange p3 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(3), Donator = context.Donator.Find(2), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
+            PungaSange p3 = new PungaSange(DateTime.Parse("2018-05-25 19:12:48"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(3), Donator = context.Donator.Find(2), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
             PungaSange p4 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(4), Donator = context.Donator.Find(2), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
 
             var pungi = new PungaSange[] { p1, p2, p3,p4 };
@@ -81,8 +81,8 @@ namespace CentruDeTransfuzie.Data
         private static void InitializeAnaliza(CTContext context)
         {
             if (context.Analiza.Any()) return;
-            //Analiza a1 = new Analiza(GrupaSange.OI, TipRh.Pozitiv, false, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(1), Donator = context.PungaSange.Find(1).Donator };
-            //Analiza a2 = new Analiza(GrupaSange.AII, TipRh.Negativ, true, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(2), Donator = context.PungaSange.Find(2).Donator };
+            Analiza a1 = new Analiza(GrupaSange.OI, TipRh.Pozitiv, false, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(1), Donator = context.PungaSange.Find(1).Donator };
+            Analiza a2 = new Analiza(GrupaSange.AII, TipRh.Negativ, true, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(2), Donator = context.PungaSange.Find(2).Donator };
             Analiza a3 = new Analiza(GrupaSange.BIII, TipRh.Pozitiv, false, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(3), Donator = context.PungaSange.Find(3).Donator };
 
             var analize = new Analiza[] {   a3 };

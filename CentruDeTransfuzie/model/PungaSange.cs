@@ -38,6 +38,12 @@ namespace CentruDeTransfuzie.model
         public float CantitateTrombocite { get; set; }
         public float CantitateGlobuleRosii { get; set; }
         public float CantitatePlasma { get; set; }
+        public bool EliminatTrombocite { get; set; }
+        public bool EliminatGlobuleRosii { get; set; }
+
+        public bool EliminatPlasma { get; set; }
+        public bool EliminatSange{get;set;}
+
         public TraseuPunga TraseuPunga { get; set; }
         public Analiza Analiza { get; set; }
 

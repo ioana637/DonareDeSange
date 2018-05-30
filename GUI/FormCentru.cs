@@ -21,7 +21,7 @@ namespace GUI
         private BindingSource bindingSource;
         private string centru;
 
-        public FormCentru(DonatorService service, string user )
+        public FormCentru(DonatorService service, string user)
         {
             serviceDonator = service;
             centru = user;
@@ -33,7 +33,9 @@ namespace GUI
             loadStocSange();
 
         }
-       
+
+
+
         public void LoadDataGridView1()
         {
             listDonatori = serviceDonator.GetAllDonatori();
@@ -161,11 +163,8 @@ namespace GUI
         private void button2_Click(object sender, EventArgs e)
         {
             Donator donator = (Donator)dataGridView1.SelectedRows[0].DataBoundItem;
-            
             if (donator == null)
                 MessageBox.Show("Selectați un donator!");
-            else if (donator.Greutate == 0 || donator.Puls == 0 || donator.TensiuneSistolica == 0 || donator.TensiuneDiastolica == 0)
-                MessageBox.Show("Completati mai intai datele donatorului(greutate, puls, tensiune sistolica, tensiune diastolica) pentru a putea trimite analizele!");
             else
             {
                 FormTrimitereAnalize form = new FormTrimitereAnalize(this.serviceCentru, donator);
@@ -275,7 +274,7 @@ namespace GUI
 
         private void loadDataGridView2()
         {
-           List<PungaSangeTraseu> listPungi = serviceCentru.GetAllPungaSangeTraseu();
+            List<PungaSangeTraseu> listPungi = serviceCentru.GetAllPungaSangeTraseu();
             bindingSource = new BindingSource(listPungi, null);
             dataGridView2.DataSource = bindingSource;
             if (bindingSource.Position >= 0)
@@ -284,6 +283,24 @@ namespace GUI
 
             }
             dataGridView2.Columns[0].Visible = false;
+            dataGridView2.Columns[7].ReadOnly = true;
+            int i = 0;
+            foreach (PungaSangeTraseu p in listPungi)
+            {
+                if (p.SosireAnalize)
+                    dataGridView2.Rows[i].Cells[8].ReadOnly = true;
+                if (p.TrimiseLaAnalize)
+                    dataGridView2.Rows[i].Cells[9].ReadOnly = true;
+                if (p.StocCentru)
+                    dataGridView2.Rows[i].Cells[10].ReadOnly = true;
+                if (p.SpitalPacient)
+                    dataGridView2.Rows[i].Cells[11].ReadOnly = true;
+
+                i++;
+
+            }
+
+
             //dataGridView2.Columns[2].Visible = false;
             //dataGridView2.Columns[8].Visible = false;
             //dataGridView2.Columns[9].Visible = false;
@@ -291,17 +308,6 @@ namespace GUI
 
 
         }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           // if (!dataGridView2.CurrentRow.Selected) throw new Exception("Trebuie selectat tot randul");
-           
-            Console.WriteLine("da");
-            //if ((bool)row.Cells[7].Value) throw new Exception("Cererea a fost tratata deja!");
-           // comboBoxGrupa.SelectedItem = row.Cells[8].Value.ToString();
-        }
-
-
         private void btnAdauga_Click(object sender, EventArgs e)
         {
             PungaSange punga = new PungaSange();
@@ -326,22 +332,110 @@ namespace GUI
 
             }
         }
-
-        private void dataGridView2_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewCell cell = dataGridView2.SelectedCells[0];
             if (cell.ColumnIndex > 7)
             {
-                int idPunga = (int)dataGridView2.Rows[cell.RowIndex].Cells[0].Value;
-                TraseuPunga traseu = serviceCentru.GetPunga(idPunga).TraseuPunga;
-                traseu.TrimiseLaAnalize = (bool)dataGridView2.Rows[cell.RowIndex].Cells[8].Value;
-                traseu.SosireAnalize = (bool)dataGridView2.Rows[cell.RowIndex].Cells[9].Value;
-                traseu.StocCentru = (bool)dataGridView2.Rows[cell.RowIndex].Cells[10].Value;
-                traseu.SpitalPacient = (bool)dataGridView2.Rows[cell.RowIndex].Cells[11].Value;
+                bool ok = true;
+                for (int i = 7; i < cell.ColumnIndex; i++)
+                    if (!(bool)dataGridView2.Rows[cell.RowIndex].Cells[i].Value)
+                        ok = false;
+                if (ok)
+                {
 
-                serviceCentru.UpdateTraseu(traseu);
-                //Console.WriteLine(traseu.PungaSange.Id);
+                    if (cell.ColumnIndex == 10 && !(bool)dataGridView2.Rows[cell.RowIndex].Cells[10].Value)
+                    {
+                        PungaSangeTraseu pungaSange = (PungaSangeTraseu)dataGridView2.Rows[cell.RowIndex].DataBoundItem;
+                        {
+                            try
+                            {
+
+                                if (serviceCentru.ValidateSange(pungaSange))
+                                {
+                                    serviceCentru.UpdateStoc(pungaSange);
+                                    loadStocSange();
+                                    dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].Value = true;
+                                    updateTraseu();
+                                    dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].ReadOnly = true;
+                                    MessageBox.Show("Stocul de sange a fost updatat!");
+                                }
+                                else
+                                {
+                                    dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].Value = false;
+                                    MessageBox.Show("Analizele pungii de sange nu permit adaugarea acesteia in stocul centrului");
+                                }
+
+                            }
+                            catch (ValidationException err)
+                            {
+                                loadStocSange();
+                                dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].Value = true;
+                                updateTraseu();
+                                dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].ReadOnly = true;
+                                MessageBox.Show(err.GetMessage() + "Vor fi pastrate doar componentele valabile!");
+                            }
+                            catch (Exception)
+                            {
+                                dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].Value = false;
+                                MessageBox.Show("Nu exista analize pentru punga de sange selectata! Mai intai trebuie sa completati analizele!");
+                            }
+                        }
+
+
+                    }
+                    else if (cell.ColumnIndex != 10)
+                    {
+                        dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].Value = true;
+                        updateTraseu();
+                        dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].ReadOnly = true;
+                    }
+                    else
+                    {
+                        dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].Value = true;
+                        dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].ReadOnly = true;
+                    }
+
+                }
+                else
+                {
+                    dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].Value = false;
+                    MessageBox.Show("Nu puteti selecta decat operatiuni consecutive!");
+                }
+            }
+
+            // if (!dataGridView2.CurrentRow.Selected) throw new Exception("Trebuie selectat tot randul");
+            Console.WriteLine("da");
+            //if ((bool)row.Cells[7].Value) throw new Exception("Cererea a fost tratata deja!");
+            // comboBoxGrupa.SelectedItem = row.Cells[8].Value.ToString();
+        }
+
+
+
+        private void updateTraseu()
+        {
+            DataGridViewCell cell = dataGridView2.SelectedCells[0];
+            int idPunga = (int)dataGridView2.Rows[cell.RowIndex].Cells[0].Value;
+            TraseuPunga traseu = serviceCentru.GetPunga(idPunga).TraseuPunga;
+            traseu.TrimiseLaAnalize = (bool)dataGridView2.Rows[cell.RowIndex].Cells[8].Value;
+            traseu.SosireAnalize = (bool)dataGridView2.Rows[cell.RowIndex].Cells[9].Value;
+            traseu.StocCentru = (bool)dataGridView2.Rows[cell.RowIndex].Cells[10].Value;
+            traseu.SpitalPacient = (bool)dataGridView2.Rows[cell.RowIndex].Cells[11].Value;
+            serviceCentru.UpdateTraseu(traseu);
+        }
+
+        private void tabControl1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                serviceCentru.EliminareSangeStoc();
+            }
+            catch (ValidationException err)
+            {
+                loadStocSange();
+                MessageBox.Show(err.GetMessage());
             }
         }
     }
+
 }

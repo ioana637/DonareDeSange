@@ -9,12 +9,13 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
 using System;
 
-namespace CentruDeTransfuzie1.Migrations
+namespace CentruDeTransfuzie.Migrations
 {
     [DbContext(typeof(CTContext))]
-    partial class CTContextModelSnapshot : ModelSnapshot
+    [Migration("20180530115850_AddEliminatPungaSange")]
+    partial class AddEliminatPungaSange
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -312,13 +313,7 @@ namespace CentruDeTransfuzie1.Migrations
 
                     b.Property<int>("DonatorId");
 
-                    b.Property<bool>("EliminatGlobuleRosii");
-
-                    b.Property<bool>("EliminatPlasma");
-
-                    b.Property<bool>("EliminatSange");
-
-                    b.Property<bool>("EliminatTrombocite");
+                    b.Property<bool>("Eliminat");
 
                     b.Property<int?>("TraseuPungaId");
 
