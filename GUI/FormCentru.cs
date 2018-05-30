@@ -328,7 +328,7 @@ namespace GUI
                 if (ok)
                 {
                     updateTraseu();
-                    if ((bool)dataGridView2.Rows[cell.RowIndex].Cells[9].Value)
+                    if (cell.ColumnIndex==9 && !(bool)dataGridView2.Rows[cell.RowIndex].Cells[9].Value)
                     {
                         PungaSangeTraseu pungaSange = (PungaSangeTraseu)dataGridView2.Rows[cell.RowIndex].DataBoundItem;
                         try
@@ -336,20 +336,25 @@ namespace GUI
                             serviceCentru.UpdateStoc(pungaSange);
                             loadStocSange();
                         }
+                        catch(ValidationException err)
+                        {
+                            MessageBox.Show(err.GetMessage() + " Vor fi pastrate doar componentele valabile!");
+                        }
                         catch (Exception)
                         {
                             dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].Value = false;
-                            MessageBox.Show("Nu exista analize pentru punga data");
+                            MessageBox.Show("Nu exista analize pentru punga data! Mai intai trebuie sa completati analizele!");
                         }
                     }
                     cell.ReadOnly = true;
                 }
+                else
+                {
+                    dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].Value = false;
+                    MessageBox.Show("Nu puteti selecta decat operatiuni consecutive!");
+                }
             }
-            else
-            {
-                dataGridView2.Rows[cell.RowIndex].Cells[cell.ColumnIndex].Value = false;
-                MessageBox.Show("Nu puteti selecta decat operatiuni consecutive!");
-            }
+           
             // if (!dataGridView2.CurrentRow.Selected) throw new Exception("Trebuie selectat tot randul");
             Console.WriteLine("da");
             //if ((bool)row.Cells[7].Value) throw new Exception("Cererea a fost tratata deja!");
@@ -370,16 +375,13 @@ namespace GUI
             traseu.SpitalPacient = (bool)dataGridView2.Rows[cell.RowIndex].Cells[11].Value;
             serviceCentru.UpdateTraseu(traseu);
         }
-        private void dataGridView2_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+
+        private void tabControl1_Click(object sender, EventArgs e)
         {
-
-
-
-
-            //Console.WriteLine(traseu.PungaSange.Id);
+            //update stoc
+            serviceCentru.EliminareSangeStoc();
+            loadStocSange();
         }
-
-
     }
 
 }

@@ -222,19 +222,43 @@ namespace Service
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
+                string err = "";
                 Analiza analiza = unitOfWork.AnalizaRepo.GetBy(a => a.PungaSange.Equals(pungaSange.Id));
                 Stoc stoc = unitOfWork.StocRepo.GetBy(s => s.RH.Equals(analiza.Rh) && s.Grupa.Equals(analiza.Grupa));
-                stoc.Plasma = pungaSange.CantitatePlasma;
-                stoc.Trombocite = pungaSange.CantitateTrombocite;
-                stoc.TotalSange = pungaSange.CantitateSange;
-                stoc.TermenGlobuleRosii = 42;
+                if (pungaSange.DataPrelevarii.AddMonths(12) > DateTime.Now)
+                {
+                    stoc.Plasma = pungaSange.CantitatePlasma;
+                }
+                else
+                    err += "Plasma este expirata!\n ";
+                if (pungaSange.DataPrelevarii.AddDays(5) > DateTime.Now)
+                {
+                    stoc.Trombocite = pungaSange.CantitateTrombocite;
+
+                }
+                else
+                    err += "Trombocitele sunt expirate!\n";
+                if (pungaSange.DataPrelevarii.AddDays(5) > DateTime.Now)
+                {
+                    stoc.TotalSange = pungaSange.CantitateSange;
+                }
+                else
+                    err += "Globulelele rosii sunt expirate!\n";
                 stoc.TermenPlasma = 12;
+                stoc.TermenGlobuleRosii = 42;
                 stoc.TermenTrombocite = 5;
                 unitOfWork.StocRepo.Update(stoc);
                 unitOfWork.Save();
+                if (!err.Equals(""))
+                    throw new ValidationException(err);
 
 
             }
+        }
+
+        public void EliminareSangeStoc()
+        {
+            
         }
     }
 }
