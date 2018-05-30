@@ -33,6 +33,7 @@ namespace Service
             public bool StocCentru { get; set; }
             public bool SpitalPacient { get; set; }
 
+
             public PungaSangeTraseu(int id, string numeDonator, DateTime dataPrelevarii, float cantitateSange, float cantitateTrombocite, float cantitateGlobuleRosii, float cantitatePlasma, bool prelevata, bool trimiseLaAnalize, bool sosireAnalize, bool stocCentru, bool spitalPacient)
             {
                 Id = id;
@@ -234,16 +235,17 @@ namespace Service
                 if (pungaSange.DataPrelevarii.AddDays(5) > DateTime.Now)
                 {
                     stoc.Trombocite = pungaSange.CantitateTrombocite;
-
                 }
                 else
                     err += "Trombocitele sunt expirate!\n";
-                if (pungaSange.DataPrelevarii.AddDays(5) > DateTime.Now)
+                if (pungaSange.DataPrelevarii.AddDays(42) > DateTime.Now)
                 {
-                    stoc.TotalSange = pungaSange.CantitateSange;
+                    stoc.GlobuleRosii = pungaSange.CantitateGlobuleRosii;
                 }
                 else
                     err += "Globulelele rosii sunt expirate!\n";
+
+                stoc.TotalSange = pungaSange.CantitateSange;
                 stoc.TermenPlasma = 12;
                 stoc.TermenGlobuleRosii = 42;
                 stoc.TermenTrombocite = 5;
@@ -258,7 +260,72 @@ namespace Service
 
         public void EliminareSangeStoc()
         {
-            
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                List<PungaSangeTraseu> all = GetAllPungaSangeTraseu();
+                bool modificat = false;
+                all.ForEach(p =>
+                {
+                    PungaSange pungaSange = unitOfWork.PungaSangeRepo.GetBy(punga => punga.Id.Equals(p.Id));
+
+
+                if (p.StocCentru)
+                    {
+                        Analiza analiza = unitOfWork.AnalizaRepo.GetBy(a => a.PungaSange.Equals(p.Id));
+                        Stoc stoc = unitOfWork.StocRepo.GetBy(s => s.RH.Equals(analiza.Rh) && s.Grupa.Equals(analiza.Grupa));
+                        var dp = p.DataPrelevarii.AddMonths(12);
+                        var dpok = DateTime.Compare(p.DataPrelevarii.AddMonths(12), DateTime.Now);
+                        if (DateTime.Compare(p.DataPrelevarii.AddMonths(12), DateTime.Now) <0 && !pungaSange.EliminatPlasma)
+                        {
+                            stoc.Plasma = stoc.Plasma - p.CantitatePlasma;
+                            pungaSange.EliminatPlasma = true;
+                            modificat = true;
+
+                        }
+                        if (DateTime.Compare(p.DataPrelevarii.AddDays(5) ,DateTime.Now)<0 && !pungaSange.EliminatTrombocite)
+                        {
+                            stoc.Trombocite = stoc.Trombocite - p.CantitateTrombocite;
+                            pungaSange.EliminatTrombocite = true;
+                            modificat = true;
+
+                        }
+                        if (DateTime.Compare(p.DataPrelevarii.AddDays(42), DateTime.Now)<0 && !pungaSange.EliminatGlobuleRosii)
+                        {
+                            stoc.GlobuleRosii = stoc.GlobuleRosii - p.CantitateGlobuleRosii;
+                            pungaSange.EliminatGlobuleRosii = true;
+                            modificat = true;
+
+                        }
+                        if (pungaSange.EliminatPlasma && pungaSange.EliminatGlobuleRosii && pungaSange.EliminatTrombocite && !pungaSange.EliminatSange)
+                        {
+                            stoc.TotalSange = stoc.TotalSange - pungaSange.CantitateSange;
+                            pungaSange.EliminatSange = true;
+
+                        }
+                        unitOfWork.PungaSangeRepo.Update(pungaSange);
+                        unitOfWork.StocRepo.Update(stoc);
+                        unitOfWork.Save();
+
+                    }
+
+                });
+                if (modificat == true)
+                    throw new ValidationException("O parte din sange a expirat. Stocul a fost updatat!");
+            }
         }
+
+        public bool ValidateSange(PungaSangeTraseu pungaSange)
+        {
+            bool ok = true;
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                Analiza analiza = unitOfWork.AnalizaRepo.GetBy(a => a.PungaSange.Equals(pungaSange.Id));
+                if (analiza.HepatitaB || analiza.HepatitaC || analiza.HIV || analiza.NivelALT > 80 || analiza.NivelALT < 4 || analiza.Sifilis || analiza.HTLV)
+                    ok = false;
+            }
+            return ok;
+        }
+
+    
     }
 }

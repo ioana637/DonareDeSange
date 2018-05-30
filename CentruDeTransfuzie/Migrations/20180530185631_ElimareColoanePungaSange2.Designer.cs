@@ -9,12 +9,13 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
 using System;
 
-namespace CentruDeTransfuzie1.Migrations
+namespace CentruDeTransfuzie.Migrations
 {
     [DbContext(typeof(CTContext))]
-    partial class CTContextModelSnapshot : ModelSnapshot
+    [Migration("20180530185631_ElimareColoanePungaSange2")]
+    partial class ElimareColoanePungaSange2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
