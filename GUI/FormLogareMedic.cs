@@ -1,4 +1,5 @@
-﻿using Service;
+﻿using CentruDeTransfuzie.model;
+using Service;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,6 +40,7 @@ namespace GUI
                 {
                     Form formMainView = new FormMedic(serviceMedic, result,username);
                     this.Hide();
+
                     formMainView.Closed += (s, args) => this.Close();
                     formMainView.ShowDialog();
                 }

@@ -52,6 +52,7 @@
     <Compile Include="DonatorServiceTests.cs" />
     <Compile Include="UnitTestAdminService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserMedicServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -60,6 +61,10 @@
     <ProjectReference Include="..\CentruDeTransfuzie\CentruDeTransfuzie.csproj">
       <Project>{83aa4644-fe3b-4904-af3b-120dd520696b}</Project>
       <Name>CentruDeTransfuzie</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GUI\GUI.csproj">
+      <Project>{DE00485F-97F6-479D-A5D6-0879DCC10CB9}</Project>
+      <Name>GUI</Name>
     </ProjectReference>
     <ProjectReference Include="..\Service1\Service.csproj">
       <Project>{6049F149-EFD4-41DD-A199-A2756750EE02}</Project>

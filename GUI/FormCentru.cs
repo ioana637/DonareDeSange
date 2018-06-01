@@ -142,6 +142,10 @@ namespace GUI
         {
             listCereri = serviceCentru.GetAllCereri();
             dataGridView3.DataSource = listCereri;
+            dataGridView3.Columns[0].Visible = false;
+            dataGridView3.Columns[1].Visible = false;
+
+
 
         }
 

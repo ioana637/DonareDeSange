@@ -62,6 +62,8 @@ namespace CentruDeTransfuzie
             .HasIndex(u => u.Telefon)
             .IsUnique();
 
+
+
             modelBuilder.Entity<UserDonator>()
             .HasIndex(u => u.Username)
             .IsUnique();
