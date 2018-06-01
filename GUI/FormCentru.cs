@@ -326,8 +326,13 @@ namespace GUI
                 punga.CantitatePlasma = 0.275F;
                 punga.CantitateGlobuleRosii = 25;//trilioane
                 punga.CantitateTrombocite = 150;//miliarde
-
-                serviceCentru.AddPungaSange(punga, donator, centru);
+                try
+                {
+                    serviceCentru.AddPungaSange(punga, donator, centru);
+                }catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
                 loadDataGridView2();
 
             }
@@ -435,6 +440,11 @@ namespace GUI
                 loadStocSange();
                 MessageBox.Show(err.GetMessage());
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

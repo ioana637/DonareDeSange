@@ -191,6 +191,7 @@ namespace Service
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
                 Donator donatorFromDb = unitOfWork.DonatorRepo.GetBy(d => d.Nume.Equals(donator.Nume) && d.Prenume.Equals(donator.Prenume) && d.Email.Equals(donator.Email));
+                if (donatorFromDb == null) throw new Exception("Eroare! Nu s-a gasit nici un donator cu aceste date!");
                 punga.DataPreluarii = DateTime.Now.Date;//.ToShortDateString();
                 punga.CentruTransfuzie = unitOfWork.CentruTransfuzieRepo.GetBy(ct => ct.Nume.Equals(centru));
                 if (donator == null) { unitOfWork.PungaSangeRepo.Save(punga); unitOfWork.Save(); }
