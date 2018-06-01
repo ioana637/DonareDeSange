@@ -61,6 +61,7 @@ namespace Service
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
+                
                 Donator donator = new Donator(nume, prenume, sex, dataNastere, domiciliu, localitate, judet, resedinta, localitateResedinta, judetResedinta, telefon, email);
                 unitOfWork.DonatorRepo.Save(donator);
                 string encryptedPassword = Util.EncryptPassword(password);
@@ -72,7 +73,27 @@ namespace Service
                 donator.UserDonator = user;
                 user.Donator = donator;
                 unitOfWork.Save();
+                
+                /*
+                Donator donator = new Donator(nume, prenume, sex, dataNastere, domiciliu, localitate, judet, resedinta, localitateResedinta, judetResedinta, telefon, email);
+                string encryptedPassword = Util.EncryptPassword(password);
+                UserDonator user = new UserDonator(userName, encryptedPassword);
+                donator.UserDonator = user;
+                user.Donator = donator;
+                unitOfWork.UserDonatorRepo.Save(user);
+                unitOfWork.DonatorRepo.Save(donator);
+                unitOfWork.Save();
+                */
+            }
+        }
 
+        public void DeleteDonatorAndUser(Donator donator, UserDonator userDonator)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                unitOfWork.UserDonatorRepo.Delete(userDonator);
+                unitOfWork.DonatorRepo.Delete(donator);
+                unitOfWork.Save();
             }
         }
 
@@ -176,6 +197,24 @@ namespace Service
                 unitOfWork.Save();
             }
             return cereri;
+        }
+
+        public List<Analiza> GetAllAnalizeByIdDonator(string username)
+        {
+            List<int> idAnalize = new List<int>();
+            List<Analiza> analize = new List<Analiza>();
+            UserDonator user;
+            Donator donator;
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                user = unitOfWork.UserDonatorRepo.GetBy(u => u.Username.Equals(username));
+                donator = unitOfWork.DonatorRepo.GetBy(d => d.UserDonator.Equals(user));
+                unitOfWork.NotificariRepo.GetAll().Where(n => n.id_donator.Equals(donator.Id)).ToList().ForEach(n => { idAnalize.Add(n.id_cerere); });
+                idAnalize.ForEach(id => analize.Add(unitOfWork.AnalizaRepo.GetBy(x => x.Id.Equals(id))));
+                unitOfWork.Save();
+            }
+
+            return analize;
         }
     }
 }

@@ -1,0 +1,653 @@
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\GUI.exe.config
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\GUI.exe
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\GUI.pdb
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\netstandard.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.AppContext.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Collections.Concurrent.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Collections.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Collections.NonGeneric.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Collections.Specialized.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ComponentModel.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ComponentModel.Primitives.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ComponentModel.TypeConverter.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Console.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Data.Common.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Contracts.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Debug.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Process.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.StackTrace.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Tools.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.TraceSource.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Tracing.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Drawing.Primitives.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Dynamic.Runtime.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Globalization.Calendars.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Globalization.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Globalization.Extensions.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.Compression.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.Watcher.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.IsolatedStorage.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.MemoryMappedFiles.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.Pipes.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Linq.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Linq.Expressions.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Linq.Parallel.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Linq.Queryable.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.Http.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.NameResolution.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.NetworkInformation.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.Ping.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.Primitives.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.Requests.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.Security.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.Sockets.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.WebHeaderCollection.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.WebSockets.Client.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.WebSockets.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ObjectModel.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Reflection.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Reflection.Extensions.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Reflection.Primitives.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Resources.Reader.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Resources.ResourceManager.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Resources.Writer.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Extensions.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Handles.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.InteropServices.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Numerics.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Json.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Xml.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Claims.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Csp.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Principal.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.SecureString.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Text.Encoding.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Text.Encoding.Extensions.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Text.RegularExpressions.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.Overlapped.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.Tasks.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.Tasks.Parallel.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.Thread.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.ThreadPool.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.Timer.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ValueTuple.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Xml.ReaderWriter.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Xml.XDocument.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Xml.XmlDocument.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Xml.XmlSerializer.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Xml.XPath.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\CentruDeTransfuzie.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Remotion.Linq.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Service1.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Interactive.Async.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Repository2.dll
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\CentruDeTransfuzie.pdb
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Service1.pdb
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Remotion.Linq.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Interactive.Async.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Repository2.pdb
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.csproj.GUI.exe.config
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormAnalizeSange.resources
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormCentru.resources
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormDonator.resources
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormLogareCentru.resources
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormLogareDonator.resources
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormLogareMedic.resources
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormMedic.resources
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormRegisterDonator.resources
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.exe
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.pdb
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormAdmin.resources
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormAdminLogare.resources
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormModificareDonator.resources
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormTrimitereAnalize.resources
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\bin\Debug\CentruDeTransfuzie.dll.config
+C:\Users\Raul\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.CerereForm.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\GUI.exe.config
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\GUI.exe
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\GUI.pdb
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\netstandard.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.AppContext.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Collections.Concurrent.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Collections.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Collections.NonGeneric.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Collections.Specialized.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ComponentModel.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ComponentModel.Primitives.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ComponentModel.TypeConverter.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Console.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Data.Common.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Contracts.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Debug.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Process.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.StackTrace.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Tools.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.TraceSource.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Tracing.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Drawing.Primitives.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Dynamic.Runtime.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Globalization.Calendars.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Globalization.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Globalization.Extensions.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.Compression.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.Watcher.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.IsolatedStorage.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.MemoryMappedFiles.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.Pipes.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Linq.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Linq.Expressions.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Linq.Parallel.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Linq.Queryable.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.Http.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.NameResolution.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.NetworkInformation.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.Ping.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.Primitives.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.Requests.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.Security.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.Sockets.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.WebHeaderCollection.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.WebSockets.Client.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Net.WebSockets.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ObjectModel.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Reflection.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Reflection.Extensions.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Reflection.Primitives.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Resources.Reader.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Resources.ResourceManager.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Resources.Writer.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Extensions.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Handles.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.InteropServices.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Numerics.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Json.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Xml.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Claims.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Csp.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.Principal.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Security.SecureString.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Text.Encoding.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Text.Encoding.Extensions.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Text.RegularExpressions.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.Overlapped.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.Tasks.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.Tasks.Parallel.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.Thread.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.ThreadPool.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Threading.Timer.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ValueTuple.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Xml.ReaderWriter.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Xml.XDocument.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Xml.XmlDocument.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Xml.XmlSerializer.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Xml.XPath.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\CentruDeTransfuzie.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Remotion.Linq.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Service1.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Collections.Immutable.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Data.SqlClient.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Interactive.Async.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Repository2.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\CentruDeTransfuzie.pdb
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\CentruDeTransfuzie.dll.config
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Service1.pdb
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Remotion.Linq.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Collections.Immutable.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Interactive.Async.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.xml
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Repository2.pdb
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.exe.config
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.CerereForm.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormAdmin.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormAdminLogare.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormAnalizeSange.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormCentru.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormDonator.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormLogareCentru.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormLogareDonator.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormLogareMedic.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormMedic.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormModificareDonator.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormRegisterDonator.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.FormTrimitereAnalize.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.exe
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.pdb
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\GUI.exe.config
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\GUI.exe
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\GUI.pdb
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Win32.Primitives.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\netstandard.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.AppContext.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Collections.Concurrent.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Collections.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Collections.NonGeneric.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Collections.Specialized.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.ComponentModel.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.ComponentModel.Primitives.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.ComponentModel.TypeConverter.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Console.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Data.Common.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Contracts.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Debug.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Process.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Diagnostics.StackTrace.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Tools.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Diagnostics.TraceSource.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Tracing.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Drawing.Primitives.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Dynamic.Runtime.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Globalization.Calendars.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Globalization.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Globalization.Extensions.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.IO.Compression.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.IO.Compression.ZipFile.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.IO.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.Primitives.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.Watcher.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.IO.IsolatedStorage.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.IO.MemoryMappedFiles.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.IO.Pipes.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Linq.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Linq.Expressions.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Linq.Parallel.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Linq.Queryable.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Net.Http.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Net.NameResolution.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Net.NetworkInformation.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Net.Ping.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Net.Primitives.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Net.Requests.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Net.Security.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Net.Sockets.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Net.WebHeaderCollection.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Net.WebSockets.Client.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Net.WebSockets.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.ObjectModel.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Reflection.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Reflection.Extensions.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Reflection.Primitives.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Resources.Reader.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Resources.ResourceManager.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Resources.Writer.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Runtime.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Runtime.Extensions.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Runtime.Handles.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Runtime.InteropServices.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Runtime.Numerics.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Formatters.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Json.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Primitives.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Xml.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Security.Claims.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Algorithms.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Csp.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Encoding.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Primitives.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Security.Principal.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Security.SecureString.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Text.Encoding.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Text.Encoding.Extensions.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Text.RegularExpressions.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Threading.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Threading.Overlapped.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Threading.Tasks.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Threading.Tasks.Parallel.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Threading.Thread.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Threading.ThreadPool.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Threading.Timer.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.ValueTuple.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Xml.ReaderWriter.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Xml.XDocument.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Xml.XmlDocument.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Xml.XmlSerializer.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Xml.XPath.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Xml.XPath.XDocument.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\CentruDeTransfuzie.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Options.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Remotion.Linq.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Service1.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Collections.Immutable.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.ComponentModel.Annotations.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Data.SqlClient.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Interactive.Async.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Repository2.dll
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\CentruDeTransfuzie.pdb
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\CentruDeTransfuzie.dll.config
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Service1.pdb
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Options.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Remotion.Linq.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Collections.Immutable.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Interactive.Async.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.xml
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\bin\Debug\Repository2.pdb
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.csproj.GUI.exe.config
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.CerereForm.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.FormAdmin.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.FormAdminLogare.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.FormAnalizeSange.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.FormCentru.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.FormDonator.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.FormLogareCentru.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.FormLogareDonator.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.FormLogareMedic.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.FormMedic.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.FormModificareDonator.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.FormRegisterDonator.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.FormTrimitereAnalize.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.exe
+D:\anul2\semestrul2\ISS\DonareDeSange\GUI\obj\Debug\GUI.pdb
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\GUI.exe.config
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\GUI.exe
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\GUI.pdb
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\netstandard.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.AppContext.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Collections.Concurrent.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Collections.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Collections.NonGeneric.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Collections.Specialized.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.ComponentModel.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.ComponentModel.Primitives.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.ComponentModel.TypeConverter.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Console.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Data.Common.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Contracts.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Debug.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Process.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Diagnostics.StackTrace.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Tools.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Diagnostics.TraceSource.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Diagnostics.Tracing.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Drawing.Primitives.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Dynamic.Runtime.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Globalization.Calendars.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Globalization.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Globalization.Extensions.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.IO.Compression.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.IO.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.IO.FileSystem.Watcher.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.IO.IsolatedStorage.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.IO.MemoryMappedFiles.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.IO.Pipes.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Linq.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Linq.Expressions.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Linq.Parallel.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Linq.Queryable.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Net.Http.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Net.NameResolution.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Net.NetworkInformation.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Net.Ping.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Net.Primitives.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Net.Requests.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Net.Security.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Net.Sockets.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Net.WebHeaderCollection.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Net.WebSockets.Client.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Net.WebSockets.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.ObjectModel.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Reflection.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Reflection.Extensions.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Reflection.Primitives.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Resources.Reader.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Resources.ResourceManager.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Resources.Writer.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Runtime.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Runtime.Extensions.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Runtime.Handles.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Runtime.InteropServices.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Runtime.Numerics.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Json.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Runtime.Serialization.Xml.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Security.Claims.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Csp.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Security.Principal.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Security.SecureString.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Text.Encoding.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Text.Encoding.Extensions.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Text.RegularExpressions.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Threading.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Threading.Overlapped.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Threading.Tasks.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Threading.Tasks.Parallel.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Threading.Thread.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Threading.ThreadPool.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Threading.Timer.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.ValueTuple.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Xml.ReaderWriter.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Xml.XDocument.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Xml.XmlDocument.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Xml.XmlSerializer.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Xml.XPath.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\CentruDeTransfuzie.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Remotion.Linq.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Service1.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Interactive.Async.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Repository2.dll
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\CentruDeTransfuzie.pdb
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\CentruDeTransfuzie.dll.config
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Service1.pdb
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Remotion.Linq.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Interactive.Async.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.xml
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\bin\Debug\Repository2.pdb
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.exe.config
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.CerereForm.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.FormAdmin.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.FormAdminLogare.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.FormAnalizeSange.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.FormCentru.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.FormDonator.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.FormLogareCentru.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.FormLogareDonator.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.FormLogareMedic.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.FormMedic.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.FormModificareDonator.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.FormRegisterDonator.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.FormTrimitereAnalize.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.exe
+C:\Users\Coste Claudia Ioana\Desktop\rep\DonareDeSange\GUI\obj\Debug\GUI.pdb

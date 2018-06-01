@@ -65,6 +65,7 @@ namespace GUI
 
         private void initPacienti()
         {
+            Pacienti.Items.Clear();
             List<Pacient> pacienti = serviceMedic.GetPacientByMedic(idMedicCurent);
             pacienti.ForEach(p => Pacienti.Items.Add(p.Nume));
             
@@ -367,6 +368,7 @@ namespace GUI
 
                 serviceMedic.AdaugaPacient(idMedic, Nume, Prenume, Email, esteDonator);
                 loadDataGridView1();
+                initPacienti();
 
                 #region ClearFieldsAddPacient
                 txtNume.Text = "";

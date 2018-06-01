@@ -28,28 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem77 = new System.Windows.Forms.ListViewItem("- hipertensiune");
-            System.Windows.Forms.ListViewItem listViewItem78 = new System.Windows.Forms.ListViewItem("- boli de inimă");
-            System.Windows.Forms.ListViewItem listViewItem79 = new System.Windows.Forms.ListViewItem("- boli renale");
-            System.Windows.Forms.ListViewItem listViewItem80 = new System.Windows.Forms.ListViewItem("- boli psihice");
-            System.Windows.Forms.ListViewItem listViewItem81 = new System.Windows.Forms.ListViewItem("- boli hepatice");
-            System.Windows.Forms.ListViewItem listViewItem82 = new System.Windows.Forms.ListViewItem("- boli endocrine");
-            System.Windows.Forms.ListViewItem listViewItem83 = new System.Windows.Forms.ListViewItem("-Hepatită( de orice tip)");
-            System.Windows.Forms.ListViewItem listViewItem84 = new System.Windows.Forms.ListViewItem("-TBC");
-            System.Windows.Forms.ListViewItem listViewItem85 = new System.Windows.Forms.ListViewItem("-Sifilis");
-            System.Windows.Forms.ListViewItem listViewItem86 = new System.Windows.Forms.ListViewItem("-Malarie");
-            System.Windows.Forms.ListViewItem listViewItem87 = new System.Windows.Forms.ListViewItem("-Epilepsie și alte boli neurologice");
-            System.Windows.Forms.ListViewItem listViewItem88 = new System.Windows.Forms.ListViewItem("-Boli psihice");
-            System.Windows.Forms.ListViewItem listViewItem89 = new System.Windows.Forms.ListViewItem("-Bruceloză");
-            System.Windows.Forms.ListViewItem listViewItem90 = new System.Windows.Forms.ListViewItem("-Ulcer");
-            System.Windows.Forms.ListViewItem listViewItem91 = new System.Windows.Forms.ListViewItem("-Diabet zaharat");
-            System.Windows.Forms.ListViewItem listViewItem92 = new System.Windows.Forms.ListViewItem("-Boli de inimă");
-            System.Windows.Forms.ListViewItem listViewItem93 = new System.Windows.Forms.ListViewItem("-Boli de piele: psoriazis, vitiligo");
-            System.Windows.Forms.ListViewItem listViewItem94 = new System.Windows.Forms.ListViewItem("-Miopie forte: peste (-) 6 dioptrii");
-            System.Windows.Forms.ListViewItem listViewItem95 = new System.Windows.Forms.ListViewItem("-Cancer");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("- hipertensiune");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("- boli de inimă");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("- boli renale");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("- boli psihice");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("- boli hepatice");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("- boli endocrine");
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("-Hepatită( de orice tip)");
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("-TBC");
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("-Sifilis");
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("-Malarie");
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("-Epilepsie și alte boli neurologice");
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("-Boli psihice");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("-Bruceloză");
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("-Ulcer");
+            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("-Diabet zaharat");
+            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("-Boli de inimă");
+            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("-Boli de piele: psoriazis, vitiligo");
+            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("-Miopie forte: peste (-) 6 dioptrii");
+            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("-Cancer");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDonator));
             this.tabDonator = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dataGridViewCereri = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -70,6 +71,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridViewAnalize = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -118,12 +120,13 @@
             this.label11 = new System.Windows.Forms.Label();
             this.textBoxUserName = new System.Windows.Forms.TextBox();
             this.buttonLogout = new System.Windows.Forms.Button();
-            this.dataGridViewCereri = new System.Windows.Forms.DataGridView();
             this.tabDonator.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCereri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnalize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -132,7 +135,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCereri)).BeginInit();
             this.SuspendLayout();
             // 
             // tabDonator
@@ -172,6 +174,24 @@
             this.tabPage1.Size = new System.Drawing.Size(983, 642);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Cereri sânge";
+            // 
+            // dataGridViewCereri
+            // 
+            this.dataGridViewCereri.AllowUserToAddRows = false;
+            this.dataGridViewCereri.AllowUserToDeleteRows = false;
+            this.dataGridViewCereri.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewCereri.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewCereri.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewCereri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCereri.GridColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridViewCereri.Location = new System.Drawing.Point(154, 146);
+            this.dataGridViewCereri.Name = "dataGridViewCereri";
+            this.dataGridViewCereri.ReadOnly = true;
+            this.dataGridViewCereri.RowHeadersVisible = false;
+            this.dataGridViewCereri.Size = new System.Drawing.Size(653, 170);
+            this.dataGridViewCereri.TabIndex = 2;
             // 
             // label1
             // 
@@ -249,12 +269,12 @@
             this.listView2.BackColor = System.Drawing.Color.AntiqueWhite;
             this.listView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem77,
-            listViewItem78,
-            listViewItem79,
-            listViewItem80,
-            listViewItem81,
-            listViewItem82});
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4,
+            listViewItem5,
+            listViewItem6});
             this.listView2.Location = new System.Drawing.Point(72, 389);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(470, 81);
@@ -370,19 +390,19 @@
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem83,
-            listViewItem84,
-            listViewItem85,
-            listViewItem86,
-            listViewItem87,
-            listViewItem88,
-            listViewItem89,
-            listViewItem90,
-            listViewItem91,
-            listViewItem92,
-            listViewItem93,
-            listViewItem94,
-            listViewItem95});
+            listViewItem7,
+            listViewItem8,
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12,
+            listViewItem13,
+            listViewItem14,
+            listViewItem15,
+            listViewItem16,
+            listViewItem17,
+            listViewItem18,
+            listViewItem19});
             this.listView1.Location = new System.Drawing.Point(72, 194);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(535, 155);
@@ -415,6 +435,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Firebrick;
+            this.tabPage3.Controls.Add(this.dataGridViewAnalize);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.dataGridView2);
             this.tabPage3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -425,6 +446,23 @@
             this.tabPage3.Size = new System.Drawing.Size(983, 642);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Istoric rezultate analize";
+            // 
+            // dataGridViewAnalize
+            // 
+            this.dataGridViewAnalize.AllowUserToAddRows = false;
+            this.dataGridViewAnalize.AllowUserToDeleteRows = false;
+            this.dataGridViewAnalize.AllowUserToResizeColumns = false;
+            this.dataGridViewAnalize.AllowUserToResizeRows = false;
+            this.dataGridViewAnalize.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dataGridViewAnalize.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAnalize.Enabled = false;
+            this.dataGridViewAnalize.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dataGridViewAnalize.Location = new System.Drawing.Point(26, 106);
+            this.dataGridViewAnalize.Name = "dataGridViewAnalize";
+            this.dataGridViewAnalize.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridViewAnalize.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewAnalize.Size = new System.Drawing.Size(930, 273);
+            this.dataGridViewAnalize.TabIndex = 2;
             // 
             // label5
             // 
@@ -954,24 +992,6 @@
             this.buttonLogout.UseVisualStyleBackColor = false;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
-            // dataGridViewCereri
-            // 
-            this.dataGridViewCereri.AllowUserToAddRows = false;
-            this.dataGridViewCereri.AllowUserToDeleteRows = false;
-            this.dataGridViewCereri.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewCereri.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewCereri.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewCereri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCereri.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridViewCereri.Location = new System.Drawing.Point(154, 146);
-            this.dataGridViewCereri.Name = "dataGridViewCereri";
-            this.dataGridViewCereri.ReadOnly = true;
-            this.dataGridViewCereri.RowHeadersVisible = false;
-            this.dataGridViewCereri.Size = new System.Drawing.Size(653, 170);
-            this.dataGridViewCereri.TabIndex = 2;
-            // 
             // FormDonator
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -981,6 +1001,7 @@
             this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.tabDonator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormDonator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -988,11 +1009,13 @@
             this.tabDonator.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCereri)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnalize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
@@ -1003,7 +1026,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCereri)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1081,5 +1103,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.DataGridView dataGridViewCereri;
+        private System.Windows.Forms.DataGridView dataGridViewAnalize;
     }
 }

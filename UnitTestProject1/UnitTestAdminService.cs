@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using CentruDeTransfuzie.model;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Service;
@@ -57,5 +58,22 @@ namespace UnitTestProject1
             adminService.DeleteSpital(spital);
             adminService.Delete(centru);
         }
+
+        [TestMethod]
+        public void TestAdminAddMedic()
+        {
+            Medic medic = new Medic("12345678901", "NumeGresit", "PrenumeGresit", "EmailGresit", "0707070707");
+            UserMedic userMedic = new UserMedic("UserGresit", "ParolaGresita");
+            List<Spital> list = new List<Spital>();
+
+
+            int count = adminService.GetAllMedici().Count;
+            adminService.AddMedic(medic, userMedic, list);
+
+            Assert.AreEqual(count + 1, adminService.GetAllMedici().Count);
+            adminService.DeleteMedicAndUser(medic, userMedic);
+            Assert.AreEqual(count, adminService.GetAllMedici().Count);
+        }
+       
     }
 }

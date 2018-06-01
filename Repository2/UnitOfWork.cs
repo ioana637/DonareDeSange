@@ -21,6 +21,7 @@ namespace Repository
         GenericRepository<Notificari> NotificariRepo { get; }
 
         GenericRepository<Spital> SpitalRepo { get; }
+        GenericRepository<SpitalMedic> SpitalMedicRepo { get; }
 
         void Save();
     }
@@ -42,6 +43,7 @@ namespace Repository
         private GenericRepository<CererePacient> cererePacientRepo;
 
         private GenericRepository<TraseuPunga> traseuPungaRepo;
+        private GenericRepository<SpitalMedic> spitalMedicRepo;
 
         private GenericRepository<Notificari> notificariRepo;
 
@@ -202,6 +204,16 @@ namespace Repository
                 if (notificariRepo == null)
                     notificariRepo = new GenericRepository<Notificari>(context);
                 return notificariRepo;
+            }
+        }
+
+        public GenericRepository<SpitalMedic> SpitalMedicRepo
+        {
+            get
+            {
+                if (spitalMedicRepo == null)
+                    spitalMedicRepo = new GenericRepository<SpitalMedic>(context);
+                return spitalMedicRepo;
             }
         }
 

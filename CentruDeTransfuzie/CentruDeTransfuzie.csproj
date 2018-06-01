@@ -188,6 +188,18 @@
     <Compile Include="Migrations\20180513171327_notificari.designer.cs">
       <DependentUpon>20180513171327_notificari.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20180530115850_AddEliminatPungaSange.cs" />
+    <Compile Include="Migrations\20180530115850_AddEliminatPungaSange.designer.cs">
+      <DependentUpon>20180530115850_AddEliminatPungaSange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20180530155910_ElimareColoanePungaSange.cs" />
+    <Compile Include="Migrations\20180530155910_ElimareColoanePungaSange.designer.cs">
+      <DependentUpon>20180530155910_ElimareColoanePungaSange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20180530185631_ElimareColoanePungaSange2.cs" />
+    <Compile Include="Migrations\20180530185631_ElimareColoanePungaSange2.designer.cs">
+      <DependentUpon>20180530185631_ElimareColoanePungaSange2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\CTContextModelSnapshot.cs" />
     <Compile Include="model\Admin.cs" />
     <Compile Include="model\Analiza.cs" />

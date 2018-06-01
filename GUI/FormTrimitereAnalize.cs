@@ -27,6 +27,7 @@ namespace GUI
         private bool ValidateForm() {
             if (comboBoxGrupaSange.SelectedItem != null && 
                 comboBoxRh.SelectedItem != null && 
+                textBoxNivelALT.Text!="" &&
                 int.Parse(textBoxNivelALT.Text) > 0 && 
                 comboBoxPunga.SelectedItem != null)
                 return true;
@@ -56,7 +57,7 @@ namespace GUI
                 }
             }
             else
-                MessageBox.Show("Trebuie sa completati toate datele!");
+                MessageBox.Show("Date incomplete/incorecte!");
         }
 
         private void buttonAnulare_Click(object sender, EventArgs e)
