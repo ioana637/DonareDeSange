@@ -20,6 +20,16 @@ namespace Service
             }
         }
 
+        public Medic GetMedicByUsername(String username)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                Medic medic = unitOfWork.MedicRepo.GetBy(m => m.UserMedic.Username.Equals(username));
+                return medic;
+            }
+        }
+
+
         public int Login(String username,String password)
         {// returneaza -1 daca datele sunt gresite, id-ul medicului altfel
             UserMedic um = GetUserMedicByUsername(username);
@@ -59,6 +69,7 @@ namespace Service
 
         }
 
+
         public void AddCerere(Cerere cerere, String username, List<Pacient> pacienti)
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
@@ -96,6 +107,8 @@ namespace Service
                 cerereSalvata.CantitateGlobuleRosii = cerere.CantitateGlobuleRosii;
                 cerereSalvata.CantitatePlasma = cerere.CantitatePlasma;
                 cerereSalvata.CantitateTrombocite = cerere.CantitateTrombocite;
+                cerereSalvata.Efectuata = cerere.Efectuata;
+                //cerereSalvata.Prioritate = cerere.Prioritate;
                 unitOfWork.CerereRepo.Update(cerereSalvata);
                 unitOfWork.Save();
 
@@ -143,6 +156,27 @@ namespace Service
 
             }
         }
+
+        public void DeleteCerere(Cerere cerere)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                var medic = unitOfWork.MedicRepo.GetMedic(cerere.Medic.Id);
+                //.Cereri.Remove(cerere);
+                unitOfWork.CerereRepo.Delete(cerere);
+            }
+        }
+
+        public void DeletePacient(string v)
+        {
+            using (UnitOfWork unitOfWork = new UnitOfWork())
+            {
+                Pacient pacient = unitOfWork.PacientRepo.GetBy(p => p.Email.Equals(v));
+                unitOfWork.MedicRepo.GetMedic(pacient.Medic.Id).Pacienti.Remove(pacient);
+                unitOfWork.PacientRepo.Delete(pacient);
+            }
+        }
+
     }
 }
 
