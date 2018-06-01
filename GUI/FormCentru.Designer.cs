@@ -53,6 +53,9 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -268,6 +271,9 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.label6);
+            this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.textBoxPrenume);
             this.tabPage2.Controls.Add(this.textBoxEmail);
             this.tabPage2.Controls.Add(this.textBoxNume);
@@ -291,7 +297,6 @@
             this.textBoxPrenume.Name = "textBoxPrenume";
             this.textBoxPrenume.Size = new System.Drawing.Size(129, 26);
             this.textBoxPrenume.TabIndex = 11;
-            this.textBoxPrenume.Text = "Prenume";
             this.textBoxPrenume.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxEmail
@@ -303,7 +308,6 @@
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(129, 26);
             this.textBoxEmail.TabIndex = 10;
-            this.textBoxEmail.Text = "Email";
             this.textBoxEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxNume
@@ -315,7 +319,6 @@
             this.textBoxNume.Name = "textBoxNume";
             this.textBoxNume.Size = new System.Drawing.Size(129, 26);
             this.textBoxNume.TabIndex = 9;
-            this.textBoxNume.Text = "Nume";
             this.textBoxNume.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnAdauga
@@ -364,7 +367,7 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(24, 68);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1126, 441);
+            this.dataGridView2.Size = new System.Drawing.Size(1057, 441);
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
@@ -378,6 +381,34 @@
             this.button5.TabIndex = 1;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(1132, 97);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 18);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Nume";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(1123, 140);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 18);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Prenume";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(1135, 182);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 18);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Email";
             // 
             // FormCentru
             // 
@@ -436,5 +467,8 @@
         private System.Windows.Forms.TextBox textBoxPrenume;
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.TextBox textBoxNume;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }
