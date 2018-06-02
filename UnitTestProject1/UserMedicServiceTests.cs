@@ -16,7 +16,7 @@ namespace Service.Tests
     {
         UserMedicService medicService = new UserMedicService();
         
-        /*
+        
         [TestMethod()]
         public void TestUpdateCerere()
         {
@@ -44,8 +44,8 @@ namespace Service.Tests
 
             medicService.DeleteCerere(cerereSalvata);
             Assert.AreEqual(count, medicService.GetAllCereri().Count());
-        }*/
-        /*
+        }
+        
         [TestMethod]
         public void TestAddCerere()
         {
@@ -64,7 +64,7 @@ namespace Service.Tests
             }
             medicService.DeleteCerere(cerereSalvata);
             Assert.AreEqual(count, medicService.GetAllCereri().Count());
-        }*/
+        }
 
 
         [TestMethod()]
