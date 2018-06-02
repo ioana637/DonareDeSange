@@ -22,6 +22,7 @@ namespace Service.Tests
         {
             int count = medicService.GetAllCereri().Count;
             Cerere cerere = new Cerere("xx-xx-xxxx", 1, 1, 1, 1, false, null, GrupaSange.AII, TipRh.Negativ);
+
             medicService.AddCerere(cerere, "ioana", new List<Pacient>());
             Cerere cerereSalvata = medicService.GetCereriByMedic("ioana").Where(c => c.Data.Equals("xx-xx-xxxx") && c.Grupa.Equals(GrupaSange.AII) && c.RH.Equals(TipRh.Negativ)).FirstOrDefault();
             Assert.AreEqual(count + 1, medicService.GetAllCereri().Count);

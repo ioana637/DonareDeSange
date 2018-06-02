@@ -108,7 +108,7 @@ namespace Service
                 cerereSalvata.CantitatePlasma = cerere.CantitatePlasma;
                 cerereSalvata.CantitateTrombocite = cerere.CantitateTrombocite;
                 cerereSalvata.Efectuata = cerere.Efectuata;
-                //cerereSalvata.Prioritate = cerere.Prioritate;
+                cerereSalvata.Prioritate = cerere.Prioritate;
                 unitOfWork.CerereRepo.Update(cerereSalvata);
                 unitOfWork.Save();
 
