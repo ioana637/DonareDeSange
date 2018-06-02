@@ -63,8 +63,27 @@ namespace Service.Tests
 
             donator.Prenume = "Mihai";
             donatorService.UpdateDonator(donator);
-            
+
             Assert.AreEqual(donator.Prenume, "Mihai");
         }
+
+        [TestMethod()]
+        public void RegisterDonatorTest()
+        {
+            Donator donator = new Donator("Popescu", "Ion", "M", DateTime.Parse("1998-02-12"), "Cluj-Napoca", "Cluj-Napoca", "Cluj", null, null, null, "0712121213", "popescupopescu2@yahoo.com");
+            UserDonator userDonator = new UserDonator("popescupopescu", "8287458823facb8ff918dbfabcd22ccb"); // parola este "parola"
+
+            int count = donatorService.GetAllDonatori().Count;
+
+            donatorService.RegisterDonator("popescupopescu", "parola", "Popescu", "Ion", "M", DateTime.Parse("1998-02-12"), "Cluj-Napoca", "Cluj-Napoca", "Cluj", null, null, null, "0712121213", "popescupopescu2@yahoo.com");
+
+            Assert.AreEqual(count + 1, donatorService.GetAllDonatori().Count);
+
+            donatorService.DeleteDonatorAndUser(donator, userDonator);
+
+            Assert.AreEqual(count, donatorService.GetAllDonatori().Count);
+
+        }
+
     }
 }

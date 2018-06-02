@@ -91,8 +91,10 @@ namespace Service
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
-                unitOfWork.UserDonatorRepo.Delete(userDonator);
-                unitOfWork.DonatorRepo.Delete(donator);
+                UserDonator userDB = unitOfWork.UserDonatorRepo.GetBy(ud => ud.Username.Equals(userDonator.Username));
+                Donator donatorDB = unitOfWork.DonatorRepo.GetBy(d => d.Email.Equals(donator.Email));
+                unitOfWork.DonatorRepo.Delete(donatorDB);
+                unitOfWork.UserDonatorRepo.Delete(userDB);
                 unitOfWork.Save();
             }
         }
