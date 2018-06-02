@@ -52,7 +52,7 @@
             this.buttonLogIn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogIn2.ForeColor = System.Drawing.Color.Firebrick;
             this.buttonLogIn2.Location = new System.Drawing.Point(136, 185);
-            this.buttonLogIn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonLogIn2.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogIn2.Name = "buttonLogIn2";
             this.buttonLogIn2.Size = new System.Drawing.Size(134, 31);
             this.buttonLogIn2.TabIndex = 5;
@@ -79,7 +79,7 @@
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.Silver;
             this.txtUsername.Location = new System.Drawing.Point(100, 64);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(252, 26);
             this.txtUsername.TabIndex = 8;
@@ -92,7 +92,7 @@
             this.txtPassw.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassw.ForeColor = System.Drawing.Color.Silver;
             this.txtPassw.Location = new System.Drawing.Point(100, 121);
-            this.txtPassw.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassw.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassw.Name = "txtPassw";
             this.txtPassw.Size = new System.Drawing.Size(252, 26);
             this.txtPassw.TabIndex = 9;
@@ -175,6 +175,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormLogareDonator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Tag = "";
+            this.Text = "DONATOR";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
