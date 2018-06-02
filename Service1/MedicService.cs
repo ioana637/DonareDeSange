@@ -161,9 +161,17 @@ namespace Service
         {
             using (UnitOfWork unitOfWork = new UnitOfWork())
             {
-                var medic = unitOfWork.MedicRepo.GetMedic(cerere.Medic.Id);
-                //.Cereri.Remove(cerere);
-                unitOfWork.CerereRepo.Delete(cerere);
+                Cerere cerereBD = unitOfWork.CerereRepo.GetBy(c => c.Id.Equals(cerere.Id));
+                List<CererePacient> cereriPacienti = unitOfWork.CererePacientRepo.GetAll().ToList();
+                cereriPacienti.ForEach(cp =>
+                {
+                    if (cp.IdCerere.Equals(cerereBD.Id))
+                    {
+                        unitOfWork.CererePacientRepo.Delete(cp);
+                    }
+                });
+                unitOfWork.CerereRepo.Delete(cerereBD);
+                unitOfWork.Save();
             }
         }
 
