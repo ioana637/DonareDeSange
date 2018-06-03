@@ -120,8 +120,6 @@ namespace GUI
             this.Close();
         }
 
-
-
         private void btnInregistreaza_Click_1(object sender, EventArgs e)
         {
             #region User Data

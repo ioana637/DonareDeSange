@@ -41,10 +41,10 @@
             this.btnNotifica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNotifica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNotifica.ForeColor = System.Drawing.Color.White;
-            this.btnNotifica.Location = new System.Drawing.Point(7, 61);
-            this.btnNotifica.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNotifica.Location = new System.Drawing.Point(9, 75);
+            this.btnNotifica.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNotifica.Name = "btnNotifica";
-            this.btnNotifica.Size = new System.Drawing.Size(201, 86);
+            this.btnNotifica.Size = new System.Drawing.Size(268, 106);
             this.btnNotifica.TabIndex = 0;
             this.btnNotifica.Text = "Notifică donatori";
             this.btnNotifica.UseVisualStyleBackColor = false;
@@ -58,10 +58,10 @@
             this.btnTrimiteSange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTrimiteSange.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTrimiteSange.ForeColor = System.Drawing.Color.White;
-            this.btnTrimiteSange.Location = new System.Drawing.Point(212, 61);
-            this.btnTrimiteSange.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTrimiteSange.Location = new System.Drawing.Point(283, 75);
+            this.btnTrimiteSange.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTrimiteSange.Name = "btnTrimiteSange";
-            this.btnTrimiteSange.Size = new System.Drawing.Size(217, 86);
+            this.btnTrimiteSange.Size = new System.Drawing.Size(289, 106);
             this.btnTrimiteSange.TabIndex = 1;
             this.btnTrimiteSange.Text = "Trimite sânge";
             this.btnTrimiteSange.UseVisualStyleBackColor = false;
@@ -70,24 +70,25 @@
             // lblmesaj
             // 
             this.lblmesaj.AutoSize = true;
-            this.lblmesaj.Location = new System.Drawing.Point(38, 39);
-            this.lblmesaj.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblmesaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmesaj.Location = new System.Drawing.Point(21, 9);
             this.lblmesaj.Name = "lblmesaj";
-            this.lblmesaj.Size = new System.Drawing.Size(0, 13);
+            this.lblmesaj.Size = new System.Drawing.Size(0, 18);
             this.lblmesaj.TabIndex = 2;
+            this.lblmesaj.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CerereForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(440, 198);
+            this.ClientSize = new System.Drawing.Size(587, 244);
             this.Controls.Add(this.lblmesaj);
             this.Controls.Add(this.btnTrimiteSange);
             this.Controls.Add(this.btnNotifica);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CerereForm";
             this.Load += new System.EventHandler(this.CerereForm_Load);
             this.ResumeLayout(false);

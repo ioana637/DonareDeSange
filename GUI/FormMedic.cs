@@ -132,6 +132,7 @@ namespace GUI
 
         private void loadDataGridView2()
         {
+            dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             listCereri = serviceMedic.GetCereriByMedic(usernameMedic);
             bindingSource = new BindingSource(listCereri, null);
             dataGridView2.DataSource = bindingSource;
@@ -312,7 +313,6 @@ namespace GUI
             //string value1 = row.Cells[0].Value.ToString();
             try
             {
-                if (!dataGridView2.CurrentRow.Selected) throw new Exception("Trebuie selectat tot randul");
                 DataGridViewRow row = dataGridView2.SelectedRows[0];
                 if ((bool)row.Cells[7].Value) throw new Exception("Cererea a fost tratata deja!");
                 comboBoxGrupa.SelectedItem = row.Cells[8].Value.ToString();

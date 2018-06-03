@@ -51,7 +51,7 @@ namespace GUI
             }
             catch (Exception err)
             {
-                MessageBox.Show("Username or password incorect!!" + err.StackTrace);
+                MessageBox.Show("Username or password incorect!!");
             }
         }
 

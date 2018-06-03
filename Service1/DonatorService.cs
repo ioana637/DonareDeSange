@@ -174,6 +174,7 @@ namespace Service
                 if (i.id_donator == idDon)
                 {
                     //de ce delete?
+                    //ca sa nu fie notificat de mai multe ori :)
                     //service.DeleteNotificare(idDon);
                     return true;
                 }

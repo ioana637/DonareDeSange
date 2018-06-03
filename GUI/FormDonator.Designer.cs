@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem96 = new System.Windows.Forms.ListViewItem("- hipertensiune");
-            System.Windows.Forms.ListViewItem listViewItem97 = new System.Windows.Forms.ListViewItem("- boli de inimă");
-            System.Windows.Forms.ListViewItem listViewItem98 = new System.Windows.Forms.ListViewItem("- boli renale");
-            System.Windows.Forms.ListViewItem listViewItem99 = new System.Windows.Forms.ListViewItem("- boli psihice");
-            System.Windows.Forms.ListViewItem listViewItem100 = new System.Windows.Forms.ListViewItem("- boli hepatice");
-            System.Windows.Forms.ListViewItem listViewItem101 = new System.Windows.Forms.ListViewItem("- boli endocrine");
-            System.Windows.Forms.ListViewItem listViewItem102 = new System.Windows.Forms.ListViewItem("-Hepatită( de orice tip)");
-            System.Windows.Forms.ListViewItem listViewItem103 = new System.Windows.Forms.ListViewItem("-TBC");
-            System.Windows.Forms.ListViewItem listViewItem104 = new System.Windows.Forms.ListViewItem("-Sifilis");
-            System.Windows.Forms.ListViewItem listViewItem105 = new System.Windows.Forms.ListViewItem("-Malarie");
-            System.Windows.Forms.ListViewItem listViewItem106 = new System.Windows.Forms.ListViewItem("-Epilepsie și alte boli neurologice");
-            System.Windows.Forms.ListViewItem listViewItem107 = new System.Windows.Forms.ListViewItem("-Boli psihice");
-            System.Windows.Forms.ListViewItem listViewItem108 = new System.Windows.Forms.ListViewItem("-Bruceloză");
-            System.Windows.Forms.ListViewItem listViewItem109 = new System.Windows.Forms.ListViewItem("-Ulcer");
-            System.Windows.Forms.ListViewItem listViewItem110 = new System.Windows.Forms.ListViewItem("-Diabet zaharat");
-            System.Windows.Forms.ListViewItem listViewItem111 = new System.Windows.Forms.ListViewItem("-Boli de inimă");
-            System.Windows.Forms.ListViewItem listViewItem112 = new System.Windows.Forms.ListViewItem("-Boli de piele: psoriazis, vitiligo");
-            System.Windows.Forms.ListViewItem listViewItem113 = new System.Windows.Forms.ListViewItem("-Miopie forte: peste (-) 6 dioptrii");
-            System.Windows.Forms.ListViewItem listViewItem114 = new System.Windows.Forms.ListViewItem("-Cancer");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("- hipertensiune");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("- boli de inimă");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("- boli renale");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("- boli psihice");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("- boli hepatice");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("- boli endocrine");
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("-Hepatită( de orice tip)");
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("-TBC");
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("-Sifilis");
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("-Malarie");
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("-Epilepsie și alte boli neurologice");
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("-Boli psihice");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("-Bruceloză");
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("-Ulcer");
+            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("-Diabet zaharat");
+            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("-Boli de inimă");
+            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("-Boli de piele: psoriazis, vitiligo");
+            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("-Miopie forte: peste (-) 6 dioptrii");
+            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("-Cancer");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDonator));
             this.tabDonator = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -207,7 +207,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(379, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(225, 24);
+            this.label1.Size = new System.Drawing.Size(289, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Cererile actuale de sânge";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -243,7 +243,7 @@
             this.checkBoxInsarcinata.AutoSize = true;
             this.checkBoxInsarcinata.Location = new System.Drawing.Point(53, 82);
             this.checkBoxInsarcinata.Name = "checkBoxInsarcinata";
-            this.checkBoxInsarcinata.Size = new System.Drawing.Size(98, 22);
+            this.checkBoxInsarcinata.Size = new System.Drawing.Size(121, 28);
             this.checkBoxInsarcinata.TabIndex = 16;
             this.checkBoxInsarcinata.Text = "Însărcinată";
             this.checkBoxInsarcinata.UseVisualStyleBackColor = true;
@@ -254,7 +254,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(50, 457);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(166, 18);
+            this.label4.Size = new System.Drawing.Size(214, 24);
             this.label4.TabIndex = 7;
             this.label4.Text = "*Vreau să donez pentru:";
             // 
@@ -263,12 +263,12 @@
             this.listView2.BackColor = System.Drawing.Color.AntiqueWhite;
             this.listView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem96,
-            listViewItem97,
-            listViewItem98,
-            listViewItem99,
-            listViewItem100,
-            listViewItem101});
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4,
+            listViewItem5,
+            listViewItem6});
             this.listView2.Location = new System.Drawing.Point(72, 389);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(470, 81);
@@ -281,7 +281,7 @@
             this.checkBoxTratament.AutoSize = true;
             this.checkBoxTratament.Location = new System.Drawing.Point(53, 355);
             this.checkBoxTratament.Name = "checkBoxTratament";
-            this.checkBoxTratament.Size = new System.Drawing.Size(409, 22);
+            this.checkBoxTratament.Size = new System.Drawing.Size(519, 28);
             this.checkBoxTratament.TabIndex = 14;
             this.checkBoxTratament.Text = "Sunt sub tratament pentru una dintre afecțiunile urmatoare:";
             this.checkBoxTratament.UseVisualStyleBackColor = true;
@@ -292,7 +292,7 @@
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(205, 481);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(68, 18);
+            this.label29.Size = new System.Drawing.Size(88, 24);
             this.label29.TabIndex = 13;
             this.label29.Text = "Prenume";
             // 
@@ -302,7 +302,7 @@
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(69, 481);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(48, 18);
+            this.label28.Size = new System.Drawing.Size(62, 24);
             this.label28.TabIndex = 12;
             this.label28.Text = "Nume";
             // 
@@ -312,7 +312,7 @@
             this.checkBoxConditii.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxConditii.Location = new System.Drawing.Point(53, 544);
             this.checkBoxConditii.Name = "checkBoxConditii";
-            this.checkBoxConditii.Size = new System.Drawing.Size(310, 22);
+            this.checkBoxConditii.Size = new System.Drawing.Size(398, 28);
             this.checkBoxConditii.TabIndex = 11;
             this.checkBoxConditii.Text = "Sunt de acord cu condițiile dinaintea donării";
             this.checkBoxConditii.UseVisualStyleBackColor = true;
@@ -335,14 +335,14 @@
             // 
             this.textBoxPrenume.Location = new System.Drawing.Point(208, 502);
             this.textBoxPrenume.Name = "textBoxPrenume";
-            this.textBoxPrenume.Size = new System.Drawing.Size(100, 24);
+            this.textBoxPrenume.Size = new System.Drawing.Size(100, 29);
             this.textBoxPrenume.TabIndex = 9;
             // 
             // textBoxNume
             // 
             this.textBoxNume.Location = new System.Drawing.Point(72, 502);
             this.textBoxNume.Name = "textBoxNume";
-            this.textBoxNume.Size = new System.Drawing.Size(100, 24);
+            this.textBoxNume.Size = new System.Drawing.Size(100, 29);
             this.textBoxNume.TabIndex = 8;
             // 
             // checkBoxBoala
@@ -351,7 +351,7 @@
             this.checkBoxBoala.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxBoala.Location = new System.Drawing.Point(53, 166);
             this.checkBoxBoala.Name = "checkBoxBoala";
-            this.checkBoxBoala.Size = new System.Drawing.Size(298, 22);
+            this.checkBoxBoala.Size = new System.Drawing.Size(383, 28);
             this.checkBoxBoala.TabIndex = 6;
             this.checkBoxBoala.Text = "Sunt suferind de una din bolile de mai jos:";
             this.checkBoxBoala.UseVisualStyleBackColor = true;
@@ -362,7 +362,7 @@
             this.checkBoxInterventii.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxInterventii.Location = new System.Drawing.Point(53, 138);
             this.checkBoxInterventii.Name = "checkBoxInterventii";
-            this.checkBoxInterventii.Size = new System.Drawing.Size(344, 22);
+            this.checkBoxInterventii.Size = new System.Drawing.Size(442, 28);
             this.checkBoxInterventii.TabIndex = 5;
             this.checkBoxInterventii.Text = "Am suferit intervenții chirurgicale în ultimele 6 luni";
             this.checkBoxInterventii.UseVisualStyleBackColor = true;
@@ -373,7 +373,7 @@
             this.checkBoxGreutate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxGreutate.Location = new System.Drawing.Point(53, 110);
             this.checkBoxGreutate.Name = "checkBoxGreutate";
-            this.checkBoxGreutate.Size = new System.Drawing.Size(160, 22);
+            this.checkBoxGreutate.Size = new System.Drawing.Size(199, 28);
             this.checkBoxGreutate.TabIndex = 4;
             this.checkBoxGreutate.Text = "Greutate peste 50kg";
             this.checkBoxGreutate.UseVisualStyleBackColor = true;
@@ -384,19 +384,19 @@
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem102,
-            listViewItem103,
-            listViewItem104,
-            listViewItem105,
-            listViewItem106,
-            listViewItem107,
-            listViewItem108,
-            listViewItem109,
-            listViewItem110,
-            listViewItem111,
-            listViewItem112,
-            listViewItem113,
-            listViewItem114});
+            listViewItem7,
+            listViewItem8,
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12,
+            listViewItem13,
+            listViewItem14,
+            listViewItem15,
+            listViewItem16,
+            listViewItem17,
+            listViewItem18,
+            listViewItem19});
             this.listView1.Location = new System.Drawing.Point(72, 194);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(535, 155);
@@ -411,7 +411,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(49, 54);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(434, 18);
+            this.label3.Size = new System.Drawing.Size(530, 24);
             this.label3.TabIndex = 1;
             this.label3.Text = "Bifați căsuțele corespunzătoare situației dumneavoastră:";
             // 
@@ -422,7 +422,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(434, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 24);
+            this.label2.Size = new System.Drawing.Size(244, 29);
             this.label2.TabIndex = 0;
             this.label2.Text = "Formular de donare";
             // 
@@ -467,7 +467,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(378, 32);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(321, 24);
+            this.label5.Size = new System.Drawing.Size(413, 29);
             this.label5.TabIndex = 1;
             this.label5.Text = "Rezultatele analizelor dumneavoastră";
             // 
@@ -549,7 +549,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(202, 406);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(681, 18);
+            this.label10.Size = new System.Drawing.Size(873, 24);
             this.label10.TabIndex = 5;
             this.label10.Text = "-De asemenea, veniți la donare odihnit și nu după o noapte pierdută la serviciu s" +
     "au în fața calculatorului.";
@@ -559,7 +559,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(202, 366);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(290, 18);
+            this.label9.Size = new System.Drawing.Size(370, 24);
             this.label9.TabIndex = 4;
             this.label9.Text = "-Nu fumați înainte și după donare cu o oră. ";
             // 
@@ -568,7 +568,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(202, 331);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(783, 18);
+            this.label8.Size = new System.Drawing.Size(1000, 24);
             this.label8.TabIndex = 3;
             this.label8.Text = "-Dimineața înainte de recoltare puteți consuma o cană cu ceai sau cafea, un mic d" +
     "ejun puțin consistent, legume, fructe.";
@@ -580,7 +580,7 @@
             this.label7.ForeColor = System.Drawing.Color.Firebrick;
             this.label7.Location = new System.Drawing.Point(201, 282);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 20);
+            this.label7.Size = new System.Drawing.Size(186, 25);
             this.label7.TabIndex = 2;
             this.label7.Text = "Înainte de a dona:";
             // 
@@ -590,7 +590,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 18;
+            this.listBox1.ItemHeight = 24;
             this.listBox1.Items.AddRange(new object[] {
             "-Femeile să nu fie: însărcinate, în perioada de lăuzie, în perioada menstruală.",
             "",
@@ -608,7 +608,7 @@
             this.label6.ForeColor = System.Drawing.Color.Firebrick;
             this.label6.Location = new System.Drawing.Point(201, 39);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(373, 20);
+            this.label6.Size = new System.Drawing.Size(449, 25);
             this.label6.TabIndex = 0;
             this.label6.Text = "Condiții de admisibilitate la donarea de sânge";
             // 
@@ -661,7 +661,7 @@
             this.cmbLoc.FormattingEnabled = true;
             this.cmbLoc.Location = new System.Drawing.Point(360, 275);
             this.cmbLoc.Name = "cmbLoc";
-            this.cmbLoc.Size = new System.Drawing.Size(204, 26);
+            this.cmbLoc.Size = new System.Drawing.Size(204, 32);
             this.cmbLoc.TabIndex = 45;
             // 
             // label20
@@ -669,7 +669,7 @@
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(357, 254);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(71, 18);
+            this.label20.Size = new System.Drawing.Size(88, 24);
             this.label20.TabIndex = 44;
             this.label20.Text = "Localitate";
             // 
@@ -677,7 +677,7 @@
             // 
             this.textBoxAdresaR.Location = new System.Drawing.Point(151, 333);
             this.textBoxAdresaR.Name = "textBoxAdresaR";
-            this.textBoxAdresaR.Size = new System.Drawing.Size(412, 24);
+            this.textBoxAdresaR.Size = new System.Drawing.Size(412, 29);
             this.textBoxAdresaR.TabIndex = 43;
             // 
             // label31
@@ -687,7 +687,7 @@
             this.label31.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label31.Location = new System.Drawing.Point(753, 62);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(140, 18);
+            this.label31.Size = new System.Drawing.Size(178, 24);
             this.label31.TabIndex = 42;
             this.label31.Text = "Reintroduceți parola";
             // 
@@ -695,7 +695,7 @@
             // 
             this.textPswNewR.Location = new System.Drawing.Point(756, 83);
             this.textPswNewR.Name = "textPswNewR";
-            this.textPswNewR.Size = new System.Drawing.Size(190, 24);
+            this.textPswNewR.Size = new System.Drawing.Size(190, 29);
             this.textPswNewR.TabIndex = 41;
             this.textPswNewR.UseSystemPasswordChar = true;
             // 
@@ -706,7 +706,7 @@
             this.label30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label30.Location = new System.Drawing.Point(557, 62);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(88, 18);
+            this.label30.Size = new System.Drawing.Size(111, 24);
             this.label30.TabIndex = 40;
             this.label30.Text = "Parolă nouă";
             // 
@@ -714,7 +714,7 @@
             // 
             this.textPswNew.Location = new System.Drawing.Point(560, 83);
             this.textPswNew.Name = "textPswNew";
-            this.textPswNew.Size = new System.Drawing.Size(190, 24);
+            this.textPswNew.Size = new System.Drawing.Size(190, 29);
             this.textPswNew.TabIndex = 39;
             this.textPswNew.UseSystemPasswordChar = true;
             // 
@@ -730,6 +730,7 @@
             this.button2.TabIndex = 34;
             this.button2.Text = "Renunță";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnUpdate
             // 
@@ -749,7 +750,7 @@
             // 
             this.textTelefon.Location = new System.Drawing.Point(417, 506);
             this.textTelefon.Name = "textTelefon";
-            this.textTelefon.Size = new System.Drawing.Size(204, 24);
+            this.textTelefon.Size = new System.Drawing.Size(204, 29);
             this.textTelefon.TabIndex = 32;
             // 
             // label27
@@ -758,7 +759,7 @@
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Location = new System.Drawing.Point(414, 485);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(76, 18);
+            this.label27.Size = new System.Drawing.Size(96, 24);
             this.label27.TabIndex = 31;
             this.label27.Text = "Nr. telefon";
             // 
@@ -766,7 +767,7 @@
             // 
             this.textEmail.Location = new System.Drawing.Point(151, 506);
             this.textEmail.Name = "textEmail";
-            this.textEmail.Size = new System.Drawing.Size(204, 24);
+            this.textEmail.Size = new System.Drawing.Size(204, 29);
             this.textEmail.TabIndex = 30;
             // 
             // label26
@@ -775,7 +776,7 @@
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Location = new System.Drawing.Point(148, 485);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(113, 18);
+            this.label26.Size = new System.Drawing.Size(147, 24);
             this.label26.TabIndex = 29;
             this.label26.Text = "Adresa de email";
             // 
@@ -785,7 +786,7 @@
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Location = new System.Drawing.Point(38, 437);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(112, 18);
+            this.label25.Size = new System.Drawing.Size(140, 24);
             this.label25.TabIndex = 28;
             this.label25.Text = "Date de contact";
             // 
@@ -794,7 +795,7 @@
             this.cmbJudR.FormattingEnabled = true;
             this.cmbJudR.Location = new System.Drawing.Point(151, 387);
             this.cmbJudR.Name = "cmbJudR";
-            this.cmbJudR.Size = new System.Drawing.Size(204, 26);
+            this.cmbJudR.Size = new System.Drawing.Size(204, 32);
             this.cmbJudR.TabIndex = 27;
             this.cmbJudR.SelectedIndexChanged += new System.EventHandler(this.cmbJudR_SelectedIndexChanged);
             // 
@@ -804,7 +805,7 @@
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Location = new System.Drawing.Point(148, 366);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(44, 18);
+            this.label24.Size = new System.Drawing.Size(56, 24);
             this.label24.TabIndex = 26;
             this.label24.Text = "Județ";
             // 
@@ -814,7 +815,7 @@
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Location = new System.Drawing.Point(360, 366);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(71, 18);
+            this.label23.Size = new System.Drawing.Size(88, 24);
             this.label23.TabIndex = 25;
             this.label23.Text = "Localitate";
             // 
@@ -823,7 +824,7 @@
             this.cmbLocR.FormattingEnabled = true;
             this.cmbLocR.Location = new System.Drawing.Point(363, 387);
             this.cmbLocR.Name = "cmbLocR";
-            this.cmbLocR.Size = new System.Drawing.Size(204, 26);
+            this.cmbLocR.Size = new System.Drawing.Size(204, 32);
             this.cmbLocR.TabIndex = 24;
             // 
             // label22
@@ -833,7 +834,7 @@
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(38, 336);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(74, 18);
+            this.label22.Size = new System.Drawing.Size(94, 24);
             this.label22.TabIndex = 23;
             this.label22.Text = "Reședința";
             // 
@@ -844,7 +845,7 @@
             this.label21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label21.Location = new System.Drawing.Point(38, 254);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(44, 18);
+            this.label21.Size = new System.Drawing.Size(56, 24);
             this.label21.TabIndex = 21;
             this.label21.Text = "Județ";
             // 
@@ -853,7 +854,7 @@
             this.cmbJud.FormattingEnabled = true;
             this.cmbJud.Location = new System.Drawing.Point(41, 275);
             this.cmbJud.Name = "cmbJud";
-            this.cmbJud.Size = new System.Drawing.Size(190, 26);
+            this.cmbJud.Size = new System.Drawing.Size(190, 32);
             this.cmbJud.TabIndex = 19;
             this.cmbJud.SelectedIndexChanged += new System.EventHandler(this.cmbJud_SelectedIndexChanged);
             // 
@@ -864,7 +865,7 @@
             this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label19.Location = new System.Drawing.Point(360, 133);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(68, 18);
+            this.label19.Size = new System.Drawing.Size(88, 24);
             this.label19.TabIndex = 16;
             this.label19.Text = "Prenume";
             // 
@@ -875,7 +876,7 @@
             this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label18.Location = new System.Drawing.Point(38, 133);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(48, 18);
+            this.label18.Size = new System.Drawing.Size(62, 24);
             this.label18.TabIndex = 15;
             this.label18.Text = "Nume";
             // 
@@ -886,7 +887,7 @@
             this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label17.Location = new System.Drawing.Point(360, 62);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(51, 18);
+            this.label17.Size = new System.Drawing.Size(63, 24);
             this.label17.TabIndex = 14;
             this.label17.Text = "Parolă";
             // 
@@ -897,7 +898,7 @@
             this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label16.Location = new System.Drawing.Point(38, 62);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(77, 18);
+            this.label16.Size = new System.Drawing.Size(97, 24);
             this.label16.TabIndex = 13;
             this.label16.Text = "Username";
             // 
@@ -908,7 +909,7 @@
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label12.Location = new System.Drawing.Point(38, 190);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 18);
+            this.label12.Size = new System.Drawing.Size(70, 24);
             this.label12.TabIndex = 8;
             this.label12.Text = "Adresă";
             // 
@@ -916,28 +917,28 @@
             // 
             this.textAdresa.Location = new System.Drawing.Point(41, 211);
             this.textAdresa.Name = "textAdresa";
-            this.textAdresa.Size = new System.Drawing.Size(512, 24);
+            this.textAdresa.Size = new System.Drawing.Size(512, 29);
             this.textAdresa.TabIndex = 5;
             // 
             // textBoxSetariPrenume
             // 
             this.textBoxSetariPrenume.Location = new System.Drawing.Point(363, 154);
             this.textBoxSetariPrenume.Name = "textBoxSetariPrenume";
-            this.textBoxSetariPrenume.Size = new System.Drawing.Size(190, 24);
+            this.textBoxSetariPrenume.Size = new System.Drawing.Size(190, 29);
             this.textBoxSetariPrenume.TabIndex = 4;
             // 
             // textBoxSetariNume
             // 
             this.textBoxSetariNume.Location = new System.Drawing.Point(41, 154);
             this.textBoxSetariNume.Name = "textBoxSetariNume";
-            this.textBoxSetariNume.Size = new System.Drawing.Size(204, 24);
+            this.textBoxSetariNume.Size = new System.Drawing.Size(204, 29);
             this.textBoxSetariNume.TabIndex = 3;
             // 
             // textBoxParola
             // 
             this.textBoxParola.Location = new System.Drawing.Point(363, 83);
             this.textBoxParola.Name = "textBoxParola";
-            this.textBoxParola.Size = new System.Drawing.Size(190, 24);
+            this.textBoxParola.Size = new System.Drawing.Size(190, 29);
             this.textBoxParola.TabIndex = 2;
             this.textBoxParola.UseSystemPasswordChar = true;
             // 
@@ -951,7 +952,7 @@
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label11.Location = new System.Drawing.Point(413, 17);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(140, 24);
+            this.label11.Size = new System.Drawing.Size(177, 29);
             this.label11.TabIndex = 1;
             this.label11.Text = "Informații cont";
             // 
@@ -959,7 +960,7 @@
             // 
             this.textBoxUserName.Location = new System.Drawing.Point(41, 83);
             this.textBoxUserName.Name = "textBoxUserName";
-            this.textBoxUserName.Size = new System.Drawing.Size(204, 24);
+            this.textBoxUserName.Size = new System.Drawing.Size(204, 29);
             this.textBoxUserName.TabIndex = 0;
             // 
             // buttonLogout

@@ -82,37 +82,37 @@ namespace GUI
         private void btnNotifica_Click(object sender, EventArgs e)
         {
             DonatorService donatorService = new DonatorService();
-            var smecherie = donatorService.GetAllDonatori();
+            var donatori = donatorService.GetAllDonatori();
             CerereService cerereservice = new CerereService();
 
             List<Donator> lista = new List<Donator>();
 
-            foreach (var i in smecherie)
+            foreach (var i in donatori)
             {
-                if (i.Localitate == centru.Oras && i.Activ == "T")
+                if (i.Localitate == centru.Oras && i.Activ == "1") // 1 = true
                 {
-                    cerereservice.AddNotificare(i.Id, centru.Id);
+                    cerereservice.AddNotificare(i.Id, cerere.Id);
                     lista.Add(i);
                 }
             }
             if (lista.Count <= 10)
             {
-                foreach (var i in smecherie)
+                foreach (var i in donatori)
                 {
-                    if (i.Judet == centru.Judet && !lista.Contains(i))
+                    if (i.Judet == centru.Judet && !lista.Contains(i) && i.Activ == "1") // 1 = true
                     {
-                        cerereservice.AddNotificare(i.Id, centru.Id);
+                        cerereservice.AddNotificare(i.Id, cerere.Id);
                         lista.Add(i);
                     }
                 }
             }
             if(lista.Count <=10)
             {
-                foreach (var i in smecherie)
-                {
-                    if (!lista.Contains(i))
+                foreach (var i in donatori)
+                { 
+                    if (!lista.Contains(i) && i.Activ == "1") // 1 = true
                     {
-                        cerereservice.AddNotificare(i.Id, centru.Id);
+                        cerereservice.AddNotificare(i.Id, cerere.Id);
                         lista.Add(i);
                     }
                 }

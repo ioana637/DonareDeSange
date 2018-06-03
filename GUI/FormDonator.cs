@@ -38,8 +38,6 @@ namespace GUI
             formLogareDonator.Show();
             this.Hide();
             formLogareDonator.Closed += (s, args) => this.Close();
-
-
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -134,6 +132,10 @@ namespace GUI
                 {
                     user.Parola = service.Encrypt(textPswNew.Text);
                 }
+            }
+            else
+            {
+                message += ",parola";
             }
 
             if (message == string.Empty)
@@ -306,6 +308,18 @@ namespace GUI
             }
         }
 
+        private void clearTextBoxex()
+        {
+            checkBoxInsarcinata.Checked = false;
+            checkBoxGreutate.Checked = false;
+            checkBoxInterventii.Checked = false;
+            checkBoxTratament.Checked = false;
+            checkBoxBoala.Checked = false;
+            checkBoxConditii.Checked = false;
+            textBoxNume.Text = string.Empty;
+            textBoxPrenume.Text = string.Empty;
+        }
+
         private void buttonVreauSaDonez_Click(object sender, EventArgs e)
         {
             string message = string.Empty;
@@ -374,6 +388,7 @@ namespace GUI
             if (messageToShow == string.Empty)
             {
                 MessageBox.Show("Mulțumim pentru dorința de a ajuta. Vă așteptăm la cel mai apropiat centru de colectare");
+                clearTextBoxex();
             }
             else
             {
@@ -381,5 +396,24 @@ namespace GUI
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Donator donator = service.GetDonator(this.Username);
+            UserDonator user = service.GetUserDonator(this.Username);
+            textBoxUserName.Text = user.Username;
+            textBoxSetariNume.Text = donator.Nume;
+            textBoxSetariPrenume.Text = donator.Prenume;
+            textAdresa.Text = donator.Domiciliu;
+            cmbJud.SelectedItem = donator.Judet;
+            cmbLoc.SelectedItem = donator.Localitate;
+            textBoxAdresaR.Text = donator.Resedinta != "" ? donator.Resedinta : donator.Domiciliu;
+            cmbJudR.SelectedItem = donator.JudetResedinta != "" ? donator.JudetResedinta : donator.Judet;
+            cmbLocR.SelectedItem = donator.LocalitateResedinta != "" ? donator.LocalitateResedinta : donator.Localitate;
+            textTelefon.Text = donator.Telefon;
+            textEmail.Text = donator.Email;
+            textPswNew.Text = string.Empty;
+            textPswNewR.Text = string.Empty;
+            textBoxParola.Text = string.Empty;
+        }
     }
 }
