@@ -18,7 +18,7 @@ namespace GUI
         private List<Cerere> listCereri = new List<Cerere>();
         private List<Stoc> listStocuri = new List<Stoc>();
         private List<PungaSange> listPungiSange = new List<PungaSange>();
-        private BindingSource bindingSource;
+        private BindingSource bindingSource, bindingSource2;
         private string centru;
 
         public FormCentru(DonatorService service, string user)
@@ -140,13 +140,11 @@ namespace GUI
 
         private void loadDataGridView3()
         {
+            dataGridView3.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             listCereri = serviceCentru.GetAllCereri();
             dataGridView3.DataSource = listCereri;
             dataGridView3.Columns[0].Visible = false;
             dataGridView3.Columns[1].Visible = false;
-
-
-
         }
 
         private void loadStocSange()
@@ -157,6 +155,7 @@ namespace GUI
 
         private void button5_Click(object sender, EventArgs e)
         {
+
             FormLogareCentru formLogareCentru = new FormLogareCentru(serviceCentru);
             this.Hide();
             formLogareCentru.Closed += (s, args) => this.Close();
@@ -174,7 +173,6 @@ namespace GUI
                 FormTrimitereAnalize form = new FormTrimitereAnalize(this.serviceCentru, donator);
                 form.Show();
             }
-
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -192,7 +190,7 @@ namespace GUI
                 }
             }
 
-            if (cerere != null)
+            if (cerere != null && cerere.Efectuata != true)
             {
 
                 var stoc = serviceCentru.GetAllStocuri();
@@ -211,11 +209,11 @@ namespace GUI
                         cerere.CantitateTrombocite <= i.Trombocite &&
                         cerere.CantitateSange <= i.TotalSange)
                         {
-                            message = "Cantitate suficienta pentru a implini cererea";
+                            message = "Cantitatea este suficienta pentru a implini cererea";
                         }
                         else
                         {
-                            message = "Insuficient sange. Notificati donatori sau trimiteti cantitatea din stoc.";
+                            message = "Ne pare rau dar nu este suficient sange pentru cererea dumneavoastra. \n Notificati donatori sau trimiteti cantitatea de sange din stoc.";
                         }
                     }
                 }
@@ -230,6 +228,10 @@ namespace GUI
                     CerereForm formCerere = new CerereForm(message, cerere, stocBun, ctr);
                     formCerere.Show();
                 }
+            }
+            else
+            {
+                MessageBox.Show("Cererea a fost deja completata.");
             }
         }
 

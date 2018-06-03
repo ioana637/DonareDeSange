@@ -52,7 +52,6 @@ namespace GUI
             comboBoxRH.Enabled = true;
             comboBoxGrupa.SelectedItem = null;
             comboBoxRH.SelectedItem = null;
-            comboBoxPr.SelectedItem = null;
             Pacienti.SelectedItems.Clear();
         }
         private void initCampuri()
@@ -69,7 +68,7 @@ namespace GUI
             Pacienti.Items.Clear();
             List<Pacient> pacienti = serviceMedic.GetPacientByMedic(idMedicCurent);
             pacienti.ForEach(p => Pacienti.Items.Add(p.Nume));
-            
+
         }
 
 
@@ -133,6 +132,7 @@ namespace GUI
 
         private void loadDataGridView2()
         {
+            dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             listCereri = serviceMedic.GetCereriByMedic(usernameMedic);
             bindingSource = new BindingSource(listCereri, null);
             dataGridView2.DataSource = bindingSource;
@@ -172,7 +172,7 @@ namespace GUI
         {
             try
             {
-                if (comboBoxRH.SelectedItem == null || comboBoxGrupa.SelectedItem == null||comboBoxPr==null) throw new Exception("Trebuie selectata grupa, Rh-ul si gradul de urgenta!");
+                if (comboBoxRH.SelectedItem == null || comboBoxGrupa.SelectedItem == null || comboBoxPr == null) throw new Exception("Trebuie selectata grupa, Rh-ul si gradul de urgenta!");
 
                 if (comboBoxGrupa.Enabled)
                 {
@@ -211,8 +211,6 @@ namespace GUI
 
             cerere.Id = Int32.Parse(row.Cells[0].Value.ToString());
             Int32 total, plasma, trombocite, globule;
-            cerere.Prioritate = (GradUrgenta)Enum.Parse(typeof(GradUrgenta), comboBoxPr.Text);
-
             if (textBoxTotal.Enabled)
             {
                 total = Int32.Parse(textBoxTotal.Text);
@@ -241,13 +239,11 @@ namespace GUI
             cerere.Efectuata = false;
             TipRh RH = (TipRh)Enum.Parse(typeof(TipRh), comboBoxRH.Text);
             GrupaSange grupa = (GrupaSange)Enum.Parse(typeof(GrupaSange), comboBoxGrupa.Text);
-            GradUrgenta prioritate = (GradUrgenta)Enum.Parse(typeof(GradUrgenta), comboBoxPr.Text);
             cerere.Grupa = grupa;
             cerere.RH = RH;
-            cerere.Prioritate = prioritate;
             Int32 total, plasma, trombocite, globule;
-           
-            
+
+
 
 
             if (textBoxTotal.Enabled)
@@ -317,12 +313,10 @@ namespace GUI
             //string value1 = row.Cells[0].Value.ToString();
             try
             {
-                if (!dataGridView2.CurrentRow.Selected) throw new Exception("Trebuie selectat tot randul");
                 DataGridViewRow row = dataGridView2.SelectedRows[0];
                 if ((bool)row.Cells[7].Value) throw new Exception("Cererea a fost tratata deja!");
                 comboBoxGrupa.SelectedItem = row.Cells[8].Value.ToString();
                 comboBoxRH.SelectedItem = row.Cells[9].Value.ToString();
-                comboBoxPr.SelectedItem = row.Cells[10].Value.ToString();
                 comboBoxRH.Enabled = false;
                 comboBoxGrupa.Enabled = false;
                 textBoxGlobule.Text = row.Cells[5].Value.ToString();
@@ -438,7 +432,7 @@ namespace GUI
             if (bindingSourceP.Position >= 0)
             {
                 dataGridView1.Rows[bindingSourceP.Position].Selected = true;
-                
+
             }
             dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[5].Visible = false;
@@ -448,7 +442,7 @@ namespace GUI
 
         private void Pacienti_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
