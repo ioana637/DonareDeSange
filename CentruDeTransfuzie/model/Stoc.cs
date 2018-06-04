@@ -34,6 +34,19 @@ namespace CentruDeTransfuzie.model
             TermenGlobuleRosii = 0;
             TermenPlasma = 0;
         }
+
+        public Stoc(float totalSange, float trombocite, float globuleRosii, float plasma, int termenTrombocite, int termenGlobuleRosii, int termenPlasma, GrupaSange grupa, TipRh rH)
+        {
+            TotalSange = totalSange;
+            Trombocite = trombocite;
+            GlobuleRosii = globuleRosii;
+            Plasma = plasma;
+            TermenTrombocite = termenTrombocite;
+            TermenGlobuleRosii = termenGlobuleRosii;
+            TermenPlasma = termenPlasma;
+            Grupa = grupa;
+            RH = rH;
+        }
     }
 }
 

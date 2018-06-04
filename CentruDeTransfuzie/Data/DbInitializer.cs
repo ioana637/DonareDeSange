@@ -22,22 +22,34 @@ namespace CentruDeTransfuzie.Data
             InitializeStoc(context);
             InitializeCentre(context);
             InitializeAdmin(context);
-            InitializeTraseuPunga(context);
-            InitializePungaSange(context);
-            InitializeAnaliza(context);
+            //InitializeTraseuPunga(context);
+            //InitializePungaSange(context);
+            //InitializeAnaliza(context);
             InitializeNotificari(context);
+            InitializeSpitale(context);
+        }
 
+        private static void InitializeSpitale(CTContext context)
+        {
+            if (context.Spital.Any()) return;
+            CentruTransfuzie c1 = context.CentruTransfuzie.Find(3);
+            CentruTransfuzie c2 = context.CentruTransfuzie.Find(4);
+            Spital sp1 = new Spital(c1, "Str. Salcamilor nr. 98", "Iasi", "Iasi");
+            Spital sp2 = new Spital(c2, "Str. Alunei nr. 637", "Arad", "Arad");
+            context.Spital.Add(sp1);
+            context.Spital.Add(sp2);
+            context.SaveChanges();
         }
 
         private static void InitializeNotificari(CTContext context)
         {
             if (context.Notificari.Any()) return;
-            Notificari n1 = new Notificari(2,1);
-            Notificari n2 = new Notificari(1,2);
-            Notificari n3 = new Notificari(1,1);
+            Notificari n1 = new Notificari(2, 1);
+            Notificari n2 = new Notificari(1, 2);
+            Notificari n3 = new Notificari(1, 1);
             Notificari n4 = new Notificari(3, 2);
-            var notificari =new Notificari[] { n1, n2, n3,n4};
-            foreach(Notificari n in notificari)
+            var notificari = new Notificari[] { n1, n2, n3, n4 };
+            foreach (Notificari n in notificari)
             {
                 context.Notificari.Add(n);
             }
@@ -51,7 +63,7 @@ namespace CentruDeTransfuzie.Data
             TraseuPunga t2 = new TraseuPunga { Prelevata = true };
             TraseuPunga t3 = new TraseuPunga { Prelevata = true };
             TraseuPunga t4 = new TraseuPunga { Prelevata = true };
-            var traseu = new TraseuPunga[] { t1, t2, t3,t4 };
+            var traseu = new TraseuPunga[] { t1, t2, t3, t4 };
             foreach (TraseuPunga tp in traseu)
             {
                 context.TraseuPunga.Add(tp);
@@ -68,7 +80,7 @@ namespace CentruDeTransfuzie.Data
             PungaSange p3 = new PungaSange(DateTime.Parse("2018-05-25 19:12:48"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(3), Donator = context.Donator.Find(2), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
             PungaSange p4 = new PungaSange(DateTime.Parse("2017-12-24"), 200, 20, 20, 10) { TraseuPunga = context.TraseuPunga.Find(4), Donator = context.Donator.Find(2), CentruTransfuzie = context.CentruTransfuzie.Find(2) };
 
-            var pungi = new PungaSange[] { p1, p2, p3,p4 };
+            var pungi = new PungaSange[] { p1, p2, p3, p4 };
             foreach (PungaSange p in pungi)
             {
                 context.PungaSange.Add(p);
@@ -85,7 +97,7 @@ namespace CentruDeTransfuzie.Data
             Analiza a2 = new Analiza(GrupaSange.AII, TipRh.Negativ, true, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(2), Donator = context.PungaSange.Find(2).Donator };
             Analiza a3 = new Analiza(GrupaSange.BIII, TipRh.Pozitiv, false, false, false, false, false, 2) { PungaSange = context.PungaSange.Find(3), Donator = context.PungaSange.Find(3).Donator };
 
-            var analize = new Analiza[] {   a3 };
+            var analize = new Analiza[] { a3 };
             foreach (Analiza a in analize)
             {
                 context.Analiza.Add(a);
@@ -128,12 +140,12 @@ namespace CentruDeTransfuzie.Data
             }
             UserMedic um1 = new UserMedic("ioana", "0d20326e6155cae6bb2b510bfc2cc01e");//parola=medic
             UserMedic um2 = new UserMedic("raul", "0d20326e6155cae6bb2b510bfc2cc01e"); //parola = medic
-            var usersM = new UserMedic[]{ um1, um2 };
+            var usersM = new UserMedic[] { um1, um2 };
             foreach (UserMedic um in usersM)
             {
                 context.UserMedic.Add(um);
             }
-            
+
 
             context.SaveChanges();
             context.UserMedic.Find(1).Medic = context.Medic.Find(1);
@@ -152,7 +164,7 @@ namespace CentruDeTransfuzie.Data
             {
                 return;
             }
-            Cerere c1 = new Cerere("1-1-2018", 5, 1, 3, 1, true, context.Medic.Find(1),GrupaSange.AII,TipRh.Pozitiv);
+            Cerere c1 = new Cerere("1-1-2018", 5, 1, 3, 1, true, context.Medic.Find(1), GrupaSange.AII, TipRh.Pozitiv);
             Cerere c2 = new Cerere("2-1-2018", 7, 2, 1, 4, false, context.Medic.Find(2), GrupaSange.AII, TipRh.Pozitiv);
             c1.Prioritate = GradUrgenta.Mediu;
             c2.Prioritate = GradUrgenta.Ridicat;
@@ -168,7 +180,6 @@ namespace CentruDeTransfuzie.Data
         {
             if (context.Donator.Any()) return;
 
-
             Donator d1 = new Donator("Dobrovat", "Mihai", "M", DateTime.Parse("1996-02-22"), "Str. Buftea", "Cluj-Napoca", "Cluj", "Str. Buftea", "Cluj-Napoca", "Cluj", "0723456799", "mihai@yahoo.com");
             d1.Activ = "T";
             Donator d2 = new Donator("Marin", "Andrei", "M", DateTime.Parse("1997-11-23"), "Str. Garii", "Iasi", "Iasi", "Str. Garii", "Iasi", "Iasi", "0723456789", "andrei@yahoo.com");
@@ -180,17 +191,16 @@ namespace CentruDeTransfuzie.Data
             UserDonator ud3 = new UserDonator("Amaria", "93a7ffba27902537651fb3dbca8ae802");//parola=parola3
             UserDonator ud4 = new UserDonator("popescu", "8287458823facb8ff918dbfabcd22ccb"); // parola este "parola"
 
-            var donatori = new Donator[] { d1, d2, d3,d4 };
+            var donatori = new Donator[] { d1, d2, d3, d4 };
 
             foreach (Donator d in donatori)
             {
                 context.Donator.Add(d);
             }
 
-            var usersD = new UserDonator[] { ud1, ud2, ud3,ud4 };
+            var usersD = new UserDonator[] { ud1, ud2, ud3, ud4 };
             foreach (UserDonator ud in usersD)
             {
-
                 context.UserDonator.Add(ud);
             }
 
@@ -199,11 +209,8 @@ namespace CentruDeTransfuzie.Data
             context.Donator.Find(1).UserDonator = context.UserDonator.Find(1);
             context.UserDonator.Find(2).Donator = context.Donator.Find(2);
             context.Donator.Find(2).UserDonator = context.UserDonator.Find(2);
-
             context.SaveChanges();
 
-            
-            
         }
 
         static void InitializeCentre(CTContext context)
@@ -214,11 +221,14 @@ namespace CentruDeTransfuzie.Data
                 return;
             }
             CentruTransfuzie c1 = new CentruTransfuzie("Centru Donare Sânge Cluj", "Piața Mihai Viteazu", "Cluj-Napoca", "Cluj");
-            CentruTransfuzie c2 = new CentruTransfuzie("Centru Donare Sânge București","Militari","Bucuresti","Ilfov");
-
+            CentruTransfuzie c2 = new CentruTransfuzie("Centru Donare Sânge București", "Militari", "Bucuresti", "Ilfov");
+            CentruTransfuzie c3 = new CentruTransfuzie("CentruTransfuzieIasi", "Moldova", "Iasi", "Iasi", "8287458823facb8ff918dbfabcd22ccb");//parola=parola
+            CentruTransfuzie c4 = new CentruTransfuzie("CentruTransfuzieArad", "Banat", "Arad", "Arad", "8287458823facb8ff918dbfabcd22ccb");//parola=parola
+            context.CentruTransfuzie.Add(c1);
+            context.CentruTransfuzie.Add(c2);
             c1.Parola = "e2a7b5972479f8c59ade36a15e5b6146";//parola=ParolaCluj
             c2.Parola = "311e8c89c2e7f24e3ac63265496297a7";//parola=ParolaBucuresti
-            var centre = new CentruTransfuzie[] { c1, c2 };
+            var centre = new CentruTransfuzie[] { c1, c2, c3, c4 };
             foreach (CentruTransfuzie c in centre)
             {
                 context.CentruTransfuzie.Add(c);

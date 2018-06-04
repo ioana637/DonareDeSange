@@ -147,7 +147,7 @@ namespace GUI
             dataGridView3.Columns[1].Visible = false;
         }
 
-        private void loadStocSange()
+        public void loadStocSange()
         {
             listStocuri = serviceCentru.GetAllStocuri();
             dataGridViewStocSange.DataSource = listStocuri;
@@ -225,8 +225,10 @@ namespace GUI
 
                     CentruTransfuzie ctr = cService.GetCentruTransfuzieByName(username);
 
-                    CerereForm formCerere = new CerereForm(message, cerere, stocBun, ctr);
+                    CerereForm formCerere = new CerereForm(message, cerere, stocBun, ctr,this);
+                   
                     formCerere.Show();
+                    loadStocSange();
                 }
             }
             else
@@ -328,9 +330,9 @@ namespace GUI
                 donator.Email = textBoxEmail.Text;
                 donator.Nume = textBoxNume.Text;
                 donator.Prenume = textBoxPrenume.Text;
-                punga.CantitateSange = 0.5F;
-                punga.CantitatePlasma = 0.275F;
-                punga.CantitateGlobuleRosii = 25;//trilioane
+                punga.CantitateSange = 500.0F;
+                punga.CantitatePlasma =275.0F;
+                punga.CantitateGlobuleRosii = 75;//trilioane
                 punga.CantitateTrombocite = 150;//miliarde
                 try
                 {

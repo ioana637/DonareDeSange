@@ -18,6 +18,7 @@ namespace GUI
         public Cerere cerere { get; set; }
         public Stoc stoc { get; set; }
         public CentruTransfuzie centru { get; set; }
+        public FormCentru parentForm { get; set; }
 
         public CerereForm(string message, Cerere cerere, Stoc stoc, CentruTransfuzie centru)
         {
@@ -26,6 +27,11 @@ namespace GUI
             this.stoc = stoc;
             this.centru = centru;
             InitializeComponent();
+        }
+
+        public CerereForm(string message, Cerere cerere, Stoc stoc, CentruTransfuzie centru, FormCentru parentForm) : this(message, cerere, stoc, centru)
+        {
+            this.parentForm = parentForm;
         }
 
         private void CerereForm_Load(object sender, EventArgs e)
@@ -74,6 +80,7 @@ namespace GUI
             }
 
             service.UpdateStoc(this.stoc);
+            parentForm.loadStocSange();
 
             this.Close();
 

@@ -236,6 +236,7 @@ namespace GUI
             Spital spital = listaSpitale[bindingSourceSpitale.Position];
             adminService.DeleteSpital(spital);
             loadDataGridViewSpitale();
+            initListaSpitalePaginaMedic();
         }
 
         private void dataGridViewSpitale_CellClick(object sender, DataGridViewCellEventArgs e)
