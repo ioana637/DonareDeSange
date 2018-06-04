@@ -155,7 +155,7 @@ namespace GUI
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+       
             FormLogareCentru formLogareCentru = new FormLogareCentru(serviceCentru);
             this.Hide();
             formLogareCentru.Closed += (s, args) => this.Close();
@@ -446,6 +446,14 @@ namespace GUI
                 loadStocSange();
                 MessageBox.Show(err.GetMessage());
             }
+        }
+
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            FormLogareCentru formLogareCentru = new FormLogareCentru(serviceCentru);
+            this.Hide();
+            formLogareCentru.Closed += (s, args) => this.Close();
+            formLogareCentru.ShowDialog();
         }
 
         private void label5_Click(object sender, EventArgs e)
