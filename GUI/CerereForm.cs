@@ -96,7 +96,7 @@ namespace GUI
 
             foreach (var i in donatori)
             {
-                if (i.Localitate == centru.Oras && i.Activ == "1") // 1 = true
+                if (i.Localitate == centru.Oras && i.Activ == "T") // 1 = true
                 {
                     cerereservice.AddNotificare(i.Id, cerere.Id);
                     lista.Add(i);
@@ -106,7 +106,7 @@ namespace GUI
             {
                 foreach (var i in donatori)
                 {
-                    if (i.Judet == centru.Judet && !lista.Contains(i) && i.Activ == "1") // 1 = true
+                    if (i.Judet == centru.Judet && !lista.Contains(i) && i.Activ == "T") // 1 = true
                     {
                         cerereservice.AddNotificare(i.Id, cerere.Id);
                         lista.Add(i);
@@ -117,7 +117,7 @@ namespace GUI
             {
                 foreach (var i in donatori)
                 {
-                    if (!lista.Contains(i) && i.Activ == "1") // 1 = true
+                    if (!lista.Contains(i) && i.Activ == "T") // 1 = true
                     {
                         cerereservice.AddNotificare(i.Id, cerere.Id);
                         lista.Add(i);

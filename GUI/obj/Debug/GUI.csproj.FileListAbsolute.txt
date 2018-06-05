@@ -1143,3 +1143,5 @@ C:\Users\Mihai\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.csproj.GenerateR
 C:\Users\Mihai\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 C:\Users\Mihai\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.exe
 C:\Users\Mihai\Documents\GitHub\DonareDeSange\GUI\obj\Debug\GUI.pdb
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\cosov\Documents\GitHub\DonareDeSange\GUI\bin\Debug\Microsoft.EntityFrameworkCore.Design.xml
